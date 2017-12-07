@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>955</width>
+    <width>1114</width>
     <height>626</height>
    </rect>
   </property>
@@ -429,25 +429,8 @@
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout" rowstretch="0,100,0">
-   <item row="2" column="5" colspan="2">
-    <widget class="QLineEdit" name="lineEdit_3">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1" colspan="3">
-    <widget class="QLineEdit" name="lineEdit_2">
+   <item row="0" column="7">
+    <widget class="QLineEdit" name="lineEdit">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -490,7 +473,7 @@
      </item>
     </widget>
    </item>
-   <item row="0" column="9">
+   <item row="0" column="14">
     <widget class="QPushButton" name="pushButton">
      <property name="font">
       <font>
@@ -525,75 +508,8 @@ background-color:#1067A5;
      </property>
     </widget>
    </item>
-   <item row="2" column="9">
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#pushButton_2{
-background-color:#C7C7C7;
-color: #000000
-}
-
-#pushButton_2:hover{
-background-color:#9B9B9A;
-}
-</string>
-     </property>
-     <property name="text">
-      <string>Exportar Archivo</string>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../iconos/file_apply.ico</normaloff>../iconos/file_apply.ico</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>30</width>
-       <height>30</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="4">
-    <widget class="QLabel" name="label_5">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#label_5{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="text">
-      <string>Total:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="7">
-    <widget class="QLineEdit" name="lineEdit">
+   <item row="0" column="12">
+    <widget class="QLineEdit" name="lineEdit_3">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -606,38 +522,6 @@ color: #FFFFFF;
        <weight>75</weight>
        <bold>true</bold>
       </font>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="6">
-    <widget class="QLabel" name="label_3">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#label_3{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="text">
-      <string>Año</string>
      </property>
     </widget>
    </item>
@@ -728,7 +612,39 @@ color: #FFFFFF;
      </item>
     </widget>
    </item>
-   <item row="1" column="0" colspan="10">
+   <item row="0" column="6">
+    <widget class="QLabel" name="label_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_3{
+background-color:#37760D;
+color: #FFFFFF;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="text">
+      <string>Año</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="15">
     <widget class="QTableView" name="tableView">
      <property name="font">
       <font>
@@ -738,6 +654,51 @@ color: #FFFFFF;
       </font>
      </property>
     </widget>
+   </item>
+   <item row="0" column="8">
+    <widget class="QLabel" name="label_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_4{
+background-color:#37760D;
+color: #FFFFFF;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="text">
+      <string>Procesos:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="9">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
    </item>
    <item row="0" column="0" colspan="2">
     <widget class="QLabel" name="label">
@@ -771,51 +732,6 @@ color: #FFFFFF;
      </property>
     </widget>
    </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_4">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#label_4{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="text">
-      <string>Procesos:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="8">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
    <item row="0" column="4">
     <widget class="QLabel" name="label_2">
      <property name="sizePolicy">
@@ -845,6 +761,90 @@ color: #FFFFFF;
      </property>
      <property name="text">
       <string>Mes:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="11">
+    <widget class="QLabel" name="label_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_5{
+background-color:#37760D;
+color: #FFFFFF;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="text">
+      <string>Total:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="10">
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="13">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_2{
+background-color:#C7C7C7;
+color: #000000
+}
+
+#pushButton_2:hover{
+background-color:#9B9B9A;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Exportar Archivo</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../iconos/file_apply.ico</normaloff>../iconos/file_apply.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
      </property>
     </widget>
    </item>

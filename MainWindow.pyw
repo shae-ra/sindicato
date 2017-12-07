@@ -3,7 +3,7 @@
 import sys
 from PyQt5 import QtWidgets, uic, QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QStackedWidget
-from vistas import listaAfiliados, listaProveedores, liquidador
+from vistas import listaAfiliados, listaProveedores, liquidador, procesador
 from PyQt5 import uic
 
 #Creacion de la clase menuPrincipal. Objeto tipo QMainWindow
@@ -19,10 +19,11 @@ class menuPrincipal(QMainWindow):
 		vla = listaAfiliados.listaAfiliados()
 		vlp = listaProveedores.listaProveedores()
 		vliq = liquidador.liquidador()
+		vpro = procesador.procesador()
 
 		
 		#Creamos una lista que guardara la vista
-		self.Vistas = [ vla, vlp, vliq ]
+		self.Vistas = [ vla, vlp, vliq, vpro ]
 
 		#se crea un ciclo for que indexara la lista con las vistas
 		for index, vista in enumerate(self.Vistas):
@@ -32,6 +33,7 @@ class menuPrincipal(QMainWindow):
 		self.pushButton_afiliados.clicked.connect(self.seleccionar_afiliados)
 		self.pushButton_proveedores.clicked.connect(self.seleccionar_proveedores)
 		self.pushButton_liquidaciones.clicked.connect(self.seleccionar_liquidacion)
+		self.pushButton_procesador.clicked.connect(self.seleccionar_procesador)
 		self.setWindowTitle("Sindicato de Trabajadores Municipales de Merlo")
 		self.showMaximized()
 
@@ -43,6 +45,9 @@ class menuPrincipal(QMainWindow):
 
 	def seleccionar_liquidacion(self):
 		self.stacked.setCurrentIndex(2)
+
+	def seleccionar_procesador(self):
+		self.stacked.setCurrentIndex(3)
 
   
 #Instancia para iniciar una aplicación
