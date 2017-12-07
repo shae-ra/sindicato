@@ -8,8 +8,8 @@ from PyQt5 import uic
 
 
 #Creacion de la clase vistaLista
-class detalleAfiliados(QtWidgets.QWidget): 
+class liquidador(QtWidgets.QWidget): 
 	def __init__(self):  
 		QWidget.__init__(self)  
 		#Configuracion del archivo .ui
-		uic.loadUi("gui/detalles/detalleAfiliados.ui", self)
+		uic.loadUi("gui/liquidacion/liquidador.ui", self)
