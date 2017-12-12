@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1191</width>
-    <height>682</height>
+    <height>670</height>
    </rect>
   </property>
   <property name="palette">
@@ -25,45 +25,45 @@
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>189</red>
-        <green>223</green>
-        <blue>223</blue>
+        <red>139</red>
+        <green>140</green>
+        <blue>145</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Light">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>209</red>
+        <green>210</green>
+        <blue>218</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>222</red>
-        <green>239</green>
-        <blue>239</blue>
+        <red>174</red>
+        <green>175</green>
+        <blue>181</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>94</red>
-        <green>111</green>
-        <blue>111</blue>
+        <red>69</red>
+        <green>70</green>
+        <blue>72</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>126</red>
-        <green>149</green>
-        <blue>149</blue>
+        <red>93</red>
+        <green>93</green>
+        <blue>97</blue>
        </color>
       </brush>
      </colorrole>
@@ -106,9 +106,9 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>189</red>
-        <green>223</green>
-        <blue>223</blue>
+        <red>139</red>
+        <green>140</green>
+        <blue>145</blue>
        </color>
       </brush>
      </colorrole>
@@ -124,9 +124,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>222</red>
-        <green>239</green>
-        <blue>239</blue>
+        <red>197</red>
+        <green>197</green>
+        <blue>200</blue>
        </color>
       </brush>
      </colorrole>
@@ -162,45 +162,45 @@
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>189</red>
-        <green>223</green>
-        <blue>223</blue>
+        <red>139</red>
+        <green>140</green>
+        <blue>145</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Light">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>209</red>
+        <green>210</green>
+        <blue>218</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>222</red>
-        <green>239</green>
-        <blue>239</blue>
+        <red>174</red>
+        <green>175</green>
+        <blue>181</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>94</red>
-        <green>111</green>
-        <blue>111</blue>
+        <red>69</red>
+        <green>70</green>
+        <blue>72</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>126</red>
-        <green>149</green>
-        <blue>149</blue>
+        <red>93</red>
+        <green>93</green>
+        <blue>97</blue>
        </color>
       </brush>
      </colorrole>
@@ -243,9 +243,9 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>189</red>
-        <green>223</green>
-        <blue>223</blue>
+        <red>139</red>
+        <green>140</green>
+        <blue>145</blue>
        </color>
       </brush>
      </colorrole>
@@ -261,9 +261,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>222</red>
-        <green>239</green>
-        <blue>239</blue>
+        <red>197</red>
+        <green>197</green>
+        <blue>200</blue>
        </color>
       </brush>
      </colorrole>
@@ -290,63 +290,63 @@
      <colorrole role="WindowText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>94</red>
-        <green>111</green>
-        <blue>111</blue>
+        <red>69</red>
+        <green>70</green>
+        <blue>72</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>189</red>
-        <green>223</green>
-        <blue>223</blue>
+        <red>139</red>
+        <green>140</green>
+        <blue>145</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Light">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>209</red>
+        <green>210</green>
+        <blue>218</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>222</red>
-        <green>239</green>
-        <blue>239</blue>
+        <red>174</red>
+        <green>175</green>
+        <blue>181</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>94</red>
-        <green>111</green>
-        <blue>111</blue>
+        <red>69</red>
+        <green>70</green>
+        <blue>72</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>126</red>
-        <green>149</green>
-        <blue>149</blue>
+        <red>93</red>
+        <green>93</green>
+        <blue>97</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Text">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>94</red>
-        <green>111</green>
-        <blue>111</blue>
+        <red>69</red>
+        <green>70</green>
+        <blue>72</blue>
        </color>
       </brush>
      </colorrole>
@@ -362,27 +362,27 @@
      <colorrole role="ButtonText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>94</red>
-        <green>111</green>
-        <blue>111</blue>
+        <red>69</red>
+        <green>70</green>
+        <blue>72</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>189</red>
-        <green>223</green>
-        <blue>223</blue>
+        <red>139</red>
+        <green>140</green>
+        <blue>145</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>189</red>
-        <green>223</green>
-        <blue>223</blue>
+        <red>139</red>
+        <green>140</green>
+        <blue>145</blue>
        </color>
       </brush>
      </colorrole>
@@ -398,9 +398,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>189</red>
-        <green>223</green>
-        <blue>223</blue>
+        <red>139</red>
+        <green>140</green>
+        <blue>145</blue>
        </color>
       </brush>
      </colorrole>
@@ -437,8 +437,8 @@
         <property name="font">
          <font>
           <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="title">
@@ -455,9 +455,9 @@
            </property>
            <property name="font">
             <font>
-             <pointsize>11</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="styleSheet">
@@ -479,8 +479,8 @@ background-color:#D7BDE2;
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
           </widget>
@@ -495,9 +495,9 @@ background-color:#D7BDE2;
            </property>
            <property name="font">
             <font>
-             <pointsize>11</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="styleSheet">
@@ -512,7 +512,7 @@ color: #1B4F72 ;
 }</string>
            </property>
            <property name="text">
-            <string>Afiliados</string>
+            <string>Consulta de Afiliados</string>
            </property>
            <property name="icon">
             <iconset>
@@ -520,8 +520,8 @@ color: #1B4F72 ;
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
           </widget>
@@ -536,9 +536,9 @@ color: #1B4F72 ;
            </property>
            <property name="font">
             <font>
-             <pointsize>11</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="styleSheet">
@@ -560,14 +560,21 @@ color: #000000;
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
           </widget>
          </item>
          <item row="1" column="0" colspan="5">
           <widget class="QStackedWidget" name="stackedWidget">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
            <widget class="QWidget" name="page"/>
            <widget class="QWidget" name="page_2"/>
           </widget>
@@ -582,9 +589,9 @@ color: #000000;
            </property>
            <property name="font">
             <font>
-             <pointsize>11</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="styleSheet">
@@ -606,8 +613,8 @@ color: #784212 ;
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
           </widget>
@@ -622,9 +629,9 @@ color: #784212 ;
            </property>
            <property name="font">
             <font>
-             <pointsize>11</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="styleSheet">
