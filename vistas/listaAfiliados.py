@@ -9,12 +9,19 @@ from PyQt5 import uic
 
 
 #Creacion de la clase vistaLista
-class listaAfiliados(QtWidgets.QWidget): 
-	def __init__(self):  
-		QWidget.__init__(self)  
+class listaAfiliados(QtWidgets.QWidget):
+	def __init__(self):
+		QWidget.__init__(self)
 		#Configuracion del archivo .ui
-		uic.loadUi("gui/listas/listaAfiliados.ui", self)
+		vista = uic.loadUi("gui/listas/listaAfiliados.ui", self)
 		#Titulo de la ventana
 		self.setWindowTitle("Busqueda de afiliados")
 
 
+		self.da = detalleAfiliados.detalleAfiliados()
+
+		vista.btn_nuevo.clicked.connect(self.mostrarDetalle)
+
+
+	def mostrarDetalle(self):
+		self.da.show()
