@@ -1,13 +1,24 @@
-#El nombre de la clase, tendra el mismo nombre que el archivo.
 
 
+#=============
+#IMPORTACIONES
+#=============
+
+# Importamos el módulo sys que provee el acceso a funciones y objetos mantenidos por el intérprete.
 import sys
+# Importamos las herramientas de PyQT que vamos a utilizar
 from PyQt5 import QtWidgets, uic, QtGui
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget
+# Importamos los elementos que se encuentran dentro del diseñador 
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton
+# Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
 
-#Creacion de la clase vistaLista
+#====================
+#DEFINICION DE CLASES
+#====================
+
+#Creacion de la clase listaProveedores
 class listaProveedores(QtWidgets.QWidget): 
 	def __init__(self):  
 		QWidget.__init__(self)  
