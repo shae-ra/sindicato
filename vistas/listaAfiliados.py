@@ -17,11 +17,12 @@ class listaAfiliados(QtWidgets.QWidget):
 		#Titulo de la ventana
 		self.setWindowTitle("Busqueda de afiliados")
 
+		#declaramos una variable para alojar a la clase "detalleAfiliados()" dentro del archivo "detalleAfiliados"
+		self.detalle = detalleAfiliados.detalleAfiliados()
 
-		self.da = detalleAfiliados.detalleAfiliados()
-
+		#se ejecuta la funcion "motrarDetalle" al presionar btn_nuevo
 		vista.btn_nuevo.clicked.connect(self.mostrarDetalle)
 
-
+	#Creamos la funcion que ejecutara la pantalla DetalleAfiliados
 	def mostrarDetalle(self):
-		self.da.show()
+		self.detalle.show()

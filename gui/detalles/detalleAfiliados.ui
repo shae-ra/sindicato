@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1098</width>
-    <height>634</height>
+    <width>944</width>
+    <height>583</height>
    </rect>
   </property>
   <property name="palette">
@@ -25,9 +25,9 @@
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>237</red>
+        <green>244</green>
+        <blue>221</blue>
        </color>
       </brush>
      </colorrole>
@@ -43,27 +43,27 @@
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>246</red>
+        <green>249</green>
+        <blue>238</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>118</red>
+        <green>122</green>
+        <blue>110</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>170</red>
-        <green>170</green>
-        <blue>170</blue>
+        <red>158</red>
+        <green>163</green>
+        <blue>147</blue>
        </color>
       </brush>
      </colorrole>
@@ -106,9 +106,9 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>237</red>
+        <green>244</green>
+        <blue>221</blue>
        </color>
       </brush>
      </colorrole>
@@ -124,9 +124,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>246</red>
+        <green>249</green>
+        <blue>238</blue>
        </color>
       </brush>
      </colorrole>
@@ -162,9 +162,9 @@
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>237</red>
+        <green>244</green>
+        <blue>221</blue>
        </color>
       </brush>
      </colorrole>
@@ -180,27 +180,27 @@
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>246</red>
+        <green>249</green>
+        <blue>238</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>118</red>
+        <green>122</green>
+        <blue>110</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>170</red>
-        <green>170</green>
-        <blue>170</blue>
+        <red>158</red>
+        <green>163</green>
+        <blue>147</blue>
        </color>
       </brush>
      </colorrole>
@@ -243,9 +243,9 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>237</red>
+        <green>244</green>
+        <blue>221</blue>
        </color>
       </brush>
      </colorrole>
@@ -261,9 +261,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>246</red>
+        <green>249</green>
+        <blue>238</blue>
        </color>
       </brush>
      </colorrole>
@@ -290,18 +290,18 @@
      <colorrole role="WindowText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>118</red>
+        <green>122</green>
+        <blue>110</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>237</red>
+        <green>244</green>
+        <blue>221</blue>
        </color>
       </brush>
      </colorrole>
@@ -317,36 +317,36 @@
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>246</red>
+        <green>249</green>
+        <blue>238</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>118</red>
+        <green>122</green>
+        <blue>110</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>170</red>
-        <green>170</green>
-        <blue>170</blue>
+        <red>158</red>
+        <green>163</green>
+        <blue>147</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Text">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>118</red>
+        <green>122</green>
+        <blue>110</blue>
        </color>
       </brush>
      </colorrole>
@@ -362,27 +362,27 @@
      <colorrole role="ButtonText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>127</red>
-        <green>127</green>
-        <blue>127</blue>
+        <red>118</red>
+        <green>122</green>
+        <blue>110</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>237</red>
+        <green>244</green>
+        <blue>221</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>237</red>
+        <green>244</green>
+        <blue>221</blue>
        </color>
       </brush>
      </colorrole>
@@ -398,9 +398,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
+        <red>237</red>
+        <green>244</green>
+        <blue>221</blue>
        </color>
       </brush>
      </colorrole>
@@ -441,6 +441,421 @@ color: #000000;
   <layout class="QGridLayout" name="gridLayout_3">
    <item row="0" column="0">
     <widget class="QTabWidget" name="tabWidget">
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>165</red>
+           <green>177</green>
+           <blue>173</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>137</red>
+           <green>147</green>
+           <blue>144</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>59</green>
+           <blue>57</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>73</red>
+           <green>78</green>
+           <blue>76</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>59</green>
+           <blue>57</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>165</red>
+           <green>177</green>
+           <blue>173</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>137</red>
+           <green>147</green>
+           <blue>144</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>59</green>
+           <blue>57</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>73</red>
+           <green>78</green>
+           <blue>76</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>59</green>
+           <blue>57</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>165</red>
+           <green>177</green>
+           <blue>173</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>137</red>
+           <green>147</green>
+           <blue>144</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>59</green>
+           <blue>57</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>73</red>
+           <green>78</green>
+           <blue>76</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>110</red>
+           <green>118</green>
+           <blue>115</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
      <property name="font">
       <font>
        <pointsize>9</pointsize>
@@ -492,6 +907,421 @@ color: #000000;
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Light">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>186</red>
+               <green>195</green>
+               <blue>195</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Midlight">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>155</red>
+               <green>162</green>
+               <blue>162</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Dark">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>62</red>
+               <green>65</green>
+               <blue>65</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Mid">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>82</red>
+               <green>87</green>
+               <blue>87</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="BrightText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Shadow">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="AlternateBase">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>189</red>
+               <green>192</green>
+               <blue>192</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ToolTipBase">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>220</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ToolTipText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Light">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>186</red>
+               <green>195</green>
+               <blue>195</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Midlight">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>155</red>
+               <green>162</green>
+               <blue>162</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Dark">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>62</red>
+               <green>65</green>
+               <blue>65</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Mid">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>82</red>
+               <green>87</green>
+               <blue>87</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="BrightText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Shadow">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="AlternateBase">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>189</red>
+               <green>192</green>
+               <blue>192</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ToolTipBase">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>220</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ToolTipText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>62</red>
+               <green>65</green>
+               <blue>65</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Light">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>186</red>
+               <green>195</green>
+               <blue>195</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Midlight">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>155</red>
+               <green>162</green>
+               <blue>162</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Dark">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>62</red>
+               <green>65</green>
+               <blue>65</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Mid">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>82</red>
+               <green>87</green>
+               <blue>87</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>62</red>
+               <green>65</green>
+               <blue>65</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="BrightText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>62</red>
+               <green>65</green>
+               <blue>65</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>237</red>
+               <green>244</green>
+               <blue>221</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Shadow">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="AlternateBase">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>124</red>
+               <green>130</green>
+               <blue>130</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ToolTipBase">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>220</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ToolTipText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
          <property name="font">
           <font>
            <pointsize>10</pointsize>
@@ -500,7 +1330,9 @@ color: #000000;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">#groupBox_4{
+background-color:#edf4dd;
+}</string>
          </property>
          <property name="title">
           <string/>
@@ -521,8 +1353,8 @@ color: #000000;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_9{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -556,8 +1388,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_22{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -643,8 +1475,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -678,8 +1510,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_2{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -764,8 +1596,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_5{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -799,8 +1631,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_3{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -851,8 +1683,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_4{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -886,8 +1718,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_7{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -938,8 +1770,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_26{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -993,8 +1825,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_12{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1045,8 +1877,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_27{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1147,8 +1979,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_8{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1182,8 +2014,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_19{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1296,8 +2128,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_21{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1325,8 +2157,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_10{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1360,8 +2192,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_25{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1466,8 +2298,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_11{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1527,8 +2359,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_13{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1601,12 +2433,12 @@ color: #FFFFFF;
          </property>
          <property name="styleSheet">
           <string notr="true">#pushButton_4{
-background-color:#0A7DD0;
-color: #ffffff
+background-color:#37760D;
+color: #FFFFFF;
 }
 
 #pushButton_4:hover{
-background-color:#1067A5;
+background-color:#37861D;
 }
 </string>
          </property>
@@ -1660,10 +2492,15 @@ background-color:#1067A5;
        </item>
        <item row="1" column="0" colspan="2">
         <widget class="QGroupBox" name="groupBox_2">
+         <property name="styleSheet">
+          <string notr="true">#groupBox_2{
+background-color:#edf4dd;
+}</string>
+         </property>
          <property name="title">
           <string/>
          </property>
-         <layout class="QGridLayout" name="gridLayout_4" columnstretch="0,0,0,0,40,0,40,0,40">
+         <layout class="QGridLayout" name="gridLayout_4" columnstretch="0,0,0,0,0,0,0,0,0">
           <item row="6" column="1">
            <widget class="QLabel" name="label_35">
             <property name="sizePolicy">
@@ -1681,8 +2518,8 @@ background-color:#1067A5;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_35{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1696,155 +2533,8 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="8" column="1">
-           <widget class="QLabel" name="label_44">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_44{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="8">
-           <widget class="QLineEdit" name="lineEdit_32">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="8">
-           <widget class="QLineEdit" name="lineEdit_43">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="7">
-           <widget class="QLabel" name="label_50">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_50{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="7">
-           <widget class="QLabel" name="label_36">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_36{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="8">
-           <widget class="QLineEdit" name="lineEdit_27">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="8">
-           <widget class="QLineEdit" name="lineEdit_35">
+          <item row="8" column="8">
+           <widget class="QLineEdit" name="lineEdit_34">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -1877,8 +2567,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_38{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1892,8 +2582,8 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="8" column="8">
-           <widget class="QLineEdit" name="lineEdit_34">
+          <item row="9" column="8">
+           <widget class="QLineEdit" name="lineEdit_35">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -1909,8 +2599,8 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="17" column="7">
-           <widget class="QLabel" name="label_51">
+          <item row="11" column="1">
+           <widget class="QLabel" name="label_46">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -1925,9 +2615,9 @@ color: #FFFFFF;
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#label_51{
-background-color:#37760D;
-color: #FFFFFF;
+             <string notr="true">#label_46{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -1937,12 +2627,12 @@ color: #FFFFFF;
              <enum>QFrame::Sunken</enum>
             </property>
             <property name="text">
-             <string>DNI:</string>
+             <string>APELLIDO:</string>
             </property>
            </widget>
           </item>
-          <item row="8" column="7">
-           <widget class="QLabel" name="label_42">
+          <item row="9" column="1">
+           <widget class="QLabel" name="label_40">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -1957,9 +2647,41 @@ color: #FFFFFF;
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#label_42{
-background-color:#37760D;
-color: #FFFFFF;
+             <string notr="true">#label_40{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>APELLIDO:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="7">
+           <widget class="QLabel" name="label_50">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_50{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -2007,8 +2729,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_41{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -2022,8 +2744,8 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="11" column="1">
-           <widget class="QLabel" name="label_46">
+          <item row="8" column="1">
+           <widget class="QLabel" name="label_44">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -2038,9 +2760,9 @@ color: #FFFFFF;
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#label_46{
-background-color:#37760D;
-color: #FFFFFF;
+             <string notr="true">#label_44{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -2054,8 +2776,8 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="9" column="1">
-           <widget class="QLabel" name="label_40">
+          <item row="8" column="7">
+           <widget class="QLabel" name="label_42">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -2070,9 +2792,9 @@ color: #FFFFFF;
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#label_40{
-background-color:#37760D;
-color: #FFFFFF;
+             <string notr="true">#label_42{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -2082,7 +2804,7 @@ color: #FFFFFF;
              <enum>QFrame::Sunken</enum>
             </property>
             <property name="text">
-             <string>APELLIDO:</string>
+             <string>DNI:</string>
             </property>
            </widget>
           </item>
@@ -2103,8 +2825,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_49{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -2137,6 +2859,40 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
+          <item row="6" column="8">
+           <widget class="QLineEdit" name="lineEdit_27">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="8">
+           <widget class="QLineEdit" name="lineEdit_43">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_6">
             <property name="sizePolicy">
@@ -2154,8 +2910,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_6{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; ;
 }</string>
             </property>
             <property name="frameShape">
@@ -2166,6 +2922,70 @@ color: #FFFFFF;
             </property>
             <property name="text">
              <string>LUGAR DE TRABAJO:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="7">
+           <widget class="QLabel" name="label_36">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_36{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>DNI:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="7">
+           <widget class="QLabel" name="label_51">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_51{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>DNI:</string>
             </property>
            </widget>
           </item>
@@ -2199,8 +3019,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_53{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -2212,6 +3032,65 @@ color: #FFFFFF;
             <property name="text">
              <string>APELLIDO:</string>
             </property>
+           </widget>
+          </item>
+          <item row="7" column="8">
+           <widget class="QLineEdit" name="lineEdit_32">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="0">
+           <widget class="QComboBox" name="comboBox_13">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <item>
+             <property name="text">
+              <string>Seleccionar</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Esposa</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Cónyuge</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Hijo</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nieto a cargo</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item row="8" column="0">
@@ -2256,38 +3135,6 @@ color: #FFFFFF;
             </item>
            </widget>
           </item>
-          <item row="9" column="7">
-           <widget class="QLabel" name="label_43">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_43{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
           <item row="18" column="7">
            <widget class="QLabel" name="label_52">
             <property name="sizePolicy">
@@ -2305,8 +3152,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_52{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -2318,48 +3165,6 @@ color: #FFFFFF;
             <property name="text">
              <string>DNI:</string>
             </property>
-           </widget>
-          </item>
-          <item row="7" column="0">
-           <widget class="QComboBox" name="comboBox_12">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
            </widget>
           </item>
           <item row="6" column="0">
@@ -2421,8 +3226,8 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="9" column="0">
-           <widget class="QComboBox" name="comboBox_11">
+          <item row="9" column="7">
+           <widget class="QLabel" name="label_43">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -2436,31 +3241,21 @@ color: #FFFFFF;
               <bold>true</bold>
              </font>
             </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
+            <property name="styleSheet">
+             <string notr="true">#label_43{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>DNI:</string>
+            </property>
            </widget>
           </item>
           <item row="11" column="0">
@@ -2505,8 +3300,8 @@ color: #FFFFFF;
             </item>
            </widget>
           </item>
-          <item row="17" column="0">
-           <widget class="QComboBox" name="comboBox_13">
+          <item row="9" column="0">
+           <widget class="QComboBox" name="comboBox_11">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -2545,6 +3340,82 @@ color: #FFFFFF;
               <string>Nieto a cargo</string>
              </property>
             </item>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QComboBox" name="comboBox_12">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <item>
+             <property name="text">
+              <string>Seleccionar</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Esposa</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Cónyuge</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Hijo</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nieto a cargo</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <widget class="QLineEdit" name="lineEdit_15">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="6">
+           <widget class="QLineEdit" name="lineEdit_36">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
            </widget>
           </item>
           <item row="18" column="0">
@@ -2589,10 +3460,10 @@ color: #FFFFFF;
             </item>
            </widget>
           </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_18">
+          <item row="6" column="6">
+           <widget class="QLineEdit" name="lineEdit_28">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -2603,21 +3474,6 @@ color: #FFFFFF;
               <weight>75</weight>
               <bold>true</bold>
              </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_18{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>FECHA DE INGRESO:</string>
             </property>
            </widget>
           </item>
@@ -2638,8 +3494,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_20{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -2653,167 +3509,6 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="1" column="1" colspan="4">
-           <widget class="QLineEdit" name="lineEdit_9">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="6">
-           <widget class="QLineEdit" name="lineEdit_28">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="6">
-           <widget class="QLineEdit" name="lineEdit_16">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="6">
-           <widget class="QLineEdit" name="lineEdit_15">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="5">
-           <widget class="QLabel" name="label_17">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_17{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>ANTIGUEDAD:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1" colspan="4">
-           <widget class="QDateEdit" name="dateEdit_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="6">
-           <widget class="QLineEdit" name="lineEdit_36">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="6">
-           <widget class="QLineEdit" name="lineEdit_37">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="6">
-           <widget class="QLineEdit" name="lineEdit_31">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
           <item row="17" column="6">
            <widget class="QLineEdit" name="lineEdit_41">
             <property name="sizePolicy">
@@ -2823,110 +3518,6 @@ color: #FFFFFF;
              </sizepolicy>
             </property>
            </widget>
-          </item>
-          <item row="11" column="6">
-           <widget class="QLineEdit" name="lineEdit_40">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="5">
-           <widget class="QLabel" name="label_34">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_34{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="5">
-           <widget class="QLabel" name="label_39">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_39{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="18" column="6">
-           <widget class="QLineEdit" name="lineEdit_46">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-           </widget>
-          </item>
-          <item row="19" column="4">
-           <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
           </item>
           <item row="3" column="4">
            <spacer name="verticalSpacer">
@@ -2940,55 +3531,6 @@ color: #FFFFFF;
              </size>
             </property>
            </spacer>
-          </item>
-          <item row="2" column="7">
-           <widget class="QLabel" name="label_28">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_28{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>N° CTA:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="8">
-           <widget class="QLineEdit" name="lineEdit_18">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
           </item>
           <item row="1" column="7">
            <widget class="QLabel" name="label_23">
@@ -3007,8 +3549,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_23{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -3019,23 +3561,6 @@ color: #FFFFFF;
             </property>
             <property name="text">
              <string>TEL. LABORAL:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="8">
-           <widget class="QLineEdit" name="lineEdit_17">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
             </property>
            </widget>
           </item>
@@ -3056,8 +3581,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_37{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -3088,8 +3613,256 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_47{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>NOMBRE:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="5">
+           <widget class="QLabel" name="label_34">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_34{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>NOMBRE:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="6">
+           <widget class="QLineEdit" name="lineEdit_37">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="6">
+           <widget class="QLineEdit" name="lineEdit_16">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="6">
+           <widget class="QLineEdit" name="lineEdit_46">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="5">
+           <widget class="QLabel" name="label_54">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_54{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>NOMBRE:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="6">
+           <widget class="QLineEdit" name="lineEdit_31">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="6">
+           <widget class="QLineEdit" name="lineEdit_40">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="4">
+           <widget class="QDateEdit" name="dateEdit_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="7">
+           <widget class="QLabel" name="label_28">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_28{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>N° CTA:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_18">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_18{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>FECHA DE INGRESO:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="5">
+           <widget class="QLabel" name="label_39">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_39{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -3120,40 +3893,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_45{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="18" column="5">
-           <widget class="QLabel" name="label_54">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_54{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -3184,8 +3925,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_48{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
 }</string>
             </property>
             <property name="frameShape">
@@ -3201,6 +3942,23 @@ color: #FFFFFF;
           </item>
           <item row="6" column="2" colspan="3">
            <widget class="QLineEdit" name="lineEdit_29">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="4">
+           <widget class="QLineEdit" name="lineEdit_9">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -3233,18 +3991,74 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="8" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_30">
+          <item row="2" column="8">
+           <widget class="QLineEdit" name="lineEdit_18">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
            </widget>
           </item>
-          <item row="11" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_38">
+          <item row="2" column="5">
+           <widget class="QLabel" name="label_17">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_17{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>ANTIGUEDAD:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="8">
+           <widget class="QLineEdit" name="lineEdit_17">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="2" colspan="3">
+           <widget class="QLineEdit" name="lineEdit_47">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -3277,6 +4091,16 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
+          <item row="8" column="2" colspan="3">
+           <widget class="QLineEdit" name="lineEdit_30">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
           <item row="17" column="2" colspan="3">
            <widget class="QLineEdit" name="lineEdit_42">
             <property name="sizePolicy">
@@ -3294,8 +4118,8 @@ color: #FFFFFF;
             </property>
            </widget>
           </item>
-          <item row="18" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_47">
+          <item row="11" column="2" colspan="3">
+           <widget class="QLineEdit" name="lineEdit_38">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -3334,12 +4158,12 @@ color: #FFFFFF;
          </property>
          <property name="styleSheet">
           <string notr="true">#pushButton_7{
-background-color:#0A7DD0;
-color: #ffffff
+background-color:#37760D;
+color: #FFFFFF;
 }
 
 #pushButton_7:hover{
-background-color:#1067A5;
+background-color:#37861D;
 }
 </string>
          </property>
@@ -3369,20 +4193,6 @@ background-color:#1067A5;
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab_3">
-      <attribute name="icon">
-       <iconset>
-        <normaloff>../iconos/new.ico</normaloff>../iconos/new.ico</iconset>
-      </attribute>
-      <attribute name="title">
-       <string>OBSERVACIONES</string>
-      </attribute>
-      <layout class="QGridLayout" name="gridLayout_7">
-       <item row="0" column="0">
-        <widget class="QTextEdit" name="textEdit"/>
-       </item>
-      </layout>
-     </widget>
      <widget class="QWidget" name="tab_4">
       <attribute name="icon">
        <iconset>
@@ -3409,12 +4219,13 @@ background-color:#1067A5;
          </property>
          <property name="styleSheet">
           <string notr="true">#pushButton_imprimirPlanilla{
-background-color:#C7C7C7;
-color: #000000
+background-color:#DF720A;
+color: #FFFFFF;
 }
 
 #pushButton_imprimirPlanilla:hover{
-background-color:#9B9B9A;
+background-color:#E09249 ;
+color: #000000;
 }
 </string>
          </property>
@@ -3463,21 +4274,20 @@ background-color:#9B9B9A;
          </property>
          <property name="styleSheet">
           <string notr="true">#pushButton_ingresarDebito{
-background-color:#299F5F;
-color: #ffffff
+background-color:#37760D;
+color: #FFFFFF;
 }
-
-#pushButton_2:hover{
-background-color:#177D45;
-}
-</string>
+#pushButton_ingresarDebito:hover{
+background-color:#5DB224;
+color: #000000;
+}</string>
          </property>
          <property name="text">
           <string>Ingresar Debito</string>
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../iconos/add.ico</normaloff>../iconos/add.ico</iconset>
+           <normaloff>../iconos/bp.png</normaloff>../iconos/bp.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -3489,6 +4299,11 @@ background-color:#177D45;
        </item>
        <item row="0" column="0" colspan="6">
         <widget class="QGroupBox" name="groupBox">
+         <property name="styleSheet">
+          <string notr="true">#groupBox{
+background-color: #edf4dd;
+}</string>
+         </property>
          <property name="title">
           <string/>
          </property>
@@ -3537,8 +4352,8 @@ background-color:#177D45;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_32{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; ;
 }</string>
             </property>
             <property name="frameShape">
@@ -3620,13 +4435,13 @@ color: #FFFFFF;
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">#pushButton_5{
-background-color:#0A7DD0;
-color: #ffffff
+             <string notr="true">#pushButton_guardar{
+background-color:#37760D;
+color: #FFFFFF;
 }
 
-#pushButton_5:hover{
-background-color:#1067A5;
+#pushButton_guardar:hover{
+background-color:#37861D;
 }
 </string>
             </property>
@@ -3662,9 +4477,10 @@ background-color:#1067A5;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_31{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}
+</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::Box</enum>
@@ -3694,8 +4510,8 @@ color: #FFFFFF;
             </property>
             <property name="styleSheet">
              <string notr="true">#label_24{
-background-color:#37760D;
-color: #FFFFFF;
+background-color:#5DADE2  ;
+color: #FFFFFF ; ;
 }</string>
             </property>
             <property name="frameShape">
@@ -3759,7 +4575,7 @@ color: #FFFFFF;
      <widget class="QWidget" name="tab_6">
       <attribute name="icon">
        <iconset>
-        <normaloff>../iconos/phones.ico</normaloff>../iconos/phones.ico</iconset>
+        <normaloff>../iconos/chart.ico</normaloff>../iconos/chart.ico</iconset>
       </attribute>
       <attribute name="title">
        <string>HISTORIAL</string>
@@ -3767,6 +4583,86 @@ color: #FFFFFF;
       <layout class="QGridLayout" name="gridLayout_13">
        <item row="0" column="0">
         <widget class="QTableView" name="tableView"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="icon">
+       <iconset>
+        <normaloff>../iconos/new.ico</normaloff>../iconos/new.ico</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>OBSERVACIONES</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0" colspan="2">
+        <widget class="QTextEdit" name="textEdit"/>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>733</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_8{
+background-color:#37760D;
+color: #FFFFFF;
+}
+
+#pushButton_8:hover{
+background-color:#37861D;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Guardar (Ctrl + G)</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../iconos/apply.ico</normaloff>../iconos/apply.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>

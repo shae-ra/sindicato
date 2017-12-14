@@ -10,7 +10,8 @@ from PyQt5 import uic
 class menuPrincipal(QMainWindow):
 	def __init__(self):
 		QMainWindow.__init__(self)
-		#Importamos la vista "menuPrincipal"
+		
+		#Importamos la vista "menuPrincipal" y la alojamos dentro de la variable "vista_principal"
 		vista_principal = uic.loadUi("gui/menuPrincipal.ui", self)
 
 		self.stacked = vista_principal.findChild(QStackedWidget)

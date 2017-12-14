@@ -13,3 +13,4 @@ class detalleAfiliados(QtWidgets.QWidget):
 		QWidget.__init__(self)  
 		#Configuracion del archivo .ui
 		uic.loadUi("gui/detalles/detalleAfiliados.ui", self)
+		self.setWindowTitle("Consulta del afiliado")
