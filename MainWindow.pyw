@@ -37,11 +37,10 @@ class menuPrincipal(QMainWindow):
 		vla = listaAfiliados.listaAfiliados()
 		vlp = listaProveedores.listaProveedores()
 		vliq = liquidador.liquidador()
-		vpro = procesador.procesador()
 
 		
 		#Creamos una variable del tipo lista que guardara las variables anteriormente declaradas
-		self.Vistas = [ vla, vlp, vliq, vpro ]
+		self.Vistas = [ vla, vlp, vliq]
 
 		#se crea un ciclo for que indexara las variables
 		for index, vista in enumerate(self.Vistas):
@@ -51,7 +50,6 @@ class menuPrincipal(QMainWindow):
 		self.pushButton_afiliados.clicked.connect(self.seleccionar_afiliados)
 		self.pushButton_proveedores.clicked.connect(self.seleccionar_proveedores)
 		self.pushButton_liquidaciones.clicked.connect(self.seleccionar_liquidacion)
-		self.pushButton_procesador.clicked.connect(self.seleccionar_procesador)
 
 		#Propiedades de la ventana
 		self.showMaximized()
@@ -71,8 +69,6 @@ class menuPrincipal(QMainWindow):
 	def seleccionar_liquidacion(self):
 		self.stacked.setCurrentIndex(2)
 
-	def seleccionar_procesador(self):
-		self.stacked.setCurrentIndex(3)
 
 
 

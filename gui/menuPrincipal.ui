@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1191</width>
-    <height>670</height>
+    <height>683</height>
    </rect>
   </property>
   <property name="palette">
@@ -444,8 +444,61 @@
         <property name="title">
          <string/>
         </property>
-        <layout class="QGridLayout" name="gridLayout" rowstretch="10,100">
+        <layout class="QGridLayout" name="gridLayout" rowstretch="10,90">
          <item row="0" column="4">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_liquidaciones">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#pushButton_liquidaciones{
+background-color:#37760D;
+color: #FFFFFF;
+}
+#pushButton_liquidaciones:hover{
+background-color:#5DB224;
+color: #000000;
+}</string>
+           </property>
+           <property name="text">
+            <string>Liquidaciones</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>iconos/bp.png</normaloff>iconos/bp.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
           <widget class="QPushButton" name="pushButton_usuarios">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -526,46 +579,6 @@ color: #1B4F72 ;
            </property>
           </widget>
          </item>
-         <item row="0" column="2">
-          <widget class="QPushButton" name="pushButton_liquidaciones">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#pushButton_liquidaciones{
-background-color:#37760D;
-color: #FFFFFF;
-}
-#pushButton_liquidaciones:hover{
-background-color:#5DB224;
-color: #000000;
-}</string>
-           </property>
-           <property name="text">
-            <string>Liquidaciones</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>iconos/bp.png</normaloff>iconos/bp.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
          <item row="1" column="0" colspan="5">
           <widget class="QStackedWidget" name="stackedWidget">
            <property name="font">
@@ -610,46 +623,6 @@ color: #784212 ;
            <property name="icon">
             <iconset>
              <normaloff>iconos/shopping cart full.ico</normaloff>iconos/shopping cart full.ico</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="3">
-          <widget class="QPushButton" name="pushButton_procesador">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#pushButton_procesador{
-background-color:#99A3A4;
-color: #FFFFFF;
-}
-
-#pushButton_procesador:hover{
-background-color:#D5DBDB ;
-}</string>
-           </property>
-           <property name="text">
-            <string>Procesar Archivo</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>iconos/computer.ico</normaloff>iconos/computer.ico</iconset>
            </property>
            <property name="iconSize">
             <size>

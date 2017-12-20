@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1114</width>
-    <height>626</height>
+    <width>829</width>
+    <height>575</height>
    </rect>
   </property>
   <property name="palette">
@@ -428,26 +428,19 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout" rowstretch="0,100,0">
-   <item row="0" column="7">
-    <widget class="QLineEdit" name="lineEdit">
+  <layout class="QGridLayout" name="gridLayout" rowstretch="5,90,5">
+   <item row="0" column="2" colspan="2">
+    <widget class="QDateEdit" name="dateEdit">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
     </widget>
    </item>
-   <item row="0" column="2">
-    <widget class="QComboBox" name="comboBox">
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_6">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -461,71 +454,24 @@
        <bold>true</bold>
       </font>
      </property>
-     <item>
-      <property name="text">
-       <string>Activos</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Jubilados/Pensionados</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="0" column="14">
-    <widget class="QPushButton" name="pushButton">
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
      <property name="styleSheet">
-      <string notr="true">#pushButton{
-background-color:#0A7DD0;
-color: #ffffff
-}
-
-#pushButton:hover{
-background-color:#1067A5;
-}
-</string>
+      <string notr="true">#label_6{
+background-color:#37760D;
+color: #FFFFFF;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
      </property>
      <property name="text">
-      <string>Liquidar</string>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../iconos/refresh.ico</normaloff>../iconos/refresh.ico</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>30</width>
-       <height>30</height>
-      </size>
+      <string>Fecha de Cobro</string>
      </property>
     </widget>
    </item>
-   <item row="0" column="12">
-    <widget class="QLineEdit" name="lineEdit_3">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="5">
+   <item row="0" column="6">
     <widget class="QComboBox" name="comboBox_2">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -612,7 +558,7 @@ background-color:#1067A5;
      </item>
     </widget>
    </item>
-   <item row="0" column="6">
+   <item row="0" column="7">
     <widget class="QLabel" name="label_3">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -644,8 +590,14 @@ color: #FFFFFF;
      </property>
     </widget>
    </item>
-   <item row="1" column="0" colspan="15">
-    <widget class="QTableView" name="tableView">
+   <item row="0" column="8">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="font">
       <font>
        <pointsize>10</pointsize>
@@ -655,7 +607,7 @@ color: #FFFFFF;
      </property>
     </widget>
    </item>
-   <item row="0" column="8">
+   <item row="2" column="0">
     <widget class="QLabel" name="label_4">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -687,23 +639,10 @@ color: #FFFFFF;
      </property>
     </widget>
    </item>
-   <item row="0" column="9">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="0" colspan="2">
-    <widget class="QLabel" name="label">
+   <item row="2" column="1" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_2">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -715,56 +654,9 @@ color: #FFFFFF;
        <bold>true</bold>
       </font>
      </property>
-     <property name="styleSheet">
-      <string notr="true">#label{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="text">
-      <string>Liquidar descuentos para:</string>
-     </property>
     </widget>
    </item>
-   <item row="0" column="4">
-    <widget class="QLabel" name="label_2">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#label_2{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="text">
-      <string>Mes:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="11">
+   <item row="2" column="3">
     <widget class="QLabel" name="label_5">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -796,8 +688,8 @@ color: #FFFFFF;
      </property>
     </widget>
    </item>
-   <item row="0" column="10">
-    <widget class="QLineEdit" name="lineEdit_2">
+   <item row="2" column="4" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_3">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
@@ -813,8 +705,14 @@ color: #FFFFFF;
      </property>
     </widget>
    </item>
-   <item row="0" column="13">
-    <widget class="QPushButton" name="pushButton_2">
+   <item row="0" column="4" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="font">
       <font>
        <pointsize>10</pointsize>
@@ -823,22 +721,85 @@ color: #FFFFFF;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">#pushButton_2{
-background-color:#C7C7C7;
-color: #000000
+      <string notr="true">#label_2{
+background-color:#37760D;
+color: #FFFFFF;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="text">
+      <string>Mes:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="9">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="10">
+    <widget class="QTableView" name="tableView">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="8" colspan="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton{
+background-color:#0A7DD0;
+color: #ffffff
 }
 
-#pushButton_2:hover{
-background-color:#9B9B9A;
+#pushButton:hover{
+background-color:#1067A5;
 }
 </string>
      </property>
      <property name="text">
-      <string>Exportar Archivo</string>
+      <string>Liquidar</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../iconos/file_apply.ico</normaloff>../iconos/file_apply.ico</iconset>
+       <normaloff>../../../../../.designer/iconos/refresh.ico</normaloff>../../../../../.designer/iconos/refresh.ico</iconset>
      </property>
      <property name="iconSize">
       <size>
