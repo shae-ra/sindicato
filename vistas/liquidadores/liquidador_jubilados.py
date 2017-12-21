@@ -1,3 +1,5 @@
+
+
 #=============
 #IMPORTACIONES
 #=============
@@ -11,15 +13,16 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTa
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
+
 #====================
 #DEFINICION DE CLASES
 #====================
 
 #Creacion de la clase detalleAfiliados
-class liquidacionParaAfiliados(QtWidgets.QWidget):
+class LiquidadorJubilados(QtWidgets.QWidget):
 	#Inicializacion del Objeto QWidget
 	def __init__(self):  
 		QWidget.__init__(self)  
 		
 		#Importamos la vista "detalleAfiliados" y la alojamos dentro de la variable "vistaDetalle"
-		uic.loadUi("gui/liquidadores/afiliados.ui", self)
+		widgetliqjubilado = uic.loadUi("gui/liquidadores/liquidadorJubilados.ui", self)

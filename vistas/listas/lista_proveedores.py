@@ -11,7 +11,7 @@ from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton
 # Importamos los archivos .py necesarios de la carpeta: vistas 
-from vistas import detalleProveedores
+from vistas.detalles import detalle_proveedores
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
@@ -21,23 +21,21 @@ from PyQt5 import uic
 #====================
 
 #Creacion de la clase listaProveedores
-class listaProveedores(QtWidgets.QWidget): 
+class ListaProveedores(QtWidgets.QWidget): 
 	def __init__(self):  
 		QWidget.__init__(self)  
 		#Configuracion del archivo .ui
-		vistaListaProveedor = uic.loadUi("gui/listas/listaProveedores.ui", self)
-		#Titulo de la ventana
-		self.setWindowTitle("Busqueda de Proveedores")
+		listadoproveedor = uic.loadUi("gui/listas/listaProveedores.ui", self)
 
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
-		self.detalleProveedor = detalleProveedores.detalleProveedores()
+		self.widgetdelproveedor = detalle_proveedores.DetalleProveedores()
 
 		#Tomamos los eventos de los botones que se encuentran dentro del archivo .ui y llamamos a las FUNCIONES
-		vistaListaProveedor.btn_nuevo.clicked.connect(self.mostrarDetalleProveedor)
+		listadoproveedor.btn_nuevo.clicked.connect(self.mostrarDetalleProveedor)
 
 	#===========================
 	#DEFINICION DE LAS FUNCIONES
 	#===========================
 	
 	def mostrarDetalleProveedor(self):
-		self.detalleProveedor.show()
+		self.widgetdelproveedor.show()

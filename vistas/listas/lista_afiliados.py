@@ -11,7 +11,7 @@ from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QStackedWidget
 # Importamos los archivos .py necesarios de la carpeta: vistas 
-from vistas import detalleAfiliados
+from vistas.detalles import detalle_afiliados
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
@@ -21,19 +21,19 @@ from PyQt5 import uic
 #====================
 
 #Creacion de la clase vistaLista
-class listaAfiliados(QtWidgets.QWidget):
+class ListaAfiliados(QtWidgets.QWidget):
 	#Inicializacion del Objeto QWidget
 	def __init__(self):
 		QWidget.__init__(self)
 
 		#Importamos la vista "listaAfiliados" y la alojamos dentro de la variable "vistaLista"
-		vistaListaAfiliado = uic.loadUi("gui/listas/listaAfiliados.ui", self)
+		listadoafiliados = uic.loadUi("gui/listas/listaAfiliados.ui", self)
 
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
-		self.detalleAfiliado = detalleAfiliados.detalleAfiliados()
+		self.widgetdelafiliado = detalle_afiliados.DetalleAfiliados()
 
 		#Tomamos los eventos de los botones que se encuentran dentro del archivo .ui y llamamos a las FUNCIONES
-		vistaListaAfiliado.btn_nuevo.clicked.connect(self.mostrarDetalleAfiliado)
+		listadoafiliados.btn_nuevo.clicked.connect(self.mostrarDetalleAfiliado)
 
 	
 	#===========================
@@ -41,4 +41,4 @@ class listaAfiliados(QtWidgets.QWidget):
 	#===========================
 	
 	def mostrarDetalleAfiliado(self):
-		self.detalleAfiliado.show()
+		self.widgetdelafiliado.show()

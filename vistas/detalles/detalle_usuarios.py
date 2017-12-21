@@ -19,11 +19,10 @@ from PyQt5 import uic
 #====================
 
 #Creacion de la clase detalleAfiliados
-class detalleProveedores(QtWidgets.QWidget):
+class DetalleUsuarios(QtWidgets.QWidget):
 	#Inicializacion del Objeto QWidget
 	def __init__(self):  
 		QWidget.__init__(self)  
 		
 		#Importamos la vista "detalleAfiliados" y la alojamos dentro de la variable "vistaDetalle"
-		uic.loadUi("gui/detalles/detalleProveedores.ui", self)
-		self.setWindowTitle("Consulta del Proveedor")
+		widgetafiliado = uic.loadUi("gui/detalles/detalleUsuarios.ui", self)
