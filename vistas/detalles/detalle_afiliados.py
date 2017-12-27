@@ -10,6 +10,7 @@ import sys
 from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget
+from vistas.cargas import carga_debito
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
@@ -28,7 +29,14 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		# Agregamos 'self.' al objeto así podemos acceder a él en el resto de las funciones
 		self.widgetafiliado = uic.loadUi("gui/detalles/detalleAfiliados.ui", self)
 
+		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
+		self.widgetdecarga = carga_debito.CargaDebito()
+
 	def showEvent(self, event):
-		self.widgetafiliado.tabWidget.setCurrentIndex(0)
+		self.widgetafiliado.tabWidget.setCurrentIndex(2)
+		self.widgetafiliado.pushButton_ingresarDebito.clicked.connect(self.mostrarCarga)
 		# Accedo al objeto 'tabWidget' que es hijo de el objeto 'widgetafiliado' y además llamo a la función setCurrentIndex()
 		# la funcion setCurrentIndex pertence al último hijo llamado.
+	
+	def mostrarCarga(self):
+		self.widgetdecarga.show()
