@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1070</width>
-    <height>579</height>
+    <width>841</width>
+    <height>548</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>841</width>
+    <height>548</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>841</width>
+    <height>548</height>
+   </size>
   </property>
   <property name="palette">
    <palette>
@@ -447,18 +459,18 @@ color: #000000;
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
@@ -501,9 +513,9 @@ color: #000000;
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -519,27 +531,27 @@ color: #000000;
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Base">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
@@ -584,18 +596,18 @@ color: #000000;
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
@@ -638,9 +650,9 @@ color: #000000;
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -656,27 +668,27 @@ color: #000000;
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Base">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
@@ -721,18 +733,18 @@ color: #000000;
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>127</red>
-           <green>127</green>
-           <blue>127</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
@@ -775,9 +787,9 @@ color: #000000;
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>127</red>
-           <green>127</green>
-           <blue>127</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -793,27 +805,27 @@ color: #000000;
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>127</red>
-           <green>127</green>
-           <blue>127</blue>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Base">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>55</red>
+           <green>118</green>
+           <blue>13</blue>
           </color>
          </brush>
         </colorrole>
@@ -858,7 +870,8 @@ color: #000000;
      </property>
      <property name="font">
       <font>
-       <pointsize>9</pointsize>
+       <family>Arial</family>
+       <pointsize>8</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -867,7 +880,7 @@ color: #000000;
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <property name="iconSize">
       <size>
@@ -898,7 +911,7 @@ color: #000000;
       <attribute name="title">
        <string>DATOS DEL AFILIADO</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout_9">
+      <layout class="QGridLayout" name="gridLayout_8">
        <item row="0" column="0" colspan="2">
         <widget class="QGroupBox" name="groupBox_4">
          <property name="sizePolicy">
@@ -1324,7 +1337,8 @@ color: #000000;
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -1335,16 +1349,91 @@ color: #000000;
          <property name="title">
           <string/>
          </property>
-         <layout class="QGridLayout" name="gridLayout" columnstretch="10,30,10,30,10,10,30">
-          <property name="verticalSpacing">
-           <number>10</number>
-          </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_13">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_13{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>TIPO DE AFILIADO:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboBox_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <item>
+             <property name="text">
+              <string>Seleccionar</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Activo</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Jubilado</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="2" colspan="5">
+           <widget class="QLabel" name="label_14">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>* Seleccionar el tipo de afiliacion: ACTIVO/JUBILADO</string>
+            </property>
+           </widget>
+          </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_9">
             <property name="font">
              <font>
-              <family>MS Shell Dlg 2</family>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -1369,7 +1458,279 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="5" column="4">
+          <item row="1" column="4" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <widget class="QLabel" name="label_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_4{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>CUIL:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="7">
+           <widget class="QLineEdit" name="lineEdit_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>APELLIDO/S:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_5{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>NOMBRE/S:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_2{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>FECHA DE NAC.:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QDateEdit" name="dateEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2" colspan="2">
+           <widget class="QLabel" name="label_11">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_11{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>ESTADO CIVIL:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="4" colspan="2">
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <item>
+             <property name="text">
+              <string>Seleccionar</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Soltero</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Casado</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Divorciado</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="4" column="6">
            <widget class="QLabel" name="label_22">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1379,7 +1740,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -1404,7 +1766,7 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="5" column="5" colspan="2">
+          <item row="4" column="7">
            <widget class="QComboBox" name="comboBox_4">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1414,7 +1776,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -1456,163 +1819,7 @@ color: #FFFFFF ;
             </item>
            </widget>
           </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO/S:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
           <item row="5" column="0">
-           <widget class="QLabel" name="label_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_2{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>FECHA DE NAC.:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1" colspan="6">
-           <widget class="QLineEdit" name="lineEdit">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1" colspan="6">
-           <widget class="QLineEdit" name="lineEdit_5">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="1" colspan="6">
-           <widget class="QLineEdit" name="lineEdit_3">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="label_5">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_5{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE/S:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0">
            <widget class="QLabel" name="label_3">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1622,7 +1829,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -1647,59 +1855,7 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="7" column="1">
-           <widget class="QLineEdit" name="lineEdit_6">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="4" colspan="2">
-           <widget class="QLabel" name="label_4">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_4{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>CUIL:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="0">
+          <item row="6" column="0">
            <widget class="QLabel" name="label_7">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1709,7 +1865,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -1734,114 +1891,7 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_11">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="2">
-           <widget class="QLabel" name="label_26">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_26{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>PISO:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="5" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_14">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="4">
-           <widget class="QLabel" name="label_12">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_12{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>LOCALIDAD:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="3">
+          <item row="6" column="4" colspan="2">
            <widget class="QLineEdit" name="lineEdit_13">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -1851,14 +1901,15 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
            </widget>
           </item>
-          <item row="7" column="4">
+          <item row="6" column="6">
            <widget class="QLabel" name="label_27">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1868,7 +1919,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -1893,7 +1945,100 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="8" column="5" colspan="2">
+          <item row="6" column="7">
+           <widget class="QLineEdit" name="lineEdit_14">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_19">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_19{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>BARRIO:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="6">
+           <widget class="QLabel" name="label_12">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_12{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>LOCALIDAD:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="7">
            <widget class="QComboBox" name="comboBox_3">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1903,7 +2048,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -1960,220 +2106,7 @@ color: #FFFFFF ;
             </item>
            </widget>
           </item>
-          <item row="1" column="2">
-           <widget class="QLabel" name="label_8">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_8{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
           <item row="8" column="0">
-           <widget class="QLabel" name="label_19">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_19{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>BARRIO:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QDateEdit" name="dateEdit">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="1" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_10">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="3">
-           <widget class="QLineEdit" name="lineEdit_8">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="1" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="6">
-           <widget class="QLineEdit" name="lineEdit_4">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="0">
-           <widget class="QLabel" name="label_21">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_21{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>E-MAIL:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="3">
-           <widget class="QLabel" name="label_10">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_10{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>CELULAR</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="0">
            <widget class="QLabel" name="label_25">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -2183,7 +2116,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -2208,24 +2142,7 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="11" column="1" colspan="6">
-           <widget class="QLineEdit" name="lineEdit_12">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="4" colspan="3">
+          <item row="8" column="6" colspan="2">
            <widget class="QLineEdit" name="lineEdit_7">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -2235,67 +2152,26 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
            </widget>
           </item>
-          <item row="5" column="3">
-           <widget class="QComboBox" name="comboBox_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_21">
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Soltero</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Casado</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Divorciado</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="5" column="2">
-           <widget class="QLabel" name="label_11">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#label_11{
+             <string notr="true">#label_21{
 background-color:#5DADE2  ;
 color: #FFFFFF ; 
 }</string>
@@ -2307,15 +2183,15 @@ color: #FFFFFF ;
              <enum>QFrame::Sunken</enum>
             </property>
             <property name="text">
-             <string>ESTADO CIVIL:</string>
+             <string>E-MAIL:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
-           <widget class="QComboBox" name="comboBox_5">
+          <item row="9" column="7">
+           <widget class="QComboBox" name="comboBox_8">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -2324,7 +2200,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -2336,27 +2213,43 @@ color: #FFFFFF ;
             </item>
             <item>
              <property name="text">
-              <string>Activo</string>
+              <string>Primario</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Jubilado</string>
+              <string>Secundario</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Terciario</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Universitario</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Posgrado</string>
              </property>
             </item>
            </widget>
           </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_13">
+          <item row="9" column="6">
+           <widget class="QLabel" name="label_29">
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">#label_13{
+             <string notr="true">#label_29{
 background-color:#5DADE2  ;
 color: #FFFFFF ; 
 }</string>
@@ -2368,23 +2261,256 @@ color: #FFFFFF ;
              <enum>QFrame::Sunken</enum>
             </property>
             <property name="text">
-             <string>TIPO DE AFILIADO:</string>
+             <string>ESTUDIOS</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
             </property>
            </widget>
           </item>
-          <item row="0" column="2" colspan="5">
-           <widget class="QLabel" name="label_14">
+          <item row="9" column="1" colspan="5">
+           <widget class="QLineEdit" name="lineEdit_12">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="font">
              <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
+           </widget>
+          </item>
+          <item row="8" column="5">
+           <widget class="QLabel" name="label_10">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_10{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
             <property name="text">
-             <string>* Seleccionar el tipo de afiliacion: ACTIVO/JUBILADO</string>
+             <string>CELULAR</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1" colspan="4">
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1" colspan="5">
+           <widget class="QLineEdit" name="lineEdit_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QLabel" name="label_26">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_26{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>PISO:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1" colspan="7">
+           <widget class="QLineEdit" name="lineEdit_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1" colspan="7">
+           <widget class="QLineEdit" name="lineEdit_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="7">
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLabel" name="label_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_8{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>DNI:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_11">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
            </widget>
           </item>
@@ -2395,7 +2521,8 @@ color: #FFFFFF ;
         <spacer name="horizontalSpacer">
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -2421,7 +2548,8 @@ color: #FFFFFF ;
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -2474,418 +2602,34 @@ background-color:#37861D;
       <attribute name="title">
        <string>GRUPO FAMILIAR</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout_5">
-       <item row="2" column="0">
-        <spacer name="horizontalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="1" column="0" colspan="2">
+      <layout class="QGridLayout" name="gridLayout_11">
+       <item row="0" column="0" colspan="2">
         <widget class="QGroupBox" name="groupBox_2">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true"/>
          </property>
          <property name="title">
           <string/>
          </property>
-         <layout class="QGridLayout" name="gridLayout_4" columnstretch="0,0,0,0,0,0,0,0,0">
-          <item row="6" column="1">
-           <widget class="QLabel" name="label_35">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_16">
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_35{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="8">
-           <widget class="QLineEdit" name="lineEdit_34">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="7">
-           <widget class="QLabel" name="label_38">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_38{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="8">
-           <widget class="QLineEdit" name="lineEdit_35">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="1">
-           <widget class="QLabel" name="label_46">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_46{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="1">
-           <widget class="QLabel" name="label_40">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_40{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="7">
-           <widget class="QLabel" name="label_50">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_50{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="8">
-           <widget class="QLineEdit" name="lineEdit_44">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="1">
-           <widget class="QLabel" name="label_41">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_41{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="1">
-           <widget class="QLabel" name="label_44">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_44{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="7">
-           <widget class="QLabel" name="label_42">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_42{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="1">
-           <widget class="QLabel" name="label_49">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_49{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="QLabel" name="label_15">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Datos del grupo familiar</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="8">
-           <widget class="QLineEdit" name="lineEdit_27">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="8">
-           <widget class="QLineEdit" name="lineEdit_43">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
+             <string>Datos Laborales</string>
             </property>
            </widget>
           </item>
@@ -2899,7 +2643,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -2921,117 +2666,8 @@ color: #FFFFFF ; ;
             </property>
            </widget>
           </item>
-          <item row="6" column="7">
-           <widget class="QLabel" name="label_36">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_36{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="7">
-           <widget class="QLabel" name="label_51">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_51{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_16">
-            <property name="font">
-             <font>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="text">
-             <string>Datos Laborales</string>
-            </property>
-           </widget>
-          </item>
-          <item row="18" column="1">
-           <widget class="QLabel" name="label_53">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_53{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>APELLIDO:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="8">
-           <widget class="QLineEdit" name="lineEdit_32">
+          <item row="1" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_9">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -3040,440 +2676,15 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
            </widget>
           </item>
-          <item row="17" column="0">
-           <widget class="QComboBox" name="comboBox_13">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="8" column="0">
-           <widget class="QComboBox" name="comboBox_10">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="18" column="7">
-           <widget class="QLabel" name="label_52">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_52{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0">
-           <widget class="QComboBox" name="comboBox_15">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="18" column="8">
-           <widget class="QLineEdit" name="lineEdit_45">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="7">
-           <widget class="QLabel" name="label_43">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_43{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DNI:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="0">
-           <widget class="QComboBox" name="comboBox_14">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="9" column="0">
-           <widget class="QComboBox" name="comboBox_11">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="7" column="0">
-           <widget class="QComboBox" name="comboBox_12">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="1" column="6">
-           <widget class="QLineEdit" name="lineEdit_15">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="6">
-           <widget class="QLineEdit" name="lineEdit_36">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="18" column="0">
-           <widget class="QComboBox" name="comboBox_16">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>Seleccionar</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Esposa</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cónyuge</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hijo</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Nieto a cargo</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="6" column="6">
-           <widget class="QLineEdit" name="lineEdit_28">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="5">
+          <item row="1" column="3">
            <widget class="QLabel" name="label_20">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -3483,7 +2694,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -3505,30 +2717,25 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="17" column="6">
-           <widget class="QLineEdit" name="lineEdit_41">
+          <item row="1" column="4">
+           <widget class="QLineEdit" name="lineEdit_15">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <family>System</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
            </widget>
           </item>
-          <item row="3" column="4">
-           <spacer name="verticalSpacer">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="1" column="7">
+          <item row="1" column="5">
            <widget class="QLabel" name="label_23">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -3538,7 +2745,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -3560,104 +2768,8 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="8" column="5">
-           <widget class="QLabel" name="label_37">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_37{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="5">
-           <widget class="QLabel" name="label_47">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_47{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="5">
-           <widget class="QLabel" name="label_34">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_34{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="6">
-           <widget class="QLineEdit" name="lineEdit_37">
+          <item row="1" column="6">
+           <widget class="QLineEdit" name="lineEdit_17">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -3666,145 +2778,11 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="6">
-           <widget class="QLineEdit" name="lineEdit_16">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-           </widget>
-          </item>
-          <item row="18" column="6">
-           <widget class="QLineEdit" name="lineEdit_46">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-           </widget>
-          </item>
-          <item row="18" column="5">
-           <widget class="QLabel" name="label_54">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_54{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="6">
-           <widget class="QLineEdit" name="lineEdit_31">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="6">
-           <widget class="QLineEdit" name="lineEdit_40">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1" colspan="4">
-           <widget class="QDateEdit" name="dateEdit_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="7">
-           <widget class="QLabel" name="label_28">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_28{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>N° CTA:</string>
             </property>
            </widget>
           </item>
@@ -3818,7 +2796,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -3840,171 +2819,25 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="7" column="5">
-           <widget class="QLabel" name="label_39">
+          <item row="2" column="1">
+           <widget class="QDateEdit" name="dateEdit_2">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_39{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="5">
-           <widget class="QLabel" name="label_45">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_45{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="5">
-           <widget class="QLabel" name="label_48">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_48{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>NOMBRE:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_29">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
            </widget>
           </item>
-          <item row="1" column="1" colspan="4">
-           <widget class="QLineEdit" name="lineEdit_9">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_33">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="8">
-           <widget class="QLineEdit" name="lineEdit_18">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="5">
+          <item row="2" column="3">
            <widget class="QLabel" name="label_17">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -4014,7 +2847,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -4036,8 +2870,8 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="1" column="8">
-           <widget class="QLineEdit" name="lineEdit_17">
+          <item row="2" column="4">
+           <widget class="QLineEdit" name="lineEdit_16">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -4046,15 +2880,47 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
+              <family>System</family>
+              <pointsize>12</pointsize>
              </font>
             </property>
            </widget>
           </item>
-          <item row="18" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_47">
+          <item row="2" column="5">
+           <widget class="QLabel" name="label_28">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_28{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>N° CTA:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="6">
+           <widget class="QLineEdit" name="lineEdit_18">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -4063,78 +2929,1637 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
            </widget>
           </item>
-          <item row="9" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_39">
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_15">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
-           </widget>
-          </item>
-          <item row="8" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_30">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+            <property name="text">
+             <string>Datos del grupo familiar</string>
             </property>
            </widget>
           </item>
-          <item row="17" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_42">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
+          <item row="3" column="2">
+           <spacer name="verticalSpacer">
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
              </font>
             </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="4" column="0" colspan="7">
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="styleSheet">
+             <string notr="true">#groupBox_3{
+background-color: #F0F5EF
+}</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <widget class="QComboBox" name="comboBox_15">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Seleccionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Esposa</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Cónyuge</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Hijo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nieto a cargo</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_35">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_35{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>APELLIDO:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" colspan="3">
+              <widget class="QLineEdit" name="lineEdit_29">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5" colspan="2">
+              <widget class="QLabel" name="label_34">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_34{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>NOMBRE:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLineEdit" name="lineEdit_28">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8" colspan="2">
+              <widget class="QLabel" name="label_36">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_36{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>DNI:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10" colspan="2">
+              <widget class="QLineEdit" name="lineEdit_27">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="2">
+              <widget class="QLabel" name="label_41">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_41{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>FECHA DE NAC.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QDateEdit" name="dateEdit_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4" colspan="2">
+              <widget class="QLabel" name="label_30">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_30{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>NIVEL DE ESTUDIOS:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="6" colspan="2">
+              <widget class="QComboBox" name="comboBox_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Seleccionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Primario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Secundario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Terciario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Universitario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Posgrado</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="8">
+              <widget class="QLabel" name="label_55">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_55{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>EDAD:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="9" colspan="3">
+              <widget class="QLineEdit" name="lineEdit_33">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </widget>
           </item>
-          <item row="11" column="2" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_38">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+          <item row="5" column="0" colspan="7">
+           <widget class="QGroupBox" name="groupBox_6">
+            <property name="styleSheet">
+             <string notr="true">#groupBox_6{
+background-color: #F0F5EF
+}</string>
             </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
+            <property name="title">
+             <string/>
             </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <widget class="QComboBox" name="comboBox_18">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Seleccionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Esposa</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Cónyuge</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Hijo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nieto a cargo</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_61">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_61{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>APELLIDO:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" colspan="3">
+              <widget class="QLineEdit" name="lineEdit_52">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5" colspan="2">
+              <widget class="QLabel" name="label_62">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_62{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>NOMBRE:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLineEdit" name="lineEdit_53">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8" colspan="2">
+              <widget class="QLabel" name="label_63">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_63{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>DNI:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10" colspan="2">
+              <widget class="QLineEdit" name="lineEdit_54">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="2">
+              <widget class="QLabel" name="label_64">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_64{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>FECHA DE NAC.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QDateEdit" name="dateEdit_5">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4" colspan="2">
+              <widget class="QLabel" name="label_37">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_37{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>NIVEL DE ESTUDIOS:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="6" colspan="2">
+              <widget class="QComboBox" name="comboBox_13">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Seleccionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Primario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Secundario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Terciario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Universitario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Posgrado</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="8">
+              <widget class="QLabel" name="label_65">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_65{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>EDAD:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="9" colspan="3">
+              <widget class="QLineEdit" name="lineEdit_55">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="6" column="0" colspan="7">
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="styleSheet">
+             <string notr="true">#groupBox_5{
+background-color: #F0F5EF
+}</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="0">
+              <widget class="QComboBox" name="comboBox_17">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Seleccionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Esposa</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Cónyuge</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Hijo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nieto a cargo</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_56">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_56{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>APELLIDO:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" colspan="3">
+              <widget class="QLineEdit" name="lineEdit_48">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5" colspan="2">
+              <widget class="QLabel" name="label_57">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_57{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>NOMBRE:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLineEdit" name="lineEdit_49">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8" colspan="2">
+              <widget class="QLabel" name="label_58">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_58{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>DNI:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10" colspan="2">
+              <widget class="QLineEdit" name="lineEdit_50">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="2">
+              <widget class="QLabel" name="label_59">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_59{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>FECHA DE NAC.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QDateEdit" name="dateEdit_4">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4" colspan="2">
+              <widget class="QLabel" name="label_33">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_33{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>NIVEL DE ESTUDIOS:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="6" colspan="2">
+              <widget class="QComboBox" name="comboBox_12">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Seleccionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Primario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Secundario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Terciario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Universitario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Posgrado</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="8">
+              <widget class="QLabel" name="label_60">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_60{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>EDAD:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="9" colspan="3">
+              <widget class="QLineEdit" name="lineEdit_51">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="7" column="0" colspan="7">
+           <widget class="QGroupBox" name="groupBox_7">
+            <property name="styleSheet">
+             <string notr="true">#groupBox_7{
+background-color: #F0F5EF
+}</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="0" column="0">
+              <widget class="QComboBox" name="comboBox_19">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Seleccionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Esposa</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Cónyuge</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Hijo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nieto a cargo</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_66">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_66{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>APELLIDO:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" colspan="3">
+              <widget class="QLineEdit" name="lineEdit_56">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5" colspan="2">
+              <widget class="QLabel" name="label_67">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_67{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>NOMBRE:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLineEdit" name="lineEdit_57">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8" colspan="2">
+              <widget class="QLabel" name="label_68">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_68{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>DNI:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="10" colspan="2">
+              <widget class="QLineEdit" name="lineEdit_58">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="2">
+              <widget class="QLabel" name="label_69">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_69{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>FECHA DE NAC.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QDateEdit" name="dateEdit_6">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4" colspan="2">
+              <widget class="QLabel" name="label_38">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_38{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>NIVEL DE ESTUDIOS:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="6" colspan="2">
+              <widget class="QComboBox" name="comboBox_14">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Seleccionar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Primario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Secundario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Terciario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Universitario</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Posgrado</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="8">
+              <widget class="QLabel" name="label_70">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#label_70{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>EDAD:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="9" colspan="3">
+              <widget class="QLineEdit" name="lineEdit_59">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </widget>
           </item>
          </layout>
         </widget>
        </item>
-       <item row="2" column="1">
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_3">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
         <widget class="QPushButton" name="pushButton_7">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -4144,7 +4569,8 @@ color: #FFFFFF ;
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -4208,7 +4634,8 @@ background-color:#37861D;
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -4263,7 +4690,8 @@ color: #000000;
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -4387,9 +4815,7 @@ color: #000000;
           </palette>
          </property>
          <property name="styleSheet">
-          <string notr="true">#groupBox{
-background-color: #efefef;
-}</string>
+          <string notr="true"/>
          </property>
          <property name="title">
           <string/>
@@ -4405,7 +4831,8 @@ background-color: #efefef;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -4432,7 +4859,8 @@ background-color: #efefef;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -4464,7 +4892,8 @@ color: #FFFFFF ; ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -4496,10 +4925,14 @@ color: #FFFFFF ; ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>System</family>
+              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
+            </property>
+            <property name="maxLength">
+             <number>22</number>
             </property>
            </widget>
           </item>
@@ -4513,7 +4946,8 @@ color: #FFFFFF ; ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -4557,7 +4991,8 @@ background-color:#37861D;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -4590,7 +5025,8 @@ color: #FFFFFF ;
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -4614,6 +5050,14 @@ color: #FFFFFF ; ;
           </item>
           <item row="1" column="0" colspan="7">
            <widget class="QTableView" name="tbl_articulos">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="tabKeyNavigation">
              <bool>false</bool>
             </property>
@@ -4669,7 +5113,16 @@ color: #FFFFFF ; ;
       </attribute>
       <layout class="QGridLayout" name="gridLayout_13">
        <item row="0" column="0">
-        <widget class="QTableView" name="tableView"/>
+        <widget class="QTableView" name="tableView">
+         <property name="font">
+          <font>
+           <family>System</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -4683,7 +5136,16 @@ color: #FFFFFF ; ;
       </attribute>
       <layout class="QGridLayout" name="gridLayout_7">
        <item row="0" column="0" colspan="2">
-        <widget class="QTextEdit" name="textEdit"/>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="font">
+          <font>
+           <family>System</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
        </item>
        <item row="1" column="0">
         <spacer name="horizontalSpacer_6">
@@ -4708,7 +5170,8 @@ color: #FFFFFF ; ;
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>

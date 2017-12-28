@@ -26,8 +26,8 @@
        </property>
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>10</pointsize>
+         <family>Arial</family>
+         <pointsize>8</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -42,7 +42,7 @@
         <bool>true</bool>
        </property>
        <property name="placeholderText">
-        <string>Nombre</string>
+        <string>Ingrese el NOMBRE del Usuario y presione ENTER para buscar</string>
        </property>
       </widget>
      </item>
@@ -62,8 +62,8 @@
        </property>
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>10</pointsize>
+         <family>Arial</family>
+         <pointsize>8</pointsize>
          <weight>50</weight>
          <bold>false</bold>
         </font>
@@ -101,8 +101,8 @@ background-color:#149144;
       <spacer name="horizontalSpacer">
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>10</pointsize>
+         <family>Arial</family>
+         <pointsize>8</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -122,8 +122,8 @@ background-color:#149144;
       <widget class="QTableView" name="tbl_articulos">
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>10</pointsize>
+         <family>System</family>
+         <pointsize>8</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>

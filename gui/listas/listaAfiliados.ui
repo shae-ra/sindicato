@@ -433,6 +433,14 @@
     <layout class="QGridLayout" name="gridLayout_2" rowstretch="5,0,90">
      <item row="1" column="0" colspan="2">
       <spacer name="horizontalSpacer">
+       <property name="font">
+        <font>
+         <family>System</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -448,8 +456,8 @@
       <widget class="QTableView" name="tbl_articulos">
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>10</pointsize>
+         <family>System</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -471,7 +479,7 @@
      <item row="0" column="1">
       <widget class="QPushButton" name="btn_nuevo">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -484,10 +492,10 @@
        </property>
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
+         <family>Arial</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="styleSheet">
@@ -503,7 +511,7 @@ background-color:#37861D;
 </string>
        </property>
        <property name="text">
-        <string>Ingresar Nuevo (Ctrl+N)</string>
+        <string>Ingresar AFILIADO (Ctrl+N)</string>
        </property>
        <property name="icon">
         <iconset>
@@ -530,14 +538,17 @@ background-color:#37861D;
        </property>
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>10</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
+         <family>Arial</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="mouseTracking">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>
@@ -545,8 +556,11 @@ background-color:#37861D;
        <property name="frame">
         <bool>true</bool>
        </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
        <property name="placeholderText">
-        <string>Inserte el Apellido del afiliado y presione ENTER</string>
+        <string>Inserte el Apellido del afiliado y presione ENTER para buscar</string>
        </property>
        <property name="clearButtonEnabled">
         <bool>true</bool>
