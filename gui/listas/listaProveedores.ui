@@ -494,8 +494,8 @@
         <font>
          <family>Arial</family>
          <pointsize>8</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
@@ -540,8 +540,8 @@ background-color:#37861D;
         <font>
          <family>Arial</family>
          <pointsize>8</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="mouseTracking">

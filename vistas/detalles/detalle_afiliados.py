@@ -33,7 +33,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.widgetdecarga = carga_debito.CargaDebito()
 
 	def showEvent(self, event):
-		self.widgetafiliado.tabWidget.setCurrentIndex(2)
+		self.widgetafiliado.tabWidget.setCurrentIndex(0)
 		self.widgetafiliado.pushButton_ingresarDebito.clicked.connect(self.mostrarCarga)
 		# Accedo al objeto 'tabWidget' que es hijo de el objeto 'widgetafiliado' y además llamo a la función setCurrentIndex()
 		# la funcion setCurrentIndex pertence al último hijo llamado.

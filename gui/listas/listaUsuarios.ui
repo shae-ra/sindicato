@@ -28,8 +28,8 @@
         <font>
          <family>Arial</family>
          <pointsize>8</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="mouseTracking">
@@ -80,7 +80,7 @@ background-color:#149144;
 </string>
        </property>
        <property name="text">
-        <string>Ingresar Nuevo (Ctrl+N)</string>
+        <string>Ingresar USUARIO (Ctrl+N)</string>
        </property>
        <property name="icon">
         <iconset>

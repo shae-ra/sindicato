@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1053</width>
-    <height>541</height>
+    <height>701</height>
    </rect>
   </property>
   <property name="palette">
@@ -428,6 +428,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>iconos/ESCUDO SINDICATO (2).jpg</normaloff>iconos/ESCUDO SINDICATO (2).jpg</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0">
@@ -489,12 +493,12 @@ color: #000000;
               </property>
               <property name="icon">
                <iconset>
-                <normaloff>iconos/ball_yellow.ico</normaloff>iconos/ball_yellow.ico</iconset>
+                <normaloff>iconos/userPriv_01.png</normaloff>iconos/userPriv_01.png</iconset>
               </property>
               <property name="iconSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>30</width>
+                <height>30</height>
                </size>
               </property>
              </widget>
@@ -700,12 +704,12 @@ color: #000000;
               </property>
               <property name="icon">
                <iconset>
-                <normaloff>iconos/ball_green.ico</normaloff>iconos/ball_green.ico</iconset>
+                <normaloff>iconos/users.ico</normaloff>iconos/users.ico</iconset>
               </property>
               <property name="iconSize">
                <size>
-                <width>15</width>
-                <height>15</height>
+                <width>40</width>
+                <height>40</height>
                </size>
               </property>
               <property name="autoDefault">
@@ -746,12 +750,12 @@ color: #000000;
               </property>
               <property name="icon">
                <iconset>
-                <normaloff>iconos/ball_red.ico</normaloff>iconos/ball_red.ico</iconset>
+                <normaloff>iconos/shopping cart full.ico</normaloff>iconos/shopping cart full.ico</iconset>
               </property>
               <property name="iconSize">
                <size>
-                <width>20</width>
-                <height>20</height>
+                <width>30</width>
+                <height>30</height>
                </size>
               </property>
              </widget>
