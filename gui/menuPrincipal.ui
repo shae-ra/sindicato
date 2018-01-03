@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1053</width>
-    <height>701</height>
+    <width>1206</width>
+    <height>703</height>
    </rect>
   </property>
   <property name="palette">
@@ -465,44 +465,6 @@ background-color: #FFFFFF;}</string>
             <property name="bottomMargin">
              <number>5</number>
             </property>
-            <item row="0" column="5">
-             <widget class="QPushButton" name="pushButton_usuarios">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="font">
-               <font>
-                <family>Arial</family>
-                <pointsize>8</pointsize>
-                <weight>50</weight>
-                <bold>false</bold>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">#pushButton_usuarios{
-background-color:	#F0F5EF;
-color: #000000;
-}
-</string>
-              </property>
-              <property name="text">
-               <string>Gestión de Usuarios (F4)</string>
-              </property>
-              <property name="icon">
-               <iconset>
-                <normaloff>iconos/userPriv_01.png</normaloff>iconos/userPriv_01.png</iconset>
-              </property>
-              <property name="iconSize">
-               <size>
-                <width>30</width>
-                <height>30</height>
-               </size>
-              </property>
-             </widget>
-            </item>
             <item row="0" column="2">
              <widget class="QPushButton" name="pushButton_afiliados">
               <property name="sizePolicy">
@@ -723,6 +685,44 @@ color: #000000;
               </property>
              </widget>
             </item>
+            <item row="0" column="6">
+             <widget class="QPushButton" name="pushButton_usuarios">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>8</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#pushButton_usuarios{
+background-color:	#F0F5EF;
+color: #000000;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Gestión de Usuarios (F5)</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>iconos/userPriv_01.png</normaloff>iconos/userPriv_01.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+            </item>
             <item row="0" column="3">
              <widget class="QPushButton" name="pushButton_proveedores">
               <property name="sizePolicy">
@@ -832,6 +832,47 @@ color: #000000;
                </size>
               </property>
              </spacer>
+            </item>
+            <item row="0" column="5">
+             <widget class="QPushButton" name="pushButton_procesador">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>8</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#pushButton_procesador{
+background-color:#F0F5EF;
+color: #000000;
+}
+#pushButton_procesador:hover{
+background-color:#F0F5EF;
+color: #000000;
+}</string>
+              </property>
+              <property name="text">
+               <string>Procesar Archivos (F4)</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>iconos/file_locked.ico</normaloff>iconos/file_locked.ico</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -1276,7 +1317,7 @@ color: #000000;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1053</width>
+     <width>1206</width>
      <height>21</height>
     </rect>
    </property>

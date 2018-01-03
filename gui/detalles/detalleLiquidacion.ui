@@ -13,7 +13,13 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,100">
+  <layout class="QGridLayout" name="gridLayout_2" rowstretch="1,99">
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
    <item row="1" column="0" colspan="3">
     <widget class="QStackedWidget" name="stackedWidget">
      <widget class="QWidget" name="page"/>
@@ -30,42 +36,35 @@ background-color: #FFFFFF}</string>
       <string/>
      </property>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Seleccione una opción de Liquidación:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item row="0" column="6">
        <widget class="QPushButton" name="pushButton_activos">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
         <property name="font">
          <font>
-          <pointsize>10</pointsize>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
          <string notr="true">#pushButton_activos{
-background-color:#27AE60;
-color: #FFFFFF;
+background-color:#F0F5EF;
+color: #000000;
 }
 #pushButton_activos:hover{
-background-color:#52BE80;
+background-color:#F0F5EF;
 color: #000000;
 }</string>
         </property>
@@ -74,57 +73,32 @@ color: #000000;
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../iconos/adim.ico</normaloff>../iconos/adim.ico</iconset>
+          <normaloff>../iconos/muni.png</normaloff>../iconos/muni.png</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>45</width>
-          <height>45</height>
+          <width>30</width>
+          <height>30</height>
          </size>
         </property>
        </widget>
       </item>
-      <item row="0" column="2">
-       <widget class="QPushButton" name="pushButton_jubilados">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
         <property name="font">
          <font>
-          <pointsize>10</pointsize>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
         </property>
-        <property name="styleSheet">
-         <string notr="true">#pushButton_jubilados{
-background-color:#27AE60;
-color: #FFFFFF;
-}
-#pushButton_jubilados:hover{
-background-color:#52BE80;
-color: #000000;
-}</string>
-        </property>
         <property name="text">
-         <string>JUBILADOS</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>../iconos/users.ico</normaloff>../iconos/users.ico</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>40</width>
-          <height>40</height>
-         </size>
+         <string>Seleccione una opción de Liquidación:</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="3">
+      <item row="0" column="4">
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -137,37 +111,51 @@ color: #000000;
         </property>
        </spacer>
       </item>
-      <item row="0" column="4">
-       <widget class="QPushButton" name="pushButton_procesador">
+      <item row="0" column="3">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="7">
+       <widget class="QPushButton" name="pushButton_jubilados">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
         <property name="font">
          <font>
-          <pointsize>10</pointsize>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">#pushButton_procesador{
-background-color:#5D6D7E  ;
-color: #FFFFFF;
+         <string notr="true">#pushButton_jubilados{
+background-color:#F0F5EF;
+color: #000000;
 }
-#pushButton_procesador:hover{
-background-color:#85929E;
+#pushButton_jubilados:hover{
+background-color:#F0F5EF;
 color: #000000;
 }</string>
         </property>
         <property name="text">
-         <string>Procesar Archivo BET/BEN</string>
+         <string>JUBILADOS</string>
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../iconos/computer.ico</normaloff>../iconos/computer.ico</iconset>
+          <normaloff>../iconos/ips.png</normaloff>../iconos/ips.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -176,6 +164,19 @@ color: #000000;
          </size>
         </property>
        </widget>
+      </item>
+      <item row="0" column="5">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </widget>
