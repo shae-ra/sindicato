@@ -25,4 +25,5 @@ class DetalleUsuarios(QtWidgets.QWidget):
 		QWidget.__init__(self)  
 		
 		#Importamos la vista "detalleAfiliados" y la alojamos dentro de la variable "vistaDetalle"
-		widgetafiliado = uic.loadUi("gui/detalles/detalleUsuarios.ui", self)
+		widgetusuario = uic.loadUi("gui/detalles/detalleUsuarios.ui", self)
+		self.setWindowTitle("Datos del usuario")

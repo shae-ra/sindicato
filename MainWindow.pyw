@@ -11,9 +11,9 @@ from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QStackedWidget
 # Importamos los archivos .py necesarios de la carpeta: vistas 
-from vistas.listas import lista_afiliados, lista_proveedores
+from vistas.listas import lista_afiliados, lista_proveedores, lista_usuarios
 # Importamos los archivos .py necesarios de la carpeta: detalles
-from vistas.detalles import detalle_liquidacion, detalle_usuarios
+from vistas.detalles import detalle_liquidacion
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
@@ -39,7 +39,7 @@ class MenuPrincipal(QMainWindow):
 		vla = lista_afiliados.ListaAfiliados()
 		vlp = lista_proveedores.ListaProveedores()
 		vliq = detalle_liquidacion.DetalleLiquidacion()
-		vuser = detalle_usuarios.DetalleUsuarios()
+		vuser = lista_usuarios.ListaUsuarios()
 
 		
 		#Creamos una variable del tipo lista que guardara las variables anteriormente declaradas
