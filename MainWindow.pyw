@@ -11,7 +11,7 @@ from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QStackedWidget
 # Importamos los archivos .py necesarios de la carpeta: vistas 
-from vistas.listas import lista_afiliados, lista_proveedores, lista_usuarios
+from vistas.listas import lista_afiliados, lista_proveedores, lista_usuarios, lista_procesador, lista_utilidades
 # Importamos los archivos .py necesarios de la carpeta: detalles
 from vistas.detalles import detalle_liquidacion
 # Importamos el modulo uic necesario para levantar un archivo .ui
@@ -39,11 +39,13 @@ class MenuPrincipal(QMainWindow):
 		vla = lista_afiliados.ListaAfiliados()
 		vlp = lista_proveedores.ListaProveedores()
 		vliq = detalle_liquidacion.DetalleLiquidacion()
+		vproc = lista_procesador.ListaProcesador()
 		vuser = lista_usuarios.ListaUsuarios()
+		vutil = lista_utilidades.ListaUtilidades()
 
 		
 		#Creamos una variable del tipo lista que guardara las variables anteriormente declaradas
-		self.Vistas = [ vla, vlp, vliq, vuser]
+		self.Vistas = [ vla, vlp, vliq, vuser, vproc, vutil]
 
 		#se crea un ciclo for que indexara las variables
 		for index, vista in enumerate(self.Vistas):
@@ -53,7 +55,9 @@ class MenuPrincipal(QMainWindow):
 		self.pushButton_afiliados.clicked.connect(self.seleccionarAfiliados)
 		self.pushButton_proveedores.clicked.connect(self.seleccionarProveedores)
 		self.pushButton_liquidaciones.clicked.connect(self.seleccionarLiquidacion)
+		self.pushButton_procesador.clicked.connect(self.seleccionarProcesador)
 		self.pushButton_usuarios.clicked.connect(self.seleccionarUsuarios)
+		self.pushButton_utilidades.clicked.connect(self.seleccionarUtilidades)
 
 		#Propiedades de la ventana
 		self.showMaximized()
@@ -75,6 +79,12 @@ class MenuPrincipal(QMainWindow):
 
 	def seleccionarUsuarios(self):
 		self.stacked.setCurrentIndex(3)
+
+	def seleccionarProcesador(self):
+		self.stacked.setCurrentIndex(4)
+
+	def seleccionarUtilidades(self):
+                self.stacked.setCurrentIndex(5)
 
 
 

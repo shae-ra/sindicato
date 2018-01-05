@@ -430,14 +430,20 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>iconos/ESCUDO SINDICATO (2).jpg</normaloff>iconos/ESCUDO SINDICATO (2).jpg</iconset>
+    <normaloff>iconos/oesteDev.ico</normaloff>iconos/oesteDev.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_3">
-    <item row="1" column="0">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout_2">
       <item row="0" column="0">
        <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -461,6 +467,118 @@
          <property name="horizontalSpacing">
           <number>0</number>
          </property>
+         <item row="0" column="6">
+          <widget class="QPushButton" name="pushButton_usuarios">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#pushButton_usuarios{
+background-color:#FFFFFF;
+color: #000000;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Gestión de Usuarios (F5)</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>iconos/userPriv_01.png</normaloff>iconos/userPriv_01.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QPushButton" name="pushButton_liquidaciones">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#pushButton_liquidaciones{
+background-color:#FFFFFF;
+color: #000000;
+}</string>
+           </property>
+           <property name="text">
+            <string>Liquidaciones (F3)</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>iconos/bp.png</normaloff>iconos/bp.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_proveedores">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#pushButton_proveedores{
+background-color:#FFFFFF;
+color: #000000;
+}</string>
+           </property>
+           <property name="text">
+            <string>Proveedores (F2)</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>iconos/shopping cart full.ico</normaloff>iconos/shopping cart full.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
          <item row="0" column="0">
           <widget class="QPushButton" name="pushButton_afiliados">
            <property name="sizePolicy">
@@ -680,118 +798,6 @@ color: #000000;
            </property>
           </widget>
          </item>
-         <item row="0" column="4">
-          <widget class="QPushButton" name="pushButton_liquidaciones">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#pushButton_liquidaciones{
-background-color:#FFFFFF;
-color: #000000;
-}</string>
-           </property>
-           <property name="text">
-            <string>Liquidaciones (F3)</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>iconos/bp.png</normaloff>iconos/bp.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>40</width>
-             <height>40</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QPushButton" name="pushButton_proveedores">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#pushButton_proveedores{
-background-color:#FFFFFF;
-color: #000000;
-}</string>
-           </property>
-           <property name="text">
-            <string>Proveedores (F2)</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>iconos/shopping cart full.ico</normaloff>iconos/shopping cart full.ico</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="6">
-          <widget class="QPushButton" name="pushButton_usuarios">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#pushButton_usuarios{
-background-color:#FFFFFF;
-color: #000000;
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Gestión de Usuarios (F5)</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>iconos/userPriv_01.png</normaloff>iconos/userPriv_01.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
          <item row="0" column="5">
           <widget class="QPushButton" name="pushButton_procesador">
            <property name="sizePolicy">
@@ -830,7 +836,45 @@ color: #000000;
            </property>
           </widget>
          </item>
-         <item row="1" column="0" colspan="7">
+         <item row="0" column="7">
+          <widget class="QPushButton" name="pushButton_utilidades">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#pushButton_utilidades{
+background-color:#FFFFFF;
+color: #000000;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Utilidades (F6)</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>iconos/applications.ico</normaloff>iconos/applications.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="8">
           <widget class="QStackedWidget" name="stackedWidget">
            <property name="palette">
             <palette>
@@ -1254,6 +1298,9 @@ color: #000000;
              <bold>false</bold>
             </font>
            </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
            <widget class="QWidget" name="page"/>
            <widget class="QWidget" name="page_2"/>
           </widget>
@@ -1262,6 +1309,22 @@ color: #000000;
        </widget>
       </item>
      </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sindicato de Trabajadores Municipales de Merlo - Software de Gestión de Afiliados y Débitos Automáticos - @2018 OesteDEV</string>
+      </property>
+      <property name="indent">
+       <number>20</number>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

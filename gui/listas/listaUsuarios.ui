@@ -15,7 +15,7 @@
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
-    <layout class="QGridLayout" name="gridLayout_2" rowstretch="5,0,95">
+    <layout class="QGridLayout" name="gridLayout_2" rowstretch="2,0,98" columnstretch="90,0,10">
      <item row="0" column="0" colspan="2">
       <widget class="QLineEdit" name="ln_buscar">
        <property name="sizePolicy">
@@ -88,8 +88,8 @@ background-color:#149144;
        </property>
        <property name="iconSize">
         <size>
-         <width>30</width>
-         <height>30</height>
+         <width>20</width>
+         <height>20</height>
         </size>
        </property>
        <property name="shortcut">
@@ -110,10 +110,13 @@ background-color:#149144;
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
        <property name="sizeHint" stdset="0">
         <size>
          <width>40</width>
-         <height>20</height>
+         <height>10</height>
         </size>
        </property>
       </spacer>

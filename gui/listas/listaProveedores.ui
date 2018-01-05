@@ -430,7 +430,7 @@
   </property>
   <layout class="QGridLayout" name="gridLayout_4">
    <item row="0" column="0">
-    <layout class="QGridLayout" name="gridLayout_2" rowstretch="5,0,95">
+    <layout class="QGridLayout" name="gridLayout_2" rowstretch="2,0,98" columnstretch="90,10">
      <item row="1" column="0" colspan="2">
       <spacer name="horizontalSpacer">
        <property name="font">
@@ -519,8 +519,8 @@ background-color:#37861D;
        </property>
        <property name="iconSize">
         <size>
-         <width>30</width>
-         <height>30</height>
+         <width>20</width>
+         <height>20</height>
         </size>
        </property>
        <property name="shortcut">
@@ -554,7 +554,7 @@ background-color:#37861D;
         <bool>true</bool>
        </property>
        <property name="placeholderText">
-        <string>Inserte el nombre del PROVEEDOR y presione ENTER para buscar</string>
+        <string>Buscar por NOMBRE O CODIGO del proveedor</string>
        </property>
        <property name="clearButtonEnabled">
         <bool>true</bool>
