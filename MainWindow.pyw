@@ -5,19 +5,19 @@
 #=============
 
 # Importamos el módulo sys que provee el acceso a funciones y objetos mantenidos por el intérprete.
-import sys 
+import sys
 # Importamos las herramientas de PyQT que vamos a utilizar
 from PyQt5 import QtWidgets, uic, QtGui
-# Importamos los elementos que se encuentran dentro del diseñador 
+# Importamos los elementos que se encuentran dentro del diseñador
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QStackedWidget
-# Importamos los archivos .py necesarios de la carpeta: vistas 
+# Importamos los archivos .py necesarios de la carpeta: vistas
 from vistas.listas import lista_afiliados, lista_proveedores, lista_usuarios, lista_procesador, lista_utilidades
 # Importamos los archivos .py necesarios de la carpeta: detalles
 from vistas.detalles import detalle_liquidacion
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
-
+from libs.db import querier
 
 #====================
 #DEFINICION DE CLASES
@@ -27,14 +27,14 @@ from PyQt5 import uic
 class MenuPrincipal(QMainWindow):
 	#Inicializacion del Objeto MainWindow
 	def __init__(self):
-		QMainWindow.__init__(self)		
-		
+		QMainWindow.__init__(self)
+
 		#Importamos la vista "menuPrincipal" y la alojamos dentro de la variable "vistaprincipal"
 		vistaprincipal = uic.loadUi("gui/menuPrincipal.ui", self)
 
 		#Tomamos el objeto stackedWidget de la vista principal y lo alojamos en una variable
 		self.stacked = vistaprincipal.findChild(QStackedWidget)
-		
+
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
 		vla = lista_afiliados.ListaAfiliados()
 		vlp = lista_proveedores.ListaProveedores()
@@ -43,14 +43,14 @@ class MenuPrincipal(QMainWindow):
 		vuser = lista_usuarios.ListaUsuarios()
 		vutil = lista_utilidades.ListaUtilidades()
 
-		
+
 		#Creamos una variable del tipo lista que guardara las variables anteriormente declaradas
 		self.Vistas = [ vla, vlp, vliq, vuser, vproc, vutil]
 
 		#se crea un ciclo for que indexara las variables
 		for index, vista in enumerate(self.Vistas):
 			self.stacked.insertWidget(index, vista)
-		
+
 		#Tomamos los eventos de los botones que se encuentran dentro del archivo .ui y llamamos a las FUNCIONES
 		self.pushButton_afiliados.clicked.connect(self.seleccionarAfiliados)
 		self.pushButton_proveedores.clicked.connect(self.seleccionarProveedores)
@@ -63,7 +63,7 @@ class MenuPrincipal(QMainWindow):
 		self.showMaximized()
 		self.setWindowTitle("Sindicato de Trabajadores Municipales de Merlo")
 
-
+		self.seleccionarAfiliados()
 	#===========================
 	#DEFINICION DE LAS FUNCIONES
 	#===========================
@@ -91,7 +91,7 @@ class MenuPrincipal(QMainWindow):
 #======================
 #EJECUTAR LA APLICACION
 #======================
- 
+
 #Instancia para iniciar una aplicación
 app = QApplication(sys.argv)
 #Crear un objeto de la clase
