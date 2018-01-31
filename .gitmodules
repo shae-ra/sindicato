@@ -1,0 +1,3 @@
+[submodule "libs/db"]
+	path = libs/db
+	url = ssh://root@oestedev.com/~root/db
