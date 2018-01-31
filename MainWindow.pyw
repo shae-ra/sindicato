@@ -17,7 +17,7 @@ from vistas.detalles import detalle_liquidacion
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
-from libs.db import querier
+from libs.db.querier import Querier
 
 #====================
 #DEFINICION DE CLASES
@@ -41,7 +41,7 @@ class MenuPrincipal(QMainWindow):
 		vliq = detalle_liquidacion.DetalleLiquidacion()
 		vproc = lista_procesador.ListaProcesador()
 		vuser = lista_usuarios.ListaUsuarios()
-		vutil = lista_utilidades.ListaUtilidades()
+		vutil = lista_utilidades.ListaUtilidades(self)
 
 
 		#Creamos una variable del tipo lista que guardara las variables anteriormente declaradas
@@ -84,9 +84,7 @@ class MenuPrincipal(QMainWindow):
 		self.stacked.setCurrentIndex(4)
 
 	def seleccionarUtilidades(self):
-                self.stacked.setCurrentIndex(5)
-
-
+		self.stacked.setCurrentIndex(5)
 
 #======================
 #EJECUTAR LA APLICACION
