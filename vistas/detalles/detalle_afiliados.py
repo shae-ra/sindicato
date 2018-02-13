@@ -14,6 +14,7 @@ from vistas.cargas import carga_debito
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 from PyQt5.QtCore import Qt
+from modelos.modelo_afiliado import ModeloAfiliado
 
 
 #====================
@@ -32,6 +33,11 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
 		self.widgetdecarga = carga_debito.CargaDebito()
+
+		self.model = ModeloAfiliado()
+
+		self.btn_guardar_afiliado.clicked.connect(self.model.guardarAfiliado)
+
 
 	def showEvent(self, event):
 		self.widgetafiliado.tabWidget.setCurrentIndex(0)

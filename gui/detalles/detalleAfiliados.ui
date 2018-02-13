@@ -3169,7 +3169,7 @@ color: #FFFFFF ;
         </spacer>
        </item>
        <item row="3" column="1">
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="btn_guardar_afiliado">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -6572,7 +6572,7 @@ color: #FFFFFF ; ;
            </widget>
           </item>
           <item row="0" column="6">
-           <widget class="QPushButton" name="pushButton_guardar">
+           <widget class="QPushButton" name="btn_guardar_debito">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
