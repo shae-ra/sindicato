@@ -29,13 +29,13 @@ class ListaUtilidades(QtWidgets.QWidget):
 		vred = red.VistaRed(self)
 		# vela =
 
-		self.vistas = [ vred ]
-		self.stacked = listaUtilidades.findChild(QtWidgets.QStackedWidget)
+		self.vistas = [ vred.vista ]
+		self.stacked = listaUtilidades.stackedWidget
 
 		for index, vista in enumerate(self.vistas):
 			self.stacked.insertWidget(index, vista)
 
-		self.seleccionarConfigurarRed()
+		self.pushButton_3.clicked.connect(self.seleccionarConfigurarRed)
 
 	def seleccionarActDB(self):
 		pass
