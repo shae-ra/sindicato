@@ -503,6 +503,9 @@ color: #000000;
              <height>30</height>
             </size>
            </property>
+           <property name="shortcut">
+            <string>F5</string>
+           </property>
           </widget>
          </item>
          <item row="0" column="4">
