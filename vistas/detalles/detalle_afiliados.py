@@ -38,6 +38,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		self.btn_guardar_afiliado.clicked.connect(self.model.guardarAfiliado)
 
+	def setAfiliado(self, afiliado):
+		pass
 
 	def showEvent(self, event):
 		self.widgetafiliado.tabWidget.setCurrentIndex(0)
