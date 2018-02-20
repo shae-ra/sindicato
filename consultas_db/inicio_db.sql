@@ -18,9 +18,15 @@ CREATE TABLE afiliados (
     cod_postal varchar(20), # Aca con un largo de 4 esta bien.
     barrio varchar(30),
     localidad varchar(50),
-    telefono varchar(20),  # El telefono deberia ser un varchar porque suele tener este formato: (0220)482-8844
+		telefono_particular varchar(20),  # El telefono deberia ser un varchar porque suele tener este formato: (0220)482-8844
+		telefono_laboral varchar(20),  # El telefono deberia ser un varchar porque suele tener este formato: (0220)482-8844
     celular varchar(20), # El celular deberia ser un varchar porque suele tener este formato: 11-6030-0122
-    email varchar(80)
+    email varchar(80),
+		lugar_trabajo varchar(40),
+		jerarquia varchar(40),
+		fecha_ingreso date,
+		antiguedad int(2),
+		nivel_estudios varchar(40)
 
 );
 
