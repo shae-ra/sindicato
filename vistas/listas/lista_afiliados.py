@@ -28,12 +28,12 @@ class ListaAfiliados(QtWidgets.QWidget):
 		QWidget.__init__(self)
 
 		#Importamos la vista "listaAfiliados" y la alojamos dentro de la variable "vistaLista"
-		listadoAfiliados = uic.loadUi("gui/listas/listaAfiliados.ui", self)
+		self.listadoAfiliados = uic.loadUi("gui/listas/listaAfiliados.ui", self)
 
 # Acá llamo la función __init__() que está en ModeloAfiliado, es la instanciación de la clase en un objeto
 # Yo acá quiero los campos que voy a mostrar nomás
 		self.model = ModeloAfiliado(
-			propiedades = ['legajo', 'Escuela', 'propiedad que no va', 'apellido', 'nombre', 'dni', 'calle', 'altura', 'piso', 'depto', 'localidad', 'telefono'])
+			propiedades = ['legajo', 'apellido', 'nombre', 'dni', 'calle', 'altura', 'piso', 'depto', 'localidad', 'telefono_particular'])
 
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
 		self.widgetdelafiliado = detalle_afiliados.DetalleAfiliados()
@@ -42,7 +42,7 @@ class ListaAfiliados(QtWidgets.QWidget):
 		self.tbl_articulos.setModel(self.model)
 
 		#Tomamos los eventos de los botones que se encuentran dentro del archivo .ui y llamamos a las FUNCIONES
-		listadoAfiliados.btn_nuevo.clicked.connect(self.mostrarDetalleAfiliado)
+		self.listadoAfiliados.btn_nuevo.clicked.connect(self.mostrarDetalleAfiliado)
 
 		self.tbl_articulos.doubleClicked.connect(self.mostrarDetalleAfiliado)
 
@@ -57,9 +57,7 @@ class ListaAfiliados(QtWidgets.QWidget):
 		# se muestra en pantalla la vista que contiene la tabla 'afiliados'
 
 	def mostrarDetalleAfiliado(self, afiliado):
-		self.model.verDetallesAfiliado(afiliado)
-		self.setDetallesAfiliado()
+		if afiliado:
+			afiliado = self.model.verDetallesAfiliado(afiliado)
+			self.widgetdelafiliado.setAfiliado(afiliado)
 		self.widgetdelafiliado.show()
-
-	def setDetallesAfiliado(self):
-		self.listadoAfiliados.

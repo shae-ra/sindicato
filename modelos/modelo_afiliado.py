@@ -21,8 +21,11 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
         'fecha_nacimiento', 'edad', 'estado_civil',
         'nacionalidad', 'calle', 'altura',
         'piso', 'depto','cod_postal', 'barrio',
-        'localidad', 'telefono',
-        'celular','email'
+        'localidad', 'telefono_particular',
+        'telefono_laboral', 'celular','email',
+        'lugar_trabajo', 'jerarquia',
+        'fecha_ingreso', 'antiguedad',
+        'nivel_estudios'
         ]
 
         self.__propiedades = self.validarPropiedades(propiedades)
@@ -48,6 +51,8 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
         return False
 
     def verDetallesAfiliado(self, afiliado = QtCore.QModelIndex()):
+        # Extraigo el legajo para buscarlo de esa forma en la base de datos
+        # porque la tabla no me muestra todos los datos
         afiliado = self.__listaAfiliados[afiliado.row()]
         legajo = afiliado[0]
 
@@ -62,8 +67,33 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
 
         self.__afiliado = afiliado
 
-    def guardarAfiliado():
-        pass
+        return self.__afiliado
+
+    def guardarAfiliado(self, afiliado):
+        respuesta = self.__querier.traerElementos(campos = ['legajo'], condiciones = [('legajo', '=', afiliado['legajo'])], tabla = 'afiliados', limite = 1)
+        print (respuesta)
+        if respuesta:
+            # Si este if evalua en verdadero significa que existe
+            # un registro con este legajo, por lo que se usar actualizarElemento
+            # en lugar de insertarElemento
+            self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", afiliado['legajo'])])
+
+        else:
+            self.__querier.insertarElemento('afiliados', afiliado)
+
+        if (self.__v.validate(afiliado, esquemaAfiliado)):
+            pass
+
+        else:
+            errors = self.__v.document_error_tree
+            # print(errors)
+            for propiedad in esquemaAfiliado:
+                try:
+                    print(errors[propiedad].errors[0].document_path)
+                except:
+                    pass
+
+            return False
 
     def borrarAfiliado():
         pass

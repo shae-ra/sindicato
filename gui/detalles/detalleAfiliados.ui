@@ -894,11 +894,14 @@ color: #000000;
        <bold>false</bold>
       </font>
      </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
      <property name="styleSheet">
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <property name="iconSize">
       <size>
@@ -1011,7 +1014,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="3" column="1" colspan="2">
-             <widget class="QDateEdit" name="dateEdit">
+             <widget class="QDateEdit" name="af_fecha_nacimiento">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1101,7 +1104,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="3" column="4">
-             <widget class="QLineEdit" name="lineEdit_18">
+             <widget class="QLineEdit" name="af_edad">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1122,7 +1125,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="3" column="14" colspan="2">
-             <widget class="QComboBox" name="comboBox_4">
+             <widget class="QComboBox" name="af_nacionalidad">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1211,7 +1214,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="1" column="15">
-             <widget class="QLineEdit" name="lineEdit_11">
+             <widget class="QLineEdit" name="af_cuil">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1229,7 +1232,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="1" column="10" colspan="3">
-             <widget class="QLineEdit" name="lineEdit_8">
+             <widget class="QLineEdit" name="af_dni">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1319,7 +1322,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="2" column="2" colspan="7">
-             <widget class="QLineEdit" name="lineEdit">
+             <widget class="QLineEdit" name="af_apellido">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1337,7 +1340,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="2" column="11" colspan="5">
-             <widget class="QLineEdit" name="lineEdit_5">
+             <widget class="QLineEdit" name="af_nombre">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1355,7 +1358,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="3" column="9" colspan="3">
-             <widget class="QComboBox" name="comboBox_2">
+             <widget class="QComboBox" name="af_estado_civil">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1501,7 +1504,7 @@ color: #FFFFFF;
              </widget>
             </item>
             <item row="1" column="2" colspan="2">
-             <widget class="QComboBox" name="comboBox_5">
+             <widget class="QComboBox" name="af_tipo">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1570,7 +1573,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="1" column="5" colspan="2">
-             <widget class="QLineEdit" name="lineEdit_4">
+             <widget class="QLineEdit" name="af_legajo">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                 <horstretch>0</horstretch>
@@ -1635,7 +1638,7 @@ background-color: #F0F5EF
            </property>
            <layout class="QGridLayout" name="gridLayout_19">
             <item row="1" column="1">
-             <widget class="QLineEdit" name="lineEdit_2">
+             <widget class="QLineEdit" name="af_tel_particular">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1725,7 +1728,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="1" column="3">
-             <widget class="QLineEdit" name="lineEdit_7">
+             <widget class="QLineEdit" name="af_celular">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1776,7 +1779,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="2" column="1">
-             <widget class="QLineEdit" name="lineEdit_17">
+             <widget class="QLineEdit" name="af_tel_laboral">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1830,7 +1833,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="2" column="3">
-             <widget class="QLineEdit" name="lineEdit_12">
+             <widget class="QLineEdit" name="af_email">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1967,7 +1970,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="1" column="10">
-             <widget class="QLineEdit" name="lineEdit_20">
+             <widget class="QLineEdit" name="af_depto">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2021,7 +2024,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="2" column="1">
-             <widget class="QLineEdit" name="lineEdit_10">
+             <widget class="QLineEdit" name="af_barrio">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2075,7 +2078,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="2" column="9" colspan="2">
-             <widget class="QLineEdit" name="lineEdit_14">
+             <widget class="QLineEdit" name="af_codigo_postal">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2096,7 +2099,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="2" column="4" colspan="2">
-             <widget class="QComboBox" name="comboBox_3">
+             <widget class="QComboBox" name="af_localidad">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2200,7 +2203,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QLineEdit" name="lineEdit_3">
+             <widget class="QLineEdit" name="af_calle">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2254,7 +2257,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="1" column="3" colspan="2">
-             <widget class="QLineEdit" name="lineEdit_6">
+             <widget class="QLineEdit" name="af_altura">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2308,7 +2311,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="1" column="7">
-             <widget class="QLineEdit" name="lineEdit_13">
+             <widget class="QLineEdit" name="af_piso">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2789,7 +2792,7 @@ background-color: #F0F5EF
            </property>
            <layout class="QGridLayout" name="gridLayout" columnstretch="10,10,10,10,10,0,0,0,0,0" rowminimumheight="1,0,0,0,0,0,0">
             <item row="5" column="9">
-             <widget class="QLineEdit" name="lineEdit_15">
+             <widget class="QLineEdit" name="af_jerarquia">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2873,7 +2876,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="6" column="1">
-             <widget class="QDateEdit" name="dateEdit_2">
+             <widget class="QDateEdit" name="af_fecha_ingreso">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2924,7 +2927,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="6" column="3">
-             <widget class="QLineEdit" name="lineEdit_16">
+             <widget class="QLineEdit" name="af_antiguedad">
               <property name="enabled">
                <bool>false</bool>
               </property>
@@ -2943,7 +2946,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="6" column="9">
-             <widget class="QComboBox" name="comboBox_8">
+             <widget class="QComboBox" name="af_nivel_estudios">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2991,7 +2994,7 @@ color: #FFFFFF ;
              </widget>
             </item>
             <item row="5" column="1" colspan="3">
-             <widget class="QLineEdit" name="lineEdit_9">
+             <widget class="QLineEdit" name="af_lugar_trabajo">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -6752,6 +6755,94 @@ color: #FFFFFF ; ;
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>af_tipo</tabstop>
+  <tabstop>af_legajo</tabstop>
+  <tabstop>af_dni</tabstop>
+  <tabstop>af_cuil</tabstop>
+  <tabstop>af_apellido</tabstop>
+  <tabstop>af_nombre</tabstop>
+  <tabstop>af_fecha_nacimiento</tabstop>
+  <tabstop>af_edad</tabstop>
+  <tabstop>af_estado_civil</tabstop>
+  <tabstop>af_nacionalidad</tabstop>
+  <tabstop>af_calle</tabstop>
+  <tabstop>af_altura</tabstop>
+  <tabstop>af_piso</tabstop>
+  <tabstop>af_depto</tabstop>
+  <tabstop>af_barrio</tabstop>
+  <tabstop>af_localidad</tabstop>
+  <tabstop>af_codigo_postal</tabstop>
+  <tabstop>af_tel_particular</tabstop>
+  <tabstop>af_celular</tabstop>
+  <tabstop>af_tel_laboral</tabstop>
+  <tabstop>af_email</tabstop>
+  <tabstop>af_lugar_trabajo</tabstop>
+  <tabstop>af_jerarquia</tabstop>
+  <tabstop>af_fecha_ingreso</tabstop>
+  <tabstop>af_antiguedad</tabstop>
+  <tabstop>af_nivel_estudios</tabstop>
+  <tabstop>btn_guardar_afiliado</tabstop>
+  <tabstop>comboBox_18</tabstop>
+  <tabstop>lineEdit_37</tabstop>
+  <tabstop>comboBox_11</tabstop>
+  <tabstop>lineEdit_38</tabstop>
+  <tabstop>lineEdit_39</tabstop>
+  <tabstop>lineEdit_40</tabstop>
+  <tabstop>dateEdit_5</tabstop>
+  <tabstop>comboBox_21</tabstop>
+  <tabstop>lineEdit_49</tabstop>
+  <tabstop>comboBox_14</tabstop>
+  <tabstop>lineEdit_50</tabstop>
+  <tabstop>lineEdit_51</tabstop>
+  <tabstop>lineEdit_52</tabstop>
+  <tabstop>dateEdit_9</tabstop>
+  <tabstop>comboBox_20</tabstop>
+  <tabstop>lineEdit_45</tabstop>
+  <tabstop>comboBox_13</tabstop>
+  <tabstop>lineEdit_46</tabstop>
+  <tabstop>lineEdit_47</tabstop>
+  <tabstop>lineEdit_48</tabstop>
+  <tabstop>dateEdit_8</tabstop>
+  <tabstop>comboBox_19</tabstop>
+  <tabstop>lineEdit_41</tabstop>
+  <tabstop>comboBox_12</tabstop>
+  <tabstop>lineEdit_42</tabstop>
+  <tabstop>lineEdit_43</tabstop>
+  <tabstop>lineEdit_44</tabstop>
+  <tabstop>dateEdit_6</tabstop>
+  <tabstop>comboBox_15</tabstop>
+  <tabstop>lineEdit_33</tabstop>
+  <tabstop>comboBox_9</tabstop>
+  <tabstop>lineEdit_28</tabstop>
+  <tabstop>lineEdit_29</tabstop>
+  <tabstop>lineEdit_27</tabstop>
+  <tabstop>dateEdit_3</tabstop>
+  <tabstop>comboBox_17</tabstop>
+  <tabstop>lineEdit_34</tabstop>
+  <tabstop>comboBox_10</tabstop>
+  <tabstop>lineEdit_30</tabstop>
+  <tabstop>lineEdit_35</tabstop>
+  <tabstop>lineEdit_36</tabstop>
+  <tabstop>dateEdit_4</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>spinBox</tabstop>
+  <tabstop>lineEdit_31</tabstop>
+  <tabstop>comboBox_16</tabstop>
+  <tabstop>dateEdit_7</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>tableView_2</tabstop>
+  <tabstop>lineEdit_32</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>pushButton_imprimirPlanilla</tabstop>
+  <tabstop>pushButton_ingresarDebito</tabstop>
+  <tabstop>comboBox_6</tabstop>
+  <tabstop>comboBox_7</tabstop>
+  <tabstop>lineEdit_19</tabstop>
+  <tabstop>btn_guardar_debito</tabstop>
+  <tabstop>tbl_articulos</tabstop>
+  <tabstop>tableView</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
