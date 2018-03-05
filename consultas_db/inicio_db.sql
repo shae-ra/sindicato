@@ -4,7 +4,7 @@ CREATE TABLE afiliados (
 	legajo int(8) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
     dni int(8) UNSIGNED UNIQUE KEY,
     tipo_afiliado varchar(20) ,
-    cuil int(11) UNSIGNED UNIQUE KEY,
+    cuil bigint(11) UNSIGNED UNIQUE KEY,
     apellido varchar(50), # Podemos poner 10 mas? por las dudas!! no recuerdo bien, pero creo que hay gente con doble apellido y largos encima. Por ejemplo: Lagos fuentealba Cristian Juan Jose
     nombre varchar(50), # Podemos poner 10 mas? por las dudas!! no recuerdo bien, pero creo que hay gente con doble apellido y largos encima. Por ejemplo: Lagos fuentealba Cristian Juan Jose
     fecha_nacimiento date,

@@ -89,14 +89,15 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             # print(errors)
             for propiedad in esquemaAfiliado:
                 try:
-                    print(errors[propiedad].errors[0].document_path)
+                    print("Hay un error en el campo: " + errors[propiedad].errors[0].document_path[0])
                 except:
                     pass
 
             return False
+        return True
 
-    def borrarAfiliado():
-        pass
+    def borrarAfiliado(self, tabla, idElem):
+        self.__querier.borrarElemento(tabla, 'legajo', idElem)
 
     def validarPropiedades(self, propiedades):
 # ahora mi función se asegura que las propieades existan en la lista, debería encontrar si hay alguna forma mas elegante de hacer esto
