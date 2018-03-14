@@ -453,7 +453,7 @@
       </spacer>
      </item>
      <item row="2" column="0" colspan="2">
-      <widget class="QTableView" name="tbl_articulos">
+      <widget class="QTableView" name="tbl_proveedores">
        <property name="font">
         <font>
          <family>System</family>
@@ -566,7 +566,7 @@ background-color:#37861D;
   </layout>
  </widget>
  <tabstops>
-  <tabstop>tbl_articulos</tabstop>
+  <tabstop>tbl_proveedores</tabstop>
  </tabstops>
  <resources/>
  <connections/>
