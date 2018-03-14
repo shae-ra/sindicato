@@ -6,7 +6,6 @@ from datetime import date
 class FixturesTest(unittest.TestCase):
 
     def setUp(self):
-        print(date(1993, 1, 28))
         self.fixture = {
         'legajo' : 84625731,
         'dni' : 12949573,
@@ -40,10 +39,10 @@ class FixturesTest(unittest.TestCase):
 
     def tearDown(self):
         del self.fixture
+        del self.model
 
     def test_guardar_afiliado(self):
         self.assertTrue(self.model.guardarAfiliado(self.fixture))
-        self.model.borrarAfiliado('afiliados', self.fixture['legajo'])
 
 if __name__ == '__main__':
     unittest.main()

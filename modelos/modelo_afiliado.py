@@ -70,7 +70,11 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
         return self.__afiliado
 
     def guardarAfiliado(self, afiliado):
-        respuesta = self.__querier.traerElementos(campos = ['legajo'], condiciones = [('legajo', '=', afiliado['legajo'])], tabla = 'afiliados', limite = 1)
+        respuesta = self.__querier.traerElementos(
+            campos = ['legajo'],
+            condiciones = [('legajo', '=', afiliado['legajo'])],
+            tabla = 'afiliados',
+            limite = 1)
         print (respuesta)
         if respuesta:
             # Si este if evalua en verdadero significa que existe
@@ -81,10 +85,7 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
         else:
             self.__querier.insertarElemento('afiliados', afiliado)
 
-        if (self.__v.validate(afiliado, esquemaAfiliado)):
-            pass
-
-        else:
+        if not (self.__v.validate(afiliado, esquemaAfiliado)):
             errors = self.__v.document_error_tree
             # print(errors)
             for propiedad in esquemaAfiliado:
@@ -133,6 +134,7 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             return value # el valor que retorno es el que aparecería en la tabla
 
     def setData(self, index, value, role = QtCore.Qt.EditRole):
+# Esta función no la estoy usando
         if role == QtCore.Qt.EditRole:
             row = index.row()
             column = index.column()
