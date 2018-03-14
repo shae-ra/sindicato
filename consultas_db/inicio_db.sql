@@ -101,11 +101,11 @@ CREATE TABLE proveedores(
 		telefono varchar(20),
     celular varchar(20),
     email varchar(80),
-    cuit int(11) UNSIGNED UNIQUE KEY,
+    cuit bigint(11) UNSIGNED UNIQUE KEY,
     razon_social varchar(60),
-    cbu int(22), #solo un largo de 22. El CBU contiene 22 numeros y deberia poderse guardar siempre y cuando tenga los 22 numeros, de otra forma no tiene que ser posible guardar. Esto achicaria mucho el margen de error.
+    cbu varchar(22), #solo un largo de 22. El CBU contiene 22 numeros y deberia poderse guardar siempre y cuando tenga los 22 numeros, de otra forma no tiene que ser posible guardar. Esto achicaria mucho el margen de error.
     banco varchar(60),
-    cuenta int(16),
+    cuenta bigint(16),
     comision varchar(40),
     responsable varchar(40),
     forma_pago varchar(40),
