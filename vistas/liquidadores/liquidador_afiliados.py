@@ -8,10 +8,11 @@
 import sys
 # Importamos las herramientas de PyQT que vamos a utilizar
 from PyQt5 import QtWidgets, uic, QtGui
-# Importamos los elementos que se encuentran dentro del diseñador 
+# Importamos los elementos que se encuentran dentro del diseñador
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
+from datetime import date
 
 
 #====================
@@ -21,8 +22,10 @@ from PyQt5 import uic
 #Creacion de la clase detalleAfiliados
 class LiquidadorAfiliados(QtWidgets.QWidget):
 	#Inicializacion del Objeto QWidget
-	def __init__(self):  
-		QWidget.__init__(self)  
-		
+	def __init__(self):
+		QWidget.__init__(self)
+
 		#Importamos la vista "detalleAfiliados" y la alojamos dentro de la variable "vistaDetalle"
-		widgetliqafiliado = uic.loadUi("gui/liquidadores/liquidadorAfiliados.ui", self)
+		self.vistaLiqAfiliado = uic.loadUi("gui/liquidadores/liquidadorAfiliados.ui", self)
+
+		self.vistaLiqAfiliado.liq_fecha.setDate(date.today())
