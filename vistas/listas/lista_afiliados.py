@@ -45,7 +45,7 @@ class ListaAfiliados(QtWidgets.QWidget):
 		self.listadoAfiliados.btn_nuevo.clicked.connect(self.mostrarDetalleAfiliado)
 
 		self.tbl_articulos.doubleClicked.connect(self.mostrarDetalleAfiliado)
-
+		self.ln_buscar.returnPressed.connect(self.buscarAfiliados)
 
 	#===========================
 	#DEFINICION DE LAS FUNCIONES
@@ -61,3 +61,15 @@ class ListaAfiliados(QtWidgets.QWidget):
 			afiliado = self.model.verDetallesAfiliado(afiliado)
 			self.widgetdelafiliado.setAfiliado(afiliado)
 		self.widgetdelafiliado.show()
+
+	def buscarAfiliados(self):
+		busqueda = self.ln_buscar.text()
+		condiciones = []
+		try:
+			busqueda = "'%{}%' OR dni LIKE '%{}%'".format(busqueda, busqueda)
+			condiciones = [('legajo', 'LIKE', busqueda)]
+		except:
+			busqueda = "'%{}%' OR apellido LIKE '%{}%'".format(busqueda, busqueda)
+			condiciones = [('nombre', "LIKE", busqueda)]
+
+		self.model.verListaAfiliados(condiciones)

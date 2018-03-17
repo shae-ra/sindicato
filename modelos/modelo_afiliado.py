@@ -41,10 +41,11 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
         self.__listaAfiliados = [] # Los valores de prueba los saco del archivo fuente
 
 # Legajo : 1, dni : 37537040 es lo que tiene que aparecer cuando uso esta función
-    def verListaAfiliados(self):
+    def verListaAfiliados(self, condiciones = None):
         self.__listaAfiliados = self.__querier.traerElementos(
             campos = self.__propiedades,
-            tabla = 'afiliados')
+            tabla = 'afiliados',
+            condiciones = condiciones)
         if self.__listaAfiliados:
             self.layoutChanged.emit()
             return True
