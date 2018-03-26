@@ -901,7 +901,7 @@ color: #000000;
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <property name="iconSize">
       <size>
@@ -6460,7 +6460,7 @@ background-color: #F0F5EF
          </property>
          <layout class="QGridLayout" name="gridLayout_2" rowstretch="7" columnstretch="10,20,10,20,5,30,5">
           <item row="0" column="1">
-           <widget class="QComboBox" name="comboBox_6">
+           <widget class="QComboBox" name="af_banco">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -6521,7 +6521,7 @@ color: #FFFFFF ; ;
            </widget>
           </item>
           <item row="0" column="3">
-           <widget class="QComboBox" name="comboBox_7">
+           <widget class="QComboBox" name="af_sucursal">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -6554,7 +6554,7 @@ color: #FFFFFF ; ;
            </widget>
           </item>
           <item row="0" column="5">
-           <widget class="QLineEdit" name="lineEdit_19">
+           <widget class="QLineEdit" name="af_cbu">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -6575,7 +6575,7 @@ color: #FFFFFF ; ;
            </widget>
           </item>
           <item row="0" column="6">
-           <widget class="QPushButton" name="btn_guardar_debito">
+           <widget class="QPushButton" name="btn_guardar_cbu">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -6836,10 +6836,10 @@ color: #FFFFFF ; ;
   <tabstop>pushButton_9</tabstop>
   <tabstop>pushButton_imprimirPlanilla</tabstop>
   <tabstop>pushButton_ingresarDebito</tabstop>
-  <tabstop>comboBox_6</tabstop>
-  <tabstop>comboBox_7</tabstop>
-  <tabstop>lineEdit_19</tabstop>
-  <tabstop>btn_guardar_debito</tabstop>
+  <tabstop>af_banco</tabstop>
+  <tabstop>af_sucursal</tabstop>
+  <tabstop>af_cbu</tabstop>
+  <tabstop>btn_guardar_cbu</tabstop>
   <tabstop>tbl_articulos</tabstop>
   <tabstop>tableView</tabstop>
  </tabstops>
