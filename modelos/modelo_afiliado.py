@@ -98,6 +98,10 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             return False
         return True
 
+    def modificarCbu(self, cbu):
+        self.__afiliado['cbu'] = cbu
+        self.__querier.actualizarElemento('afiliados', self.__afiliado, [("legajo", "=", self.__afiliado['legajo'])] )
+
     def borrarAfiliado(self, tabla, idElem):
         self.__querier.borrarElemento(tabla, 'legajo', idElem)
 
