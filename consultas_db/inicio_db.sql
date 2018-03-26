@@ -26,7 +26,9 @@ CREATE TABLE afiliados (
 		jerarquia varchar(40),
 		fecha_ingreso date,
 		antiguedad int(2),
-		nivel_estudios varchar(40)
+		nivel_estudios varchar(40),
+		id_banco int(8),
+		cbu varchar(22)
 
 );
 
@@ -71,24 +73,19 @@ CREATE TABLE servicios_afiliado(
 
 CREATE TABLE debitos(
     legajo_afiliado int(8) UNSIGNED NOT NULL,
-    id_banco int(8) UNSIGNED NOT NULL,
-    cbu int(22) #solo un largo de 22. El CBU contiene 22 numeros y deberia poderse guardar siempre y cuando tenga los 22 numeros, de otra forma no tiene que ser posible guardar. Esto achicaria mucho el margen de error.
-# Esto dame mas tiempo para que me pueda fijar bieeen
+		id int(32) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    mes_descuento date, # (Mes de descuento)
+    proveedor_id int(16) UNSIGNED NOT NULL,
+    cuota_actual int(2),
+    total_cuotas int(2),
+    fecha_carga_inicial date, # FIJARSE SI FUNCIONA
+		importe_total int(8),
+		
 );
 
 CREATE TABLE bancos(
 	id int(8) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre varchar(20)
-);
-
-CREATE TABLE descuentos(
-	id int(32) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    mes_descuento date, # (Mes de descuento)
-    proveedor_id int(16) UNSIGNED NOT NULL,
-    cuota_actual int(2),
-    total_cuotas int(2),
-    fecha_carga_inicial date # FIJARSE SI FUNCIONA
-
 );
 
 CREATE TABLE proveedores(
