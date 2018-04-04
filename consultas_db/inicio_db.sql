@@ -18,18 +18,18 @@ CREATE TABLE afiliados (
     cod_postal varchar(20), # Aca con un largo de 4 esta bien.
     barrio varchar(30),
     localidad varchar(50),
-		telefono_particular varchar(20),  # El telefono deberia ser un varchar porque suele tener este formato: (0220)482-8844
-		telefono_laboral varchar(20),  # El telefono deberia ser un varchar porque suele tener este formato: (0220)482-8844
+	telefono_particular varchar(20),  # El telefono deberia ser un varchar porque suele tener este formato: (0220)482-8844
+	telefono_laboral varchar(20),  # El telefono deberia ser un varchar porque suele tener este formato: (0220)482-8844
     celular varchar(20), # El celular deberia ser un varchar porque suele tener este formato: 11-6030-0122
     email varchar(80),
-		lugar_trabajo varchar(40),
-		jerarquia varchar(40),
-		fecha_ingreso date,
-		antiguedad int(2),
-		nivel_estudios varchar(40),
-		id_banco int(8),
-		cbu varchar(22)
-
+	lugar_trabajo varchar(40),
+	jerarquia varchar(40),
+	fecha_ingreso date,
+	antiguedad int(2),
+	nivel_estudios varchar(40),
+	id_banco int(8),
+    sucursal varchar(32),
+	cbu varchar(22)
 );
 
 CREATE TABLE familiares(
@@ -45,7 +45,7 @@ CREATE TABLE familiares(
 
     CONSTRAINT `constr_familiar_fk`
 		FOREIGN KEY `familiar_fk` (`legajo_afiliado`) REFERENCES `afiliados` (`legajo`)
-		ON DELETE CASCADE ON UPDATE CASCADE,
+		ON DELETE CASCADE ON UPDATE CASCADE
     #Crear clave foránea
 );
 
@@ -72,14 +72,14 @@ CREATE TABLE servicios_afiliado(
 );
 
 CREATE TABLE debitos(
+    id int(32) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     legajo_afiliado int(8) UNSIGNED NOT NULL,
-		id int(32) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     mes_descuento date, # (Mes de descuento)
     proveedor_id int(16) UNSIGNED NOT NULL,
     cuota_actual int(2),
     total_cuotas int(2),
     fecha_carga_inicial date, # FIJARSE SI FUNCIONA
-		importe_total int(8),
+	importe_total int(8)
 		
 );
 

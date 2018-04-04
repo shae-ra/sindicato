@@ -39,11 +39,15 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.model = ModeloAfiliado()
 
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
+		self.btn_guardar_cbu.clicked.connect(self.guardarCbu)
 
 	def guardarAfiliado(self):
 		afiliado = self.getAfiliado()
-
 		self.model.guardarAfiliado(afiliado)
+
+	def guardarCbu(self):
+		cbu = self.vd_afiliado.af_cbu.text()
+		self.model.modificarCbu(cbu)
 
 	def getAfiliado(self):
 		f_ingreso = self.vd_afiliado.af_fecha_ingreso.date()
@@ -135,7 +139,12 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado.af_jerarquia.setText(afiliado[22]),
 		self.vd_afiliado.af_fecha_ingreso.setDate(QDate(afiliado[23])),
 		self.vd_afiliado.af_antiguedad.setText(str(afiliado[24])),
-		self.vd_afiliado.af_nivel_estudios.setCurrentText(afiliado[25])
+		self.vd_afiliado.af_nivel_estudios.setCurrentText(afiliado[25]),
+		self.vd_afiliado.af_sucursal.setCurrentText(afiliado[27]),
+		self.vd_afiliado.af_cbu.setText(afiliado[28]),
+
+	def setBanco(self):
+		pass
 
 	def showEvent(self, event):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)
