@@ -26,5 +26,9 @@ esquemaAfiliado = {
     'jerarquia' : { 'type': 'string', 'maxlength' : 40 },
     'fecha_ingreso' : { 'type': 'date' },
     'antiguedad' : { 'type': 'integer', 'max' : 99 },
-    'nivel_estudios' : { 'type': 'string', 'maxlength' : 40 }
+    'nivel_estudios' : { 'type': 'string', 'maxlength' : 40 },
+    'cbu' : { 'type': 'string', 'maxlength' : 22 },
+    'banco' : { 'type' : 'integer', 'max' : 99999999 },
+    'sucursal' : { 'type' : 'string', 'maxlength' : 32}
+
 }

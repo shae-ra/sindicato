@@ -1,5 +1,3 @@
-
-
 #=============
 #IMPORTACIONES
 #=============
@@ -13,7 +11,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTa
 from vistas.cargas import carga_debito
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
-from PyQt5.QtCore import Qt, QDate
+from PyQt5.QtCore import Qt, QDate, QRegExp
 from modelos.modelo_afiliado import ModeloAfiliado
 
 from datetime import date
@@ -29,6 +27,9 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	def __init__(self):
 		QWidget.__init__(self)
 
+		rxCbu = QRegExp("[0-9]{22}")
+
+
 		# Importamos la vista "detalleAfiliados" y la alojamos dentro de la variable "vistaDetalle"
 		# Agregamos 'self.' al objeto así podemos acceder a él en el resto de las funciones
 		self.vd_afiliado = uic.loadUi("gui/detalles/detalleAfiliados.ui", self)
@@ -36,10 +37,12 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
 		self.widgetdecarga = carga_debito.CargaDebito()
 
+		self.vd_afiliado.af_cbu.setValidator(QtGui.QRegExpValidator(rxCbu))
+
 		self.model = ModeloAfiliado()
 
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
-		self.btn_guardar_cbu.clicked.connect(self.guardarCbu)
+		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
 
 	def guardarAfiliado(self):
 		afiliado = self.getAfiliado()
@@ -108,7 +111,10 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		'antiguedad' : antiguedad,
 		'fecha_ingreso' : f_ingreso,
 		'jerarquia' : self.vd_afiliado.af_jerarquia.text(),
-		'nivel_estudios' : self.vd_afiliado.af_nivel_estudios.currentText()
+		'nivel_estudios' : self.vd_afiliado.af_nivel_estudios.currentText(),
+		'cbu' : self.vd_afiliado.af_cbu.text(),
+		'sucursal' : self.vd_afiliado.af_sucursal.currentText(),
+
 		}
 
 		return afiliado
@@ -142,9 +148,6 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado.af_nivel_estudios.setCurrentText(afiliado[25]),
 		self.vd_afiliado.af_sucursal.setCurrentText(afiliado[27]),
 		self.vd_afiliado.af_cbu.setText(afiliado[28]),
-
-	def setBanco(self):
-		pass
 
 	def showEvent(self, event):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)

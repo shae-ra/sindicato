@@ -6,18 +6,15 @@ from validadores.validador_afiliado import esquemaAfiliado
 class ModeloAfiliado(QtCore.QAbstractTableModel):
     __querier = querier.Querier()
     __v = cerberus.Validator()
-    _instance = None
-
-    def __new__(self, *args, **kwargs):
-        if not self._instance:
-            self._instance = super(ModeloAfiliado, self).__new__(self, *args, **kwargs)
 
         # La idea ahora es separar el esquema de validación de los datos y campos que se van a usar, nosotros no vamos a usar
         # todos los campos en la tabla, habíamos definido los que se encuentran en el archivo 'cosas para hacer.md'
         # | Legajo | Apellido | Nombre | DNI | Dirección | Teléfono | Ordenado alfabéticamente por apellido
         # Calle + Altura + Piso + Depto + (Localidad)
 
-            self.__propiedades = ['legajo','dni',
+    def __init__(self, propiedades = None, parent = None):
+        super(ModeloAfiliado, self).__init__()
+        self.__propiedades = ['legajo','dni',
             'tipo_afiliado','cuil',
             'apellido','nombre',
             'fecha_nacimiento', 'edad', 'estado_civil',
@@ -28,18 +25,14 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             'lugar_trabajo', 'jerarquia',
             'fecha_ingreso', 'antiguedad',
             'nivel_estudios'
-            ]
-
-            self.__listaAfiliados = [] # Los valores de prueba los saco del archivo fuente
-            self.__afiliado = []
-
-        return self._instance
-
-    def __init__(self, propiedades = None, parent = None):
-        super(ModeloAfiliado, self).__init__()
+        ]
         if propiedades:
             self.__propiedades = self.validarPropiedades(propiedades)
 
+        self.__listaAfiliados = [] # Los valores de prueba los saco del archivo fuente
+        self.__afiliado = []
+
+# =============================================================================================
 # Esta lista de listas es la que aparece en la tabla de afiliados apenas arranca
 # el programa
 # Tengo que hacer que el programa levante esta lista desde la base de datos.
@@ -103,19 +96,6 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
 
             return False
         return True
-
-    def modificarCbu(self, cbu):
-        print(self.__afiliado)
-        self.__afiliado[28] = cbu
-        self.__querier.actualizarElemento(
-            'afiliados',
-            self.__afiliado,
-            [("legajo", "=", self.__afiliado[0])] )
-
-    def getDatosBancarios(self, cbu):
-        self.__querier.traerElementos(
-            campos = ('cbu', 'id_banco', 'sucursal'),
-            condiciones = [('legajo', '=', self.__afiliado[0])])
 
     def borrarAfiliado(self, tabla, idElem):
         self.__querier.borrarElemento(tabla, 'legajo', idElem)
