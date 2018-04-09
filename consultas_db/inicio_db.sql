@@ -1,7 +1,7 @@
 use sindicato;
 
 CREATE TABLE afiliados (
-	legajo int(8) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
+	legajo int(8) UNSIGNED NOT NULL PRIMARY KEY, # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
     dni int(8) UNSIGNED UNIQUE KEY,
     tipo_afiliado varchar(20) ,
     cuil bigint(11) UNSIGNED UNIQUE KEY,
@@ -80,7 +80,7 @@ CREATE TABLE debitos(
     total_cuotas int(2),
     fecha_carga_inicial date, # FIJARSE SI FUNCIONA
 	importe_total int(8)
-		
+
 );
 
 CREATE TABLE bancos(
