@@ -39,7 +39,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		self.vd_afiliado.af_cbu.setValidator(QtGui.QRegExpValidator(rxCbu))
 
-		self.model = ModeloAfiliado()
+		self.model = ModeloAfiliado(parent = self)
 
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
@@ -120,34 +120,64 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		return afiliado
 
 	def setAfiliado(self, afiliado):
-		self.vd_afiliado.af_legajo.setText(str(afiliado[0])),
-		self.vd_afiliado.af_dni.setText(str(afiliado[1])),
-		self.vd_afiliado.af_tipo.setCurrentText(afiliado[2]),
-		self.vd_afiliado.af_cuil.setText(str(afiliado[3])),
-		self.vd_afiliado.af_apellido.setText(afiliado[4]),
-		self.vd_afiliado.af_nombre.setText(afiliado[5]),
-		self.vd_afiliado.af_fecha_nacimiento.setDate(QDate(afiliado[6])),
-		self.vd_afiliado.af_edad.setText(str(afiliado[7])),
-		self.vd_afiliado.af_estado_civil.setCurrentText(afiliado[8]),
-		self.vd_afiliado.af_nacionalidad.setCurrentText(afiliado[9]),
-		self.vd_afiliado.af_calle.setText(afiliado[10]),
-		self.vd_afiliado.af_altura.setText(str(afiliado[11])),
-		self.vd_afiliado.af_piso.setText(afiliado[12]),
-		self.vd_afiliado.af_depto.setText(afiliado[13]),
-		self.vd_afiliado.af_codigo_postal.setText(afiliado[14]),
-		self.vd_afiliado.af_barrio.setText(afiliado[15]),
-		self.vd_afiliado.af_localidad.setCurrentText(afiliado[16]),
-		self.vd_afiliado.af_tel_particular.setText(afiliado[17]),
-		self.vd_afiliado.af_tel_laboral.setText(afiliado[18]),
-		self.vd_afiliado.af_celular.setText(afiliado[19]),
-		self.vd_afiliado.af_email.setText(afiliado[20]),
-		self.vd_afiliado.af_lugar_trabajo.setText(afiliado[21]),
-		self.vd_afiliado.af_jerarquia.setText(afiliado[22]),
-		self.vd_afiliado.af_fecha_ingreso.setDate(QDate(afiliado[23])),
-		self.vd_afiliado.af_antiguedad.setText(str(afiliado[24])),
-		self.vd_afiliado.af_nivel_estudios.setCurrentText(afiliado[25]),
-		self.vd_afiliado.af_sucursal.setCurrentText(afiliado[27]),
-		self.vd_afiliado.af_cbu.setText(afiliado[28]),
+		self.vd_afiliado.af_legajo.setText(str(afiliado[0]))
+		self.vd_afiliado.af_dni.setText(str(afiliado[1]))
+		self.vd_afiliado.af_tipo.setCurrentText(afiliado[2])
+		self.vd_afiliado.af_cuil.setText(str(afiliado[3]))
+		self.vd_afiliado.af_apellido.setText(afiliado[4])
+		self.vd_afiliado.af_nombre.setText(afiliado[5])
+		self.vd_afiliado.af_fecha_nacimiento.setDate(QDate(afiliado[6]))
+		self.vd_afiliado.af_edad.setText(str(afiliado[7]))
+		self.vd_afiliado.af_estado_civil.setCurrentText(afiliado[8])
+		self.vd_afiliado.af_nacionalidad.setCurrentText(afiliado[9])
+		self.vd_afiliado.af_calle.setText(afiliado[10])
+		self.vd_afiliado.af_altura.setText(str(afiliado[11]))
+		self.vd_afiliado.af_piso.setText(afiliado[12])
+		self.vd_afiliado.af_depto.setText(afiliado[13])
+		self.vd_afiliado.af_codigo_postal.setText(afiliado[14])
+		self.vd_afiliado.af_barrio.setText(afiliado[15])
+		self.vd_afiliado.af_localidad.setCurrentText(afiliado[16])
+		self.vd_afiliado.af_tel_particular.setText(afiliado[17])
+		self.vd_afiliado.af_tel_laboral.setText(afiliado[18])
+		self.vd_afiliado.af_celular.setText(afiliado[19])
+		self.vd_afiliado.af_email.setText(afiliado[20])
+		self.vd_afiliado.af_lugar_trabajo.setText(afiliado[21])
+		self.vd_afiliado.af_jerarquia.setText(afiliado[22])
+		self.vd_afiliado.af_fecha_ingreso.setDate(QDate(afiliado[23]))
+		self.vd_afiliado.af_antiguedad.setText(str(afiliado[24]))
+		self.vd_afiliado.af_nivel_estudios.setCurrentText(afiliado[25])
+		self.vd_afiliado.af_sucursal.setCurrentText(afiliado[27])
+		self.vd_afiliado.af_cbu.setText(afiliado[28])
+
+	def resetAfiliado(self):
+		self.vd_afiliado.af_legajo.setText('')
+		self.vd_afiliado.af_dni.setText('')
+		self.vd_afiliado.af_tipo.setCurrentIndex(0)
+		self.vd_afiliado.af_cuil.setText('')
+		self.vd_afiliado.af_apellido.setText('')
+		self.vd_afiliado.af_nombre.setText('')
+		self.vd_afiliado.af_fecha_nacimiento.setDate(QDate(date.today()))
+		self.vd_afiliado.af_edad.setText('')
+		self.vd_afiliado.af_estado_civil.setCurrentIndex(0)
+		self.vd_afiliado.af_nacionalidad.setCurrentIndex(0)
+		self.vd_afiliado.af_calle.setText('')
+		self.vd_afiliado.af_altura.setText('')
+		self.vd_afiliado.af_piso.setText('')
+		self.vd_afiliado.af_depto.setText('')
+		self.vd_afiliado.af_codigo_postal.setText('')
+		self.vd_afiliado.af_barrio.setText('')
+		self.vd_afiliado.af_localidad.setCurrentIndex(0)
+		self.vd_afiliado.af_tel_particular.setText('')
+		self.vd_afiliado.af_tel_laboral.setText('')
+		self.vd_afiliado.af_celular.setText('')
+		self.vd_afiliado.af_email.setText('')
+		self.vd_afiliado.af_lugar_trabajo.setText('')
+		self.vd_afiliado.af_jerarquia.setText('')
+		self.vd_afiliado.af_fecha_ingreso.setDate(QDate(date.today()))
+		self.vd_afiliado.af_antiguedad.setText('')
+		self.vd_afiliado.af_nivel_estudios.setCurrentIndex(0)
+		self.vd_afiliado.af_sucursal.setCurrentIndex(0)
+		self.vd_afiliado.af_cbu.setText('')
 
 	def showEvent(self, event):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)

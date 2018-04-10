@@ -14,6 +14,8 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
 
     def __init__(self, propiedades = None, parent = None):
         super(ModeloAfiliado, self).__init__()
+        if parent:
+            self.__parent = parent
         self.__propiedades = ['legajo','dni',
             'tipo_afiliado','cuil',
             'apellido','nombre',

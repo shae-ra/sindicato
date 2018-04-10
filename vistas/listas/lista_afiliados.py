@@ -47,6 +47,7 @@ class ListaAfiliados(QtWidgets.QWidget):
 		self.tbl_articulos.doubleClicked.connect(self.mostrarDetalleAfiliado)
 		self.ln_buscar.returnPressed.connect(self.buscarAfiliados)
 
+
 	#===========================
 	#DEFINICION DE LAS FUNCIONES
 	#===========================
@@ -60,6 +61,8 @@ class ListaAfiliados(QtWidgets.QWidget):
 		if afiliado:
 			afiliado = self.model.verDetallesAfiliado(afiliado)
 			self.widgetdelafiliado.setAfiliado(afiliado)
+		else:
+			self.widgetdelafiliado.resetAfiliado()
 		self.widgetdelafiliado.show()
 
 	def buscarAfiliados(self):
