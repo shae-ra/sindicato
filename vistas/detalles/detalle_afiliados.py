@@ -35,7 +35,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado = uic.loadUi("gui/detalles/detalleAfiliados.ui", self)
 
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
-		self.widgetdecarga = carga_debito.CargaDebito()
+		self.v_carga = carga_debito.CargaDebito()
 
 		self.vd_afiliado.af_cbu.setValidator(QtGui.QRegExpValidator(rxCbu))
 
@@ -186,7 +186,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		# la funcion setCurrentIndex pertence al último hijo llamado.
 
 	def mostrarCarga(self):
-		self.widgetdecarga.show()
+		self.v_carga.show()
 
 	def keyPressEvent(self, event):
 		if event.key() == Qt.Key_Escape:
