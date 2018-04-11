@@ -36,7 +36,7 @@ class ListaAfiliados(QtWidgets.QWidget):
 			propiedades = ['legajo', 'apellido', 'nombre', 'dni', 'calle', 'altura', 'piso', 'depto', 'localidad', 'telefono_particular'])
 
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
-		self.widgetdelafiliado = detalle_afiliados.DetalleAfiliados()
+		self.vd_afiliado = detalle_afiliados.DetalleAfiliados()
 
 		# Asignamos el modelo de tabla a la tabla propiamente dicha
 		self.tbl_articulos.setModel(self.model)
@@ -60,19 +60,18 @@ class ListaAfiliados(QtWidgets.QWidget):
 	def mostrarDetalleAfiliado(self, afiliado):
 		if afiliado:
 			afiliado = self.model.verDetallesAfiliado(afiliado)
-			self.widgetdelafiliado.setAfiliado(afiliado)
+			self.vd_afiliado.setAfiliado(afiliado)
 		else:
-			self.widgetdelafiliado.resetAfiliado()
-		self.widgetdelafiliado.show()
+			self.vd_afiliado.resetAfiliado()
+		self.vd_afiliado.show()
 
 	def buscarAfiliados(self):
 		busqueda = self.ln_buscar.text()
 		condiciones = []
 		try:
-			busqueda = "'%{}%' OR dni LIKE '%{}%'".format(busqueda, busqueda)
-			condiciones = [('legajo', 'LIKE', busqueda)]
+			busqueda = int(busqueda)
+			condiciones = [("legajo LIKE '%{}%' OR dni".format(busqueda), 'LIKE', "'%{}%'".format(busqueda))]
 		except:
-			busqueda = "'%{}%' OR apellido LIKE '%{}%'".format(busqueda, busqueda)
-			condiciones = [('nombre', "LIKE", busqueda)]
+			condiciones = [("nombre LIKE '%{}%' OR apellido".format(busqueda), "LIKE", "'%{}%'".format(busqueda))]
 
 		self.model.verListaAfiliados(condiciones)

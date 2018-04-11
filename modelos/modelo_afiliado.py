@@ -68,7 +68,6 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
         print(afiliado)
 
         self.__afiliado = afiliado
-
         return self.__afiliado
 
     def guardarAfiliado(self, afiliado):

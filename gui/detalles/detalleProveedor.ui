@@ -456,7 +456,7 @@ color: #000000;
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="1" column="1">
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="btn_guardar">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -475,12 +475,12 @@ color: #000000;
       <enum>Qt::LeftToRight</enum>
      </property>
      <property name="styleSheet">
-      <string notr="true">#pushButton_4{
+      <string notr="true">#btn_guardar{
 background-color:#37760D;
 color: #FFFFFF;
 }
 
-#pushButton_4:hover{
+#btn_guardar:hover{
 background-color:#37861D;
 }
 </string>
@@ -497,6 +497,9 @@ background-color:#37861D;
        <width>20</width>
        <height>20</height>
       </size>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+G</string>
      </property>
      <property name="autoDefault">
       <bool>true</bool>
@@ -1041,44 +1044,8 @@ background-color: #F0F5EF
             </property>
            </widget>
           </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_59">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial</family>
-              <pointsize>8</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">#label_59{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="text">
-             <string>DIRECCION</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_24">
+          <item row="1" column="2">
+           <widget class="QLineEdit" name="prov_id">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1130,8 +1097,8 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="2" column="1" colspan="7">
-           <widget class="QLineEdit" name="lineEdit_22">
+          <item row="2" column="2" colspan="7">
+           <widget class="QLineEdit" name="prov_servicios">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1183,7 +1150,7 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="1" column="2">
+          <item row="1" column="3">
            <widget class="QLabel" name="label_33">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1219,8 +1186,8 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="1" column="3" colspan="5">
-           <widget class="QLineEdit" name="lineEdit_20">
+          <item row="1" column="4" colspan="5">
+           <widget class="QLineEdit" name="prov_nombre">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1236,7 +1203,7 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="4" column="0">
+          <item row="7" column="0">
            <widget class="QLabel" name="label_67">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1272,7 +1239,7 @@ color: #FFFFFF ;  ;
             </property>
            </widget>
           </item>
-          <item row="4" column="2">
+          <item row="7" column="3">
            <widget class="QLabel" name="label_66">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1308,8 +1275,8 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
-           <widget class="QLineEdit" name="lineEdit_53">
+          <item row="7" column="2">
+           <widget class="QLineEdit" name="prov_telefono">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1325,8 +1292,8 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="4" column="3">
-           <widget class="QLineEdit" name="lineEdit_48">
+          <item row="7" column="4">
+           <widget class="QLineEdit" name="prov_celular">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1342,8 +1309,8 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="3" column="7">
-           <widget class="QLineEdit" name="lineEdit_23">
+          <item row="6" column="8">
+           <widget class="QLineEdit" name="prov_altura">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1359,7 +1326,7 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="3" column="6">
+          <item row="6" column="7">
            <widget class="QLabel" name="label_64">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1395,24 +1362,7 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="3" column="1" colspan="5">
-           <widget class="QLineEdit" name="lineEdit_49">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="4">
+          <item row="7" column="5">
            <widget class="QLabel" name="label_65">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1448,8 +1398,114 @@ color: #FFFFFF ;
             </property>
            </widget>
           </item>
-          <item row="4" column="5" colspan="3">
-           <widget class="QLineEdit" name="lineEdit_25">
+          <item row="7" column="6" colspan="3">
+           <widget class="QLineEdit" name="prov_email">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_61">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_61{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>LOCALIDAD</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="4" colspan="3">
+           <widget class="QLineEdit" name="prov_calle">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QLabel" name="label_59">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>8</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_59{
+background-color:#5DADE2  ;
+color: #FFFFFF ; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="text">
+             <string>DIRECCION</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLineEdit" name="prov_localidad">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1486,7 +1542,7 @@ background-color: #F0F5EF
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
           <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_26">
+           <widget class="QLineEdit" name="prov_cuit">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1594,7 +1650,7 @@ color: #FFFFFF ;
            </widget>
           </item>
           <item row="2" column="1" colspan="6">
-           <widget class="QLineEdit" name="lineEdit_27">
+           <widget class="QLineEdit" name="prov_cbu">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1719,7 +1775,7 @@ color: #FFFFFF ;  ;
            </widget>
           </item>
           <item row="3" column="6">
-           <widget class="QLineEdit" name="lineEdit_28">
+           <widget class="QLineEdit" name="prov_cuenta">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1772,7 +1828,7 @@ color: #FFFFFF ;
            </widget>
           </item>
           <item row="3" column="1" colspan="4">
-           <widget class="QLineEdit" name="lineEdit_56">
+           <widget class="QLineEdit" name="prov_banco">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1825,7 +1881,7 @@ color: #FFFFFF ;
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QLineEdit" name="lineEdit_54">
+           <widget class="QLineEdit" name="prov_comision">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1842,7 +1898,7 @@ color: #FFFFFF ;
            </widget>
           </item>
           <item row="4" column="3">
-           <widget class="QLineEdit" name="lineEdit_55">
+           <widget class="QLineEdit" name="prov_responsable">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1895,7 +1951,7 @@ color: #FFFFFF ;
            </widget>
           </item>
           <item row="4" column="5" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_57">
+           <widget class="QLineEdit" name="prov_forma_pago">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1912,7 +1968,7 @@ color: #FFFFFF ;
            </widget>
           </item>
           <item row="1" column="3" colspan="4">
-           <widget class="QLineEdit" name="lineEdit_21">
+           <widget class="QLineEdit" name="prov_razon_social">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1943,74 +1999,7 @@ color: #FFFFFF ;
       </attribute>
       <layout class="QGridLayout" name="gridLayout_5">
        <item row="0" column="0" colspan="2">
-        <widget class="QTextEdit" name="textEdit"/>
-       </item>
-       <item row="1" column="0">
-        <spacer name="horizontalSpacer_6">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>733</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_8">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <family>Arial</family>
-           <pointsize>8</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">#pushButton_8{
-background-color:#37760D;
-color: #FFFFFF;
-}
-
-#pushButton_8:hover{
-background-color:#37861D;
-}
-</string>
-         </property>
-         <property name="text">
-          <string>Guardar (Ctrl + G)</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>../iconos/apply.ico</normaloff>../iconos/apply.ico</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>20</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="autoDefault">
-          <bool>true</bool>
-         </property>
-         <property name="default">
-          <bool>false</bool>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
+        <widget class="QTextEdit" name="prov_notas"/>
        </item>
       </layout>
      </widget>

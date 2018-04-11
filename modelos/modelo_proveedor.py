@@ -3,12 +3,12 @@ from libs.db import querier
 import cerberus
 from validadores.validador_proveedor import esquemaProveedor
 
-class ModeloProveedores(QtCore.QAbstractTableModel):
+class ModeloProveedor(QtCore.QAbstractTableModel):
     __querier = querier.Querier()
     __v = cerberus.Validator()
 
     def __init__(self, propiedades = None, parent = None):
-        super(ModeloProveedores, self).__init__()
+        super(ModeloProveedor, self).__init__()
 
         self.__propiedades = [
         'id', 'nombre', 'servicios',
@@ -20,9 +20,11 @@ class ModeloProveedores(QtCore.QAbstractTableModel):
         'forma_pago', 'notas'
         ]
 
-        self.__propiedades = self.validarPropiedades(propiedades)
-        self.__proveedor = { }
+        if propiedades:
+            self.__propiedades = self.validarPropiedades(propiedades)
+
         self.__listaProveedores = []
+        self.__proveedor = []
 
 
     def verListaProveedores(self):
@@ -51,9 +53,12 @@ class ModeloProveedores(QtCore.QAbstractTableModel):
         return self.__proveedor
 
     def guardarProveedor(self, proveedor):
+        condiciones = ''
+        if proveedor['id']:
+            condiciones = [('id', '=', proveedor['id'])]
         respuesta = self.__querier.traerElementos(
             campos = ['id'],
-            condiciones = [('id', '=', proveedor['id'])],
+            condiciones = condiciones,
             tabla = 'proveedores',
             limite = 1
             )
