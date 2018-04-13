@@ -517,7 +517,7 @@ background-color: #FFFFFF;
      </property>
      <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,100000,0">
       <item row="4" column="2" rowspan="2">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="btn_confirmar">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -604,7 +604,7 @@ color: red;
        </widget>
       </item>
       <item row="3" column="0" colspan="3">
-       <widget class="QTextEdit" name="textEdit"/>
+       <widget class="QTextEdit" name="deb_notas"/>
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="label_3">
@@ -700,7 +700,7 @@ color: #FFFFFF ; ;
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QLineEdit" name="lineEdit_8">
+          <widget class="QLineEdit" name="deb_orden">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -718,7 +718,7 @@ color: #FFFFFF ; ;
           </widget>
          </item>
          <item row="3" column="6" colspan="2">
-          <widget class="QLineEdit" name="lineEdit_10">
+          <widget class="QLineEdit" name="deb_">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -769,7 +769,7 @@ color: #FFFFFF ; ;
           </widget>
          </item>
          <item row="0" column="7">
-          <widget class="QLineEdit" name="lineEdit_5">
+          <widget class="QLineEdit" name="deb_importe_cuota">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -820,7 +820,7 @@ color: #FFFFFF ; ;
           </widget>
          </item>
          <item row="3" column="1" colspan="3">
-          <widget class="QLineEdit" name="lineEdit_9">
+          <widget class="QLineEdit" name="deb_importe_total">
            <property name="enabled">
             <bool>false</bool>
            </property>
@@ -874,7 +874,7 @@ color: #FFFFFF ; ;
           </widget>
          </item>
          <item row="0" column="4" colspan="2">
-          <widget class="QLineEdit" name="lineEdit_7">
+          <widget class="QLineEdit" name="deb_total_cuotas">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -914,24 +914,6 @@ background-color: #F0F5EF
          <bool>false</bool>
         </property>
         <layout class="QGridLayout" name="gridLayout">
-         <item row="1" column="2">
-          <widget class="QLineEdit" name="lineEdit_6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>System</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label">
            <property name="sizePolicy">
@@ -965,20 +947,64 @@ color: #FFFFFF ; ;
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_6">
-           <property name="text">
-            <string>NOMBRE DEL PROVEEDOR</string>
-           </property>
-          </widget>
-         </item>
          <item row="1" column="1">
-          <widget class="QComboBox" name="comboBox">
+          <widget class="QComboBox" name="prov_id">
            <item>
             <property name="text">
              <string>Buscar</string>
             </property>
            </item>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="prov_nombre">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>System</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#label_6{
+background-color:#5DADE2  ;
+color: #FFFFFF ; ;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string>Nombre:</string>
+           </property>
           </widget>
          </item>
         </layout>
@@ -1038,7 +1064,7 @@ color: #FFFFFF ; ;
           </widget>
          </item>
          <item row="1" column="7">
-          <widget class="QLineEdit" name="lineEdit_12">
+          <widget class="QLineEdit" name="deb_fecha_anio">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -1056,7 +1082,7 @@ color: #FFFFFF ; ;
           </widget>
          </item>
          <item row="1" column="5">
-          <widget class="QLineEdit" name="lineEdit_3">
+          <widget class="QLineEdit" name="deb_fecha_mes">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -1128,17 +1154,16 @@ color: #FFFFFF ; ;
   </layout>
  </widget>
  <tabstops>
-  <tabstop>comboBox</tabstop>
-  <tabstop>lineEdit_6</tabstop>
-  <tabstop>lineEdit_3</tabstop>
-  <tabstop>lineEdit_12</tabstop>
-  <tabstop>lineEdit_8</tabstop>
-  <tabstop>lineEdit_7</tabstop>
-  <tabstop>lineEdit_5</tabstop>
-  <tabstop>lineEdit_9</tabstop>
-  <tabstop>lineEdit_10</tabstop>
-  <tabstop>textEdit</tabstop>
-  <tabstop>pushButton</tabstop>
+  <tabstop>prov_id</tabstop>
+  <tabstop>deb_fecha_mes</tabstop>
+  <tabstop>deb_fecha_anio</tabstop>
+  <tabstop>deb_orden</tabstop>
+  <tabstop>deb_total_cuotas</tabstop>
+  <tabstop>deb_importe_cuota</tabstop>
+  <tabstop>deb_importe_total</tabstop>
+  <tabstop>deb_</tabstop>
+  <tabstop>deb_notas</tabstop>
+  <tabstop>btn_confirmar</tabstop>
  </tabstops>
  <resources/>
  <connections/>
