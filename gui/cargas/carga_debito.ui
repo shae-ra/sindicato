@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>widget</class>
+ <widget class="QWidget" name="widget">
   <property name="windowModality">
    <enum>Qt::ApplicationModal</enum>
   </property>
@@ -9,20 +9,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>618</width>
-    <height>394</height>
+    <width>587</width>
+    <height>263</height>
    </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>618</width>
-    <height>394</height>
-   </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>618</width>
-    <height>394</height>
+    <width>587</width>
+    <height>263</height>
    </size>
   </property>
   <property name="palette">
@@ -441,9 +435,13 @@
    </palette>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Carga de Débito</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_5">
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../iconos/oesteDev.ico</normaloff>../iconos/oesteDev.ico</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5" rowstretch="30,90">
    <item row="0" column="0">
     <widget class="QPushButton" name="pushButton_2">
      <property name="enabled">
@@ -515,8 +513,238 @@ background-color: #FFFFFF;
      <property name="title">
       <string/>
      </property>
-     <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,100000,0">
-      <item row="4" column="2" rowspan="2">
+     <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,0,0">
+      <item row="1" column="0" colspan="3">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#groupBox_2{
+background-color: #F0F5EF
+}</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#label_4{
+background-color:#5DADE2  ;
+color: #FFFFFF ; ;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string>Cant. de Cuotas:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLineEdit" name="deb_total_cuotas">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>System</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#label_7{
+background-color:#5DADE2  ;
+color: #FFFFFF ; ;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string>Orden/ Cred. N°:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#label_5{
+background-color:#5DADE2  ;
+color: #FFFFFF ; ;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string>Importe Cuota:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="deb_importe_cuota">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>System</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="deb_orden">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>System</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#label_9{
+background-color:#5DADE2  ;
+color: #FFFFFF ; ;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string>Total a cobrar:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="deb_importe_total">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>System</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="2" rowspan="2">
        <widget class="QPushButton" name="btn_confirmar">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -559,29 +787,7 @@ color: #FFFFFF;
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_10">
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#label_10{
-color: red;
-}</string>
-        </property>
-        <property name="text">
-         <string>Al confirmar la operación se guardarán los importes en la ficha del afiliado</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="0">
+      <item row="3" column="0">
        <widget class="QLabel" name="label_11">
         <property name="font">
          <font>
@@ -603,295 +809,26 @@ color: red;
         </property>
        </widget>
       </item>
-      <item row="3" column="0" colspan="3">
-       <widget class="QTextEdit" name="deb_notas"/>
-      </item>
       <item row="2" column="0">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>Detalle del Débito Automático</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0" colspan="3">
-       <widget class="QGroupBox" name="groupBox_2">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
+       <widget class="QLabel" name="label_10">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">#groupBox_2{
-background-color: #F0F5EF
+         <string notr="true">#label_10{
+color: red;
 }</string>
         </property>
-        <property name="title">
-         <string/>
+        <property name="text">
+         <string>Al confirmar la operación se guardarán los importes en la ficha del afiliado</string>
         </property>
-        <property name="flat">
-         <bool>false</bool>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
-        <layout class="QGridLayout" name="gridLayout_2">
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_9">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label_9{
-background-color:#5DADE2  ;
-color: #FFFFFF ; ;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>Total a cobrar:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_7">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label_7{
-background-color:#5DADE2  ;
-color: #FFFFFF ; ;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>Orden/ Cred. N°:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="deb_orden">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>System</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="6" colspan="2">
-          <widget class="QLineEdit" name="deb_">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>System</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="6">
-          <widget class="QLabel" name="label_5">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label_5{
-background-color:#5DADE2  ;
-color: #FFFFFF ; ;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>Importe Cuota:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="7">
-          <widget class="QLineEdit" name="deb_importe_cuota">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>System</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="4" colspan="2">
-          <widget class="QLabel" name="label_8">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label_8{
-background-color:#5DADE2  ;
-color: #FFFFFF ; ;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>Com/ Porc.:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1" colspan="3">
-          <widget class="QLineEdit" name="deb_importe_total">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>System</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2" colspan="2">
-          <widget class="QLabel" name="label_4">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label_4{
-background-color:#5DADE2  ;
-color: #FFFFFF ; ;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>Cant. de Cuotas:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="4" colspan="2">
-          <widget class="QLineEdit" name="deb_total_cuotas">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>System</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-        </layout>
        </widget>
       </item>
       <item row="0" column="0">
@@ -914,10 +851,19 @@ background-color: #F0F5EF
          <bool>false</bool>
         </property>
         <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="1">
+          <widget class="QComboBox" name="prov_id">
+           <item>
+            <property name="text">
+             <string>Buscar</string>
+            </property>
+           </item>
+          </widget>
+         </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -943,67 +889,14 @@ color: #FFFFFF ; ;
             <enum>QFrame::Sunken</enum>
            </property>
            <property name="text">
-            <string>ID Proveedor:</string>
+            <string>ID &amp; Nombre</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="1">
-          <widget class="QComboBox" name="prov_id">
-           <item>
-            <property name="text">
-             <string>Buscar</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="prov_nombre">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>System</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
+         <item row="0" column="0">
           <widget class="QLabel" name="label_6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label_6{
-background-color:#5DADE2  ;
-color: #FFFFFF ; ;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
            <property name="text">
-            <string>Nombre:</string>
+            <string>Proveedor</string>
            </property>
           </widget>
          </item>
@@ -1157,12 +1050,6 @@ color: #FFFFFF ; ;
   <tabstop>prov_id</tabstop>
   <tabstop>deb_fecha_mes</tabstop>
   <tabstop>deb_fecha_anio</tabstop>
-  <tabstop>deb_orden</tabstop>
-  <tabstop>deb_total_cuotas</tabstop>
-  <tabstop>deb_importe_cuota</tabstop>
-  <tabstop>deb_importe_total</tabstop>
-  <tabstop>deb_</tabstop>
-  <tabstop>deb_notas</tabstop>
   <tabstop>btn_confirmar</tabstop>
  </tabstops>
  <resources/>
