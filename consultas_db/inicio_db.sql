@@ -41,7 +41,7 @@ CREATE TABLE familiares(
     fecha_nacimiento date,
     edad int(2),
     nivel_estudios varchar(40),
-    legajo_afiliado int(8) UNSIGNED NOT NULL,  # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
+    legajo_afiliado varchar(22) NOT NULL,  # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
 
 
     CONSTRAINT `constr_familiar_fk`
