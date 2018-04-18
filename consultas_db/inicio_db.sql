@@ -1,11 +1,11 @@
 use sindicato;
 
 CREATE TABLE afiliados (
-	legajo varchar(22) UNSIGNED NOT NULL PRIMARY KEY, # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
-    dni varchar(8) UNSIGNED UNIQUE KEY,
+	legajo varchar(22) NOT NULL PRIMARY KEY, # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
+    dni varchar(8) UNIQUE KEY,
     tipo_afiliado varchar(20) ,
 		activo smallint(1),
-    cuil varchar(11) UNSIGNED UNIQUE KEY,
+    cuil varchar(11) UNIQUE KEY,
     apellido varchar(50), # Podemos poner 10 mas? por las dudas!! no recuerdo bien, pero creo que hay gente con doble apellido y largos encima. Por ejemplo: Lagos fuentealba Cristian Juan Jose
     nombre varchar(50), # Podemos poner 10 mas? por las dudas!! no recuerdo bien, pero creo que hay gente con doble apellido y largos encima. Por ejemplo: Lagos fuentealba Cristian Juan Jose
     fecha_nacimiento date,
@@ -57,8 +57,8 @@ CREATE TABLE servicios(
 );
 
 CREATE TABLE servicios_afiliado(
-	id_servicio int(8) UNSIGNED NOT NULL,
-    legajo_afiliado int(8) UNSIGNED NOT NULL,
+	id_servicio int(16) UNSIGNED NOT NULL,
+    legajo_afiliado varchar(22) NOT NULL,
     fecha date,
     cantidad int(20),
     detalle varchar(80),
@@ -74,7 +74,7 @@ CREATE TABLE servicios_afiliado(
 
 CREATE TABLE debitos(
     id int UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    legajo_afiliado varchar(22) UNSIGNED NOT NULL,
+    legajo_afiliado varchar(22) NOT NULL,
     fecha_descuento date, # (Mes de descuento)
 		fecha_carga_inicial date, # FIJARSE SI FUNCIONA
 
@@ -102,7 +102,7 @@ CREATE TABLE proveedores(
 		telefono varchar(20),
     celular varchar(20),
     email varchar(80),
-    cuit varchar(11) UNSIGNED UNIQUE KEY,
+    cuit varchar(11) UNIQUE KEY,
     razon_social varchar(60),
     cbu varchar(22), #solo un largo de 22. El CBU contiene 22 numeros y deberia poderse guardar siempre y cuando tenga los 22 numeros, de otra forma no tiene que ser posible guardar. Esto achicaria mucho el margen de error.
     banco varchar(60),
