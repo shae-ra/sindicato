@@ -33,3 +33,20 @@ class CargaDebito(QtWidgets.QWidget):
 		self.model = ModeloDebito()
 
 		self.v_carga.prov_id.setModel(self.model_prov)
+
+	def guardarDebito(self):
+		debito = self.getDebito()
+		self.model.guardarDebito(debito)
+
+	def getDebito(self):
+		debito = {
+		self.v_carga.deb_prov_id.text(),
+		self.v_carga.deb_total_cuotas.text(),
+		self.v_carga.deb_importe_cuota.text(),
+		self.v_carga.deb_importe_actual.text(), # NOT IN DATABASE
+		self.v_carga.deb_fecha_mes.text(),
+		self.v_carga.deb_fecha_anio.text(),
+		self.v_carga.deb_orden.text(), # NOT IN DATABASE
+		}
+
+		return debito

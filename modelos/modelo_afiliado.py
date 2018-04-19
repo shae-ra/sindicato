@@ -77,14 +77,6 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             tabla = 'afiliados',
             limite = 1)
         print (respuesta)
-        if respuesta:
-            # Si este if evalua en verdadero significa que existe
-            # un registro con este legajo, por lo que se usar actualizarElemento
-            # en lugar de insertarElemento
-            self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", afiliado['legajo'])])
-
-        else:
-            self.__querier.insertarElemento('afiliados', afiliado)
 
         if not (self.__v.validate(afiliado, esquemaAfiliado)):
             errors = self.__v.document_error_tree
@@ -96,6 +88,17 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
                     pass
 
             return False
+            
+        if respuesta:
+            # Si este if evalua en verdadero significa que existe
+            # un registro con este legajo, por lo que se usar actualizarElemento
+            # en lugar de insertarElemento
+            self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", afiliado['legajo'])])
+
+        else:
+            self.__querier.insertarElemento('afiliados', afiliado)
+
+
         return True
 
     def borrarAfiliado(self, tabla, idElem):

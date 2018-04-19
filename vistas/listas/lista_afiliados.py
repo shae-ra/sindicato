@@ -45,8 +45,8 @@ class ListaAfiliados(QtWidgets.QWidget):
 		self.listadoAfiliados.btn_nuevo.clicked.connect(self.mostrarDetalleAfiliado)
 
 		self.tbl_articulos.doubleClicked.connect(self.mostrarDetalleAfiliado)
-		self.tbl_articulos.returnPressed.connect(self.mostrarDetalleAfiliado)
-		
+		# self.tbl_articulos.returnPressed.connect(self.mostrarDetalleAfiliado)
+
 		self.ln_buscar.returnPressed.connect(self.buscarAfiliados)
 
 

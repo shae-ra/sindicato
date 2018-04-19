@@ -3,7 +3,7 @@ from libs.db import querier
 import cerberus
 
 class ModeloDebito(QtCore.QAbstractTableModel):
-    q = querier.Querier()
+    __querier = querier.Querier()
     __v = cerberus.Validator()
 
     def __init__(self, propiedades = None, parent = None):
@@ -22,3 +22,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             'total_cuotas' : {'type' : 'integer', 'maxlength' : 2 },
             'fecha_carga_actual' : {'type' : 'date' },
         }
+
+
+    def guardarDebito(self, debito):
+        self.__querier.insertarElemento('debitos', debito)
