@@ -1046,6 +1046,9 @@ background-color: #F0F5EF
           </item>
           <item row="1" column="2">
            <widget class="QLineEdit" name="prov_id">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2007,6 +2010,28 @@ color: #FFFFFF ;
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>prov_id</tabstop>
+  <tabstop>prov_nombre</tabstop>
+  <tabstop>prov_servicios</tabstop>
+  <tabstop>prov_localidad</tabstop>
+  <tabstop>prov_calle</tabstop>
+  <tabstop>prov_altura</tabstop>
+  <tabstop>prov_telefono</tabstop>
+  <tabstop>prov_celular</tabstop>
+  <tabstop>prov_email</tabstop>
+  <tabstop>prov_cuit</tabstop>
+  <tabstop>prov_razon_social</tabstop>
+  <tabstop>prov_cbu</tabstop>
+  <tabstop>prov_banco</tabstop>
+  <tabstop>prov_cuenta</tabstop>
+  <tabstop>prov_comision</tabstop>
+  <tabstop>prov_responsable</tabstop>
+  <tabstop>prov_forma_pago</tabstop>
+  <tabstop>prov_notas</tabstop>
+  <tabstop>btn_guardar</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
