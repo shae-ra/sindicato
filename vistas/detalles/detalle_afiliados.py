@@ -13,6 +13,7 @@ from vistas.cargas import carga_debito
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QDate, QRegExp
 from modelos.modelo_afiliado import ModeloAfiliado
+from modelos.modelo_debito import ModeloDebito
 
 from datetime import date
 
@@ -40,6 +41,15 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado.af_cbu.setValidator(QtGui.QRegExpValidator(rxCbu))
 
 		self.model = ModeloAfiliado(parent = self)
+		self.model_debito = ModeloDebito(propiedades = [
+			"id",
+			"legajo_afiliado",
+			"fecha_descuento",
+			"cuota_actual",
+			"total_cuotas"			
+			])
+
+		self.vd_afiliado.tbl_debitos.setModel(self.model_debito)
 
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
@@ -182,8 +192,13 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	def showEvent(self, event):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)
 		self.vd_afiliado.pushButton_ingresarDebito.clicked.connect(self.mostrarCarga)
+		self.verListaDebitos()
 		# Accedo al objeto 'tabWidget' que es hijo de el objeto 'vd_afiliado' y además llamo a la función setCurrentIndex()
 		# la funcion setCurrentIndex pertence al último hijo llamado.
+
+	def verListaDebitos(self):
+		condiciones = [("legajo_afiliado", "=", "'{}'".format(self.vd_afiliado.af_legajo.text()))]
+		self.model_debito.verTablaDebitos(condiciones)
 
 	def mostrarCarga(self):
 		# if self.model.tieneCbu():
