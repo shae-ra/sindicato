@@ -186,6 +186,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		# la funcion setCurrentIndex pertence al último hijo llamado.
 
 	def mostrarCarga(self):
+		# if self.model.tieneCbu():
 		self.v_carga.show()
 
 	def keyPressEvent(self, event):

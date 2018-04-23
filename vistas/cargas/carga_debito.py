@@ -13,6 +13,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTa
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 
+from datetime import date
+
 from modelos.modelo_proveedor import ModeloProveedor
 from modelos.modelo_debito import ModeloDebito
 
@@ -29,10 +31,12 @@ class CargaDebito(QtWidgets.QWidget):
 		# Importamos la vista "carga_debito" y la alojamos dentro de la variable "carga"
 		self.v_carga = uic.loadUi("gui/cargas/carga_debito.ui", self)
 
-		self.model_prov = ModeloProveedor(['id'])
+		self.model_prov = ModeloProveedor(propiedades = ['id', 'nombre'])
 		self.model = ModeloDebito()
 
 		self.v_carga.prov_id.setModel(self.model_prov)
+
+		self.v_carga.btn_confirmar.clicked.connect(self.getDebito)
 
 	def guardarDebito(self):
 		debito = self.getDebito()
@@ -40,13 +44,20 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def getDebito(self):
 		debito = {
-		self.v_carga.deb_prov_id.text(),
-		self.v_carga.deb_total_cuotas.text(),
-		self.v_carga.deb_importe_cuota.text(),
-		self.v_carga.deb_importe_actual.text(), # NOT IN DATABASE
-		self.v_carga.deb_fecha_mes.text(),
-		self.v_carga.deb_fecha_anio.text(),
-		self.v_carga.deb_orden.text(), # NOT IN DATABASE
+		"proveedor_id" : int(self.v_carga.prov_id.currentText().split("-")[0]),
+		"total_cuotas" : self.v_carga.deb_total_cuotas.text(),
+		"importe_actual" : self.v_carga.deb_importe_cuota.text(),
+		"importe_total" : self.v_carga.deb_importe_total.text(), # NOT IN DATABASE
+		"fecha_descuento" : date(
+			int(self.v_carga.deb_fecha_anio.text()),
+			int(self.v_carga.deb_fecha_mes.text()),
+			1),
+		"fecha_carga_inicial" : date.today(),
+		"n_credito" : self.v_carga.deb_orden.text(), # NOT IN DATABASE
 		}
+		print(debito)
 
 		return debito
+
+	def showEvent(self, event):
+		self.model_prov.verListaProveedores()

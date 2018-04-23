@@ -1050,6 +1050,10 @@ color: #FFFFFF ; ;
   <tabstop>prov_id</tabstop>
   <tabstop>deb_fecha_mes</tabstop>
   <tabstop>deb_fecha_anio</tabstop>
+  <tabstop>deb_importe_cuota</tabstop>
+  <tabstop>deb_total_cuotas</tabstop>
+  <tabstop>deb_orden</tabstop>
+  <tabstop>deb_importe_total</tabstop>
   <tabstop>btn_confirmar</tabstop>
  </tabstops>
  <resources/>

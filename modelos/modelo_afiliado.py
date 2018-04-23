@@ -88,7 +88,7 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
                     pass
 
             return False
-            
+
         if respuesta:
             # Si este if evalua en verdadero significa que existe
             # un registro con este legajo, por lo que se usar actualizarElemento

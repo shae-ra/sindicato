@@ -28,6 +28,28 @@ class ModeloProveedor(QtCore.QAbstractTableModel):
 
 
     def verListaProveedores(self):
+        nuevaLista = []
+        self.__listaProveedores = self.__querier.traerElementos(
+            campos = self.__propiedades,
+            tabla = 'proveedores')
+
+        print(self.__listaProveedores)
+        for index, item in enumerate(self.__listaProveedores):
+            print(item)
+            print(index)
+            id = str(item[0])
+            nombre = str(item[1])
+
+            nuevaLista.append(["{} - {}".format(id, nombre)])
+        self.__listaProveedores = nuevaLista
+        print(self.__listaProveedores)
+
+        if self.__listaProveedores:
+            self.layoutChanged.emit()
+            return True
+        return False
+
+    def verTablaProveedores(self):
         self.__listaProveedores = self.__querier.traerElementos(
             campos = self.__propiedades,
             tabla = 'proveedores')

@@ -43,7 +43,7 @@ class ListaProveedores(QtWidgets.QWidget):
 	#===========================
 
 	def showEvent(self,event):
-		self.model.verListaProveedores()
+		self.model.verTablaProveedores()
 
 	def mostrarDetalleProveedor(self, proveedor):
 		if proveedor:
@@ -61,4 +61,4 @@ class ListaProveedores(QtWidgets.QWidget):
 		except:
 			condiciones = [("nombre", "LIKE", "'%{}%'".format(busqueda))]
 
-		self.model.verListaProveedores(condiciones)
+		self.model.verTablaProveedores(condiciones)
