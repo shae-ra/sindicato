@@ -35,7 +35,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado = uic.loadUi("gui/detalles/detalleAfiliados.ui", self)
 
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
-		self.v_carga = carga_debito.CargaDebito()
+		self.v_carga = carga_debito.CargaDebito(self)
 
 		self.vd_afiliado.af_cbu.setValidator(QtGui.QRegExpValidator(rxCbu))
 

@@ -10,19 +10,23 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         super(ModeloDebito, self).__init__()
 
         self.__esquemaDebitos = {
-            'legajo_afiliado' : {'type' : 'integer', 'maxlength' : 8 },
-            'id_banco' : {'type' : 'integer', 'maxlength' : 8 },
-            'cbu' : { 'type': 'integer', 'maxlength' : 22},
-
-#Importado de ModeloDescuentos
             'id' : {'type' : 'integer', 'maxlength' : 32 },
-            'mes_descuento' : {'type' : 'date' },
-            'proveedor_id' : { 'type': 'integer', 'maxlength' : 16},
-            'cuota_actual' : {'type' : 'integer', 'maxlength' : 2 },
-            'total_cuotas' : {'type' : 'integer', 'maxlength' : 2 },
-            'fecha_carga_actual' : {'type' : 'date' },
+            'legajo_afiliado' : { 'type' : 'string', 'maxlength' : 22 },
+            'fecha_descuento' : { 'type' : 'date' },
+            'fecha_carga_actual' : { 'type' : 'date' },
+            'proveedor_id' : {  'type': 'integer' },
+            'cuota_actual' : { 'type' : 'integer' },
+            'total_cuotas' : { 'type' : 'integer' },
+            'importe_actual' : { 'type' : 'integer' },
+            'importe_total' : { 'type' : 'integer' }
+
         }
 
 
     def guardarDebito(self, debito):
-        self.__querier.insertarElemento('debitos', debito)
+        print(debito['total_cuotas'])
+
+        for cuota_actual in range(debito['total_cuotas']): # El 1 indica desde que numero arrancar
+            debito['cuota_actual'] = cuota_actual + 1
+            print(debito)
+            self.__querier.insertarElemento('debitos', debito)
