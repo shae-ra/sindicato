@@ -38,6 +38,9 @@ class CargaDebito(QtWidgets.QWidget):
 
 		self.v_carga.btn_confirmar.clicked.connect(self.getDebito)
 
+		self.v_carga.deb_total_cuotas.textChanged.connect(self.__calcularTotalACobrar)
+		self.v_carga.deb_importe_cuota.textChanged.connect(self.__calcularTotalACobrar)
+
 	def guardarDebito(self):
 		debito = self.getDebito()
 		self.model.guardarDebito(debito)
@@ -61,3 +64,15 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def showEvent(self, event):
 		self.model_prov.verListaProveedores()
+
+	def __calcularTotalACobrar(self):
+		cantidad_cuotas = 0
+		importe = 0
+		try:
+			cantidad_cuotas = int(self.v_carga.deb_total_cuotas.text())
+			importe = int(self.v_carga.deb_importe_cuota.text())
+		except ValueError:
+			total_a_cobrar = 0
+		total_a_cobrar = cantidad_cuotas * importe
+
+		self.v_carga.deb_importe_total.setText(str(total_a_cobrar))
