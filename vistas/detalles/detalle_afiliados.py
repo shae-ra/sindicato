@@ -28,7 +28,6 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	def __init__(self):
 		QWidget.__init__(self)
 
-		rxCbu = QRegExp("[0-9]{22}")
 
 
 		# Importamos la vista "detalleAfiliados" y la alojamos dentro de la variable "vistaDetalle"
@@ -38,7 +37,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
 		self.v_carga = carga_debito.CargaDebito(self)
 
-		self.vd_afiliado.af_cbu.setValidator(QtGui.QRegExpValidator(rxCbu))
+		self.setRegex()
 
 		self.model = ModeloAfiliado(parent = self)
 		self.model_debito = ModeloDebito(propiedades = [
@@ -46,7 +45,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			"legajo_afiliado",
 			"fecha_descuento",
 			"cuota_actual",
-			"total_cuotas"			
+			"total_cuotas"
 			])
 
 		self.vd_afiliado.tbl_debitos.setModel(self.model_debito)
@@ -207,3 +206,39 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	def keyPressEvent(self, event):
 		if event.key() == Qt.Key_Escape:
 			self.close()
+
+	def setRegex(self):
+		rxCbu = QRegExp("[0-9]{22}")
+		rxLegajo = QRegExp("[0-9]{8}")
+		rxDni = QRegExp("\d{8}")
+		rxCuil = QRegExp("[0-9]{11}")
+		rxNombreApellido = QRegExp("\D{50}")
+		rxCalle = QRegExp("\D{50}")
+		rxAltura = QRegExp("\d{8}")
+		rxPiso = QRegExp(".{10}")
+		rxDepto = QRegExp(".{4}")
+		rxCodPostal = QRegExp(".{20}")
+		rxBarrio = QRegExp("\D{30}")
+		rxTelefono = QRegExp("[\d\s()-]{20}")
+		rxEmail = QRegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}")
+		rxLugarTrabajo = QRegExp("\D{40}")
+		rxJerarquia = QRegExp("\D{40}")
+
+		self.vd_afiliado.af_cbu.setValidator(QtGui.QRegExpValidator(rxCbu))
+		self.vd_afiliado.af_apellido.setValidator(QtGui.QRegExpValidator(rxNombreApellido))
+		self.vd_afiliado.af_legajo.setValidator(QtGui.QRegExpValidator(rxLegajo))
+		self.vd_afiliado.af_dni.setValidator(QtGui.QRegExpValidator(rxDni))
+		self.vd_afiliado.af_nombre.setValidator(QtGui.QRegExpValidator(rxNombreApellido))
+		self.vd_afiliado.af_cuil.setValidator(QtGui.QRegExpValidator(rxCuil))
+		self.vd_afiliado.af_calle.setValidator(QtGui.QRegExpValidator(rxCalle))
+		self.vd_afiliado.af_altura.setValidator(QtGui.QRegExpValidator(rxAltura))
+		self.vd_afiliado.af_piso.setValidator(QtGui.QRegExpValidator(rxPiso))
+		self.vd_afiliado.af_depto.setValidator(QtGui.QRegExpValidator(rxDepto))
+		self.vd_afiliado.af_codigo_postal.setValidator(QtGui.QRegExpValidator(rxCodPostal))
+		self.vd_afiliado.af_barrio.setValidator(QtGui.QRegExpValidator(rxBarrio))
+		self.vd_afiliado.af_tel_laboral.setValidator(QtGui.QRegExpValidator(rxTelefono))
+		self.vd_afiliado.af_tel_particular.setValidator(QtGui.QRegExpValidator(rxTelefono))
+		self.vd_afiliado.af_celular.setValidator(QtGui.QRegExpValidator(rxTelefono))
+		self.vd_afiliado.af_email.setValidator(QtGui.QRegExpValidator(rxEmail))
+		self.vd_afiliado.af_lugar_trabajo.setValidator(QtGui.QRegExpValidator(rxLugarTrabajo))
+		self.vd_afiliado.af_jerarquia.setValidator(QtGui.QRegExpValidator(rxJerarquia))
