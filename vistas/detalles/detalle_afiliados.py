@@ -41,11 +41,12 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		self.model = ModeloAfiliado(parent = self)
 		self.model_debito = ModeloDebito(propiedades = [
-			"id",
-			"legajo_afiliado",
 			"fecha_descuento",
+			"proveedor_id",
+			"importe_actual",
 			"cuota_actual",
-			"total_cuotas"
+			"total_cuotas",
+			"fecha_carga_inicial"
 			])
 
 		self.vd_afiliado.tbl_debitos.setModel(self.model_debito)
@@ -212,7 +213,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		rxLegajo = QRegExp("[0-9]{8}")
 		rxDni = QRegExp("\d{8}")
 		rxCuil = QRegExp("[0-9]{11}")
-		rxNombreApellido = QRegExp("\D{50}")
+		rxNombreApellido = QRegExp("[A-Z\s]{50}")
 		rxCalle = QRegExp("\D{50}")
 		rxAltura = QRegExp("\d{8}")
 		rxPiso = QRegExp(".{10}")

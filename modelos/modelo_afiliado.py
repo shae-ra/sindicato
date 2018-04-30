@@ -94,15 +94,17 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             # un registro con este legajo, por lo que se usar actualizarElemento
             # en lugar de insertarElemento
             self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", afiliado['legajo'])])
+            self.verListaAfiliados()
 
         else:
             self.__querier.insertarElemento('afiliados', afiliado)
-
+            self.verListaAfiliados()
 
         return True
 
     def borrarAfiliado(self, tabla, idElem):
         self.__querier.borrarElemento(tabla, 'legajo', idElem)
+        self.verListaAfiliados()
 
     def validarPropiedades(self, propiedades):
 # ahora mi función se asegura que las propieades existan en la lista, debería encontrar si hay alguna forma mas elegante de hacer esto

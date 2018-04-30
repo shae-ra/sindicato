@@ -2,6 +2,8 @@ from PyQt5 import QtCore
 from libs.db import querier
 import cerberus
 
+from datetime import date
+
 class ModeloDebito(QtCore.QAbstractTableModel):
     __querier = querier.Querier()
     __v = cerberus.Validator()
@@ -13,7 +15,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             'id' : {'type' : 'integer', 'maxlength' : 32 },
             'legajo_afiliado' : { 'type' : 'string', 'maxlength' : 22 },
             'fecha_descuento' : { 'type' : 'date' },
-            'fecha_carga_actual' : { 'type' : 'date' },
+            'fecha_carga_inicial' : { 'type' : 'date' },
             'proveedor_id' : {  'type': 'integer' },
             'cuota_actual' : { 'type' : 'integer' },
             'total_cuotas' : { 'type' : 'integer' },
@@ -26,7 +28,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             'id',
             'legajo_afiliado',
             'fecha_descuento',
-            'fecha_carga_actual',
+            'fecha_carga_inicial',
             'proveedor_id',
             'cuota_actual',
             'total_cuotas',
@@ -38,11 +40,21 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         self.__listaDebitos = []
 
     def guardarDebito(self, debito):
-        print(debito['total_cuotas'])
+        # print(debito['total_cuotas'])
+        print(debito)
+        for indexCuota in range(debito['total_cuotas']): # El 1 indica desde que numero arrancar
+            debito['cuota_actual'] = indexCuota + 1
 
-        for cuota_actual in range(debito['total_cuotas']): # El 1 indica desde que numero arrancar
-            debito['cuota_actual'] = cuota_actual + 1
-            print(debito)
+            newMonth = debito['fecha_descuento'].month + indexCuota
+            if newMonth > 12:
+                newYear = debito['fecha_descuento'].year + 1
+                newMonth = debito['fecha_descuento'].month % 12
+                newDate = date(newYear, newMonth, 1)
+            else:
+                newDate = date(debito['fecha_descuento'].year, newMonth, 1)
+
+            debito['fecha_descuento'] = newDate
+
             self.__querier.insertarElemento('debitos', debito)
 
     def verTablaDebitos(self, condiciones):
@@ -51,8 +63,31 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             tabla = 'debitos',
             condiciones = condiciones
         )
+
+        self.__listaDebitos = self.__toList()
+        self._setDates(2)
+
         self.layoutChanged.emit()
 
+    def __incrementMonth(self, date):
+        if date.month() < 12:
+            incrementedDate = date(date.year(), date.mont() + 1 , date.day())
+        else:
+            incrementedDate = date(date.year() + 1, 0, date.day())
+        print("DEBUG - Incremented Date : {}".format(incrementedDate))
+
+        return incrementedDate
+
+    def __toList(self):
+        listaDebitos = []
+        for index, debito in enumerate(self.__listaDebitos):
+            listaDebitos.append(list(debito))
+
+        return listaDebitos
+
+    def _setDates(self, dateIndex):
+        for debito in self.__listaDebitos:
+            debito[dateIndex] = QtCore.QDate(debito[dateIndex])
 
     def validarPropiedades(self, propiedades):
         if propiedades:
