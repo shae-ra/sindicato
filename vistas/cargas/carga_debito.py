@@ -37,6 +37,7 @@ class CargaDebito(QtWidgets.QWidget):
 		self.model = ModeloDebito()
 
 		self.v_carga.prov_id.setModel(self.model_prov)
+		self.v_carga.prov_id.currentIndexChanged.connect(self.__disableComision)
 
 		self.v_carga.btn_confirmar.clicked.connect(self.guardarDebito)
 
@@ -85,6 +86,12 @@ class CargaDebito(QtWidgets.QWidget):
 		total_a_cobrar = cantidad_cuotas * importe
 
 		self.v_carga.deb_importe_total.setText(str(total_a_cobrar))
+
+	def __disableComision(self):
+		if int(self.v_carga.prov_id.currentText().split("-")[0]) == 7:
+			self.v_carga.deb_orden.setEnabled(True)
+		else:
+			self.v_carga.deb_orden.setEnabled(False)
 
 	def keyPressEvent(self, event):
 		if event.key() == Qt.Key_Escape:

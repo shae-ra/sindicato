@@ -65,7 +65,8 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         )
 
         self.__listaDebitos = self.__toList()
-        self._setDates(2)
+        self._setDates(0)
+        self._setDates(5)
 
         self.layoutChanged.emit()
 
