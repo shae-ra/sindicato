@@ -38,11 +38,13 @@ class CargaDebito(QtWidgets.QWidget):
 
 		self.v_carga.prov_id.setModel(self.model_prov)
 		self.v_carga.prov_id.currentIndexChanged.connect(self.__disableComision)
+		self.v_carga.prov_id.currentIndexChanged.connect(self.setNumeroDeOrden)
 
 		self.v_carga.btn_confirmar.clicked.connect(self.guardarDebito)
 
 		self.v_carga.deb_total_cuotas.textChanged.connect(self.__calcularTotalACobrar)
 		self.v_carga.deb_importe_cuota.textChanged.connect(self.__calcularTotalACobrar)
+
 
 	def guardarDebito(self):
 		debito = self.getDebito()
@@ -74,6 +76,40 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def showEvent(self, event):
 		self.model_prov.verListaProveedores()
+
+	def setNumeroDeOrden(self):
+		numeroDeOrden = self.getNumeroDeOrden()
+
+		self.v_carga.deb_orden.setText(numeroDeOrden)
+
+	def getNumeroDeOrden(self):
+		proveedor = int(self.v_carga.prov_id.currentText().split("-")[0])
+		fecha = date.today()
+
+		numero = self.model.consultarUltimoNumeroDeOrden(proveedor, fecha)
+
+		fecha = self.__formatearFecha(fecha)
+		proveedor = self.__formatearIdProveedor(proveedor)
+		numero = self.__formatearNumeroOrden(numero)
+
+		numeroDeOrden = fecha + proveedor + numero
+		return numeroDeOrden
+
+	def __formatearFecha(self, fecha):
+		fecha = fecha.strftime('%d%m%Y')
+		return fecha
+
+	def __formatearIdProveedor(self, idProveedor):
+		idProveedor = str(idProveedor)
+		while len(idProveedor) < 3:
+			idProveedor = '0' + idProveedor
+		return idProveedor
+
+	def __formatearNumeroOrden(self, numero):
+		numero = str(numero)
+		while len(numero) < 4:
+			numero = '0' + numero
+		return numero
 
 	def __calcularTotalACobrar(self):
 		cantidad_cuotas = 0

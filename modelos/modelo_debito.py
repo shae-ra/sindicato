@@ -100,6 +100,23 @@ class ModeloDebito(QtCore.QAbstractTableModel):
                     print("Propiedad '{}' es inválida, no se agregará".format(propiedad))
             return prop
 
+    def consultarUltimoNumeroDeOrden(self, proveedor, fecha):
+        respuesta = self.__querier.traerElementos(
+            tabla = "debitos",
+            campos = ["n_orden"],
+            condiciones = [
+                ('proveedor_id' ,'=' , proveedor),
+                ('fecha_carga_inicial' ,'=' , fecha),
+            ],
+            limite = 1
+        )
+
+        if respuesta:
+            return respuesta[0][-4]
+
+        else:
+            return 0
+
     def rowCount(self, parent):
         return len(self.__listaDebitos)
 
