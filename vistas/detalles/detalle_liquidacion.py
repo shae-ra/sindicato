@@ -8,7 +8,7 @@
 import sys
 # Importamos las herramientas de PyQT que vamos a utilizar
 from PyQt5 import QtWidgets, uic, QtGui
-# Importamos los elementos que se encuentran dentro del diseñador 
+# Importamos los elementos que se encuentran dentro del diseñador
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget, QStackedWidget
 # Importamos los archivos .py necesarios de la carpeta: detalles
 from vistas.liquidadores import liquidador_afiliados, liquidador_jubilados
@@ -23,9 +23,9 @@ from PyQt5 import uic
 #Creacion de la clase detalleAfiliados
 class DetalleLiquidacion(QtWidgets.QWidget):
 	#Inicializacion del Objeto QWidget
-	def __init__(self):  
-		QWidget.__init__(self)  
-		
+	def __init__(self):
+		QWidget.__init__(self)
+
 		#Importamos la vista "detalleAfiliados" y la alojamos dentro de la variable "vistaDetalle"
 		widgetliquidacion = uic.loadUi("gui/detalles/detalleLiquidacion.ui", self)
 
@@ -47,6 +47,7 @@ class DetalleLiquidacion(QtWidgets.QWidget):
 		self.pushButton_activos.clicked.connect(self.seleccionarActivos)
 		self.pushButton_jubilados.clicked.connect(self.seleccionarJubilados)
 
+		self.seleccionarActivos()
 
 	#===========================
 	#DEFINICION DE LAS FUNCIONES
