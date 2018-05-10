@@ -12,13 +12,10 @@ Clonar el repositorio
 git clone https://github.com/claudio2489/sindicato.git
 ```
 
-Actualizar la dependencia en libs/db
+Pasar a la rama Dev
 ```
-cd libs/db
-git pull
+git branch dev
 ```
-Acá va a preguntar por usuario y contraseña para oestedev.com, debido a que es un repositorio privado.
-Autenticarse y la librería podrá actualizarse
 
 *Nota*:
 
