@@ -74,6 +74,7 @@ CREATE TABLE servicios_afiliado(
 
 CREATE TABLE debitos(
     id int UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	id_temporal int UNSIGNED
     legajo_afiliado varchar(22) NOT NULL,
     fecha_descuento date, # (Mes de descuento)
 		fecha_carga_inicial date, # FIJARSE SI FUNCIONA
@@ -83,7 +84,9 @@ CREATE TABLE debitos(
     total_cuotas int(2),
 		importe_actual decimal(8,2),
 		importe_total decimal(8,2),
-		n_credito varchar(22)
+		n_credito varchar(22),
+	estado varchar(22),
+	motivo varchar(22)
 
 );
 
