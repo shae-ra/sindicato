@@ -68,7 +68,7 @@ class CargaDebito(QtWidgets.QWidget):
 			"total_cuotas" : int(self.v_carga.deb_total_cuotas.text()),
 			"importe_actual" : int(self.v_carga.deb_importe_cuota.text()),
 			"importe_total" : int(self.v_carga.deb_importe_total.text()),
-			"n_credito" : self.v_carga.deb_orden.text()
+			"n_orden" : self.v_carga.deb_orden.text()
 			}
 
 			print(debito)

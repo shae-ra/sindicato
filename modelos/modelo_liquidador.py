@@ -19,7 +19,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             'fecha_descuento','fecha_carga_inicial',
             'proveedor_id','cuota_actual',
             'total_cuotas','importe_actual',
-            'importe_total','n_credito',
+            'importe_total','n_orden',
         ]
 
         if propiedades:

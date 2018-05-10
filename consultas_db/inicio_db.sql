@@ -84,7 +84,7 @@ CREATE TABLE debitos(
     total_cuotas int(2),
 		importe_actual decimal(8,2),
 		importe_total decimal(8,2),
-		n_credito varchar(22),
+		n_orden varchar(22),
 	estado varchar(22),
 	motivo varchar(22)
 

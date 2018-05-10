@@ -41,11 +41,11 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
     def guardarDebito(self, debito):
         # print(debito['total_cuotas'])
-        print(debito)
+        mes = debito['fecha_descuento'].month
         for indexCuota in range(debito['total_cuotas']): # El 1 indica desde que numero arrancar
             debito['cuota_actual'] = indexCuota + 1
 
-            newMonth = debito['fecha_descuento'].month + indexCuota
+            newMonth = mes + indexCuota
             if newMonth > 12:
                 newYear = debito['fecha_descuento'].year + 1
                 newMonth = debito['fecha_descuento'].month % 12
