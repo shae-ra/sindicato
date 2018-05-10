@@ -573,11 +573,6 @@ background-color:#FFFFFF
            </item>
            <item>
             <property name="text">
-             <string>SAC-Junio</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
              <string>Julio</string>
             </property>
            </item>
@@ -604,11 +599,6 @@ background-color:#FFFFFF
            <item>
             <property name="text">
              <string>Diciembre</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>SAC-Diciembre</string>
             </property>
            </item>
           </widget>
@@ -852,6 +842,9 @@ background-color:#FFFFFF
              <bold>true</bold>
             </font>
            </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
           </widget>
          </item>
          <item row="2" column="0">
@@ -868,6 +861,9 @@ background-color:#FFFFFF
              <weight>75</weight>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
            </property>
           </widget>
          </item>
@@ -926,7 +922,7 @@ color: #000000;
 }</string>
            </property>
            <property name="text">
-            <string>Exportar Reporte </string>
+            <string>Exportar Reporte  (Ctrl+E)</string>
            </property>
            <property name="icon">
             <iconset>
@@ -938,6 +934,9 @@ color: #000000;
              <height>20</height>
             </size>
            </property>
+           <property name="shortcut">
+            <string>Ctrl+E</string>
+           </property>
           </widget>
          </item>
         </layout>
@@ -947,7 +946,7 @@ color: #000000;
     </widget>
    </item>
    <item row="0" column="1">
-    <widget class="QTableView" name="tableView">
+    <widget class="QTableView" name="tbl_liq">
      <property name="font">
       <font>
        <pointsize>10</pointsize>
@@ -959,6 +958,33 @@ color: #000000;
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>liq_fecha</tabstop>
+  <tabstop>liq_mes</tabstop>
+  <tabstop>liq_anio</tabstop>
+  <tabstop>btn_procesar_liq</tabstop>
+  <tabstop>tbl_liq</tabstop>
+  <tabstop>liq_cantidad_total</tabstop>
+  <tabstop>liq_importe_total</tabstop>
+  <tabstop>btn_exportar</tabstop>
+ </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>liq_anio</sender>
+   <signal>returnPressed()</signal>
+   <receiver>btn_procesar_liq</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>114</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>177</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
