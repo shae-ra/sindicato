@@ -69,6 +69,7 @@ class ListaAfiliados(QtWidgets.QWidget):
 
 	def buscarAfiliados(self):
 		busqueda = self.ln_buscar.text()
+		orden = ("apellido, nombre","ASC")
 		condiciones = []
 		try:
 			busqueda = int(busqueda)
@@ -76,4 +77,4 @@ class ListaAfiliados(QtWidgets.QWidget):
 		except:
 			condiciones = [("nombre LIKE '%{}%' OR apellido".format(busqueda), "LIKE", "'%{}%'".format(busqueda))]
 
-		self.model.verListaAfiliados(condiciones)
+		self.model.verListaAfiliados(condiciones = condiciones, orden = orden)

@@ -42,11 +42,12 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
 # El legajo hay que modificarlo porque tiene auto-incremento
 
 # Legajo : 1, dni : 37537040 es lo que tiene que aparecer cuando uso esta función
-    def verListaAfiliados(self, condiciones = None):
+    def verListaAfiliados(self, condiciones = None, orden = None):
         self.__listaAfiliados = self.__querier.traerElementos(
             campos = self.__propiedades,
             tabla = 'afiliados',
-            condiciones = condiciones)
+            condiciones = condiciones,
+            orden = orden)
         if self.__listaAfiliados:
             self.layoutChanged.emit()
             return True
