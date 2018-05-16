@@ -30,7 +30,8 @@
     <widget class="QGroupBox" name="groupBox">
      <property name="styleSheet">
       <string notr="true">#groupBox{
-background-color: #FFFFFF}</string>
+background-color: #F8F7F6
+}</string>
      </property>
      <property name="title">
       <string/>
@@ -53,20 +54,13 @@ background-color: #FFFFFF}</string>
         <property name="font">
          <font>
           <family>Arial</family>
-          <pointsize>8</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">#pushButton_activos{
-background-color:#F0F5EF;
-color: #000000;
-}
-#pushButton_activos:hover{
-background-color:#F0F5EF;
-color: #000000;
-}</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>ACTIVOS</string>
@@ -88,7 +82,7 @@ color: #000000;
         <property name="font">
          <font>
           <family>Arial</family>
-          <pointsize>8</pointsize>
+          <pointsize>9</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
@@ -135,20 +129,13 @@ color: #000000;
         <property name="font">
          <font>
           <family>Arial</family>
-          <pointsize>8</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">#pushButton_jubilados{
-background-color:#F0F5EF;
-color: #000000;
-}
-#pushButton_jubilados:hover{
-background-color:#F0F5EF;
-color: #000000;
-}</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>JUBILADOS</string>

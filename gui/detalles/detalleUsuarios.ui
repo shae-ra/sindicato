@@ -496,7 +496,7 @@
     <widget class="QGroupBox" name="groupBox">
      <property name="styleSheet">
       <string notr="true">#groupBox{
-background-color: #F0F5EF
+background-color: #F8F7F6
 }</string>
      </property>
      <property name="title">
@@ -514,10 +514,7 @@ background-color: #F0F5EF
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">#label_13{
-background-color:#5DADE2  ;
-color: #FFFFFF ; 
-}</string>
+         <string notr="true"/>
         </property>
         <property name="frameShape">
          <enum>QFrame::Box</enum>
