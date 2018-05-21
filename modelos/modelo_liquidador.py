@@ -1,5 +1,7 @@
 from PyQt5 import QtCore
 from libs.db import querier
+from libs import procesador
+from datetime import date
 import cerberus
 
 class ModeloLiquidador(QtCore.QAbstractTableModel):
@@ -15,11 +17,9 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         if parent:
             self.__parent = parent
         self.__propiedades = [
-            'id','legajo_afiliado',
-            'fecha_descuento','fecha_carga_inicial',
-            'proveedor_id','cuota_actual',
-            'total_cuotas','importe_actual',
-            'importe_total','n_orden',
+            'debitos.id', 'operacion', 'fecha_descuento',
+            'legajo_afiliado', 'banco', 'cbu', 'importe_actual',
+            'cuit', 'movimiento', 'empresa'
         ]
 
         if propiedades:
@@ -28,31 +28,72 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         self.__listaDebitos = [] # Los valores de prueba los saco del archivo fuente
         self.__afiliado = []
 
-    def verListaLiquidacion(self, condiciones = None):
+        self.setConfig(banco = "P", cuit = "30561600194", empresa = "SIND T MUN MERLO")
+
+    def setConfig(self, banco, cuit, empresa):
+        self.operacion = "71"
+        self.banco = banco
+        self.cuit = cuit
+        self.empresa = empresa
+
+    def setPrefijoOrden(self, prefijo):
+        if self.jubilado:
+            prefijo = "1400008" # CONSULTAR CON CLAUDIO!
+        else:
+            prefijo = "14"
+        self.prefijoOrden = prefijo
+
+    def setTipoAfiliado(self, tipo):
+        if tipo == "ACTIVO":
+            self.jubilado = False
+        else:
+            self.jubilado = True
+
+    def verListaLiquidacion(self, fechaCobro, condiciones = None):
         self.__listaDebitos = self.__querier.traerElementos(
-            campos = self.__propiedades,
+            campos = ['debitos.id', 'legajo_afiliado', 'cbu', 'importe_actual'],
             tabla = 'debitos',
+            uniones = [("afiliados", "legajo_afiliado = afiliados.legajo")],
             condiciones = condiciones)
+        fechaCobro.strftime("%d%m%Y")
 
         for index,debito in enumerate(self.__listaDebitos):
             debito = list(debito)
+
+            debito.insert(1, self.operacion)
+            debito.insert(2, fechaCobro)
+            debito.insert(4, self.banco)
+            debito.insert(7, self.cuit)
+            debito.insert(8, index)
+            debito.insert(9, self.empresa)
+
             self.__listaDebitos[index] = debito
 
-        self.__setTotales()
 
-        self.__toString(1)
-        self.__toString(3)
+        self.__setTotales(6)
+
+        self.__toString(2)
+        self.__toString(6)
+
 
         if self.__listaDebitos:
             self.layoutChanged.emit()
             return True
         return False
 
-    def __setTotales(self):
+    def liquidar(self, fecha):
+
+        lineas = ""
+
+        for index, debito in enumerate(self.__listaDebitos, 1):
+            debito["id_temporal"] = index
+            lineas += procesarLinea(debito, fecha)
+
+    def __setTotales(self, indexImporte):
         self.total_debitos = len(self.__listaDebitos)
         self.importe_total = 0
         for debito in self.__listaDebitos:
-            self.importe_total += debito[3]
+            self.importe_total += debito[indexImporte]
 
     def __toString(self, index):
         for debito in self.__listaDebitos:

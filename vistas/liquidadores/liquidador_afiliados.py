@@ -22,9 +22,9 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		self.vistaLiqAfiliado.liq_fecha.setDate(date.today())
 
 		self.model = ModeloLiquidador(propiedades = [
-			'id', 'fecha_descuento',
-			'proveedor_id', 'importe_actual',
-			'cuota_actual', 'total_cuotas']
+            'debitos.id', 'operacion', 'fecha_descuento',
+            'legajo_afiliado', 'banco', 'cbu', 'importe_actual',
+            'cuit', 'movimiento', 'empresa']
 			)
 		# FALTAN 2 PROPIEDADES QUE NUNCA SE CREARON EN LA BASE DE DATOS. OTRO ERROR DE DISEÑO.
 
@@ -33,10 +33,13 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		self.vistaLiqAfiliado.btn_procesar_liq.clicked.connect(self.buscarDebitosALiquidar)
 		self.vistaLiqAfiliado.btn_procesar_liq.clicked.connect(self.setTotales)
 
-	def getFechaCobro(self):
-		diaCobro = self.vistaLiqAfiliado.liq_fecha.date()
+		self.vistaLiqAfiliado.btn_exportar.clicked.connect(self.procesarDocumento)
 
-		return diaCobro
+	def getFechaCobro(self):
+		fechaCobro = self.vistaLiqAfiliado.liq_fecha.date()
+		fechaCobro = date(fechaCobro.year(), fechaCobro.month(), fechaCobro.day())
+
+		return fechaCobro
 
 	def getFechaLiquidacion(self):
 		mesALiquidar = self.vistaLiqAfiliado.liq_mes.currentIndex() + 1
@@ -46,11 +49,12 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		return fechaLiquidacion
 
 	def buscarDebitosALiquidar(self):
-		fecha = self.getFechaLiquidacion()
-		self.model.verListaLiquidacion(
+		fechaLiquidacion = self.getFechaLiquidacion()
+		fechaCobro = self.getFechaCobro()
+		self.model.verListaLiquidacion(fechaCobro,
 			condiciones = [
-			("YEAR(fecha_descuento)", "=", fecha.year),
-			("MONTH(fecha_descuento)", "=", fecha.month)
+			("YEAR(fecha_descuento)", "=", fechaLiquidacion.year),
+			("MONTH(fecha_descuento)", "=", fechaLiquidacion.month)
 			])
 
 		self.vistaLiqAfiliado.tbl_liq.setColumnHidden(0, True)
@@ -58,3 +62,14 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 	def setTotales(self):
 		self.vistaLiqAfiliado.liq_cantidad_total.setText(str(self.model.total_debitos))
 		self.vistaLiqAfiliado.liq_importe_total.setText(str(self.model.importe_total))
+
+	def procesarDocumento(self):
+		# Abre ventana de dialogo para guardar archivo .ebt
+		# El nombre por defecto es la fecha de liquidacion
+		# Procesa todos los debitos en la ventana
+		# Guarda cada linea procesada en el archivo
+		# Guarda el archivo en formato .ebt
+		# Actualiza la base de datos con id_temporal para todos los debitos
+
+		fecha = self.vistaLiqAfiliado.liq_fecha.date()
+		self.model.liquidar(fecha)
