@@ -48,7 +48,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             newMonth = mes + indexCuota
             if newMonth > 12:
                 newYear = debito['fecha_descuento'].year + 1
-                newMonth = debito['fecha_descuento'].month % 12
+                newMonth = debito['fecha_descuento'].month % 12 + 1
                 newDate = date(newYear, newMonth, 1)
             else:
                 newDate = date(debito['fecha_descuento'].year, newMonth, 1)
