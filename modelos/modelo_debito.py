@@ -72,7 +72,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
     def __incrementMonth(self, date):
         if date.month() < 12:
-            incrementedDate = date(date.year(), date.mont() + 1 , date.day())
+            incrementedDate = date(date.year(), date.month() + 1 , date.day())
         else:
             incrementedDate = date(date.year() + 1, 0, date.day())
         print("DEBUG - Incremented Date : {}".format(incrementedDate))
