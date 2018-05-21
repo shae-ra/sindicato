@@ -4,7 +4,7 @@ CREATE TABLE afiliados (
 	legajo varchar(22) NOT NULL PRIMARY KEY, # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
     dni varchar(8) UNIQUE KEY,
     tipo_afiliado varchar(20) ,
-		activo smallint(1),
+	activo smallint(1),
     cuil varchar(11) UNIQUE KEY,
     apellido varchar(50), # Podemos poner 10 mas? por las dudas!! no recuerdo bien, pero creo que hay gente con doble apellido y largos encima. Por ejemplo: Lagos fuentealba Cristian Juan Jose
     nombre varchar(50), # Podemos poner 10 mas? por las dudas!! no recuerdo bien, pero creo que hay gente con doble apellido y largos encima. Por ejemplo: Lagos fuentealba Cristian Juan Jose
@@ -23,7 +23,7 @@ CREATE TABLE afiliados (
 	telefono_laboral varchar(20),  # El telefono deberia ser un varchar porque suele tener este formato: (0220)482-8844
     celular varchar(20), # El celular deberia ser un varchar porque suele tener este formato: 11-6030-0122
     email varchar(80),
-	lugar_trabajo varchar(40),
+	lugar_trabajo varchar(100),
 	jerarquia varchar(40),
 	fecha_ingreso date,
 	antiguedad int(2),
@@ -74,17 +74,16 @@ CREATE TABLE servicios_afiliado(
 
 CREATE TABLE debitos(
     id int UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	id_temporal int UNSIGNED
+	id_temporal int UNSIGNED,
     legajo_afiliado varchar(22) NOT NULL,
     fecha_descuento date, # (Mes de descuento)
-		fecha_carga_inicial date, # FIJARSE SI FUNCIONA
-
+	fecha_carga_inicial date, # FIJARSE SI FUNCIONA
     proveedor_id int(8) UNSIGNED NOT NULL,
     cuota_actual int(2),
     total_cuotas int(2),
-		importe_actual decimal(8,2),
-		importe_total decimal(8,2),
-		n_orden varchar(22),
+	importe_actual decimal(8,2),
+	importe_total decimal(8,2),
+	n_orden varchar(22),
 	estado varchar(22),
 	motivo varchar(22)
 
@@ -102,7 +101,7 @@ CREATE TABLE proveedores(
     calle varchar(80),
     altura int(8) DEFAULT NULL,
     localidad varchar(50),
-		telefono varchar(20),
+	telefono varchar(20),
     celular varchar(20),
     email varchar(80),
     cuit varchar(11) UNIQUE KEY,
