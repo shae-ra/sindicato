@@ -6,6 +6,7 @@ from PyQt5 import QtWidgets, uic, QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
+import xlwt
 from datetime import date
 
 from modelos.modelo_liquidador import ModeloLiquidador
@@ -71,5 +72,40 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		# Guarda el archivo en formato .ebt
 		# Actualiza la base de datos con id_temporal para todos los debitos
 
-		fecha = self.vistaLiqAfiliado.liq_fecha.date()
-		self.model.liquidar(fecha)
+		# fecha = self.vistaLiqAfiliado.liq_fecha.date()
+		# self.model.liquidar(fecha)
+
+		self.handleSaveEbt()
+
+	def handleSaveXls(self):
+		path = QtWidgets.QFileDialog.getSaveFileName(
+			None, 'Save File', '', 'Excel(*.xls)')
+
+		if not path[0]:
+			return
+		wb = xlwt.Workbook()
+		ws = wb.add_sheet('documento')
+
+	def handleSaveEbt(self):
+		path = QtWidgets.QFileDialog.getSaveFileName(
+			None, 'Save File', '', 'Electronic Benefits Transfer(*.ebt)'
+		)
+
+		if not path[0]:
+			return
+
+		ebt_file = open(path[0], "w")
+
+		for row in range(self.model.rowCount(None)):
+			line = ""
+			item = self.model.listaDebitos[row]
+			line = "{}{}{}                  {}{}{}{}CUOTAS 014{}                                        {}\n".format(
+				item[1], item[2],
+				item[3], item[4], item[5],
+				item[6], item[7], item[8],
+				item[9]
+			)
+			ebt_file.write(line)
+
+		ebt_file.close()
+		# ebt_file.save(path[0])

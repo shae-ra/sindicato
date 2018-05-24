@@ -25,7 +25,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         if propiedades:
             self.__propiedades = self.validarPropiedades(propiedades)
 
-        self.__listaDebitos = [] # Los valores de prueba los saco del archivo fuente
+        self.listaDebitos = [] # Los valores de prueba los saco del archivo fuente
         self.__afiliado = []
 
         self.setConfig(banco = "P", cuit = "30561600194", empresa = "SIND T MUN MERLO")
@@ -50,14 +50,14 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             self.jubilado = True
 
     def verListaLiquidacion(self, fechaCobro, condiciones = None):
-        self.__listaDebitos = self.__querier.traerElementos(
+        self.listaDebitos = self.__querier.traerElementos(
             campos = ['debitos.id', 'legajo_afiliado', 'cbu', 'importe_actual'],
             tabla = 'debitos',
             uniones = [("afiliados", "legajo_afiliado = afiliados.legajo")],
             condiciones = condiciones)
         fechaCobro.strftime("%d%m%Y")
 
-        for index,debito in enumerate(self.__listaDebitos):
+        for index,debito in enumerate(self.listaDebitos):
             debito = list(debito)
 
             debito.insert(1, self.operacion)
@@ -67,7 +67,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             debito.insert(8, index)
             debito.insert(9, self.empresa)
 
-            self.__listaDebitos[index] = debito
+            self.listaDebitos[index] = debito
 
 
         self.__setTotales(6)
@@ -76,7 +76,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         self.__toString(6)
 
 
-        if self.__listaDebitos:
+        if self.listaDebitos:
             self.layoutChanged.emit()
             return True
         return False
@@ -85,18 +85,18 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
 
         lineas = ""
 
-        for index, debito in enumerate(self.__listaDebitos, 1):
+        for index, debito in enumerate(self.listaDebitos, 1):
             debito["id_temporal"] = index
             lineas += procesarLinea(debito, fecha)
 
     def __setTotales(self, indexImporte):
-        self.total_debitos = len(self.__listaDebitos)
+        self.total_debitos = len(self.listaDebitos)
         self.importe_total = 0
-        for debito in self.__listaDebitos:
+        for debito in self.listaDebitos:
             self.importe_total += debito[indexImporte]
 
     def __toString(self, index):
-        for debito in self.__listaDebitos:
+        for debito in self.listaDebitos:
             debito[index] = str(debito[index])
 
     def validarPropiedades(self, propiedades):
@@ -112,11 +112,11 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
 
 # Estas son las funciones específicas de Qt para las tablas
     def rowCount(self, parent):
-        return len(self.__listaDebitos)
+        return len(self.listaDebitos)
 
     def columnCount(self, parent):
-        if self.__listaDebitos:
-            return len(self.__listaDebitos[0])
+        if self.listaDebitos:
+            return len(self.listaDebitos[0])
         else:
             return 0
 
@@ -128,7 +128,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         if role == QtCore.Qt.DisplayRole:
             row = index.row()
             column = index.column()
-            value = self.__listaDebitos[row][column] # value contiene la lista de listas que contiene los afiliados
+            value = self.listaDebitos[row][column] # value contiene la lista de listas que contiene los afiliados
 
             return value # el valor que retorno es el que aparecería en la tabla
 

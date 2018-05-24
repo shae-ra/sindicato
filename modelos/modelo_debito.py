@@ -37,7 +37,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         ]
         self.__propiedades = self.validarPropiedades(propiedades)
 
-        self.__listaDebitos = []
+        self.listaDebitos = []
 
     def guardarDebito(self, debito):
         # print(debito['total_cuotas'])
@@ -58,13 +58,13 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             self.__querier.insertarElemento('debitos', debito)
 
     def verTablaDebitos(self, condiciones):
-        self.__listaDebitos = self.__querier.traerElementos(
+        self.listaDebitos = self.__querier.traerElementos(
             campos = self.__propiedades,
             tabla = 'debitos',
             condiciones = condiciones
         )
 
-        self.__listaDebitos = self.__toList()
+        self.listaDebitos = self.__toList()
         self._setDates(0)
         self._setDates(5)
 
@@ -81,13 +81,13 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
     def __toList(self):
         listaDebitos = []
-        for index, debito in enumerate(self.__listaDebitos):
+        for index, debito in enumerate(self.listaDebitos):
             listaDebitos.append(list(debito))
 
         return listaDebitos
 
     def _setDates(self, dateIndex):
-        for debito in self.__listaDebitos:
+        for debito in self.listaDebitos:
             debito[dateIndex] = QtCore.QDate(debito[dateIndex])
 
     def validarPropiedades(self, propiedades):
@@ -118,11 +118,11 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             return 0
 
     def rowCount(self, parent):
-        return len(self.__listaDebitos)
+        return len(self.listaDebitos)
 
     def columnCount(self, parent):
-        if self.__listaDebitos:
-            return len(self.__listaDebitos[0])
+        if self.listaDebitos:
+            return len(self.listaDebitos[0])
         else:
             return 0
 
@@ -133,7 +133,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         if role == QtCore.Qt.DisplayRole:
             row = index.row()
             column = index.column()
-            value = self.__listaDebitos[row][column]
+            value = self.listaDebitos[row][column]
             return value
 
     def headerData(self, section, orientation, role):
