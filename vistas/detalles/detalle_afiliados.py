@@ -210,7 +210,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 	def setRegex(self):
 		rxCbu = QRegExp("[0-9]{22}")
-		rxLegajo = QRegExp("[0-9]{8}")
+		rxLegajo = QRegExp("[0-9]{8,8}")
 		rxDni = QRegExp("\d{8}")
 		rxCuil = QRegExp("[0-9]{11}")
 		rxNombreApellido = QRegExp("[A-Z\s]{50}")
