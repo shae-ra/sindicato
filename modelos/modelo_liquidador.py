@@ -1,6 +1,5 @@
 from PyQt5 import QtCore
 from libs.db import querier
-from libs import procesador
 from datetime import date
 import cerberus
 
