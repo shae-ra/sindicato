@@ -110,3 +110,4 @@ venv.bak/
 /__req/
 *.exe
 *.ini
+*.ebt
