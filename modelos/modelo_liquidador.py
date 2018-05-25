@@ -55,7 +55,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             tabla = 'debitos',
             uniones = [("afiliados", "legajo_afiliado = afiliados.legajo")],
             condiciones = condiciones)
-        fechaCobro.strftime("%d%m%Y")
+        fechaCobro = fechaCobro.strftime("%d%m%Y")
 
         for index,debito in enumerate(self.listaDebitos):
             debito = list(debito)

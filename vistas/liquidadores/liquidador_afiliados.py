@@ -55,7 +55,8 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		self.model.verListaLiquidacion(fechaCobro,
 			condiciones = [
 			("YEAR(fecha_descuento)", "=", fechaLiquidacion.year),
-			("MONTH(fecha_descuento)", "=", fechaLiquidacion.month)
+			("MONTH(fecha_descuento)", "=", fechaLiquidacion.month),
+			("cbu", "<>", "''")
 			])
 
 		self.vistaLiqAfiliado.tbl_liq.setColumnHidden(0, True)
@@ -87,8 +88,9 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		ws = wb.add_sheet('documento')
 
 	def handleSaveEbt(self):
+		fechaCobro = self.getFechaCobro()
 		path = QtWidgets.QFileDialog.getSaveFileName(
-			None, 'Save File', '', 'Electronic Benefits Transfer(*.ebt)'
+			None, 'Save File', fechaCobro.strftime("%d%m%Y"), 'Electronic Benefits Transfer(*.ebt)'
 		)
 
 		if not path[0]:
@@ -99,13 +101,18 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		for row in range(self.model.rowCount(None)):
 			line = ""
 			item = self.model.listaDebitos[row]
+			formattedDec = self.formatDec(item[6])
 			line = "{}{}{}                  {}{}{}{}CUOTAS 014{}                                        {}\n".format(
 				item[1], item[2],
 				item[3], item[4], item[5],
-				item[6], item[7], item[8],
+				"{0:010d}".format(formattedDec), item[7], "{0:015d}".format(item[8]),
 				item[9]
 			)
 			ebt_file.write(line)
 
 		ebt_file.close()
 		# ebt_file.save(path[0])
+
+	def formatDec(self, decim):
+		decim = decim.split('.')
+		return int(decim[0] + decim[1])
