@@ -80,13 +80,12 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             return True
         return False
 
-    def liquidar(self, fecha):
-
-        lineas = ""
-
-        for index, debito in enumerate(self.listaDebitos, 1):
-            debito["id_temporal"] = index
-            lineas += procesarLinea(debito, fecha)
+    def actualizarDebito(self, debito, condiciones):
+        self.__querier.actualizarElemento(
+            tabla = "debitos",
+            elemento = debito,
+            condiciones = condiciones
+        )
 
     def __setTotales(self, indexImporte):
         self.total_debitos = len(self.listaDebitos)

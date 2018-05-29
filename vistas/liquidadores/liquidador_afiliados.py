@@ -56,6 +56,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 			condiciones = [
 			("YEAR(fecha_descuento)", "=", fechaLiquidacion.year),
 			("MONTH(fecha_descuento)", "=", fechaLiquidacion.month),
+			("estado", "is", "NULL"),
 			("cbu", "<>", "''")
 			])
 
@@ -109,6 +110,15 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 				item[9]
 			)
 			ebt_file.write(line)
+			condiciones = [
+				("id", "=", item[0])]
+			self.model.actualizarDebito(
+				debito = {
+					'id' : item[0],
+					'id_temporal' : int(item[8]),
+					'estado' : 'procesando'
+					},
+				condiciones = condiciones)
 
 		ebt_file.close()
 		# ebt_file.save(path[0])
