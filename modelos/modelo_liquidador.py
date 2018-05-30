@@ -56,18 +56,26 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             condiciones = condiciones)
         fechaCobro = fechaCobro.strftime("%d%m%Y")
 
+        orden = 1
+        newListaDebitos = []
         for index,debito in enumerate(self.listaDebitos):
             debito = list(debito)
 
+            if len(debito[1]) != 8:
+                continue
+            if len(debito[2]) != 22:
+                continue
+            orden += 1
             debito.insert(1, self.operacion)
             debito.insert(2, fechaCobro)
             debito.insert(4, self.banco)
             debito.insert(7, self.cuit)
-            debito.insert(8, index)
+            debito.insert(8, orden)
             debito.insert(9, self.empresa)
 
-            self.listaDebitos[index] = debito
+            newListaDebitos.append(debito)
 
+        self.listaDebitos = newListaDebitos
 
         self.__setTotales(6)
 
@@ -90,8 +98,9 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
     def __setTotales(self, indexImporte):
         self.total_debitos = len(self.listaDebitos)
         self.importe_total = 0
-        for debito in self.listaDebitos:
-            self.importe_total += debito[indexImporte]
+        if self.total_debitos > 0:
+            for debito in self.listaDebitos:
+                self.importe_total += debito[indexImporte]
 
     def __toString(self, index):
         for debito in self.listaDebitos:
