@@ -91,7 +91,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 	def handleSaveEbt(self):
 		fechaCobro = self.getFechaCobro()
 		path = QtWidgets.QFileDialog.getSaveFileName(
-			None, 'Save File', fechaCobro.strftime("%d%m%Y"), 'Electronic Benefits Transfer(*.ebt)'
+			None, 'Save File', fechaCobro.strftime("%d%m%Y"), 'Texto plano(*.txt)'
 		)
 
 		if not path[0]:
