@@ -6,7 +6,7 @@ from PyQt5 import QtWidgets, uic, QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
-import xlwt
+#import xlwt
 from datetime import date
 
 from modelos.modelo_liquidador import ModeloLiquidador
