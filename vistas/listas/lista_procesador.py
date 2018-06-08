@@ -32,11 +32,14 @@ class ListaProcesador(QtWidgets.QWidget):
 		path = QtWidgets.QFileDialog.getOpenFileName(
 			self, 'Open File', "", "Todos los archivos (*.*)")
 
-		with open(path[0], 'r') as bet_file:
-			listaDebitos = []
-			for line in bet_file:
-				listaDebitos.append(self.processBetLine(line))
-			self.model.verListaDebitosAProcesar(listaDebitos)
+		try:
+			with open(path[0], 'r') as bet_file:
+				listaDebitos = []
+				for line in bet_file:
+					listaDebitos.append(self.processBetLine(line))
+				self.model.verListaDebitosAProcesar(listaDebitos)
+		except FileNotFoundError:
+			return
 
 	def processBetLine(self, line):
 		# Variables: estado, fecha, id_afiliado , banco("p"), cbu_afiliado, importe, cuit_sindicato, "CUOTAS", orden_movimiento, codigo_error, "SIND T MUN MERLO"
@@ -60,7 +63,7 @@ class ListaProcesador(QtWidgets.QWidget):
 	def formatEstado(self, estado):
 		if estado == "72":
 			return "Procesado"
-		elif estado == "56":
+		elif estado == "55":
 			return "Reversión"
 		else:
 			return "Error: codigo " + estado + " desconocido"
