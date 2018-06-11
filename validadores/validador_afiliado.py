@@ -1,7 +1,7 @@
 # validador_afiliado.py
 
 esquemaAfiliado = {
-    'legajo' : { 'type' : 'integer' },
+    'legajo' : { 'type' : 'string', 'minlength' : 8, 'maxlength' : 8 },
     'dni' : {'type' : 'integer' },
     'tipo_afiliado' : { 'type' : 'string', 'maxlength' : 20 },
     'cuil' : { 'type' : 'integer', 'max' : 99999999999 },

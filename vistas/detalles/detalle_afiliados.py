@@ -80,10 +80,6 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		f_nacimiento = date(f_nacimiento.year(), f_nacimiento.month(), f_nacimiento.day() )
 
 		try:
-			legajo = int(self.vd_afiliado.af_legajo.text())
-		except:
-			legajo = 0
-		try:
 			dni = int(self.vd_afiliado.af_dni.text())
 		except:
 			dni = 0
@@ -106,7 +102,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		afiliado = {
 
-		'legajo' : legajo,
+		'legajo' : self.vd_afiliado.af_legajo.text(),
 		'dni' : dni,
 		'tipo_afiliado' : self.vd_afiliado.af_tipo.currentText(),
 		'cuil' : cuil,
