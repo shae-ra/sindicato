@@ -7,7 +7,7 @@ import sys
 # Importamos las herramientas de PyQT que vamos a utilizar
 from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget, QMessageBox
 from vistas.cargas import carga_debito
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
@@ -57,6 +57,16 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	def guardarAfiliado(self):
 		afiliado = self.getAfiliado()
 		self.model.guardarAfiliado(afiliado)
+		cdiag = self.operacionCompletada()
+		reset = self.resetAfiliado()
+
+
+	def operacionCompletada(self):
+		msg = QMessageBox()
+		msg.setIcon(QMessageBox.Information)
+		msg.setText("Operación Exitosa     ")
+		msg.setWindowTitle("...")
+		retval = msg.exec_()
 
 	def guardarCbu(self):
 		cbu = self.vd_afiliado.af_cbu.text()

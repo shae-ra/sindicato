@@ -9,7 +9,7 @@ import sys
 # Importamos las herramientas de PyQT que vamos a utilizar
 from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget, QMessageBox
 from PyQt5.QtCore import Qt
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
@@ -50,9 +50,28 @@ class CargaDebito(QtWidgets.QWidget):
 		debito = self.getDebito()
 		if debito:
 			self.model.guardarDebito(debito)
+			cdiag = self.operacionCompletada()
+			reset = self.resetDebito()
 		else:
 			#observer.msg("No se puede cargar el debito")
 			return
+
+
+	def operacionCompletada(self):
+		msg = QMessageBox()
+		msg.setIcon(QMessageBox.Information)
+		msg.setText("Operación Exitosa     ")
+		msg.setWindowTitle("...")
+		retval = msg.exec_()
+
+
+	def resetDebito(self):
+		self.v_carga.deb_fecha_mes.setText('')
+		self.v_carga.deb_fecha_anio.setText('')
+		self.v_carga.deb_total_cuotas.setText('')
+		self.v_carga.deb_importe_cuota.setText('')
+		self.v_carga.deb_importe_total.setText('')
+		self.v_carga.deb_orden.setText('')
 
 	def getDebito(self):
 		if self.v_carga.deb_importe_total.text() != "" and self.v_carga.deb_importe_total.text() != "0":
