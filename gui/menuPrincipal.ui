@@ -29,14 +29,6 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>8</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
         <property name="title">
          <string/>
         </property>
@@ -54,26 +46,33 @@
           <number>10</number>
          </property>
          <property name="horizontalSpacing">
-          <number>0</number>
+          <number>2</number>
          </property>
          <item row="0" column="6">
           <widget class="QPushButton" name="pushButton_usuarios">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">#pushButton_usuarios{
+background-color: #009973;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#pushButton_usuarios:hover{
+background-color: #004d39;
+color: #FFFFFF;
+}</string>
            </property>
            <property name="text">
             <string>Gestión de Usuarios (F5)</string>
@@ -84,8 +83,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
            <property name="shortcut">
@@ -96,21 +95,28 @@
          <item row="0" column="4">
           <widget class="QPushButton" name="pushButton_liquidaciones">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">#pushButton_liquidaciones{
+background-color: #009973;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#pushButton_liquidaciones:hover{
+background-color: #004d39;
+color: #FFFFFF;
+}</string>
            </property>
            <property name="text">
             <string>Liquidaciones (F3)</string>
@@ -121,8 +127,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
            <property name="shortcut">
@@ -133,21 +139,28 @@
          <item row="0" column="1">
           <widget class="QPushButton" name="pushButton_proveedores">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">#pushButton_proveedores{
+background-color: #009973;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#pushButton_proveedores:hover{
+background-color: #004d39;
+color: #FFFFFF;
+}</string>
            </property>
            <property name="text">
             <string>Proveedores (F2)</string>
@@ -158,8 +171,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
            <property name="shortcut">
@@ -170,10 +183,16 @@
          <item row="0" column="0">
           <widget class="QPushButton" name="pushButton_afiliados">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
            </property>
            <property name="palette">
             <palette>
@@ -181,54 +200,54 @@
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
@@ -237,54 +256,54 @@
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
@@ -293,70 +312,71 @@
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>0</red>
+                 <green>153</green>
+                 <blue>115</blue>
                 </color>
                </brush>
               </colorrole>
              </disabled>
             </palette>
            </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">#pushButton_afiliados{
+background-color: #009973;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#pushButton_afiliados:hover{
+background-color: #004d39;
+color: #FFFFFF;
+}</string>
            </property>
            <property name="text">
             <string>Consulta de Afiliados (F1)</string>
@@ -367,8 +387,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
            <property name="shortcut">
@@ -388,21 +408,28 @@
          <item row="0" column="5">
           <widget class="QPushButton" name="pushButton_procesador">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">#pushButton_procesador{
+background-color: #009973;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#pushButton_procesador:hover{
+background-color: #004d39;
+color: #FFFFFF;
+}</string>
            </property>
            <property name="text">
             <string>Procesar Archivos (F4)</string>
@@ -413,8 +440,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
            <property name="shortcut">
@@ -425,21 +452,28 @@
          <item row="0" column="7">
           <widget class="QPushButton" name="pushButton_utilidades">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">#pushButton_utilidades{
+background-color: #009973;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#pushButton_utilidades:hover{
+background-color: #004d39;
+color: #FFFFFF;
+}</string>
            </property>
            <property name="text">
             <string>Utilidades (F6)</string>
@@ -450,8 +484,8 @@
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
            <property name="shortcut">
@@ -876,14 +910,6 @@
              </disabled>
             </palette>
            </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="currentIndex">
             <number>1</number>
            </property>
@@ -898,14 +924,6 @@
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="label">
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>8</pointsize>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
       <property name="text">
        <string>Sindicato de Trabajadores Municipales de Merlo - Software de Gestión de Afiliados y Débitos Automáticos - @2018 OesteDEV</string>
       </property>

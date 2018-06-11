@@ -13,7 +13,81 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_2" rowstretch="10,0,0,0">
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="2" column="0">
+    <spacer name="horizontalSpacer_7">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="btn_aplicar">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#btn_aplicar{
+background-color:#005c99;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#btn_aplicar:hover{
+background-color:#004d80;
+color: #FFFFFF;
+}</string>
+     </property>
+     <property name="text">
+      <string>Aplicar Cambios</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../iconos/down.ico</normaloff>../iconos/down.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QTableView" name="tbl_procesador">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="0" colspan="2">
     <widget class="QGroupBox" name="groupBox">
      <property name="sizePolicy">
@@ -24,8 +98,10 @@
      </property>
      <property name="font">
       <font>
-       <family>Arial</family>
-       <pointsize>9</pointsize>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -41,8 +117,10 @@ background-color: #F8F7F6
        <widget class="QLabel" name="label_3">
         <property name="font">
          <font>
-          <family>Arial</family>
-          <pointsize>9</pointsize>
+          <family>Calibri</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
          </font>
         </property>
         <property name="text">
@@ -50,40 +128,19 @@ background-color: #F8F7F6
         </property>
        </widget>
       </item>
-      <item row="0" column="3">
-       <spacer name="horizontalSpacer_4">
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="7">
+      <item row="0" column="2">
        <widget class="QPushButton" name="btn_buscar_bet">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>9</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>35</height>
+         </size>
         </property>
         <property name="text">
          <string>Buscar archivo</string>
@@ -100,92 +157,21 @@ background-color: #F8F7F6
         </property>
        </widget>
       </item>
-      <item row="0" column="5">
-       <spacer name="horizontalSpacer_2">
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="6">
-       <spacer name="horizontalSpacer_3">
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
       <item row="0" column="1">
-       <spacer name="horizontalSpacer">
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="4">
-       <spacer name="horizontalSpacer_5">
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="2">
        <spacer name="horizontalSpacer_6">
         <property name="font">
          <font>
-          <family>Arial</family>
-          <pointsize>9</pointsize>
+          <family>Calibri</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
          </font>
         </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -197,29 +183,6 @@ background-color: #F8F7F6
       </item>
      </layout>
     </widget>
-   </item>
-   <item row="3" column="0">
-    <spacer name="horizontalSpacer_7">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="3" column="1">
-    <widget class="QPushButton" name="btn_aplicar">
-     <property name="text">
-      <string>Aplicar Cambios</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0" colspan="2">
-    <widget class="QTableView" name="tbl_procesador"/>
    </item>
   </layout>
  </widget>

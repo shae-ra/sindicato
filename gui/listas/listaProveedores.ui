@@ -20,8 +20,8 @@
       <spacer name="horizontalSpacer">
        <property name="font">
         <font>
-         <family>Arial</family>
-         <pointsize>9</pointsize>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -78,8 +78,8 @@
        </property>
        <property name="font">
         <font>
-         <family>Arial</family>
-         <pointsize>10</pointsize>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -106,6 +106,12 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>35</height>
+        </size>
+       </property>
        <property name="maximumSize">
         <size>
          <width>200</width>
@@ -114,17 +120,24 @@
        </property>
        <property name="font">
         <font>
-         <family>Arial</family>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>8</pointsize>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">#btn_nuevo{
+background-color:#005c99;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#btn_nuevo:hover{
+background-color:#004d80;
+color: #FFFFFF;
+}</string>
        </property>
        <property name="text">
-        <string>Ingresar PROVEEDOR (Ctrl+N)</string>
+        <string>Ingresar PROVEEDOR</string>
        </property>
        <property name="icon">
         <iconset>
@@ -151,8 +164,8 @@
        </property>
        <property name="font">
         <font>
-         <family>Arial</family>
-         <pointsize>10</pointsize>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>

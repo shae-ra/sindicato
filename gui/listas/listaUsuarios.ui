@@ -63,8 +63,8 @@
        </property>
        <property name="font">
         <font>
-         <family>Arial</family>
-         <pointsize>10</pointsize>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -86,10 +86,16 @@
      <item row="0" column="2">
       <widget class="QPushButton" name="btn_nuevo">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>35</height>
+        </size>
        </property>
        <property name="maximumSize">
         <size>
@@ -99,16 +105,24 @@
        </property>
        <property name="font">
         <font>
-         <family>Arial</family>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>8</pointsize>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">#btn_nuevo{
+background-color:#005c99;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#btn_nuevo:hover{
+background-color:#004d80;
+color: #FFFFFF;
+}</string>
        </property>
        <property name="text">
-        <string>Ingresar USUARIO (Ctrl+N)</string>
+        <string>Ingresar USUARIO</string>
        </property>
        <property name="icon">
         <iconset>
@@ -129,7 +143,8 @@
       <spacer name="horizontalSpacer">
        <property name="font">
         <font>
-         <family>Arial</family>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -189,8 +204,8 @@
        </property>
        <property name="font">
         <font>
-         <family>Arial</family>
-         <pointsize>10</pointsize>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>

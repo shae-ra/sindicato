@@ -439,7 +439,10 @@
      </property>
      <property name="font">
       <font>
-       <family>Arial</family>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -465,6 +468,14 @@ background-color: #F0F5EF}
       </property>
       <item row="8" column="0" colspan="2">
        <spacer name="verticalSpacer">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
@@ -486,10 +497,10 @@ background-color: #F0F5EF}
         </property>
         <property name="font">
          <font>
-          <family>Arial</family>
-          <pointsize>8</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
+          <family>Calibri</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
          </font>
         </property>
         <property name="styleSheet">
@@ -517,6 +528,14 @@ background-color: #F0F5EF}
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">#groupBox_2{
 background-color:#FFFFFF
@@ -526,7 +545,97 @@ background-color:#FFFFFF
          <string/>
         </property>
         <layout class="QGridLayout" name="gridLayout_2">
-         <item row="3" column="1">
+         <item row="5" column="0" colspan="3">
+          <widget class="QPushButton" name="btn_procesar_liq">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#btn_procesar_liq{
+background-color:#005c99;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#btn_procesar_liq:hover{
+background-color:#004d80;
+color: #FFFFFF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Iniciar Liquidación</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../iconos/refresh.ico</normaloff>../iconos/refresh.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="3">
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#label{
+color: red;
+}</string>
+           </property>
+           <property name="text">
+            <string> Ingrese como fecha, el dia anterior</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="liq_anio">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
           <widget class="QComboBox" name="liq_mes">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -536,7 +645,8 @@ background-color:#FFFFFF
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
              <weight>75</weight>
              <bold>true</bold>
             </font>
@@ -603,57 +713,7 @@ background-color:#FFFFFF
            </item>
           </widget>
          </item>
-         <item row="4" column="1">
-          <widget class="QLineEdit" name="liq_anio">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label_6{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>MES:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0" colspan="2">
+         <item row="2" column="0" colspan="3">
           <widget class="QDateEdit" name="liq_fecha">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -663,114 +723,22 @@ color: #FFFFFF;
            </property>
            <property name="font">
             <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
              <weight>75</weight>
              <bold>true</bold>
             </font>
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label_3{
-background-color:#37760D;
-color: #FFFFFF;
-}</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Sunken</enum>
-           </property>
-           <property name="text">
-            <string>AÑO:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="0" colspan="2">
-          <widget class="QPushButton" name="btn_procesar_liq">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#btn_procesar_liq{
-background-color:#0A7DD0;
-color: #ffffff
-}
-
-#btn_procesar_liq:hover{
-background-color:#1067A5;
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Iniciar Liquidación</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../iconos/refresh.ico</normaloff>../iconos/refresh.ico</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0" colspan="2">
-          <widget class="QLabel" name="label">
-           <property name="font">
-            <font>
-             <weight>50</weight>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#label{
-color: red;
-}</string>
-           </property>
-           <property name="text">
-            <string> Ingrese como fecha, el dia anterior</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0" colspan="2">
+         <item row="1" column="0" colspan="3">
           <widget class="QLabel" name="label_4">
            <property name="font">
             <font>
-             <weight>50</weight>
-             <bold>false</bold>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
             </font>
            </property>
            <property name="styleSheet">
@@ -786,11 +754,49 @@ color: red;
            </property>
           </widget>
          </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Mes:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="label_7">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Año:</string>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
       </item>
       <item row="3" column="0">
        <widget class="QGroupBox" name="groupBox_3">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">#groupBox_3{
 background-color:#FFFFFF
@@ -810,10 +816,10 @@ background-color:#FFFFFF
            </property>
            <property name="font">
             <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
             </font>
            </property>
            <property name="styleSheet">
@@ -837,7 +843,8 @@ background-color:#FFFFFF
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
              <weight>75</weight>
              <bold>true</bold>
             </font>
@@ -857,7 +864,8 @@ background-color:#FFFFFF
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
              <weight>75</weight>
              <bold>true</bold>
             </font>
@@ -877,10 +885,10 @@ background-color:#FFFFFF
            </property>
            <property name="font">
             <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
             </font>
            </property>
            <property name="styleSheet">
@@ -897,28 +905,35 @@ background-color:#FFFFFF
          <item row="5" column="0">
           <widget class="QPushButton" name="btn_exportar">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
            <property name="font">
             <font>
-             <family>Arial</family>
-             <pointsize>8</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
             </font>
            </property>
            <property name="styleSheet">
             <string notr="true">#btn_exportar{
-background-color:#DF720A;
+background-color:#339966;
 color: #FFFFFF;
+border-radius: 10px;
 }
 
 #btn_exportar:hover{
-background-color:#E09249 ;
-color: #000000;
+background-color:#1f6040;
+color: #FFFFFF;
 }</string>
            </property>
            <property name="text">
@@ -949,7 +964,8 @@ color: #000000;
     <widget class="QTableView" name="tbl_liq">
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
