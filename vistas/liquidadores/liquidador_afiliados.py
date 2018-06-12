@@ -44,7 +44,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 
 	def getFechaLiquidacion(self):
 		mesALiquidar = self.vistaLiqAfiliado.liq_mes.currentIndex() + 1
-		anioALiquidar = int(self.vistaLiqAfiliado.liq_anio.text())
+		anioALiquidar = int(self.vistaLiqAfiliado.liq_anio.text()) # esto estalla
 		fechaLiquidacion = date(anioALiquidar, mesALiquidar, 1)
 
 		return fechaLiquidacion
@@ -57,6 +57,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 			("YEAR(fecha_descuento)", "=", fechaLiquidacion.year),
 			("MONTH(fecha_descuento)", "=", fechaLiquidacion.month),
 			("estado", "is", "NULL"),
+			("tipo_afiliado", "=", "'Activo'"),
 			("cbu", "<>", "''")
 			])
 
