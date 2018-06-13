@@ -58,7 +58,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		afiliado = self.getAfiliado()
 		self.model.guardarAfiliado(afiliado)
 		cdiag = self.operacionCompletada()
-		reset = self.resetAfiliado()
+		close = self.close()
 
 
 	def operacionCompletada(self):
@@ -220,16 +220,16 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		rxDni = QRegExp("\d{8,8}")
 		rxCuil = QRegExp("[0-9]{11,11}")
 		rxNombreApellido = QRegExp("[A-Z\s]{50}")
-		rxCalle = QRegExp("[A-Z0-9]{80}") #("\D{50}")
+		rxCalle = QRegExp("[A-Z0-9.\s]{80}") #("\D{50}")
 		rxAltura = QRegExp("\d{8}")
 		rxPiso = QRegExp(".{10}")
 		rxDepto = QRegExp(".{4}")
 		rxCodPostal = QRegExp(".{20}")
-		rxBarrio = QRegExp("[A-Z0-9]{80}")
+		rxBarrio = QRegExp("[A-Z0-9.\s]{80}")
 		rxTelefono = QRegExp("[\d\s()-]{20}")
-		rxEmail = QRegExp("[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}")
-		rxLugarTrabajo = QRegExp("[A-Z0-9]{80}")
-		rxJerarquia = QRegExp("[A-Z0-9]{80}")
+		rxEmail = QRegExp("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[A-Z]{2,4}")
+		rxLugarTrabajo = QRegExp("[A-Z0-9.\s]{80}")
+		rxJerarquia = QRegExp("[A-Z0-9.\s]{80}")
 
 		self.vd_afiliado.af_cbu.setValidator(QtGui.QRegExpValidator(rxCbu))
 		self.vd_afiliado.af_apellido.setValidator(QtGui.QRegExpValidator(rxNombreApellido))

@@ -30,8 +30,9 @@ class ListaProveedores(QtWidgets.QWidget):
 		self.vd_proveedor = detalle_proveedores.DetalleProveedores()
 
 		self.model = ModeloProveedor(
-			propiedades = ['id', 'nombre', 'servicios', 'razon_social', 'email']
+			propiedades = ['id', 'nombre', 'servicios', 'razon_social', 'calle', 'altura', 'localidad', 'email', 'comision', 'responsable',]
 		)
+
 		self.tbl_proveedores.setModel(self.model)
 
 		#Tomamos los eventos de los botones que se encuentran dentro del archivo .ui y llamamos a las FUNCIONES
