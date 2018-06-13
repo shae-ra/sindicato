@@ -7,7 +7,7 @@ import sys
 # Importamos las herramientas de PyQT que vamos a utilizar
 from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget, QMessageBox
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QRegExp
@@ -37,6 +37,19 @@ class DetalleProveedores(QtWidgets.QWidget):
 	def guardarProveedor(self):
 		proveedor = self.getProveedor()
 		self.model.guardarProveedor(proveedor)
+		cdiag = self.operacionCompletada()
+		close = self.close()
+
+
+	def operacionCompletada(self):
+		msg = QMessageBox()
+		msg.setIcon(QMessageBox.Information)
+		msg.setText("Operación Exitosa     ")
+		msg.setWindowTitle("...")
+		retval = msg.exec_()
+
+	
+
 
 	def getProveedor(self):
 		try:
@@ -128,30 +141,22 @@ class DetalleProveedores(QtWidgets.QWidget):
 
 
 	def setRegex(self):
-		rxNombre = QRegExp("[A-Z0-9]{50}")
-		rxServicios = QRegExp("[A-Z0-9]{100}")
-		#rxDni = QRegExp("\d{8,8}")
-		#rxCuil = QRegExp("[0-9]{11,11}")
-		#rxNombreApellido = QRegExp("[A-Z\s]{50}")
-		rxCalle = QRegExp("[A-Z0-9]{80}")
+		rxNombre = QRegExp("[A-Z0-9.\s]{50}")
+		rxServicios = QRegExp("[A-Z0-9.\s]{100}")
+		rxCalle = QRegExp("[A-Z0-9.\s]{80}")
 		rxAltura = QRegExp("\d{8}")
-		rxLocalidad = QRegExp("[A-Z0-9]{50}")
-		#rxPiso = QRegExp(".{10}")
-		#rxDepto = QRegExp(".{4}")
-		#rxCodPostal = QRegExp(".{20}")
-		#rxBarrio = QRegExp("[A-Z0-9]{80}")
+		rxLocalidad = QRegExp("[A-Z0-9.\s]{50}")
 		rxTelefono = QRegExp("[\d\s()-]{20}")
 		rxCelular = QRegExp("[\d\s()-]{20}")
 		rxEmail = QRegExp("[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}")
 		rxCuit = QRegExp("[0-9]{11,11}")
-		rxRazon_social = QRegExp("[a-z0-9]{50}")
+		rxRazon_social = QRegExp("[a-zA-Z0-9.\s]{50}")
 		rxCbu = QRegExp("[0-9]{22}")
-		rxBanco = QRegExp("[A-Z0-9]{60}")
+		rxBanco = QRegExp("[A-Z0-9.\s]{60}")
 		rxCuenta = QRegExp("[0-9]{16}")
-		rxComision = QRegExp("[A-Z0-9]{40}")
-		rxResponsable = QRegExp("[A-Z0-9]{40}")
-		rxForma_pago = QRegExp("[A-Z0-9]{80}")
-		#rxNotas = QRegExp("[a-z0-9]{500}")
+		rxComision = QRegExp("[A-Z0-9.\s]{40}")
+		rxResponsable = QRegExp("[A-Z0-9.\s]{40}")
+		rxForma_pago = QRegExp("[A-Z0-9.\s]{80}")
 
 		self.vd_proveedor.prov_nombre.setValidator(QtGui.QRegExpValidator(rxNombre))
 		self.vd_proveedor.prov_servicios.setValidator(QtGui.QRegExpValidator(rxServicios))
