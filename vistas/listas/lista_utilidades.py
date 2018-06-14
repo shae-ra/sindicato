@@ -9,9 +9,11 @@ from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton
 # Importamos el modulo uic necesario para levantar un archivo .ui
+from vistas.listas import lista_usuarios
+
 from PyQt5 import uic
 
-from vistas.utilidades import red
+from vistas.utilidades import red, nodisponible
 
 #====================
 #DEFINICION DE CLASES
@@ -27,15 +29,23 @@ class ListaUtilidades(QtWidgets.QWidget):
 
 		# vadb =
 		vred = red.VistaRed(self)
+		vusuarios = lista_usuarios.ListaUsuarios()
+		vnodisponible = nodisponible.NoDisponible()
 		# vela =
 
-		self.vistas = [ vred.vista ]
+		self.vistas = [ vred.vista, vusuarios, vnodisponible]
 		self.stacked = listaUtilidades.stackedWidget
 
 		for index, vista in enumerate(self.vistas):
 			self.stacked.insertWidget(index, vista)
 
-		self.pushButton_3.clicked.connect(self.seleccionarConfigurarRed)
+		self.gestion_usuarios.clicked.connect(self.seleccionarListadeUsuarios)
+		self.configurar_red.clicked.connect(self.seleccionarConfigurarRed)
+		self.pushButton_2.clicked.connect(self.seleccionarNoDisponible)
+		self.pushButton_5.clicked.connect(self.seleccionarNoDisponible)
+		self.pushButton_6.clicked.connect(self.seleccionarNoDisponible)
+		self.pushButton_7.clicked.connect(self.seleccionarNoDisponible)
+		self.pushButton.clicked.connect(self.seleccionarNoDisponible)
 
 	def seleccionarActDB(self):
 		pass
@@ -45,3 +55,9 @@ class ListaUtilidades(QtWidgets.QWidget):
 
 	def seleccionarConfigurarRed(self):
 		self.stacked.setCurrentIndex(0)
+
+	def seleccionarListadeUsuarios(self):
+		self.stacked.setCurrentIndex(1)
+
+	def seleccionarNoDisponible(self):
+		self.stacked.setCurrentIndex(2)

@@ -48,50 +48,6 @@
          <property name="horizontalSpacing">
           <number>2</number>
          </property>
-         <item row="0" column="6">
-          <widget class="QPushButton" name="pushButton_usuarios">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#pushButton_usuarios{
-background-color: #009973;
-color: #FFFFFF;
-border-radius: 10px;
-}
-
-#pushButton_usuarios:hover{
-background-color: #004d39;
-color: #FFFFFF;
-}</string>
-           </property>
-           <property name="text">
-            <string>Gestión de Usuarios (F5)</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>iconos/userPriv_01.png</normaloff>iconos/userPriv_01.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="shortcut">
-            <string>F5</string>
-           </property>
-          </widget>
-         </item>
          <item row="0" column="4">
           <widget class="QPushButton" name="pushButton_liquidaciones">
            <property name="sizePolicy">
@@ -133,50 +89,6 @@ color: #FFFFFF;
            </property>
            <property name="shortcut">
             <string>F3</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QPushButton" name="pushButton_proveedores">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#pushButton_proveedores{
-background-color: #009973;
-color: #FFFFFF;
-border-radius: 10px;
-}
-
-#pushButton_proveedores:hover{
-background-color: #004d39;
-color: #FFFFFF;
-}</string>
-           </property>
-           <property name="text">
-            <string>Proveedores (F2)</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>iconos/shopping cart full.ico</normaloff>iconos/shopping cart full.ico</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="shortcut">
-            <string>F2</string>
            </property>
           </widget>
          </item>
@@ -449,7 +361,51 @@ color: #FFFFFF;
            </property>
           </widget>
          </item>
-         <item row="0" column="7">
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_proveedores">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#pushButton_proveedores{
+background-color: #009973;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#pushButton_proveedores:hover{
+background-color: #004d39;
+color: #FFFFFF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Proveedores (F2)</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>iconos/shopping cart full.ico</normaloff>iconos/shopping cart full.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>F2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
           <widget class="QPushButton" name="pushButton_utilidades">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -493,7 +449,7 @@ color: #FFFFFF;
            </property>
           </widget>
          </item>
-         <item row="1" column="0" colspan="8">
+         <item row="1" column="0" colspan="7">
           <widget class="QStackedWidget" name="stackedWidget">
            <property name="palette">
             <palette>
