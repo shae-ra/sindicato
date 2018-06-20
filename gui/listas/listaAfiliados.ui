@@ -453,7 +453,7 @@
       </spacer>
      </item>
      <item row="2" column="0" colspan="2">
-      <widget class="QTableView" name="tbl_articulos">
+      <widget class="ListadoAfiliadosContextM" name="tbl_afiliados">
        <property name="palette">
         <palette>
          <active>
@@ -649,8 +649,15 @@ color: #FFFFFF;
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ListadoAfiliadosContextM</class>
+   <extends>QTableView</extends>
+   <header>widgets.table_views.listado_afiliados</header>
+  </customwidget>
+ </customwidgets>
  <tabstops>
-  <tabstop>tbl_articulos</tabstop>
+  <tabstop>tbl_afiliados</tabstop>
  </tabstops>
  <resources/>
  <connections/>
