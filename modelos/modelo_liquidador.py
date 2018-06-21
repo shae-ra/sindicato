@@ -48,6 +48,9 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         else:
             self.jubilado = True
 
+    def verListaLiquidacionJub(self, fechasCobro, condiciones = None):
+        pass
+        
     def verListaLiquidacion(self, fechaCobro, condiciones = None):
         self.listaDebitos = self.__querier.traerElementos(
             campos = ['debitos.id', 'legajo_afiliado', 'cbu', 'importe_actual'],

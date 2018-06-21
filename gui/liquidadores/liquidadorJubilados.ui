@@ -131,9 +131,6 @@ background-color:#FFFFFF
            <property name="mouseTracking">
             <bool>false</bool>
            </property>
-           <property name="tabletTracking">
-            <bool>false</bool>
-           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -153,6 +150,9 @@ background-color:#FFFFFF
             <bool>false</bool>
            </property>
            <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+           <property name="tabletTracking" stdset="0">
             <bool>false</bool>
            </property>
           </widget>
@@ -209,7 +209,7 @@ background-color:#FFFFFF
           </widget>
          </item>
          <item row="7" column="1">
-          <widget class="QComboBox" name="comboBox_3">
+          <widget class="QComboBox" name="liqj_mes">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -256,11 +256,6 @@ background-color:#FFFFFF
            </item>
            <item>
             <property name="text">
-             <string>SAC-Junio</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
              <string>Julio</string>
             </property>
            </item>
@@ -287,11 +282,6 @@ background-color:#FFFFFF
            <item>
             <property name="text">
              <string>Diciembre</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>SAC-Diciembre</string>
             </property>
            </item>
           </widget>
@@ -671,6 +661,9 @@ background-color:#FFFFFF
          </item>
          <item row="2" column="0" colspan="2">
           <widget class="QLineEdit" name="liqj_cantidad_total">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -684,11 +677,17 @@ background-color:#FFFFFF
              <weight>75</weight>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
            </property>
           </widget>
          </item>
          <item row="4" column="0" colspan="2">
           <widget class="QLineEdit" name="liqj_importe_total">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -702,6 +701,9 @@ background-color:#FFFFFF
              <weight>75</weight>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
            </property>
           </widget>
          </item>
@@ -788,7 +790,7 @@ color: #FFFFFF;
     </widget>
    </item>
    <item row="0" column="1">
-    <widget class="QTableView" name="tableView">
+    <widget class="QTableView" name="tbl_liqj">
      <property name="font">
       <font>
        <family>Calibri</family>
@@ -801,6 +803,19 @@ color: #FFFFFF;
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>liqj_fecha_0</tabstop>
+  <tabstop>liqj_fecha_123</tabstop>
+  <tabstop>liqj_fecha_456</tabstop>
+  <tabstop>liqj_fecha_789</tabstop>
+  <tabstop>liqj_mes</tabstop>
+  <tabstop>liqj_anio</tabstop>
+  <tabstop>btn_liquidar</tabstop>
+  <tabstop>tbl_liqj</tabstop>
+  <tabstop>btn_exportar</tabstop>
+  <tabstop>liqj_importe_total</tabstop>
+  <tabstop>liqj_cantidad_total</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
