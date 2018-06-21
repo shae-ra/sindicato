@@ -4487,7 +4487,7 @@ background-color: #F8F7F6
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QTableView" name="tbl_debitos">
+           <widget class="ListadoDebitosContextM" name="tbl_debitos">
             <property name="palette">
              <palette>
               <active>
@@ -5106,6 +5106,13 @@ background-color: #F8F7F6
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ListadoDebitosContextM</class>
+   <extends>QTableView</extends>
+   <header>widgets.table_views.listado_debitos</header>
+  </customwidget>
+ </customwidgets>
  <tabstops>
   <tabstop>af_tipo</tabstop>
   <tabstop>af_legajo</tabstop>
