@@ -48,8 +48,17 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			"total_cuotas",
 			"fecha_carga_inicial"
 			])
+		self.model_historial = ModeloDebito(propiedades = [
+			"fecha_descuento",
+			"proveedor_id",
+			"importe_actual",
+			"cuota_actual",
+			"total_cuotas",
+			"fecha_carga_inicial"
+		])
 
 		self.vd_afiliado.tbl_debitos.setModel(self.model_debito)
+		self.vd_afiliado.tbl_historial_debitos.setModel(self.model_historial)
 
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
@@ -197,14 +206,26 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 	def showEvent(self, event):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)
-		self.vd_afiliado.pushButton_ingresarDebito.clicked.connect(self.mostrarCarga)
+		self.vd_afiliado.btn_ingresar_debito.clicked.connect(self.mostrarCarga)
 		self.verListaDebitos()
+		self.verHistorialDebitos()
 		# Accedo al objeto 'tabWidget' que es hijo de el objeto 'vd_afiliado' y además llamo a la función setCurrentIndex()
 		# la funcion setCurrentIndex pertence al último hijo llamado.
 
 	def verListaDebitos(self):
-		condiciones = [("legajo_afiliado", "=", "'{}'".format(self.vd_afiliado.af_legajo.text()))]
+		condiciones = [
+			("legajo_afiliado", "=", "'{}'".format(self.vd_afiliado.af_legajo.text())),
+			("estado", "IS", "NULL")
+			]
 		self.model_debito.verTablaDebitos(condiciones)
+
+	def verHistorialDebitos(self):
+		condiciones = [
+			("legajo_afiliado", "=", "'{}'".format(self.vd_afiliado.af_legajo.text())),
+			("estado", "IS NOT", "NULL"),
+			]
+		orden = ("fecha_descuento", "DESC")
+		self.model_historial.verTablaDebitos(condiciones, orden)
 
 	def mostrarCarga(self):
 		# if self.model.tieneCbu():

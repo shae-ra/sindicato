@@ -15,12 +15,16 @@ class ListadoAfiliadosContextM(QtWidgets.QTableView):
 		if self.selectedIndexes():
 			self.menu.popup(QtGui.QCursor.pos())
 
-
 	def bajaAfiliado(self, event):
 		print ("bajaAfiliado slot called")
 		indexes = self.selectedIndexes()
 		# get the selected row and column
-		for index in indexes:
-			print(self.model().itemData(index))
 
-		# print("Row: {} - Col: {}".format(row, col))
+		legajo = self.model().itemData(indexes[0])[0]
+
+		afiliado = {
+			"legajo" : legajo,
+			"activo" : 0
+		}
+
+		self.model().bajaAfiliado(afiliado)

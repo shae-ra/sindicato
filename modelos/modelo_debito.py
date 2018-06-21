@@ -57,11 +57,12 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
             self.__querier.insertarElemento('debitos', debito)
 
-    def verTablaDebitos(self, condiciones):
+    def verTablaDebitos(self, condiciones, orden = None):
         self.listaDebitos = self.__querier.traerElementos(
             campos = self.__propiedades,
             tabla = 'debitos',
-            condiciones = condiciones
+            condiciones = condiciones,
+            orden = orden
         )
 
         self.listaDebitos = self.__toList()
