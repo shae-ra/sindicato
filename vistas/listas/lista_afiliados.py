@@ -39,13 +39,13 @@ class ListaAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado = detalle_afiliados.DetalleAfiliados()
 
 		# Asignamos el modelo de tabla a la tabla propiamente dicha
-		self.tbl_articulos.setModel(self.model)
+		self.tbl_afiliados.setModel(self.model)
 
 		#Tomamos los eventos de los botones que se encuentran dentro del archivo .ui y llamamos a las FUNCIONES
 		self.listadoAfiliados.btn_nuevo.clicked.connect(self.mostrarDetalleAfiliado)
 
-		self.tbl_articulos.doubleClicked.connect(self.mostrarDetalleAfiliado)
-		# self.tbl_articulos.returnPressed.connect(self.mostrarDetalleAfiliado)
+		self.tbl_afiliados.doubleClicked.connect(self.mostrarDetalleAfiliado)
+		# self.tbl_afiliados.returnPressed.connect(self.mostrarDetalleAfiliado)	
 
 		self.ln_buscar.returnPressed.connect(self.buscarAfiliados)
 
