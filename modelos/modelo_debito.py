@@ -20,8 +20,9 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             'cuota_actual' : { 'type' : 'integer' },
             'total_cuotas' : { 'type' : 'integer' },
             'importe_actual' : { 'type' : 'integer' },
-            'importe_total' : { 'type' : 'integer' }
-
+            'importe_total' : { 'type' : 'integer' },
+            'estado' : { 'type' : 'string' },
+            'motivo' : { 'type' : 'string' },
         }
 
         self.__propiedades = [
@@ -33,7 +34,9 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             'cuota_actual',
             'total_cuotas',
             'importe_actual',
-            'importe_total'
+            'importe_total',
+            'estado',
+            'motivo'
         ]
         self.__propiedades = self.validarPropiedades(propiedades)
 
@@ -57,7 +60,10 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
             self.__querier.insertarElemento('debitos', debito)
 
-    def verTablaDebitos(self, condiciones, orden = None):
+    def actualizarDebito(self, debito):
+        self.__querier.actualizarElemento(tabla = 'debitos', elemento = debito)
+
+    def verTablaDebitos(self, condiciones, orden = None, fechas = None):
         self.listaDebitos = self.__querier.traerElementos(
             campos = self.__propiedades,
             tabla = 'debitos',
@@ -66,8 +72,9 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         )
 
         self.listaDebitos = self.__toList()
-        self._setDates(0)
-        self._setDates(5)
+
+        for fecha in fechas:
+            self._setDates(fecha)
 
         self.layoutChanged.emit()
 

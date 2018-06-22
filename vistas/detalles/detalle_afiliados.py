@@ -41,6 +41,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		self.model = ModeloAfiliado(parent = self)
 		self.model_debito = ModeloDebito(propiedades = [
+			"id",
 			"fecha_descuento",
 			"proveedor_id",
 			"importe_actual",
@@ -54,7 +55,9 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			"importe_actual",
 			"cuota_actual",
 			"total_cuotas",
-			"fecha_carga_inicial"
+			"fecha_carga_inicial",
+			"estado",
+			"motivo"
 		])
 
 		self.vd_afiliado.tbl_debitos.setModel(self.model_debito)
@@ -217,7 +220,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			("legajo_afiliado", "=", "'{}'".format(self.vd_afiliado.af_legajo.text())),
 			("estado", "IS", "NULL")
 			]
-		self.model_debito.verTablaDebitos(condiciones)
+		self.model_debito.verTablaDebitos(condiciones, fechas = [1, 6])
+		self.tbl_debitos.setColumnHidden(0, True)
 
 	def verHistorialDebitos(self):
 		condiciones = [
@@ -225,7 +229,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			("estado", "IS NOT", "NULL"),
 			]
 		orden = ("fecha_descuento", "DESC")
-		self.model_historial.verTablaDebitos(condiciones, orden)
+		self.model_historial.verTablaDebitos(condiciones, orden, fechas = [0, 5])
 
 	def mostrarCarga(self):
 		# if self.model.tieneCbu():
