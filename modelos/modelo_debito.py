@@ -78,6 +78,10 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
         self.layoutChanged.emit()
 
+    def borrarDebito(self, idDebito):
+        
+        self.__querier.borrarElemento('debitos', 'id', idDebito)
+
     def __incrementMonth(self, date):
         if date.month() < 12:
             incrementedDate = date(date.year(), date.month() + 1 , date.day())

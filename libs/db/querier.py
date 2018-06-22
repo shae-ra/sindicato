@@ -52,11 +52,20 @@ class Querier(object):
 
         grant = "GRANT SELECT, INSERT, UPDATE ON {}.* TO '{}'@'{}' IDENTIFIED BY '{}'".format(self.database, user, hostname, password)
 
-    def borrarElemento(self, tabla, nombreId, idElemento):
-        consulta = "DELETE FROM {} WHERE '{}' = '%s'".format(tabla, nombreId)
+    def borrarElemento(self, tabla, pkeyElemento, idElemento):
+        if not tabla or not pkeyElemento:
+            return False
+        consulta = "DELETE FROM {} WHERE {} = '%s'".format(tabla, pkeyElemento)
 
-        print(consulta)
-        self.__consultar_e(consulta, (idElemento,))
+        db = self.__conectar()
+        cursor = db.cursor()
+
+        cursor.execute(consulta, (idElemento,))
+        db.commit()
+
+        cursor.close()
+        db.close()
+
         return True
 
     def getTablas(self):
@@ -200,10 +209,6 @@ class Querier(object):
             print("No se logro hacer la consulta: ", error)
             db.rollback()
 
-        try:
-            resultado =  cursor.fetchall()
-        except:
-            resultado = None
         cursor.close()
         db.close()
 

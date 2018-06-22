@@ -24,18 +24,13 @@ class ListadoDebitosContextM(QtWidgets.QTableView):
 
 	def borrarDebito(self, event):
 		pass
-		# print ("bajaAfiliado slot called")
-		# indexes = self.selectedIndexes()
-		# # get the selected row and column
-		#
-		# legajo = self.model().itemData(indexes[0])[0]
-		#
-		# afiliado = {
-		# 	"legajo" : legajo,
-		# 	"activo" : 0
-		# }
 
-		# self.model().bajaAfiliado(afiliado)
+		row = self.currentIndex().row()
+
+		idDebitoIndex = self.model().index(row, 0)
+		idDebito = self.model().itemData(idDebitoIndex)[0]
+
+		self.model().borrarDebito(idDebito)
 
 	def pagoManual(self, event):
 		row = self.currentIndex().row()
