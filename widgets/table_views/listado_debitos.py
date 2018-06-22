@@ -23,14 +23,13 @@ class ListadoDebitosContextM(QtWidgets.QTableView):
 			self.menu.popup(QtGui.QCursor.pos())
 
 	def borrarDebito(self, event):
-		pass
-
 		row = self.currentIndex().row()
 
 		idDebitoIndex = self.model().index(row, 0)
 		idDebito = self.model().itemData(idDebitoIndex)[0]
 
 		self.model().borrarDebito(idDebito)
+		self.model().refrescarTabla()
 
 	def pagoManual(self, event):
 		row = self.currentIndex().row()
@@ -44,3 +43,4 @@ class ListadoDebitosContextM(QtWidgets.QTableView):
 		}
 
 		self.model().actualizarDebito(debito)
+		self.model().refrescarTabla()

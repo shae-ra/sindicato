@@ -64,6 +64,9 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         self.__querier.actualizarElemento(tabla = 'debitos', elemento = debito)
 
     def verTablaDebitos(self, condiciones, orden = None, fechas = None):
+        self.__condicionesRefresco = condiciones
+        self.__ordenRefresco = orden
+        self.__fechasRefresco = fechas
         self.listaDebitos = self.__querier.traerElementos(
             campos = self.__propiedades,
             tabla = 'debitos',
@@ -78,8 +81,14 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
         self.layoutChanged.emit()
 
+    def refrescarTabla(self):
+        self.verTablaDebitos(
+            condiciones = self.__condicionesRefresco,
+            orden = self.__ordenRefresco,
+            fechas = self.__fechasRefresco)
+
     def borrarDebito(self, idDebito):
-        
+
         self.__querier.borrarElemento('debitos', 'id', idDebito)
 
     def __incrementMonth(self, date):
