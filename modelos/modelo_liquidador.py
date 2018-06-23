@@ -49,8 +49,62 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             self.jubilado = True
 
     def verListaLiquidacionJub(self, fechasCobro, condiciones = None):
-        pass
-        
+        self.listaDebitos = self.__querier.traerElementos(
+            campos = ['debitos.id', 'legajo_afiliado', 'cbu', 'importe_actual', 'dni'],
+            tabla = 'debitos',
+            uniones = [("afiliados", "legajo_afiliado = afiliados.legajo")],
+            condiciones = condiciones)
+
+        for index, fechaCobro in enumerate(fechasCobro):
+            fechaCobro = fechaCobro.strftime("%d%m%Y")
+            fechasCobro[index] = fechaCobro
+
+        orden = 1
+        newListaDebitos = []
+
+        for index, debito in enumerate(self.listaDebitos):
+            debito = list(debito)
+            legajo = debito[1]
+            cbu = debito[2]
+            dni = debito.pop(4)
+
+            if len(legajo) != 8:
+                continue
+            if len(cbu) != 22:
+                continue
+
+            if int(dni[-1]) == 0:
+                fechaCobro = fechasCobro[0]
+            elif int(dni[-1]) <= 3:
+                fechaCobro = fechasCobro[1]
+            elif int(dni[-1]) <= 6:
+                fechaCobro = fechasCobro[2]
+            elif int(dni[-1]) <= 9:
+                fechaCobro = fechasCobro[3]
+
+            debito.insert(1, self.operacion)
+            debito.insert(2, fechaCobro)
+            debito.insert(4, self.banco)
+            debito.insert(7, self.cuit)
+            debito.insert(8, orden)
+            debito.insert(9, self.empresa)
+
+            newListaDebitos.append(debito)
+            orden += 1
+
+        self.listaDebitos = newListaDebitos
+
+        self.__setTotales(6)
+
+        self.__toString(2)
+        self.__toString(6)
+
+
+        if self.listaDebitos:
+            self.layoutChanged.emit()
+            return True
+        return False
+
     def verListaLiquidacion(self, fechaCobro, condiciones = None):
         self.listaDebitos = self.__querier.traerElementos(
             campos = ['debitos.id', 'legajo_afiliado', 'cbu', 'importe_actual'],
@@ -63,18 +117,20 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         newListaDebitos = []
         for index,debito in enumerate(self.listaDebitos):
             debito = list(debito)
+            legajo = debito[1]
+            cbu = debito[2]
+            if len(legajo) != 8:
+                continue
+            if len(cbu) != 22:
+                continue
 
-            if len(debito[1]) != 8:
-                continue
-            if len(debito[2]) != 22:
-                continue
-            orden += 1
             debito.insert(1, self.operacion)
             debito.insert(2, fechaCobro)
             debito.insert(4, self.banco)
             debito.insert(7, self.cuit)
             debito.insert(8, orden)
             debito.insert(9, self.empresa)
+            orden += 1
 
             newListaDebitos.append(debito)
 

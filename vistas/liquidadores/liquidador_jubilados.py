@@ -39,8 +39,9 @@ class LiquidadorJubilados(QtWidgets.QWidget):
 			'legajo_afiliado', 'banco', 'cbu', 'importe_actual',
 			'cuit', 'movimiento', 'empresa'])
 
+		self.tbl_liqj.setModel(self.model)
+
 		self.vistaLiqJubilado.btn_liquidar.clicked.connect(self.buscarDebitosALiquidar)
-		self.vistaLiqJubilado.btn_liquidar.clicked.connect(self.setTotales)
 
 		self.vistaLiqJubilado.btn_exportar.clicked.connect(self.procesarDocumento)
 
@@ -85,6 +86,8 @@ class LiquidadorJubilados(QtWidgets.QWidget):
 			("tipo_afiliado", "=", "'Jubilado'"),
 			("cbu", "<>", "''")
 			])
+
+		self.setTotales()
 
 	def setTotales(self):
 		self.vistaLiqJubilado.liqj_cantidad_total.setText(str(self.model.total_debitos))

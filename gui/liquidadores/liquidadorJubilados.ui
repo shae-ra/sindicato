@@ -817,5 +817,22 @@ color: #FFFFFF;
   <tabstop>liqj_cantidad_total</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>liqj_anio</sender>
+   <signal>returnPressed()</signal>
+   <receiver>btn_liquidar</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
