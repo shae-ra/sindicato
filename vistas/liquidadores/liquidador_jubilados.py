@@ -43,7 +43,7 @@ class LiquidadorJubilados(QtWidgets.QWidget):
 
 		self.vistaLiqJubilado.btn_liquidar.clicked.connect(self.buscarDebitosALiquidar)
 
-		self.vistaLiqJubilado.btn_exportar.clicked.connect(self.procesarDocumento)
+		self.vistaLiqJubilado.btn_exportar.clicked.connect(self.handleSaveEbt)
 
 	def getFechaLiquidacion(self):
 		mesALiquidar = self.vistaLiqJubilado.liqj_mes.currentIndex() + 1
@@ -93,9 +93,39 @@ class LiquidadorJubilados(QtWidgets.QWidget):
 		self.vistaLiqJubilado.liqj_cantidad_total.setText(str(self.model.total_debitos))
 		self.vistaLiqJubilado.liqj_importe_total.setText(str(self.model.importe_total))
 
-	def procesarDocumento(self):
-		pass
+	def handleSaveEbt(self):
+		path = QtWidgets.QFileDialog.getSaveFileName(
+			None, 'Save File', "", 'Texto plano(*.txt)'
+		)
 
+		if not path[0]:
+			return
+
+		ebt_file = open(path[0], "w")
+
+		for row in range(self.model.rowCount(None)):
+			line = ""
+			item = self.model.listaDebitos[row]
+			formattedDec = self.formatDec(item[6])
+			line = "{}{}{}                  {}{}{}{}CUOTAS 014{}                                        {}\n".format(
+				item[1], item[2],
+				"{0:010d}".format(int(item[3])), item[4], item[5],
+				"{0:010d}".format(formattedDec), item[7], "{0:015d}".format(item[8]),
+				item[9]
+			)
+			ebt_file.write(line)
+			condiciones = [
+				("id", "=", item[0])]
+			self.model.actualizarDebito(
+				debito = {
+					'id' : item[0],
+					'id_temporal' : int(item[8]),
+					'estado' : 'procesando'
+					},
+				condiciones = condiciones)
+
+		ebt_file.close()
+		# ebt_file.save(path[0])
 
 	def formatDec(self, decim):
 		decim = decim.split('.')
