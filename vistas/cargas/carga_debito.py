@@ -14,7 +14,8 @@ from PyQt5.QtCore import Qt
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 import openpyxl
-
+import win32print
+from configparser import ConfigParser
 
 from datetime import date
 
@@ -116,9 +117,22 @@ class CargaDebito(QtWidgets.QWidget):
 		ws['H9'] = self.v_carga.deb_importe_total.text()
 		ws['D9'] = self.v_carga.deb_importe_total.text()
 
+		# ABRIR UN CUADRO DE DIALOGO INDICANDO DONDE GUARDAR
 		wb.save('out.xlsx')
+		
 		wb.close()
 
+	def imprimirBono(self):
+		#TERMINAR ESTO
+		config = ConfigParser()
+
+		if config.read('impresora.ini'):
+			if 'IMPRESORA' in config.section():
+				impresora = config['IMPRESORA']['nombre_impresora']
+				printer = win32print.SetDefaultPrinter(impresora)
+
+		else:
+			print("No se ha configurado la impresora")
 
 	def showEvent(self, event):
 		self.model_prov.verListaProveedores()
