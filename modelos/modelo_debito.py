@@ -76,6 +76,8 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
         self.listaDebitos = self.__toList()
 
+        self.__toString(3)
+
         for fecha in fechas:
             self._setDates(fecha)
 
@@ -106,6 +108,10 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             listaDebitos.append(list(debito))
 
         return listaDebitos
+
+    def __toString(self, index):
+        for debito in self.listaDebitos:
+            debito[index] = str(debito[index])
 
     def _setDates(self, dateIndex):
         for debito in self.listaDebitos:
