@@ -33,7 +33,6 @@ class ListadoAfiliadosContextM(QtWidgets.QTableView):
 
 	def confirmarBaja(self):
 		msg = QtWidgets.QMessageBox()
-		msg.setText("¿Está seguro de dar de baja a este afiliado?")
 
 		reply = msg.question(self, "¿Dar de baja?", "¿Está seguro de dar de baja a este afiliado?",
 			QtWidgets.QMessageBox.Yes, QtWidgets.QMessageBox.No)

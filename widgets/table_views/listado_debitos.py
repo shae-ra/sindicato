@@ -28,8 +28,9 @@ class ListadoDebitosContextM(QtWidgets.QTableView):
 		idDebitoIndex = self.model().index(row, 0)
 		idDebito = self.model().itemData(idDebitoIndex)[0]
 
-		self.model().borrarDebito(idDebito)
-		self.model().refrescarTabla()
+		if self.confirmarOperacion():
+			self.model().borrarDebito(idDebito)
+			self.model().refrescarTabla()
 
 	def pagoManual(self, event):
 		row = self.currentIndex().row()
@@ -42,5 +43,19 @@ class ListadoDebitosContextM(QtWidgets.QTableView):
 			'estado' : "Cobrado manualmente"
 		}
 
-		self.model().actualizarDebito(debito)
-		self.model().refrescarTabla()
+		if self.confirmarOperacion():
+			self.model().actualizarDebito(debito)
+			self.model().refrescarTabla()
+
+	def confirmarOperacion(self):
+		msg = QtWidgets.QMessageBox()
+
+		reply = msg.question(self, "Confirmar operación", "¿Está seguro de realizar esta operación?",
+			QtWidgets.QMessageBox.Yes, QtWidgets.QMessageBox.No)
+
+		msg.show()
+
+		if reply == QtWidgets.QMessageBox.Yes:
+			return True
+		else:
+			return False
