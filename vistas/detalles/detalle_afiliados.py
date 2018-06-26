@@ -41,9 +41,10 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		self.model = ModeloAfiliado(parent = self)
 		self.model_debito = ModeloDebito(propiedades = [
-			"id",
+			"debitos.id",
 			"fecha_descuento",
-			"proveedor_id",
+			"nombre",
+			# "proveedor_id",
 			"importe_actual",
 			"cuota_actual",
 			"total_cuotas",
@@ -51,7 +52,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			])
 		self.model_historial = ModeloDebito(propiedades = [
 			"fecha_descuento",
-			"proveedor_id",
+			"nombre",
+			# "proveedor_id",
 			"importe_actual",
 			"cuota_actual",
 			"total_cuotas",

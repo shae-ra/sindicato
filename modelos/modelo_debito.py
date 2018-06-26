@@ -12,10 +12,11 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         super(ModeloDebito, self).__init__()
 
         self.__esquemaDebitos = {
-            'id' : {'type' : 'integer', 'maxlength' : 32 },
+            'debitos.id' : {'type' : 'integer', 'maxlength' : 32 },
             'legajo_afiliado' : { 'type' : 'string', 'maxlength' : 22 },
             'fecha_descuento' : { 'type' : 'date' },
             'fecha_carga_inicial' : { 'type' : 'date' },
+            'nombre' : { 'type': 'string'},
             'proveedor_id' : {  'type': 'integer' },
             'cuota_actual' : { 'type' : 'integer' },
             'total_cuotas' : { 'type' : 'integer' },
@@ -26,10 +27,11 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         }
 
         self.__propiedades = [
-            'id',
+            'debitos.id',
             'legajo_afiliado',
             'fecha_descuento',
             'fecha_carga_inicial',
+            'nombre',
             'proveedor_id',
             'cuota_actual',
             'total_cuotas',
@@ -67,19 +69,22 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         self.__condicionesRefresco = condiciones
         self.__ordenRefresco = orden
         self.__fechasRefresco = fechas
+
         self.listaDebitos = self.__querier.traerElementos(
             campos = self.__propiedades,
             tabla = 'debitos',
             condiciones = condiciones,
-            orden = orden
+            orden = orden,
+            uniones = [("proveedores", "debitos.proveedor_id = proveedores.id")]
         )
 
         self.listaDebitos = self.__toList()
 
-        self.__toString(3)
-
         for fecha in fechas:
             self._setDates(fecha)
+
+        self.__toString(2)
+        self.__toString(3)
 
         self.layoutChanged.emit()
 
