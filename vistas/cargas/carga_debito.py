@@ -13,6 +13,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTa
 from PyQt5.QtCore import Qt
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
+import openpyxl
+
 
 from datetime import date
 
@@ -50,6 +52,7 @@ class CargaDebito(QtWidgets.QWidget):
 		debito = self.getDebito()
 		if debito:
 			self.model.guardarDebito(debito)
+			self.getXls()
 			cdiag = self.operacionCompletada()
 			reset = self.resetDebito()
 		else:
@@ -92,6 +95,30 @@ class CargaDebito(QtWidgets.QWidget):
 
 			print(debito)
 			return debito
+
+	def getXls(self):
+
+		wb = openpyxl.load_workbook('bono/bonos.xlsx')
+		ws = wb.worksheets[0]
+		img = openpyxl.drawing.image.Image('bono/sindicato.png')
+		img2 = openpyxl.drawing.image.Image('bono/sindicato.png')
+		img3 = openpyxl.drawing.image.Image('bono/sindicato.png')
+		ws.add_image(img, 'A1')
+		ws.add_image(img2, 'A15')
+		ws.add_image(img3, 'A29')
+
+		ws['C4'] = date.today()
+		ws['D5'] = "{} {}".format(self.parent.vd_afiliado.af_apellido.text(), self.parent.vd_afiliado.af_nombre.text())
+		ws['C6'] = self.parent.vd_afiliado.af_legajo.text()
+		ws['E6'] = self.parent.vd_afiliado.af_lugar_trabajo.text()
+		ws['C7'] = self.v_carga.deb_orden.text()
+		ws['E7'] = self.v_carga.prov_id.currentText().split("-")[1]
+		ws['H9'] = self.v_carga.deb_importe_total.text()
+		ws['D9'] = self.v_carga.deb_importe_total.text()
+
+		wb.save('out.xlsx')
+		wb.close()
+
 
 	def showEvent(self, event):
 		self.model_prov.verListaProveedores()
