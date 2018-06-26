@@ -56,6 +56,7 @@ class CargaDebito(QtWidgets.QWidget):
 			self.getXls()
 			cdiag = self.operacionCompletada()
 			reset = self.resetDebito()
+			self.close()
 		else:
 			#observer.msg("No se puede cargar el debito")
 			return
@@ -115,12 +116,18 @@ class CargaDebito(QtWidgets.QWidget):
 		ws['C7'] = self.v_carga.deb_orden.text()
 		ws['E7'] = self.v_carga.prov_id.currentText().split("-")[1]
 		ws['H9'] = self.v_carga.deb_importe_total.text()
-		ws['D9'] = self.v_carga.deb_importe_total.text()
+		ws['D9'] = self.v_carga.deb_importe_palabras.text()
 
 		# ABRIR UN CUADRO DE DIALOGO INDICANDO DONDE GUARDAR
-		wb.save('out.xlsx')
-		
+		self.handleSave(wb)
+
 		wb.close()
+
+	def handleSave(self, workbook):
+		path = QtWidgets.QFileDialog.getSaveFileName(
+			None, 'Save File', self.v_carga.deb_orden.text(), 'Excel(*.xlsx)')
+		if not path[0]: return
+		workbook.save(path[0])
 
 	def imprimirBono(self):
 		#TERMINAR ESTO
