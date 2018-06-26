@@ -13,7 +13,7 @@ from vistas.listas import lista_usuarios
 
 from PyQt5 import uic
 
-from vistas.utilidades import red, nodisponible
+from vistas.utilidades import red, nodisponible, impresora
 
 #====================
 #DEFINICION DE CLASES
@@ -31,9 +31,10 @@ class ListaUtilidades(QtWidgets.QWidget):
 		vred = red.VistaRed(self)
 		vusuarios = lista_usuarios.ListaUsuarios()
 		vnodisponible = nodisponible.NoDisponible()
+		vimpresora = impresora.VistaImpresora(self)
 		# vela =
 
-		self.vistas = [ vred.vista, vusuarios, vnodisponible]
+		self.vistas = [ vred.vista, vusuarios, vnodisponible, vimpresora.vista]
 		self.stacked = listaUtilidades.stackedWidget
 
 		for index, vista in enumerate(self.vistas):
@@ -41,6 +42,7 @@ class ListaUtilidades(QtWidgets.QWidget):
 
 		self.gestion_usuarios.clicked.connect(self.seleccionarListadeUsuarios)
 		self.configurar_red.clicked.connect(self.seleccionarConfigurarRed)
+		self.configurar_impresora.clicked.connect(self.seleccionarConfigurarImpresora)
 		self.pushButton_2.clicked.connect(self.seleccionarNoDisponible)
 		self.pushButton_5.clicked.connect(self.seleccionarNoDisponible)
 		self.pushButton_6.clicked.connect(self.seleccionarNoDisponible)
@@ -61,3 +63,6 @@ class ListaUtilidades(QtWidgets.QWidget):
 
 	def seleccionarNoDisponible(self):
 		self.stacked.setCurrentIndex(2)
+
+	def seleccionarConfigurarImpresora(self):
+		self.stacked.setCurrentIndex(3)
