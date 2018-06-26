@@ -6,7 +6,6 @@ from PyQt5 import QtWidgets, uic, QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
-#import xlwt
 from datetime import date
 
 from modelos.modelo_liquidador import ModeloLiquidador
@@ -122,7 +121,6 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 				condiciones = condiciones)
 
 		ebt_file.close()
-		# ebt_file.save(path[0])
 
 	def formatDec(self, decim):
 		decim = decim.split('.')
