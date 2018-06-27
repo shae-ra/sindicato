@@ -466,6 +466,15 @@
             </color>
            </brush>
           </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>212</red>
+             <green>212</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </active>
          <inactive>
           <colorrole role="Text">
@@ -474,6 +483,15 @@
              <red>0</red>
              <green>0</green>
              <blue>127</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>212</red>
+             <green>212</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -488,6 +506,15 @@
             </color>
            </brush>
           </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>212</red>
+             <green>212</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </disabled>
         </palette>
        </property>
@@ -499,8 +526,14 @@
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">alternate-background-color: rgb(212, 212, 255)</string>
+       </property>
        <property name="tabKeyNavigation">
         <bool>false</bool>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
        </property>
        <property name="selectionBehavior">
         <enum>QAbstractItemView::SelectRows</enum>
