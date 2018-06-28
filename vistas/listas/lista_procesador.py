@@ -38,6 +38,7 @@ class ListaProcesador(QtWidgets.QWidget):
 				for line in bet_file:
 					listaDebitos.append(self.processBetLine(line))
 				self.model.verListaDebitosAProcesar(listaDebitos)
+				self.ajustarTabla()
 		except FileNotFoundError:
 			return
 
@@ -79,3 +80,8 @@ class ListaProcesador(QtWidgets.QWidget):
 
 	def formatLegajo(self, legajo):
 		return self.formatCerosIzquierda(legajo).zfill(8) # Se usa zfill por ser un string
+
+
+	def ajustarTabla(self):
+		header = self.listaProcesador.tbl_procesador.horizontalHeader()
+		header.setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)

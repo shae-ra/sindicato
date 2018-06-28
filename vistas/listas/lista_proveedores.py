@@ -34,6 +34,7 @@ class ListaProveedores(QtWidgets.QWidget):
 		)
 
 		self.tbl_proveedores.setModel(self.model)
+		self.ajustarTabla()
 
 		#Tomamos los eventos de los botones que se encuentran dentro del archivo .ui y llamamos a las FUNCIONES
 		self.tbl_proveedores.doubleClicked.connect(self.mostrarDetalleProveedor)
@@ -63,3 +64,8 @@ class ListaProveedores(QtWidgets.QWidget):
 			condiciones = [("nombre", "LIKE", "'%{}%'".format(busqueda))]
 
 		self.model.verTablaProveedores(condiciones)
+		self.ajustarTabla()
+
+	def ajustarTabla(self):
+		header = self.tbl_proveedores.horizontalHeader()
+		header.setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)

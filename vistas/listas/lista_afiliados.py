@@ -40,12 +40,13 @@ class ListaAfiliados(QtWidgets.QWidget):
 
 		# Asignamos el modelo de tabla a la tabla propiamente dicha
 		self.tbl_afiliados.setModel(self.model)
+		self.ajustarTabla()
 
 		#Tomamos los eventos de los botones que se encuentran dentro del archivo .ui y llamamos a las FUNCIONES
 		self.listadoAfiliados.btn_nuevo.clicked.connect(self.mostrarDetalleAfiliado)
 
 		self.tbl_afiliados.doubleClicked.connect(self.mostrarDetalleAfiliado)
-		# self.tbl_afiliados.returnPressed.connect(self.mostrarDetalleAfiliado)	
+		# self.tbl_afiliados.returnPressed.connect(self.mostrarDetalleAfiliado)
 
 		self.ln_buscar.returnPressed.connect(self.buscarAfiliados)
 
@@ -78,3 +79,8 @@ class ListaAfiliados(QtWidgets.QWidget):
 			condiciones = [("nombre LIKE '%{}%' OR apellido".format(busqueda), "LIKE", "'%{}%'".format(busqueda))]
 
 		self.model.verListaAfiliados(condiciones = condiciones, orden = orden)
+		self.ajustarTabla()
+
+	def ajustarTabla(self):
+		header = self.tbl_afiliados.horizontalHeader()
+		header.setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)

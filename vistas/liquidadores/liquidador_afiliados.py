@@ -105,7 +105,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 			formattedDec = self.formatDec(item[6])
 			line = "{}{}{}                  {}{}{}{}CUOTAS 014{}                                        {}\n".format(
 				item[1], item[2],
-				item[3], item[4], item[5],
+				"{0:010d}".format(int(item[3])), item[4], item[5],
 				"{0:010d}".format(formattedDec), item[7], "{0:015d}".format(item[8]),
 				item[9]
 			)
@@ -124,4 +124,4 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 
 	def formatDec(self, decim):
 		decim = decim.split('.')
-		return int(decim[0] + decim[1])
+		return int(decim[0] + decim[1]) + 700

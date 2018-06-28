@@ -129,4 +129,4 @@ class LiquidadorJubilados(QtWidgets.QWidget):
 
 	def formatDec(self, decim):
 		decim = decim.split('.')
-		return int(decim[0] + decim[1])
+		return int(decim[0] + decim[1]) + 700
