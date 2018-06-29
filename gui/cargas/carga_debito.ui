@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>588</width>
-    <height>371</height>
+    <width>660</width>
+    <height>426</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -21,20 +21,20 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>588</width>
-    <height>371</height>
+    <width>660</width>
+    <height>246</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>588</width>
-    <height>371</height>
+    <width>660</width>
+    <height>426</height>
    </size>
   </property>
   <property name="sizeIncrement">
    <size>
-    <width>588</width>
-    <height>371</height>
+    <width>660</width>
+    <height>426</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -47,8 +47,8 @@
   <widget class="QPushButton" name="btn_confirmar">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>320</y>
+     <x>390</x>
+     <y>380</y>
      <width>251</width>
      <height>35</height>
     </rect>
@@ -102,9 +102,9 @@ color: #FFFFFF;
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>20</x>
      <y>10</y>
-     <width>591</width>
+     <width>631</width>
      <height>108</height>
     </rect>
    </property>
@@ -146,10 +146,10 @@ color: #FFFFFF;
   <widget class="QGroupBox" name="groupBox_6">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>30</x>
      <y>120</y>
-     <width>551</width>
-     <height>171</height>
+     <width>611</width>
+     <height>211</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -201,7 +201,7 @@ background-color: #F8F7F6
        <enum>QFrame::Plain</enum>
       </property>
       <property name="text">
-       <string>Importe en palabras:</string>
+       <string>Son pesos:</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -473,66 +473,6 @@ background-color: #F8F7F6
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
-     </widget>
-    </item>
-    <item row="7" column="3" colspan="4">
-     <widget class="QComboBox" name="prov_id">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="palette">
-       <palette>
-        <active>
-         <colorrole role="Text">
-          <brush brushstyle="SolidPattern">
-           <color alpha="255">
-            <red>0</red>
-            <green>108</green>
-            <blue>0</blue>
-           </color>
-          </brush>
-         </colorrole>
-        </active>
-        <inactive>
-         <colorrole role="Text">
-          <brush brushstyle="SolidPattern">
-           <color alpha="255">
-            <red>0</red>
-            <green>108</green>
-            <blue>0</blue>
-           </color>
-          </brush>
-         </colorrole>
-        </inactive>
-        <disabled>
-         <colorrole role="Text">
-          <brush brushstyle="SolidPattern">
-           <color alpha="255">
-            <red>0</red>
-            <green>42</green>
-            <blue>0</blue>
-           </color>
-          </brush>
-         </colorrole>
-        </disabled>
-       </palette>
-      </property>
-      <property name="font">
-       <font>
-        <family>Calibri</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <item>
-       <property name="text">
-        <string>Buscar</string>
-       </property>
-      </item>
      </widget>
     </item>
     <item row="9" column="1">
@@ -877,7 +817,26 @@ background-color: #F8F7F6
       </property>
      </widget>
     </item>
-    <item row="7" column="1" colspan="2">
+    <item row="11" column="2" colspan="5">
+     <widget class="QLineEdit" name="deb_importe_palabras">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Importe en letras</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
      <widget class="QLabel" name="label">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
@@ -910,13 +869,10 @@ background-color: #F8F7F6
       </property>
      </widget>
     </item>
-    <item row="11" column="2">
-     <widget class="QLineEdit" name="deb_importe_palabras">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
+    <item row="7" column="2" colspan="5">
+     <widget class="QComboBox" name="prov_id">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -966,9 +922,11 @@ background-color: #F8F7F6
         <bold>true</bold>
        </font>
       </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
+      <item>
+       <property name="text">
+        <string>Buscar</string>
+       </property>
+      </item>
      </widget>
     </item>
    </layout>
@@ -976,9 +934,9 @@ background-color: #F8F7F6
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>20</x>
      <y>330</y>
-     <width>311</width>
+     <width>431</width>
      <height>20</height>
     </rect>
    </property>
@@ -989,7 +947,7 @@ background-color: #F8F7F6
     </sizepolicy>
    </property>
    <property name="text">
-    <string>Al confirmar el pago directo, se abrirá el bono correspondiente</string>
+    <string>Al confirmar el pago directo, se DESCARGARÁ el bono correspondiente a la operación</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
