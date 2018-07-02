@@ -21,34 +21,57 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         if propiedades:
             self.__propiedades = self.validarPropiedades(propiedades)
 
-        self.__debitosProcesados = [] # Los valores de prueba los saco del archivo fuente
+        self.__debitosAProcesar = [] # Los valores de prueba los saco del archivo fuente
+
+        self.__debitosProcesables = [] # Los valores de acá salen de la base de datos
+
+        self.__codigosDeRechazo = {}
+
+        self.verListaDebitosProcesables()
+        self.verListaCodigosDeRechazo()
 
         # self.setConfig(banco = "P", cuit = "30561600194", empresa = "SIND T MUN MERLO")
 
+    def verListaCodigosDeRechazo(self):
+
+        self.__codigosDeRechazo = self.__querier.traerElementos(
+            campos = ["codigo", "descripcion"],
+            tabla = "codigos_rechazo"
+        )
+        codigosDeRechazo = dict( (codigo, descripcion) for codigo, descripcion in self.__codigosDeRechazo)
+        self.__codigosDeRechazo = codigosDeRechazo
+        # CodigosDeRechazo ahora contiene una lista de tuplas, cada tupla es un registro de la base de datos.
+
     def verListaDebitosAProcesar(self, lista):
 
-        self.__debitosProcesados = lista
+        self.__debitosAProcesar = lista
 
         for index,item in enumerate(lista):
             codigo = item[8]
             if codigo != "   ":
-                descripcion = self.__querier.traerElementos(
-                    campos = ["descripcion"],
-                    tabla = "codigos_rechazo",
-                    condiciones = [("codigo", "LIKE", "'%{}%'".format(codigo))]
-                )
+
                 # print(descripcion)
-                self.__debitosProcesados[index][9] = descripcion[0][0]
+                self.__debitosAProcesar[index][9] = self.__codigosDeRechazo[codigo]
 
-
-        if self.__debitosProcesados:
+        if self.__debitosAProcesar:
             self.layoutChanged.emit()
             return True
         return False
 
+    def verListaDebitosProcesables(self):
+
+        self.__debitosProcesables = self.__querier.traerElementos(
+            campos = ["id","id_temporal", "legajo_afiliado", "cbu", "fecha_descuento", "importe_actual"],
+            tabla = "debitos",
+            uniones = [("afiliados", "afiliados.legajo = debitos.legajo_afiliado")],
+            condiciones = [("id_temporal", "IS NOT", "NULL")]
+        )
+
+        print(self.__debitosProcesables)
+
     def apllicarCambios(self):
 
-        for debito in self.__debitosProcesados:
+        for debito in self.__debitosAProcesar:
             print("Estado a actualizar: " + debito[0])
             print("Motivo a actualizar: " + debito[8])
             self.__querier.actualizarElemento(
@@ -68,19 +91,24 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
             condiciones = condiciones
         )
 
+    def compararDebitosProcesables(self):
+
+        for debitoAProcesar in self.__debitosAProcesar:
+            pass
+
     def limpiarTabla(self):
-        self.__debitosProcesados = []
+        self.__debitosAProcesar = []
         self.layoutChanged.emit()
 
     def __setTotales(self, indexImporte):
-        self.total_debitos = len(self.__debitosProcesados)
+        self.total_debitos = len(self.__debitosAProcesar)
         self.importe_total = 0
         if self.total_debitos > 0:
-            for debito in self.__debitosProcesados:
+            for debito in self.__debitosAProcesar:
                 self.importe_total += debito[indexImporte]
 
     def __toString(self, index):
-        for debito in self.__debitosProcesados:
+        for debito in self.__debitosAProcesar:
             debito[index] = str(debito[index])
 
     def validarPropiedades(self, propiedades):
@@ -96,11 +124,11 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
 
 # Estas son las funciones específicas de Qt para las tablas
     def rowCount(self, parent):
-        return len(self.__debitosProcesados)
+        return len(self.__debitosAProcesar)
 
     def columnCount(self, parent):
-        if self.__debitosProcesados:
-            return len(self.__debitosProcesados[0])
+        if self.__debitosAProcesar:
+            return len(self.__debitosAProcesar[0])
         else:
             return 0
 
@@ -112,7 +140,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         if role == QtCore.Qt.DisplayRole:
             row = index.row()
             column = index.column()
-            value = self.__debitosProcesados[row][column] # value contiene la lista de listas que contiene los afiliados
+            value = self.__debitosAProcesar[row][column] # value contiene la lista de listas que contiene los afiliados
 
             return value # el valor que retorno es el que aparecería en la tabla
 
