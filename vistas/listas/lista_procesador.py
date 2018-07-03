@@ -1,7 +1,7 @@
 # Importamos el módulo sys que provee el acceso a funciones y objetos mantenidos por el intérprete.
 import sys
 # Importamos las herramientas de PyQT que vamos a utilizar
-from PyQt5 import QtWidgets, uic, QtGui
+from PyQt5 import QtWidgets, uic, QtGui, QtCore
 # Importamos los elementos que se encuentran dentro del diseñador
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton
 # Importamos el modulo uic necesario para levantar un archivo .ui
@@ -23,6 +23,8 @@ class ListaProcesador(QtWidgets.QWidget):
 
 		self.model = ModeloProcesador()
 
+		self.listaProcesador.tbl_procesador.setItemDelegate(BackgroundColorDelegate(self))
+
 		self.listaProcesador.tbl_procesador.setModel(self.model)
 		self.listaProcesador.btn_buscar_bet.clicked.connect(self.handleOpenBet)
 		self.listaProcesador.btn_aplicar.clicked.connect(self.model.apllicarCambios)
@@ -36,7 +38,8 @@ class ListaProcesador(QtWidgets.QWidget):
 			with open(path[0], 'r') as bet_file:
 				listaDebitos = []
 				for line in bet_file:
-					listaDebitos.append(self.processBetLine(line))
+					lineaProcesada = self.processBetLine(line)
+					listaDebitos.append(lineaProcesada)
 				self.model.verListaDebitosAProcesar(listaDebitos)
 				self.ajustarTabla()
 		except FileNotFoundError:
@@ -51,7 +54,8 @@ class ListaProcesador(QtWidgets.QWidget):
 		cbu = line[39:61]
 		importe = self.formatImporte(line[61:71])
 		cuit = line[71:82]
-		orden_movimiento = self.formatCerosIzquierda(line[92:107])
+		orden_mov_prev = self.formatCerosIzquierda(line[92:107])
+		orden_movimiento = self.formatJubilados(orden_mov_prev)
 		codigo_error = line[144:147]
 		empresa = line[147:164]
 
@@ -78,10 +82,35 @@ class ListaProcesador(QtWidgets.QWidget):
 	def formatCerosIzquierda(self, linea):
 		return linea.lstrip("0")
 
+	def formatJubilados(self, linea):
+		if len(linea) > 3:
+			if (linea[-4] == "8"):
+				linea = linea[-3:]
+				print ("Miren chicos! Encontré al jubilado!")
+
+		return self.formatCerosIzquierda(linea)
+
 	def formatLegajo(self, legajo):
 		return self.formatCerosIzquierda(legajo).zfill(8) # Se usa zfill por ser un string
-
 
 	def ajustarTabla(self):
 		header = self.listaProcesador.tbl_procesador.horizontalHeader()
 		header.setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
+
+class BackgroundColorDelegate(QtWidgets.QStyledItemDelegate):
+
+	def __init__(self, parent = None):
+		super(BackgroundColorDelegate, self).__init__()
+
+		self.parent = parent
+
+	def	calculateColorForRow(self, index):
+		return QtGui.QColor(210, 10, 10)
+
+
+	def initStyleOption(self, option, index):
+		super(BackgroundColorDelegate,self).initStyleOption(option, index)
+		if index.column() == 8:
+			dato = self.parent.model.data(index, QtCore.Qt.DisplayRole)
+			if dato != "   " :
+				option.backgroundBrush = self.calculateColorForRow(index.row())
