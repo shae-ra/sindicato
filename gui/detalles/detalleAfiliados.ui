@@ -49,7 +49,7 @@
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>1</number>
      </property>
      <property name="iconSize">
       <size>
@@ -3656,7 +3656,7 @@ background-color: #F8F7F6
            </widget>
           </item>
           <item row="1" column="0" colspan="2">
-           <widget class="QTableView" name="tbl_familiares">
+           <widget class="ListadoFamiliaresContextM" name="tbl_familiares">
             <property name="font">
              <font>
               <family>Calibri</family>
@@ -5203,6 +5203,11 @@ background-color: #F8F7F6
    <class>ListadoDebitosContextM</class>
    <extends>QTableView</extends>
    <header>widgets.table_views.listado_debitos</header>
+  </customwidget>
+  <customwidget>
+   <class>ListadoFamiliaresContextM</class>
+   <extends>QTableView</extends>
+   <header>widgets.table_views.listado_familiares</header>
   </customwidget>
  </customwidgets>
  <tabstops>

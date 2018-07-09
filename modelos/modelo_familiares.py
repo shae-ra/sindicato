@@ -16,11 +16,31 @@ class ModeloFamiliares(QtCore.QAbstractTableModel):
 
         self.__listaFamiliares = []
 
+    def borrarFamiliar(self, idFamiliar):
+        self.__querier.borrarElemento('familiares', 'dni', idFamiliar)
+
+    def guardarFamiliar(self, familiar):
+        self.__querier.insertarElemento('familiares', familiar)
+        self.verListaFamiliares()
+        return True
+
+    def refrescarTabla(self):
+        self.__listaFamiliares = self.__querier.traerElementos(
+            campos = self.__propiedades,
+            tabla = 'familiares',
+            uniones = [("afiliados", "legajo_afiliado = afiliados.legajo")],
+            condiciones = self.condicionesRefresco,
+            orden = self.ordenRefresco)
+        if self.__listaFamiliares:
+            self.layoutChanged.emit()
 
     def verListaFamiliares(self, condiciones = None, orden = None):
         # USAR SI NECESITO HARDCODEAR CONDICIONES
         # if condiciones:
         #     condiciones.append(("", "", ""))
+
+        self.condicionesRefresco = condiciones
+        self.ordenRefresco = orden
 
         self.__listaFamiliares = self.__querier.traerElementos(
             campos = self.__propiedades,
@@ -32,11 +52,6 @@ class ModeloFamiliares(QtCore.QAbstractTableModel):
             self.layoutChanged.emit()
             return True
         return False
-
-    def guardarFamiliar(self, familiar):
-        self.__querier.insertarElemento('familiares', familiar)
-        self.verListaFamiliares()
-        return True
 
 # Estas son las funciones específicas de Qt para las tablas
     def rowCount(self, parent):
