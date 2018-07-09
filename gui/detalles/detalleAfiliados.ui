@@ -49,7 +49,7 @@
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <property name="iconSize">
       <size>
@@ -2822,7 +2822,10 @@ color: #FFFFFF;
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab_5">
+     <widget class="QWidget" name="tab_familiares">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <attribute name="icon">
        <iconset>
         <normaloff>../iconos/users.ico</normaloff>../iconos/users.ico</iconset>
@@ -2973,7 +2976,7 @@ background-color: #F8F7F6
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QComboBox" name="comboBox_15">
+              <widget class="QComboBox" name="fam_relacion">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -3140,7 +3143,7 @@ background-color: #F8F7F6
               </widget>
              </item>
              <item row="9" column="1" colspan="3">
-              <widget class="QLineEdit" name="lineEdit_29">
+              <widget class="QLineEdit" name="fam_apellido">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -3267,7 +3270,7 @@ background-color: #F8F7F6
               </widget>
              </item>
              <item row="9" column="5">
-              <widget class="QLineEdit" name="lineEdit_27">
+              <widget class="QLineEdit" name="fam_nombre">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -3322,7 +3325,7 @@ background-color: #F8F7F6
               </widget>
              </item>
              <item row="9" column="7">
-              <widget class="QLineEdit" name="lineEdit_28">
+              <widget class="QLineEdit" name="fam_dni">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -3410,7 +3413,10 @@ background-color: #F8F7F6
               </widget>
              </item>
              <item row="11" column="5">
-              <widget class="QLineEdit" name="lineEdit_33">
+              <widget class="QLineEdit" name="fam_edad">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -3468,6 +3474,9 @@ background-color: #F8F7F6
                  <bold>true</bold>
                 </font>
                </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
               </widget>
              </item>
              <item row="11" column="6">
@@ -3504,7 +3513,7 @@ background-color: #F8F7F6
               </widget>
              </item>
              <item row="11" column="7">
-              <widget class="QComboBox" name="comboBox_9">
+              <widget class="QComboBox" name="fam_nivel_estudios">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -3589,7 +3598,7 @@ background-color: #F8F7F6
               </widget>
              </item>
              <item row="11" column="1" colspan="3">
-              <widget class="QDateEdit" name="dateEdit_3">
+              <widget class="QDateEdit" name="fam_fecha_nacimiento">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
                  <horstretch>0</horstretch>
@@ -3647,7 +3656,7 @@ background-color: #F8F7F6
            </widget>
           </item>
           <item row="1" column="0" colspan="2">
-           <widget class="QTableView" name="tableView_3">
+           <widget class="QTableView" name="tbl_familiares">
             <property name="font">
              <font>
               <family>Calibri</family>
@@ -3754,7 +3763,7 @@ color: #FFFFFF;
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="QLineEdit" name="lineEdit_32">
+           <widget class="QLineEdit" name="serv_nombre">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3859,7 +3868,7 @@ background-color: #F8F7F6
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QTableView" name="tableView_2">
+           <widget class="QTableView" name="tbl_servicios">
             <property name="palette">
              <palette>
               <active>
@@ -3939,7 +3948,7 @@ background-color: #F8F7F6
            <number>9</number>
           </property>
           <item row="1" column="3">
-           <widget class="QDateEdit" name="dateEdit_7">
+           <widget class="QDateEdit" name="serv_fecha">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -4027,7 +4036,7 @@ background-color: #F8F7F6
            </widget>
           </item>
           <item row="1" column="5">
-           <widget class="QComboBox" name="comboBox_16">
+           <widget class="QComboBox" name="serv_tipo">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -4160,7 +4169,7 @@ background-color: #F8F7F6
            </widget>
           </item>
           <item row="1" column="10">
-           <widget class="QPushButton" name="btn_guardar_servicio">
+           <widget class="QPushButton" name="btn_asociar_servicio">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
@@ -4213,7 +4222,7 @@ color: #FFFFFF;
            </widget>
           </item>
           <item row="1" column="9">
-           <widget class="QSpinBox" name="spinBox">
+           <widget class="QSpinBox" name="serv_cantidad">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -4337,7 +4346,7 @@ color: #FFFFFF ;
            </widget>
           </item>
           <item row="1" column="7">
-           <widget class="QLineEdit" name="lineEdit_31">
+           <widget class="QLineEdit" name="serv_detalles">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -5196,6 +5205,59 @@ background-color: #F8F7F6
    <header>widgets.table_views.listado_debitos</header>
   </customwidget>
  </customwidgets>
+ <tabstops>
+  <tabstop>af_tipo</tabstop>
+  <tabstop>af_apellido</tabstop>
+  <tabstop>af_nombre</tabstop>
+  <tabstop>af_dni</tabstop>
+  <tabstop>af_cuil</tabstop>
+  <tabstop>af_fecha_nacimiento</tabstop>
+  <tabstop>af_edad</tabstop>
+  <tabstop>af_nacionalidad</tabstop>
+  <tabstop>af_estado_civil</tabstop>
+  <tabstop>af_calle</tabstop>
+  <tabstop>af_altura</tabstop>
+  <tabstop>af_piso</tabstop>
+  <tabstop>af_depto</tabstop>
+  <tabstop>af_codigo_postal</tabstop>
+  <tabstop>af_barrio</tabstop>
+  <tabstop>af_localidad</tabstop>
+  <tabstop>af_lugar_trabajo</tabstop>
+  <tabstop>af_jerarquia</tabstop>
+  <tabstop>af_fecha_ingreso</tabstop>
+  <tabstop>af_antiguedad</tabstop>
+  <tabstop>af_nivel_estudios</tabstop>
+  <tabstop>af_tel_particular</tabstop>
+  <tabstop>af_tel_laboral</tabstop>
+  <tabstop>af_celular</tabstop>
+  <tabstop>af_email</tabstop>
+  <tabstop>btn_guardar_afiliado</tabstop>
+  <tabstop>tbl_familiares</tabstop>
+  <tabstop>fam_relacion</tabstop>
+  <tabstop>fam_apellido</tabstop>
+  <tabstop>fam_nombre</tabstop>
+  <tabstop>fam_dni</tabstop>
+  <tabstop>fam_fecha_nacimiento</tabstop>
+  <tabstop>fam_nivel_estudios</tabstop>
+  <tabstop>btn_guardar_familiar</tabstop>
+  <tabstop>serv_fecha</tabstop>
+  <tabstop>serv_tipo</tabstop>
+  <tabstop>serv_detalles</tabstop>
+  <tabstop>serv_cantidad</tabstop>
+  <tabstop>btn_asociar_servicio</tabstop>
+  <tabstop>tbl_servicios</tabstop>
+  <tabstop>serv_nombre</tabstop>
+  <tabstop>btn_guardar_servicio_nuevo</tabstop>
+  <tabstop>af_legajo</tabstop>
+  <tabstop>af_banco</tabstop>
+  <tabstop>af_sucursal</tabstop>
+  <tabstop>af_cbu</tabstop>
+  <tabstop>btn_guardar_cbu</tabstop>
+  <tabstop>tbl_debitos</tabstop>
+  <tabstop>btn_ingresar_debito</tabstop>
+  <tabstop>btn_imprimir_planilla</tabstop>
+  <tabstop>tbl_historial_debitos</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

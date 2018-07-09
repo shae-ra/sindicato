@@ -14,6 +14,7 @@ from PyQt5 import uic
 from PyQt5.QtCore import Qt, QDate, QRegExp
 from modelos.modelo_afiliado import ModeloAfiliado
 from modelos.modelo_debito import ModeloDebito
+from modelos.modelo_familiares import ModeloFamiliares
 
 from datetime import date
 
@@ -62,11 +63,18 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			"motivo"
 		])
 
+		self.model_familiares = ModeloFamiliares()
+
 		self.vd_afiliado.tbl_debitos.setModel(self.model_debito)
 		self.vd_afiliado.tbl_historial_debitos.setModel(self.model_historial)
+		self.vd_afiliado.tbl_familiares.setModel(self.model_familiares)
+
+		self.vd_afiliado.fam_fecha_nacimiento.dateChanged.connect(self.setEdadFamiliar)
 
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
+		self.btn_guardar_familiar.clicked.connect(self.guardarFamiliar)
+
 
 	def guardarAfiliado(self):
 		afiliado = self.getAfiliado()
@@ -74,13 +82,22 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		cdiag = self.operacionCompletada()
 		close = self.close()
 
+	def guardarFamiliar(self):
+		fechaNacimiento = self.vd_afiliado.fam_fecha_nacimiento.date()
+		fechaNacimiento = self.__convertirFecha(fechaNacimiento)
 
-	def operacionCompletada(self):
-		msg = QMessageBox()
-		msg.setIcon(QMessageBox.Information)
-		msg.setText("Operación Exitosa     ")
-		msg.setWindowTitle("...")
-		retval = msg.exec_()
+		familiar = {
+			'familiares.dni' : self.vd_afiliado.fam_dni.text(),
+			'familiares.relacion' : self.vd_afiliado.fam_relacion.currentText(),
+			'familiares.nombre' : self.vd_afiliado.fam_nombre.text(),
+	        'familiares.apellido' : self.vd_afiliado.fam_apellido.text(),
+			'familiares.fecha_nacimiento' : fechaNacimiento,
+	        'familiares.edad' : self.vd_afiliado.fam_edad.text(),
+			'familiares.nivel_estudios' : self.vd_afiliado.fam_nivel_estudios.currentText(),
+			'familiares.legajo_afiliado' : self.vd_afiliado.af_legajo.text()
+		}
+		self.model_familiares.guardarFamiliar(familiar)
+		self.resetFamiliar()
 
 	def guardarCbu(self):
 		cbu = self.vd_afiliado.af_cbu.text()
@@ -149,6 +166,13 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		return afiliado
 
+	def operacionCompletada(self):
+		msg = QMessageBox()
+		msg.setIcon(QMessageBox.Information)
+		msg.setText("Operación Exitosa     ")
+		msg.setWindowTitle("...")
+		retval = msg.exec_()
+
 	def setAfiliado(self, afiliado):
 		self.vd_afiliado.af_legajo.setText(str(afiliado[0]))
 		self.vd_afiliado.af_dni.setText(str(afiliado[1]))
@@ -213,6 +237,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)
 		self.vd_afiliado.btn_ingresar_debito.clicked.connect(self.mostrarCarga)
 		self.verListaDebitos()
+		self.verListaFamiliares()
 		self.verHistorialDebitos()
 		# Accedo al objeto 'tabWidget' que es hijo de el objeto 'vd_afiliado' y además llamo a la función setCurrentIndex()
 		# la funcion setCurrentIndex pertence al último hijo llamado.
@@ -225,6 +250,12 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.model_debito.verTablaDebitos(condiciones, fechas = [1, 6])
 		self.tbl_debitos.setColumnHidden(0, True)
 
+	def verListaFamiliares(self):
+		condiciones = [
+			("legajo_afiliado", "=", "'{}'".format(self.vd_afiliado.af_legajo.text())),
+		]
+		self.model_familiares.verListaFamiliares(condiciones)
+
 	def verHistorialDebitos(self):
 		condiciones = [
 			("legajo_afiliado", "=", "'{}'".format(self.vd_afiliado.af_legajo.text())),
@@ -236,6 +267,25 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	def mostrarCarga(self):
 		# if self.model.tieneCbu():
 		self.v_carga.show()
+
+	def setEdadFamiliar(self):
+		today = date.today()
+		fechaNacimiento = self.vd_afiliado.fam_fecha_nacimiento.date()
+		fechaNacimiento = self.__convertirFecha(fechaNacimiento)
+		edad = today.year - fechaNacimiento.year - ((today.month, today.day) < (fechaNacimiento.month, fechaNacimiento.day))
+		self.vd_afiliado.fam_edad.setText(str(edad))
+
+	def __convertirFecha(self, fecha):
+		return date(fecha.year(), fecha.month(), fecha.day())
+
+	def resetFamiliar(self):
+		self.vd_afiliado.fam_dni.setText(''),
+		self.vd_afiliado.fam_relacion.setCurrentIndex(0),
+		self.vd_afiliado.fam_nombre.setText(''),
+		self.vd_afiliado.fam_apellido.setText(''),
+		self.vd_afiliado.fam_edad.setText(''),
+		self.vd_afiliado.fam_nivel_estudios.setCurrentIndex(0),
+		self.vd_afiliado.af_legajo.setText('')
 
 	def keyPressEvent(self, event):
 		if event.key() == Qt.Key_Escape:
