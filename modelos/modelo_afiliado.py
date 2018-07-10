@@ -163,7 +163,7 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             row = index.row()
             column = index.column()
 
-            value = self.articulos[row][column]
+            value = self.__listaAfiliados[row][column]
 
             return value
 

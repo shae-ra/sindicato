@@ -35,10 +35,6 @@ class ModeloFamiliares(QtCore.QAbstractTableModel):
             self.layoutChanged.emit()
 
     def verListaFamiliares(self, condiciones = None, orden = None):
-        # USAR SI NECESITO HARDCODEAR CONDICIONES
-        # if condiciones:
-        #     condiciones.append(("", "", ""))
-
         self.condicionesRefresco = condiciones
         self.ordenRefresco = orden
 

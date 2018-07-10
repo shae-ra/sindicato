@@ -5264,5 +5264,22 @@ background-color: #F8F7F6
   <tabstop>tbl_historial_debitos</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>serv_nombre</sender>
+   <signal>returnPressed()</signal>
+   <receiver>btn_guardar_servicio</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>982</x>
+     <y>649</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1027</x>
+     <y>653</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
