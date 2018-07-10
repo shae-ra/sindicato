@@ -26,12 +26,31 @@ class ModeloProveedor(QtCore.QAbstractTableModel):
         self.__listaProveedores = []
         self.__proveedor = []
 
+    def bajaProveedor(self, idProveedor):
+        proveedor = {
+            'activo' : 0
+        }
+        self.__querier.actualizarElemento(
+            tabla = 'proveedores',
+            elemento = proveedor,
+            condiciones = [('id', '=', idProveedor)]
+        )
+
+    def refrescarTabla(self):
+        self.__listaProveedores = self.__querier.traerElementos(
+            campos = self.__propiedades,
+            tabla = 'proveedores',
+            condiciones = [('activo', '=', 1)])
+        if self.__listaProveedores:
+            self.layoutChanged.emit()
 
     def verListaProveedores(self):
         nuevaLista = []
         self.__listaProveedores = self.__querier.traerElementos(
             campos = self.__propiedades,
-            tabla = 'proveedores')
+            tabla = 'proveedores',
+            condiciones = [('activo', '=', 1)]
+            )
 
         print(self.__listaProveedores)
         for index, item in enumerate(self.__listaProveedores):
