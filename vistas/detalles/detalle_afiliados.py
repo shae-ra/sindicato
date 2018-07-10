@@ -15,6 +15,7 @@ from PyQt5.QtCore import Qt, QDate, QRegExp
 from modelos.modelo_afiliado import ModeloAfiliado
 from modelos.modelo_debito import ModeloDebito
 from modelos.modelo_familiares import ModeloFamiliares
+from modelos.modelo_servicios import ModeloServicios
 
 from datetime import date
 
@@ -28,9 +29,6 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	#Inicializacion del Objeto QWidget
 	def __init__(self):
 		QWidget.__init__(self)
-
-
-
 		# Importamos la vista "detalleAfiliados" y la alojamos dentro de la variable "vistaDetalle"
 		# Agregamos 'self.' al objeto así podemos acceder a él en el resto de las funciones
 		self.vd_afiliado = uic.loadUi("gui/detalles/detalleAfiliados.ui", self)
@@ -64,17 +62,33 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		])
 
 		self.model_familiares = ModeloFamiliares()
+		self.model_servicios = ModeloServicios()
 
 		self.vd_afiliado.tbl_debitos.setModel(self.model_debito)
 		self.vd_afiliado.tbl_historial_debitos.setModel(self.model_historial)
 		self.vd_afiliado.tbl_familiares.setModel(self.model_familiares)
+		#self.vd_afiliado.tbl_servicios.setModel(self.model_servicios_afiliado)
+		self.vd_afiliado.serv_tipo.setModel(self.model_servicios)
 
 		self.vd_afiliado.fam_fecha_nacimiento.dateChanged.connect(self.setEdadFamiliar)
 
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_familiar.clicked.connect(self.guardarFamiliar)
+		self.btn_guardar_servicio.clicked.connect(self.guardarServicio)
 
+	def confirmarOperacion(self):
+		msg = QtWidgets.QMessageBox()
+
+		reply = msg.question(self, "Confirmar operación", "¿Está seguro de realizar esta operación?",
+			QtWidgets.QMessageBox.Yes, QtWidgets.QMessageBox.No)
+
+		msg.show()
+
+		if reply == QtWidgets.QMessageBox.Yes:
+			return True
+		else:
+			return False
 
 	def guardarAfiliado(self):
 		afiliado = self.getAfiliado()
@@ -102,6 +116,15 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	def guardarCbu(self):
 		cbu = self.vd_afiliado.af_cbu.text()
 		self.model.modificarCbu(cbu)
+
+	def guardarServicio(self):
+		servicio = {
+			'nombre' : self.vd_afiliado.serv_nombre.text()
+		}
+
+		if self.confirmarOperacion():
+			self.model_servicios.guardarServicio(servicio)
+			self.vd_afiliado.serv_nombre.setText('')
 
 	def getAfiliado(self):
 		f_ingreso = self.vd_afiliado.af_fecha_ingreso.date()
@@ -239,6 +262,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.verListaDebitos()
 		self.verListaFamiliares()
 		self.verHistorialDebitos()
+		self.model_servicios.verListaServicios()
 		# Accedo al objeto 'tabWidget' que es hijo de el objeto 'vd_afiliado' y además llamo a la función setCurrentIndex()
 		# la funcion setCurrentIndex pertence al último hijo llamado.
 

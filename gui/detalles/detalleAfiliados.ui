@@ -49,7 +49,7 @@
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>2</number>
      </property>
      <property name="iconSize">
       <size>
@@ -3710,7 +3710,7 @@ background-color: #F8F7F6
            <number>9</number>
           </property>
           <item row="1" column="3">
-           <widget class="QPushButton" name="btn_guardar_servicio_nuevo">
+           <widget class="QPushButton" name="btn_guardar_servicio">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
@@ -3727,13 +3727,13 @@ background-color: #F8F7F6
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">#btn_guardar_servicio_nuevo{
+             <string notr="true">#btn_guardar_servicio{
 background-color:#005c99;
 color: #FFFFFF;
 border-radius: 10px;
 }
 
-#btn_guardar_servicio_nuevo:hover{
+#btn_guardar_servicio:hover{
 background-color:#004d80;
 color: #FFFFFF;
 }</string>
@@ -4186,13 +4186,13 @@ background-color: #F8F7F6
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">#btn_guardar_servicio{
+             <string notr="true">#btn_asociar_servicio{
 background-color:#005c99;
 color: #FFFFFF;
 border-radius: 10px;
 }
 
-#btn_guardar_servicio:hover{
+#btn_asociar_servicio:hover{
 background-color:#004d80;
 color: #FFFFFF;
 }</string>
@@ -5252,7 +5252,7 @@ background-color: #F8F7F6
   <tabstop>btn_asociar_servicio</tabstop>
   <tabstop>tbl_servicios</tabstop>
   <tabstop>serv_nombre</tabstop>
-  <tabstop>btn_guardar_servicio_nuevo</tabstop>
+  <tabstop>btn_guardar_servicio</tabstop>
   <tabstop>af_legajo</tabstop>
   <tabstop>af_banco</tabstop>
   <tabstop>af_sucursal</tabstop>
