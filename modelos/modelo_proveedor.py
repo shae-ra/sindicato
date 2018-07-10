@@ -71,7 +71,8 @@ class ModeloProveedor(QtCore.QAbstractTableModel):
     def verTablaProveedores(self):
         self.__listaProveedores = self.__querier.traerElementos(
             campos = self.__propiedades,
-            tabla = 'proveedores')
+            tabla = 'proveedores',
+            condiciones = [('activo', '=', '1')])
         if self.__listaProveedores:
             self.layoutChanged.emit()
             return True
