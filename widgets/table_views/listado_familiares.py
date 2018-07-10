@@ -29,16 +29,6 @@ class ListadoFamiliaresContextM(QtWidgets.QTableView):
 			self.model().borrarFamiliar(idFamiliar)
 			self.model().refrescarTabla()
 
-	def pagoManual(self, event):
-		row = self.currentIndex().row()
-
-		idFamiliarIndex = self.model().index(row, 0)
-		idFamiliar = self.model().itemData(idFamiliarIndex)[0]
-
-		if self.confirmarOperacion():
-			self.model().borrarFamiliar(idFamiliar)
-			self.model().refrescarTabla()
-
 	def confirmarOperacion(self):
 		msg = QtWidgets.QMessageBox()
 
