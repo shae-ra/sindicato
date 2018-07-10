@@ -16,6 +16,16 @@ class ModeloServicios(QtCore.QAbstractListModel):
 
         self.__listaServicios = []
 
+    def getId(self, nombre):
+        resultado = self.__querier.traerElementos(
+			campos = ['id'],
+			tabla = 'servicios',
+			condiciones = [('nombre', '=', "'{}'".format(nombre))]
+		)
+
+        print(resultado)
+        return resultado[0][0]
+
     def guardarServicio(self, servicio):
         self.__querier.insertarElemento('servicios', servicio)
         self.verListaServicios()
@@ -29,7 +39,6 @@ class ModeloServicios(QtCore.QAbstractListModel):
 
         if self.__listaServicios:
             self.layoutChanged.emit()
-
         print(self.__listaServicios)
 
     def rowCount(self, parent):

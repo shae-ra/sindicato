@@ -16,6 +16,7 @@ from modelos.modelo_afiliado import ModeloAfiliado
 from modelos.modelo_debito import ModeloDebito
 from modelos.modelo_familiares import ModeloFamiliares
 from modelos.modelo_servicios import ModeloServicios
+from modelos.modelo_servicios_afiliados import ModeloServiciosAfiliados
 
 from datetime import date
 
@@ -63,19 +64,34 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		self.model_familiares = ModeloFamiliares()
 		self.model_servicios = ModeloServicios()
+		self.model_servicios_afiliado = ModeloServiciosAfiliados()
 
 		self.vd_afiliado.tbl_debitos.setModel(self.model_debito)
 		self.vd_afiliado.tbl_historial_debitos.setModel(self.model_historial)
 		self.vd_afiliado.tbl_familiares.setModel(self.model_familiares)
-		#self.vd_afiliado.tbl_servicios.setModel(self.model_servicios_afiliado)
+		self.vd_afiliado.tbl_servicios.setModel(self.model_servicios_afiliado)
 		self.vd_afiliado.serv_tipo.setModel(self.model_servicios)
 
 		self.vd_afiliado.fam_fecha_nacimiento.dateChanged.connect(self.setEdadFamiliar)
 
+		self.btn_asociar_servicio.clicked.connect(self.asociarServicio)
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_familiar.clicked.connect(self.guardarFamiliar)
 		self.btn_guardar_servicio.clicked.connect(self.guardarServicio)
+
+	def asociarServicio(self):
+		id_servicio = self.model_servicios.getId(self.vd_afiliado.serv_tipo.currentText())
+		fecha = self.vd_afiliado.serv_fecha.date()
+		fecha = self.__convertirFecha(fecha)
+		servicio = {
+			'id_servicio' : id_servicio,
+			'legajo_afiliado' : self.vd_afiliado.af_legajo.text(),
+			'fecha' : fecha,
+			'cantidad' : self.vd_afiliado.serv_cantidad.text(),
+			'detalle' :self.vd_afiliado.serv_detalles.text()
+		}
+		self.model_servicios_afiliado.asociarServicio(servicio)
 
 	def confirmarOperacion(self):
 		msg = QtWidgets.QMessageBox()
@@ -263,6 +279,10 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.verListaFamiliares()
 		self.verHistorialDebitos()
 		self.model_servicios.verListaServicios()
+		self.model_servicios_afiliado.verTablaServicios(self.vd_afiliado.af_legajo.text())
+
+		self.vd_afiliado.serv_tipo.setCurrentIndex(0)
+
 		# Accedo al objeto 'tabWidget' que es hijo de el objeto 'vd_afiliado' y además llamo a la función setCurrentIndex()
 		# la funcion setCurrentIndex pertence al último hijo llamado.
 
