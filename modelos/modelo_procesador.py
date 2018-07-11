@@ -45,15 +45,21 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
     def verListaDebitosAProcesar(self, lista):
 
         self.__debitosAProcesar = lista
+        self.verListaDebitosProcesables()
+        self.procesables = []
 
-        for index,item in enumerate(lista):
-            codigo = item[8]
+        for index, debito in enumerate(lista):
+            codigo = debito[8]
+
             if codigo != "   ":
-
-                # print(descripcion)
                 self.__debitosAProcesar[index][9] = self.__codigosDeRechazo[codigo]
 
-        if self.__debitosAProcesar:
+            self.obtenerDebitoProcesable(debito)
+
+        if self.procesables:
+            print("DEBUG - Debitos a procesar: ", self.__debitosAProcesar)
+            print("DEBUG - Procesables: ", self.procesables)
+            self.__debitosAProcesar = self.procesables
             self.layoutChanged.emit()
             return True
         return False
@@ -64,7 +70,8 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
             campos = ["id","id_temporal", "legajo_afiliado", "cbu", "fecha_descuento", "importe_actual"],
             tabla = "debitos",
             uniones = [("afiliados", "afiliados.legajo = debitos.legajo_afiliado")],
-            condiciones = [("id_temporal", "IS NOT", "NULL")]
+            condiciones = [("id_temporal", "IS NOT", "NULL")],
+            orden = ("id_temporal", "ASC")
         )
 
         print(self.__debitosProcesables)
@@ -79,9 +86,10 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
                 elemento = { "id_temporal" : None,
                     "estado" : debito[0],
                     "motivo" : debito[8] },
-                condiciones = [("id_temporal", "=", int(debito[7]))]
+                condiciones = [("id_temporal", "=", int(debito[7])), ("legajo_afiliado", "=", debito[2])]
             )
 
+        self.verListaDebitosProcesables()
         self.limpiarTabla()
 
     def actualizarDebito(self, debito, condiciones):
@@ -91,10 +99,32 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
             condiciones = condiciones
         )
 
-    def compararDebitosProcesables(self):
+    def obtenerDebitoProcesable(self, debito):
+        # Voy a comparar los elementos de self.__debitosAProcesar con los de
+        # self.__debitosProcesables. El segundo lo puedo traer ordenado para hacer de las búsquedas un proceso mas rápido,
+        # el primero no hace falta ordenarlo ya que vamos a iterar sobre el registro por registro.
 
-        for debitoAProcesar in self.__debitosAProcesar:
-            pass
+        match = []
+        for index, possMatch in enumerate(self.__debitosProcesables):
+            if possMatch[1] == int(debito[7]) and possMatch[2] == debito[2]:
+                match = self.__debitosProcesables[index]
+
+                if debito[4] != match[3]: # CBU
+                    print("Los CBU no coinciden en ", match[2])
+                    print(debito[4])
+                    print(match[3])
+                if debito[1] != match[4]:  # Fecha
+                    print("Las fechas no coinciden en ", match[2])
+                    print(debito[1])
+                    print(match[4].strftime('%d/%m/%Y'))
+                if debito[5] != match[5]:  # Importe
+                    print("Los importes no coinciden en ", match[2])
+                    print(debito[5])
+                    print(match[5])
+
+                self.procesables.append(list(debito))
+                return True
+        return False
 
     def limpiarTabla(self):
         self.__debitosAProcesar = []
