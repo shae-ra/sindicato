@@ -40,6 +40,8 @@ class ListaProveedores(QtWidgets.QWidget):
 		self.tbl_proveedores.doubleClicked.connect(self.mostrarDetalleProveedor)
 		listadoproveedor.btn_nuevo.clicked.connect(self.mostrarDetalleProveedor)
 
+		self.ln_buscar.returnPressed.connect(self.buscarProveedores)
+
 	#===========================
 	#DEFINICION DE LAS FUNCIONES
 	#===========================
@@ -57,6 +59,7 @@ class ListaProveedores(QtWidgets.QWidget):
 
 	def buscarProveedores(self):
 		busqueda = self.ln_buscar.text()
+		condiciones = []
 		try:
 			busqueda = int(busqueda)
 			condiciones =  [("id", "LIKE", "'%{}%'".format(busqueda))]
