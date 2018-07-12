@@ -73,6 +73,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado.serv_tipo.setModel(self.model_servicios)
 
 		self.vd_afiliado.fam_fecha_nacimiento.dateChanged.connect(self.setEdadFamiliar)
+		self.vd_afiliado.af_fecha_nacimiento.dateChanged.connect(self.setEdadAfiliado)
+		self.vd_afiliado.af_fecha_ingreso.dateChanged.connect(self.setAntiguedad)
 
 		self.btn_asociar_servicio.clicked.connect(self.asociarServicio)
 		self.btn_guardar_afiliado.clicked.connect(self.guardarAfiliado)
@@ -312,12 +314,27 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		# if self.model.tieneCbu():
 		self.v_carga.show()
 
+	def setEdad(self, fecha):
+		hoy = date.today()
+		fecha = self.__convertirFecha(fecha)
+		edad = hoy.year - fecha.year - ((hoy.month, hoy.day) < (fecha.month, fecha.day))
+		return str(edad)
+
 	def setEdadFamiliar(self):
-		today = date.today()
+
+		# today = date.today()
 		fechaNacimiento = self.vd_afiliado.fam_fecha_nacimiento.date()
-		fechaNacimiento = self.__convertirFecha(fechaNacimiento)
-		edad = today.year - fechaNacimiento.year - ((today.month, today.day) < (fechaNacimiento.month, fechaNacimiento.day))
-		self.vd_afiliado.fam_edad.setText(str(edad))
+		# self.vd_afiliado.fam_edad.setText(str(edad))
+
+		self.vd_afiliado.fam_edad.setText(self.setEdad(fechaNacimiento))
+
+	def setAntiguedad(self):
+		fechaIngreso = self.vd_afiliado.af_fecha_ingreso.date()
+		self.vd_afiliado.af_antiguedad.setText(self.setEdad(fechaIngreso))
+
+	def setEdadAfiliado(self):
+		fechaNacimiento = self.vd_afiliado.af_fecha_nacimiento.date()
+		self.vd_afiliado.af_edad.setText(self.setEdad(fechaNacimiento))
 
 	def __convertirFecha(self, fecha):
 		return date(fecha.year(), fecha.month(), fecha.day())
@@ -370,3 +387,11 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado.af_email.setValidator(QtGui.QRegExpValidator(rxEmail))
 		self.vd_afiliado.af_lugar_trabajo.setValidator(QtGui.QRegExpValidator(rxLugarTrabajo))
 		self.vd_afiliado.af_jerarquia.setValidator(QtGui.QRegExpValidator(rxJerarquia))
+
+	def setRegexFamiliar(self):
+		rxDni = QRegExp("\d{8,8}")
+		rxNyA = QRegExp("[A-Z\s]{50}")
+
+		self.vd_afiliado.fam_dni.setValidator(QtGui.QRegExpValidator(rxDni))
+		self.vd_afiliado.fam_apellido.setValidator(QtGui.QRegExpValidator(rxNyA))
+		self.vd_afiliado.fam_nombre.setValidator(QtGui.QRegExpValidator(rxNyA))
