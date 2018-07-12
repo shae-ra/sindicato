@@ -154,6 +154,17 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             condiciones = condiciones
         )
 
+    def esProcesable(self):
+        resultado = self.__querier.traerElementos(
+            tabla = 'debitos',
+            condiciones = [('id_temporal','IS NOT','NULL')],
+            limite = 1
+        )
+
+        if resultado:
+            return False
+        return True
+
     def __setTotales(self, indexImporte):
         self.total_debitos = len(self.listaDebitos)
         self.importe_total = 0

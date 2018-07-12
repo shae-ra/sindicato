@@ -76,8 +76,11 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 
 		# fecha = self.vistaLiqAfiliado.liq_fecha.date()
 		# self.model.liquidar(fecha)
-
-		self.handleSaveEbt()
+		if self.model.esProcesable():
+			self.handleSaveEbt()
+		else:
+			# ACA SE PUEDE PONER UNA VENTANA EMERGENTE PARA RESETEAR LOS DEBITOS CON id_temporal EN LA BASE DE DATOS
+			print("No se puede procesar el archivo porque se está esperando una debitación automática")
 
 	def handleSaveXls(self):
 		path = QtWidgets.QFileDialog.getSaveFileName(
