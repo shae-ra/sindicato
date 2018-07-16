@@ -312,6 +312,14 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 	def mostrarCarga(self):
 		# if self.model.tieneCbu():
+		if len(self.vd_afiliado.af_cbu.text()) != 22:
+
+			msg = QtWidgets.QMessageBox()
+
+			reply = msg.question(self, "Alerta", "El CBU del afiliado no tiene 22 caracteres",
+				QtWidgets.QMessageBox.Ok)
+			msg.show()
+			return False
 		self.v_carga.show()
 
 	def setEdad(self, fecha):
