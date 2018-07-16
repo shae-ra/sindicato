@@ -51,16 +51,26 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def guardarDebito(self):
 		debito = self.getDebito()
-		if debito:
+		if debito['errores']:
+			self.mensajeError(debito['errores'])
+			#observer.msg("No se puede cargar el debito")
+		else:
 			self.model.guardarDebito(debito)
 			self.getXls()
-			cdiag = self.operacionCompletada()
+			self.operacionCompletada()
 			reset = self.resetDebito()
 			self.close()
-		else:
-			#observer.msg("No se puede cargar el debito")
-			return
+		return
 
+	def mensajeError(self, errores):
+		msg = QMessageBox()
+		msg.setIcon(QMessageBox.Information)
+		erroresMsg = ""
+		for error in errores:
+			erroresMsg += error
+		msg.setText("No se puede realizar la operacion por los siguientes motivos: \n" + erroresMsg )
+		msg.setWindowTitle("...")
+		msg.exec_()
 
 	def operacionCompletada(self):
 		msg = QMessageBox()
@@ -68,7 +78,6 @@ class CargaDebito(QtWidgets.QWidget):
 		msg.setText("Operación Exitosa     ")
 		msg.setWindowTitle("...")
 		retval = msg.exec_()
-
 
 	def resetDebito(self):
 		self.v_carga.deb_fecha_mes.setText('')
@@ -79,24 +88,52 @@ class CargaDebito(QtWidgets.QWidget):
 		self.v_carga.deb_orden.setText('')
 
 	def getDebito(self):
-		if self.v_carga.deb_importe_total.text() != "" and self.v_carga.deb_importe_total.text() != "0":
-			print("TRUUUUU")
-			debito = {
-			"legajo_afiliado" : self.parent.vd_afiliado.af_legajo.text(),
-			"fecha_descuento" : date(
-				int(self.v_carga.deb_fecha_anio.text()),
-				int(self.v_carga.deb_fecha_mes.text()),
-				1),
-			"fecha_carga_inicial" : date.today(),
-			"proveedor_id" : int(self.v_carga.prov_id.currentText().split("-")[0]),
-			"total_cuotas" : int(self.v_carga.deb_total_cuotas.text()),
-			"importe_actual" : int(self.v_carga.deb_importe_cuota.text()),
-			"importe_total" : int(self.v_carga.deb_importe_total.text()),
-			"n_orden" : self.v_carga.deb_orden.text()
-			}
+		errores = []
+		debito = {
+		"legajo_afiliado" : self.parent.vd_afiliado.af_legajo.text(),
+		"fecha_carga_inicial" : date.today(),
+		"n_orden" : self.v_carga.deb_orden.text()
+		}
 
-			print(debito)
-			return debito
+		fecha_mes = 0
+		fecha_anio = 0
+		try:
+			fecha_anio = int(self.v_carga.deb_fecha_anio.text())
+		except:
+			errores.append("- El año ingresado no es válido\n")
+		try:
+			fecha_mes = int(self.v_carga.deb_fecha_mes.text())
+		except:
+			errores.append("- El mes ingresado no es válido\n")
+		try:
+			debito['proveedor_id'] = int(self.v_carga.prov_id.currentText().split("-")[0])
+		except:
+			errores.append("- No hay seleccionado un proveedor\n")
+		try:
+			debito['total_cuotas'] = int(self.v_carga.deb_total_cuotas.text())
+			if debito['total_cuotas'] == 0:
+				errores.append("- No hay cuotas ingresadas\n")
+		except:
+			errores.append("- No hay cuotas ingresadas\n")
+		try:
+			debito['importe_actual'] = int(self.v_carga.deb_importe_cuota.text())
+			if debito['importe_actual'] > 900:
+				errores.append("- El importe por cuota exede el máximo disponible\n")
+		except:
+			errores.append("- No se ha ingresado un importe\n")
+		try:
+			debito['importe_total'] = int(self.v_carga.deb_importe_total.text())
+			if debito['importe_total'] == "" or debito['importe_total'] == "0":
+				errores.append("- No se ha podido calcular el total a cobrar\n")
+		except:
+			errores.append("- No se ha podido calcular el total a cobrar\n")
+
+		if fecha_mes and fecha_anio:
+			debito['fecha_descuento'] = date(fecha_anio, fecha_mes, 1)
+
+		# print(debito)
+		debito['errores'] = errores
+		return debito
 
 	def getXls(self):
 
@@ -143,6 +180,7 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def showEvent(self, event):
 		self.model_prov.verListaProveedores()
+		self.v_carga.prov_id.setCurrentIndex(0)
 
 	def setNumeroDeOrden(self):
 		numeroDeOrden = self.getNumeroDeOrden()
