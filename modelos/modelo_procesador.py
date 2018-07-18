@@ -2,6 +2,8 @@ from PyQt5 import QtCore
 from libs.db import querier
 from datetime import date
 from dateutil.relativedelta import relativedelta
+from PyQt5.QtWidgets import QFileDialog
+import openpyxl
 import cerberus
 
 class ModeloProcesador(QtCore.QAbstractTableModel):
@@ -42,6 +44,8 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         )
         codigosDeRechazo = dict( (codigo, descripcion) for codigo, descripcion in self.__codigosDeRechazo)
         self.__codigosDeRechazo = codigosDeRechazo
+        self.__codigosDeRechazo[None] = ""
+        self.__codigosDeRechazo['   '] = ""
         # CodigosDeRechazo ahora contiene una lista de tuplas, cada tupla es un registro de la base de datos.
 
     def verListaDebitosAProcesar(self, lista):
@@ -49,6 +53,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         self.__debitosBet = lista
         self.verListaDebitosDatabase()
         self.__debitosProcesados = []
+        self.__debitosProcesadosDB = []
         self.__debitosRechazados = []
         # self.procesables = []
 
@@ -121,6 +126,8 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
                 condiciones = [("id", "=", debito[0])]
             )
 
+        self.guardarXls()
+
         self.verListaDebitosDatabase()
         self.limpiarTabla()
 
@@ -179,9 +186,55 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
                     match[db_motivo] = debito[f_codigo_error]
                     self.__debitosRechazados.append(match)
                 else:
+                    self.__debitosProcesadosDB.append(list(match))
                     self.__debitosProcesados.append(list(debito))
                 return True
         return False
+
+    def guardarXls(self):
+        wb = openpyxl.Workbook()
+        ws = wb.worksheets[0]
+
+        registrosModificados = len(self.__debitosProcesados) + len(self.__debitosRechazados)
+
+        debitosXls = self.__querier.traerElementos(
+            tabla = "debitos",
+            campos = ["CONCAT(afiliados.nombre, ' ', afiliados. apellido)", "importe_actual", "cuota_actual", "total_cuotas", "motivo", "proveedores.nombre"],
+            uniones = [('afiliados', 'afiliados.legajo = debitos.legajo_afiliado'), ('proveedores', 'proveedores.id = debitos.proveedor_id')],
+            limite = registrosModificados,
+            orden = ("debitos.id", "DESC")
+        )
+
+        ws['A1'] = 'Afiliado'
+        ws['B1'] = 'Importe'
+        ws['C1'] = 'Cuota'
+        ws['D1'] = 'Cantidad de cuotas'
+        ws['E1'] = 'Rechazado'
+        ws['F1'] = 'Empresa'
+
+        for index, debito in enumerate(debitosXls):
+            a = 'A{}'.format(index + 2)
+            b = 'B{}'.format(index + 2)
+            c = 'C{}'.format(index + 2)
+            d = 'D{}'.format(index + 2)
+            e = 'E{}'.format(index + 2)
+            f = 'F{}'.format(index + 2)
+            ws[a] = debito[0]
+            ws[b] = debito[1]
+            ws[c] = debito[2]
+            ws[d] = debito[3]
+            ws[e] = self.__codigosDeRechazo[debito[4]]
+            ws[f] = debito[5]
+
+		# ABRIR UN CUADRO DE DIALOGO INDICANDO DONDE GUARDAR
+        self.handleSave(wb)
+        wb.close()
+
+    def handleSave(self, workbook):
+        path = QFileDialog.getSaveFileName(
+        	None, 'Save File', '', 'Excel(*.xlsx)')
+        if not path[0]: return
+        workbook.save(path[0])
 
     def limpiarTabla(self):
         self.__debitosBet = []
