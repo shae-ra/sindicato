@@ -55,6 +55,7 @@ class CargaDebito(QtWidgets.QWidget):
 			self.mensajeError(debito['errores'])
 			#observer.msg("No se puede cargar el debito")
 		else:
+			debito.pop('errores')
 			self.model.guardarDebito(debito)
 			self.getXls()
 			self.operacionCompletada()

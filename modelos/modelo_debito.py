@@ -50,8 +50,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         mes = debito['fecha_descuento'].month
         for indexCuota in range(debito['total_cuotas']): # El 1 indica desde que numero arrancar
             debito['cuota_actual'] = indexCuota + 1
-            debito['fecha_descuento'] = debito['fecha_descuento'] + relativedelta(months=indexCuota)
-
+            debito['fecha_descuento'] = debito['fecha_descuento'] + relativedelta(months=1)
             self.__querier.insertarElemento('debitos', debito)
 
     def actualizarDebito(self, debito):
