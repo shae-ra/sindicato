@@ -1,5 +1,6 @@
 from PyQt5 import QtCore
 from libs.db import querier
+from dateutil.relativedelta import relativedelta
 import cerberus
 
 from datetime import date
@@ -49,16 +50,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         mes = debito['fecha_descuento'].month
         for indexCuota in range(debito['total_cuotas']): # El 1 indica desde que numero arrancar
             debito['cuota_actual'] = indexCuota + 1
-
-            newMonth = mes + indexCuota
-            if newMonth > 12:
-                newYear = debito['fecha_descuento'].year + 1
-                newMonth = debito['fecha_descuento'].month % 12 + 1
-                newDate = date(newYear, newMonth, 1)
-            else:
-                newDate = date(debito['fecha_descuento'].year, newMonth, 1)
-
-            debito['fecha_descuento'] = newDate
+            debito['fecha_descuento'] = debito['fecha_descuento'] + relativedelta(months=indexCuota)
 
             self.__querier.insertarElemento('debitos', debito)
 
