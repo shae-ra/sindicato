@@ -1,6 +1,7 @@
 from PyQt5 import QtCore
 from libs.db import querier
 from datetime import date
+from dateutil.relativedelta import relativedelta
 import cerberus
 
 class ModeloProcesador(QtCore.QAbstractTableModel):
@@ -21,13 +22,14 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         if propiedades:
             self.__propiedades = self.validarPropiedades(propiedades)
 
-        self.__debitosAProcesar = [] # Los valores de prueba los saco del archivo fuente
+        self.__debitosBet = [] # Los valores de prueba los saco del archivo fuente
 
-        self.__debitosProcesables = [] # Los valores de acá salen de la base de datos
-
+        self.__debitosDatabase = [] # Los valores de acá salen de la base de datos
+        self.__debitosNoProcesados = []
+        self.__debitosRechazados = []
+        self.__debitosProcesados = []
         self.__codigosDeRechazo = {}
 
-        self.verListaDebitosProcesables()
         self.verListaCodigosDeRechazo()
 
         # self.setConfig(banco = "P", cuit = "30561600194", empresa = "SIND T MUN MERLO")
@@ -44,41 +46,46 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
 
     def verListaDebitosAProcesar(self, lista):
 
-        self.__debitosAProcesar = lista
-        self.verListaDebitosProcesables()
-        self.procesables = []
+        self.__debitosBet = lista
+        self.verListaDebitosDatabase()
+        self.__debitosProcesados = []
+        self.__debitosRechazados = []
+        # self.procesables = []
 
-        for index, debito in enumerate(lista):
+        for index, debito in enumerate(self.__debitosBet):
             codigo = debito[8]
 
             if codigo != "   ":
-                self.__debitosAProcesar[index][9] = self.__codigosDeRechazo[codigo]
+                self.__debitosBet[index][9] = self.__codigosDeRechazo[codigo]
 
             self.obtenerDebitoProcesable(debito)
 
-        if self.procesables:
-            print("DEBUG - Debitos a procesar: ", self.__debitosAProcesar)
-            print("DEBUG - Procesables: ", self.procesables)
-            self.__debitosAProcesar = self.procesables
-            self.layoutChanged.emit()
-            return True
-        return False
+        # if self.procesables:
+        print("DEBUG - Debitos a procesar: ", self.__debitosBet)
+        print("DEBUG - Procesados: ", self.__debitosProcesados)
+        print("DEBUG - Rechazados, para clonar: ", self.__debitosRechazados)
+        print("DEBUG - No Procesados, para clonar: ", self.__debitosNoProcesados)
+            # self.__debitosBet = self.procesables
+        self.layoutChanged.emit()
+        return True
+        # return False
 
-    def verListaDebitosProcesables(self):
+    def verListaDebitosDatabase(self):
 
-        self.__debitosProcesables = self.__querier.traerElementos(
-            campos = ["id","id_temporal", "legajo_afiliado", "cbu", "fecha_descuento", "importe_actual"],
+        self.__debitosDatabase = self.__querier.traerElementos(
+            campos = ["id","id_temporal", "legajo_afiliado", "cbu", "fecha_descuento", "importe_actual",
+                "fecha_carga_inicial", "proveedor_id", "cuota_actual", "total_cuotas", "importe_total", "n_orden", "estado", "motivo"],
             tabla = "debitos",
             uniones = [("afiliados", "afiliados.legajo = debitos.legajo_afiliado")],
             condiciones = [("id_temporal", "IS NOT", "NULL")],
             orden = ("id_temporal", "ASC")
         )
 
-        print(self.__debitosProcesables)
+        print(self.__debitosDatabase)
 
     def apllicarCambios(self):
 
-        for debito in self.__debitosAProcesar:
+        for debito in self.__debitosProcesados:
             print("Estado a actualizar: " + debito[0])
             print("Motivo a actualizar: " + debito[8])
             self.__querier.actualizarElemento(
@@ -89,7 +96,32 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
                 condiciones = [("id_temporal", "=", int(debito[7])), ("legajo_afiliado", "=", debito[2])]
             )
 
-        self.verListaDebitosProcesables()
+        for debito in self.__debitosRechazados:
+            self.__querier.insertarElemento(
+                tabla = "debitos",
+                elemento = { "id_temporal" : None,
+                    "legajo_afiliado" : debito[2],
+                    "fecha_descuento" : debito[4] + relativedelta(months = 1), # Nueva fecha para proximo mes
+                    "importe_actual" : debito[5],
+                    "fecha_carga_inicial" : debito[6],
+                    "proveedor_id" : debito[7],
+                    "cuota_actual" : debito[8],
+                    "total_cuotas" : debito[9],
+                    "importe_total" : debito[10],
+                    "n_orden" : debito[11],
+                    "estado" : None,
+                    "motivo" : None }
+            )
+            self.__querier.actualizarElemento(
+                tabla = "debitos",
+                elemento = { "id_temporal" : None,
+                    "estado" : debito[12],
+                    "motivo" : debito[13]
+                    },
+                condiciones = [("id", "=", debito[0])]
+            )
+
+        self.verListaDebitosDatabase()
         self.limpiarTabla()
 
     def actualizarDebito(self, debito, condiciones):
@@ -100,45 +132,70 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         )
 
     def obtenerDebitoProcesable(self, debito):
-        # Voy a comparar los elementos de self.__debitosAProcesar con los de
-        # self.__debitosProcesables. El segundo lo puedo traer ordenado para hacer de las búsquedas un proceso mas rápido,
+        # Voy a comparar los elementos de self.__debitosBet con los de
+        # self.__debitosDatabase. El segundo lo puedo traer ordenado para hacer de las búsquedas un proceso mas rápido,
         # el primero no hace falta ordenarlo ya que vamos a iterar sobre el registro por registro.
 
+        # noProcesados = []
+        # ignorados = []
+
         match = []
-        for index, possMatch in enumerate(self.__debitosProcesables):
-            if possMatch[1] == int(debito[7]) and possMatch[2] == debito[2]:
-                match = self.__debitosProcesables[index]
 
-                if debito[4] != match[3]: # CBU
-                    print("Los CBU no coinciden en ", match[2])
-                    print(debito[4])
-                    print(match[3])
-                if debito[1] != match[4]:  # Fecha
-                    print("Las fechas no coinciden en ", match[2])
-                    print(debito[1])
-                    print(match[4].strftime('%d/%m/%Y'))
-                if debito[5] != match[5]:  # Importe
-                    print("Los importes no coinciden en ", match[2])
-                    print(debito[5])
-                    print(match[5])
+        f_idTemporal, f_legajoAfiliado, f_cbu, f_fecha, f_importe, f_estado, f_codigo_error = 7, 2, 4, 1, 5, 0, 8
+        db_idTemporal, db_legajoAfiliado, db_cbu, db_fecha, db_importe, db_estado, db_motivo = 1, 2, 3, 4, 5, 12, 13
 
-                self.procesables.append(list(debito))
+        for index, possMatch in enumerate(self.__debitosDatabase):
+            if possMatch[db_idTemporal] == int(debito[f_idTemporal]) and possMatch[db_legajoAfiliado] == debito[f_legajoAfiliado]:
+                match = self.__debitosDatabase[index]
+
+                print("\nDEBUG - El item file contiene: ")
+                print("Legajo de Afiliado: ", debito[f_legajoAfiliado])
+                print("Id Temporal: ", debito[f_idTemporal])
+                print("Estado: ", debito[f_estado])
+                print("Codigo de error: ", debito[f_codigo_error])
+
+                print("\nDEBUG - El item en db contiene: ")
+                print("Legajo de Afiliado: ", match[db_legajoAfiliado])
+                print("Id Temporal", match[db_idTemporal])
+
+                print("")
+
+                if debito[f_cbu] != match[db_cbu]: # CBU
+                    print("Los CBU no coinciden en ", match[db_legajoAfiliado])
+                    print(debito[f_cbu])
+                    print(match[db_cbu])
+                if debito[f_fecha] != match[db_fecha]:  # Fecha
+                    print("Las fechas no coinciden en ", match[db_legajoAfiliado])
+                    print(debito[f_fecha])
+                    print(match[db_fecha].strftime('%d/%m/%Y'))
+                if debito[f_importe] != match[db_importe]:  # Importe
+                    print("Los importes no coinciden en ", match[db_legajoAfiliado])
+                    print(debito[f_importe])
+                    print(match[db_importe])
+
+                if debito[f_estado] != "Procesado" or debito[f_codigo_error] != "   ":
+                    match = list(match)
+                    match[db_estado] = debito[f_estado]
+                    match[db_motivo] = debito[f_codigo_error]
+                    self.__debitosRechazados.append(match)
+                else:
+                    self.__debitosProcesados.append(list(debito))
                 return True
         return False
 
     def limpiarTabla(self):
-        self.__debitosAProcesar = []
+        self.__debitosBet = []
         self.layoutChanged.emit()
 
     def __setTotales(self, indexImporte):
-        self.total_debitos = len(self.__debitosAProcesar)
+        self.total_debitos = len(self.__debitosBet)
         self.importe_total = 0
         if self.total_debitos > 0:
-            for debito in self.__debitosAProcesar:
+            for debito in self.__debitosBet:
                 self.importe_total += debito[indexImporte]
 
     def __toString(self, index):
-        for debito in self.__debitosAProcesar:
+        for debito in self.__debitosBet:
             debito[index] = str(debito[index])
 
     def validarPropiedades(self, propiedades):
@@ -154,11 +211,11 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
 
 # Estas son las funciones específicas de Qt para las tablas
     def rowCount(self, parent):
-        return len(self.__debitosAProcesar)
+        return len(self.__debitosBet)
 
     def columnCount(self, parent):
-        if self.__debitosAProcesar:
-            return len(self.__debitosAProcesar[0])
+        if self.__debitosBet:
+            return len(self.__debitosBet[0])
         else:
             return 0
 
@@ -170,7 +227,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         if role == QtCore.Qt.DisplayRole:
             row = index.row()
             column = index.column()
-            value = self.__debitosAProcesar[row][column] # value contiene la lista de listas que contiene los afiliados
+            value = self.__debitosBet[row][column] # value contiene la lista de listas que contiene los afiliados
 
             return value # el valor que retorno es el que aparecería en la tabla
 
