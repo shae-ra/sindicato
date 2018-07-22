@@ -1,5 +1,3 @@
-
-
 #=============
 #IMPORTACIONES
 #=============
@@ -56,7 +54,15 @@ class CargaDebito(QtWidgets.QWidget):
 			#observer.msg("No se puede cargar el debito")
 		else:
 			debito.pop('errores')
-			self.model.guardarDebito(debito)
+			of = debito['importe_actual'] % 900
+			fecha = debito['fecha_descuento']
+			for subDebito in range(int(debito['importe_actual']/900)):
+				overflow = self.overflowDebito(debito)
+				self.model.guardarDebito(overflow)
+				debito['fecha_descuento'] = fecha
+			debito['importe_actual'] = of
+			if debito['importe_actual'] > 0:
+				self.model.guardarDebito(debito)
 			self.getXls()
 			self.operacionCompletada()
 			reset = self.resetDebito()
@@ -117,12 +123,6 @@ class CargaDebito(QtWidgets.QWidget):
 		except:
 			errores.append("- No hay cuotas ingresadas\n")
 		try:
-			debito['importe_actual'] = int(self.v_carga.deb_importe_cuota.text())
-			if debito['importe_actual'] > 900:
-				errores.append("- El importe por cuota exede el máximo disponible\n")
-		except:
-			errores.append("- No se ha ingresado un importe\n")
-		try:
 			debito['importe_total'] = int(self.v_carga.deb_importe_total.text())
 			if debito['importe_total'] == "" or debito['importe_total'] == "0":
 				errores.append("- No se ha podido calcular el total a cobrar\n")
@@ -131,6 +131,10 @@ class CargaDebito(QtWidgets.QWidget):
 
 		if fecha_mes and fecha_anio:
 			debito['fecha_descuento'] = date(fecha_anio, fecha_mes, 1)
+		try:
+			debito['importe_actual'] = int(self.v_carga.deb_importe_cuota.text())
+		except:
+			errores.append("- No se ha ingresado un importe\n")
 
 		# print(debito)
 		debito['errores'] = errores
@@ -178,6 +182,10 @@ class CargaDebito(QtWidgets.QWidget):
 
 		else:
 			print("No se ha configurado la impresora")
+
+	def overflowDebito(self, debito):
+		debito['importe_actual'] = 900
+		return debito
 
 	def showEvent(self, event):
 		self.model_prov.verListaProveedores()
