@@ -42,6 +42,7 @@ class ModeloFamiliares(QtCore.QAbstractTableModel):
             campos = self.__propiedades,
             tabla = 'familiares',
             uniones = [("afiliados", "legajo_afiliado = afiliados.legajo")],
+            condiciones = condiciones,
             orden = orden)
 
         if self.__listaFamiliares:

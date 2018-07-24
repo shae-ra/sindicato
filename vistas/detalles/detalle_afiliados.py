@@ -128,6 +128,9 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			'familiares.nivel_estudios' : self.vd_afiliado.fam_nivel_estudios.currentText(),
 			'familiares.legajo_afiliado' : self.vd_afiliado.af_legajo.text()
 		}
+
+		condiciones = [("afiliados.legajo", "=", familiar['familiares.legajo_afiliado'])]
+
 		self.model_familiares.guardarFamiliar(familiar)
 		self.resetFamiliar()
 
