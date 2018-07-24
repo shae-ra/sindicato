@@ -296,7 +296,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			("legajo_afiliado", "=", "'{}'".format(self.vd_afiliado.af_legajo.text())),
 			("estado", "IS", "NULL")
 			]
-		self.model_debito.verTablaDebitos(condiciones, fechas = [1, 6])
+		orden = ("fecha_descuento", "ASC")
+		self.model_debito.verTablaDebitos(condiciones, orden, fechas = [1, 6])
 		self.tbl_debitos.setColumnHidden(0, True)
 
 	def verListaFamiliares(self):
