@@ -35,10 +35,23 @@ class ModeloServiciosAfiliados(QtCore.QAbstractTableModel):
             orden = ('fecha', 'DESC')
         )
 
+        self.__tablaServicios = self.__toList()
+        self._setDates(0)
+
         if self.__tablaServicios:
             self.layoutChanged.emit()
             return True
         return False
+
+    def _setDates(self, dateIndex):
+        for servicio in self.__tablaServicios:
+            servicio[dateIndex] = QtCore.QDate(servicio[dateIndex])
+
+    def __toList(self):
+        listaServicios = []
+        for index, debito in enumerate(self.__tablaServicios):
+            listaServicios.append(list(debito))
+        return listaServicios
 
 # Estas son las funciones específicas de Qt para las tablas
     def rowCount(self, parent):
