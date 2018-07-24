@@ -61,14 +61,6 @@
          </disabled>
         </palette>
        </property>
-       <property name="font">
-        <font>
-         <family>Calibri</family>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
        <property name="mouseTracking">
         <bool>false</bool>
        </property>
@@ -122,7 +114,7 @@ color: #FFFFFF;
 }</string>
        </property>
        <property name="text">
-        <string>Ingresar USUARIO</string>
+        <string>Ingresar Usuario</string>
        </property>
        <property name="icon">
         <iconset>

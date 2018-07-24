@@ -170,7 +170,7 @@ color: #FFFFFF;
 }</string>
        </property>
        <property name="text">
-        <string>Ingresar PROVEEDOR</string>
+        <string>Ingresar Proveedor</string>
        </property>
        <property name="icon">
         <iconset>
@@ -194,14 +194,6 @@ color: #FFFFFF;
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>Calibri</family>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
        </property>
        <property name="mouseTracking">
         <bool>false</bool>

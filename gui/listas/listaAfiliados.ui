@@ -569,12 +569,6 @@
          <height>200</height>
         </size>
        </property>
-       <property name="font">
-        <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>8</pointsize>
-        </font>
-       </property>
        <property name="styleSheet">
         <string notr="true">#btn_nuevo{
 background-color:#005c99;
@@ -588,7 +582,7 @@ color: #FFFFFF;
 }</string>
        </property>
        <property name="text">
-        <string>Ingresar AFILIADO</string>
+        <string>Ingresar Afiliado</string>
        </property>
        <property name="icon">
         <iconset>
@@ -649,14 +643,6 @@ color: #FFFFFF;
           </colorrole>
          </disabled>
         </palette>
-       </property>
-       <property name="font">
-        <font>
-         <family>Calibri</family>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
        </property>
        <property name="mouseTracking">
         <bool>false</bool>
