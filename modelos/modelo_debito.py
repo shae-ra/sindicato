@@ -24,7 +24,8 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             'importe_actual' : { 'type' : 'integer' },
             'importe_total' : { 'type' : 'integer' },
             'estado' : { 'type' : 'string' },
-            'motivo' : { 'type' : 'string' },
+            'n_orden' : { 'type' : 'string'},
+            'motivo' : { 'type' : 'string' }
         }
 
         self.__propiedades = [
@@ -38,6 +39,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             'total_cuotas',
             'importe_actual',
             'importe_total',
+            'n_orden',
             'estado',
             'motivo'
         ]
@@ -74,8 +76,8 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         for fecha in fechas:
             self._setDates(fecha)
 
-        self.__toString(2)
         self.__toString(3)
+        self.__toString(4)
 
         self.layoutChanged.emit()
 
