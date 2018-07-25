@@ -6,9 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>873</width>
-    <height>589</height>
+    <width>692</width>
+    <height>502</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>692</width>
+    <height>502</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>692</width>
+    <height>502</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>692</width>
+    <height>502</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -451,19 +469,11 @@ color: #000000;
        </disabled>
       </palette>
      </property>
-     <property name="font">
-      <font>
-       <family>Arial</family>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
      <property name="styleSheet">
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <property name="iconSize">
       <size>
@@ -581,9 +591,7 @@ color: #FFFFFF;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">#groupBox{
-background-color: #F8F7F6
-}</string>
+          <string notr="true"/>
          </property>
          <property name="title">
           <string/>
@@ -596,14 +604,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -629,14 +629,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -674,7 +666,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -685,7 +677,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -705,7 +697,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -723,8 +715,6 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -741,14 +731,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -774,14 +756,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -816,7 +790,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -827,7 +801,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -847,7 +821,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -862,14 +836,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -896,14 +862,6 @@ background-color: #F8F7F6
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
-            </property>
             <property name="styleSheet">
              <string notr="true"/>
             </property>
@@ -918,61 +876,6 @@ background-color: #F8F7F6
             </property>
             <property name="alignment">
              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="15" column="1">
-           <widget class="QLineEdit" name="prov_comision">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="palette">
-             <palette>
-              <active>
-               <colorrole role="Text">
-                <brush brushstyle="SolidPattern">
-                 <color alpha="255">
-                  <red>0</red>
-                  <green>0</green>
-                  <blue>127</blue>
-                 </color>
-                </brush>
-               </colorrole>
-              </active>
-              <inactive>
-               <colorrole role="Text">
-                <brush brushstyle="SolidPattern">
-                 <color alpha="255">
-                  <red>0</red>
-                  <green>0</green>
-                  <blue>127</blue>
-                 </color>
-                </brush>
-               </colorrole>
-              </inactive>
-              <disabled>
-               <colorrole role="Text">
-                <brush brushstyle="SolidPattern">
-                 <color alpha="255">
-                  <red>120</red>
-                  <green>120</green>
-                  <blue>120</blue>
-                 </color>
-                </brush>
-               </colorrole>
-              </disabled>
-             </palette>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
             </property>
            </widget>
           </item>
@@ -992,7 +895,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1003,7 +906,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1023,44 +926,11 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
-            </property>
-           </widget>
-          </item>
-          <item row="15" column="0">
-           <widget class="QLabel" name="label_71">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::NoFrame</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Plain</enum>
-            </property>
-            <property name="text">
-             <string>Comisión:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
             </property>
            </widget>
           </item>
@@ -1080,7 +950,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1091,7 +961,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1111,7 +981,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1126,14 +996,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -1159,14 +1021,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -1201,7 +1055,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1212,7 +1066,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1232,7 +1086,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1247,14 +1101,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -1289,7 +1135,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1300,7 +1146,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1320,7 +1166,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1344,7 +1190,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1355,7 +1201,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1375,7 +1221,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1399,7 +1245,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1410,7 +1256,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1430,7 +1276,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1445,14 +1291,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -1478,14 +1316,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -1520,7 +1350,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1531,7 +1361,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1551,7 +1381,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1566,14 +1396,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -1608,7 +1430,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1619,7 +1441,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1639,7 +1461,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1663,7 +1485,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1674,7 +1496,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1694,7 +1516,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1709,14 +1531,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -1751,7 +1565,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1762,7 +1576,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1782,7 +1596,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1806,7 +1620,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1817,7 +1631,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1837,7 +1651,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1861,7 +1675,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1872,7 +1686,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1892,44 +1706,11 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
-            </property>
-           </widget>
-          </item>
-          <item row="13" column="0">
-           <widget class="QLabel" name="label_60">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::NoFrame</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Plain</enum>
-            </property>
-            <property name="text">
-             <string>Banco:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
             </property>
            </widget>
           </item>
@@ -1940,14 +1721,6 @@ background-color: #F8F7F6
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -1966,7 +1739,32 @@ background-color: #F8F7F6
             </property>
            </widget>
           </item>
-          <item row="13" column="1">
+          <item row="12" column="2">
+           <widget class="QLabel" name="label_60">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>Banco:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="3">
            <widget class="QLineEdit" name="prov_banco">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -1982,7 +1780,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1993,7 +1791,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -2013,7 +1811,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -2021,21 +1819,93 @@ background-color: #F8F7F6
             </property>
            </widget>
           </item>
-          <item row="17" column="0">
-           <widget class="QLabel" name="label_75">
+          <item row="14" column="3">
+           <widget class="QLineEdit" name="prov_comision">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="palette">
+             <palette>
+              <active>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>0</red>
+                  <green>0</green>
+                  <blue>255</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </active>
+              <inactive>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>0</red>
+                  <green>0</green>
+                  <blue>255</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </inactive>
+              <disabled>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>120</red>
+                  <green>120</green>
+                  <blue>120</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </disabled>
+             </palette>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="2">
+           <widget class="QLabel" name="label_71">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="font">
-             <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>Comisión:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="2">
+           <widget class="QLabel" name="label_75">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -2054,7 +1924,7 @@ background-color: #F8F7F6
             </property>
            </widget>
           </item>
-          <item row="17" column="1">
+          <item row="16" column="3">
            <widget class="QLineEdit" name="prov_forma_pago">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -2070,7 +1940,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -2081,7 +1951,7 @@ background-color: #F8F7F6
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -2101,7 +1971,7 @@ background-color: #F8F7F6
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -2195,9 +2065,7 @@ color: #FFFFFF;
        <item row="0" column="0" colspan="2">
         <widget class="QGroupBox" name="groupBox_3">
          <property name="styleSheet">
-          <string notr="true">#groupBox_3{
-background-color: #F8F7F6
-}</string>
+          <string notr="true"/>
          </property>
          <property name="title">
           <string/>
@@ -2205,9 +2073,46 @@ background-color: #F8F7F6
          <layout class="QGridLayout" name="gridLayout_4">
           <item row="1" column="0" colspan="2">
            <widget class="QTextEdit" name="prov_notas">
+            <property name="palette">
+             <palette>
+              <active>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>0</red>
+                  <green>0</green>
+                  <blue>255</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </active>
+              <inactive>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>0</red>
+                  <green>0</green>
+                  <blue>255</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </inactive>
+              <disabled>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>120</red>
+                  <green>120</green>
+                  <blue>120</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </disabled>
+             </palette>
+            </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -2219,8 +2124,6 @@ background-color: #F8F7F6
            <widget class="QLabel" name="label_3">
             <property name="font">
              <font>
-              <family>Calibri</family>
-              <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>

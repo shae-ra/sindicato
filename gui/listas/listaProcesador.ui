@@ -127,14 +127,6 @@ background-color: #F8F7F6
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
        <widget class="QLabel" name="label_3">
-        <property name="font">
-         <font>
-          <family>Calibri</family>
-          <pointsize>12</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
         <property name="text">
          <string>Seleccionar archivos &quot;BET/ BEN&quot; para afiliados:</string>
         </property>

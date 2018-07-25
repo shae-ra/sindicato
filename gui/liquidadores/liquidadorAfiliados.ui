@@ -497,8 +497,6 @@ background-color: #F0F5EF}
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
-          <pointsize>12</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -559,14 +557,6 @@ background-color:#FFFFFF
              <height>35</height>
             </size>
            </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true">#btn_procesar_liq{
 background-color:#005c99;
@@ -596,14 +586,6 @@ color: #FFFFFF;
          </item>
          <item row="0" column="0" colspan="3">
           <widget class="QLabel" name="label">
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true">#label{
 color: red;
@@ -733,14 +715,6 @@ color: red;
          </item>
          <item row="1" column="0" colspan="3">
           <widget class="QLabel" name="label_4">
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true">#label_4{
 color: red;
@@ -756,14 +730,6 @@ color: red;
          </item>
          <item row="3" column="1">
           <widget class="QLabel" name="label_5">
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="text">
             <string>Mes:</string>
            </property>
@@ -771,14 +737,6 @@ color: red;
          </item>
          <item row="4" column="1">
           <widget class="QLabel" name="label_7">
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="text">
             <string>Año:</string>
            </property>
@@ -813,14 +771,6 @@ background-color:#FFFFFF
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -883,14 +833,6 @@ background-color:#FFFFFF
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -915,14 +857,6 @@ background-color:#FFFFFF
              <width>150</width>
              <height>35</height>
             </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
            </property>
            <property name="styleSheet">
             <string notr="true">#btn_exportar{

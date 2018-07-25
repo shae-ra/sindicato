@@ -53,8 +53,6 @@ background-color: #F0F5EF}
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
-          <pointsize>12</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -120,15 +118,10 @@ background-color:#FFFFFF
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="tabletTracking">
             <bool>false</bool>
            </property>
            <property name="styleSheet">
@@ -152,9 +145,6 @@ background-color:#FFFFFF
            <property name="wordWrap">
             <bool>false</bool>
            </property>
-           <property name="tabletTracking" stdset="0">
-            <bool>false</bool>
-           </property>
           </widget>
          </item>
          <item row="6" column="0">
@@ -164,14 +154,6 @@ background-color:#FFFFFF
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -312,14 +294,6 @@ background-color:#FFFFFF
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -345,14 +319,6 @@ background-color:#FFFFFF
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -377,14 +343,6 @@ background-color:#FFFFFF
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -423,14 +381,6 @@ background-color:#FFFFFF
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -461,14 +411,6 @@ background-color:#FFFFFF
              <width>150</width>
              <height>35</height>
             </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
            </property>
            <property name="styleSheet">
             <string notr="true">#btn_liquidar{
@@ -523,14 +465,6 @@ color: #FFFFFF;
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -550,14 +484,6 @@ color: #FFFFFF;
          </item>
          <item row="1" column="0" colspan="2">
           <widget class="QLabel" name="label_4">
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true">#label_4{
 color: red;
@@ -591,14 +517,6 @@ color: red;
          </item>
          <item row="0" column="0" colspan="2">
           <widget class="QLabel" name="label">
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true">#label{
 color: red;
@@ -639,14 +557,6 @@ background-color:#FFFFFF
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -715,14 +625,6 @@ background-color:#FFFFFF
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -747,14 +649,6 @@ background-color:#FFFFFF
              <width>150</width>
              <height>35</height>
             </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Calibri</family>
-             <pointsize>12</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
            </property>
            <property name="styleSheet">
             <string notr="true">#btn_exportar{
