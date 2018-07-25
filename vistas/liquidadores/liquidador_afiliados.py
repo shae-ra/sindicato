@@ -119,7 +119,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 				debito = {
 					'id' : item[0],
 					'id_temporal' : int(item[8]),
-					'estado' : 'procesando'
+					'estado' : 'Procesando'
 					},
 				condiciones = condiciones)
 

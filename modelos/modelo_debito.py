@@ -49,10 +49,10 @@ class ModeloDebito(QtCore.QAbstractTableModel):
 
     def guardarDebito(self, debito):
         # print(debito['total_cuotas'])
-        mes = debito['fecha_descuento'].month
+        mes = debito['fecha_descuento']
         for indexCuota in range(debito['total_cuotas']): # El 1 indica desde que numero arrancar
             debito['cuota_actual'] = indexCuota + 1
-            debito['fecha_descuento'] = debito['fecha_descuento'] + relativedelta(months=1)
+            debito['fecha_descuento'] = mes + relativedelta(months=indexCuota)
             self.__querier.insertarElemento('debitos', debito)
 
     def actualizarDebito(self, debito):
