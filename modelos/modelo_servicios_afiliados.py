@@ -27,12 +27,14 @@ class ModeloServiciosAfiliados(QtCore.QAbstractTableModel):
         return True
 
     def verTablaServicios(self, legajo):
+        if not legajo:
+            legajo = "0"
         self.__tablaServicios = self.__querier.traerElementos(
             tabla = 'servicios_afiliado',
             campos = ['fecha', 'nombre', 'detalle', 'cantidad'],
             uniones = [('servicios', 'servicios.id = id_servicio')],
             condiciones = [('legajo_afiliado', '=', legajo)],
-            orden = ('fecha', 'DESC')
+            orden = ("fecha", "DESC")
         )
 
         self.__tablaServicios = self.__toList()
