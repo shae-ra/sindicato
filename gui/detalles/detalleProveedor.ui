@@ -473,7 +473,7 @@ color: #000000;
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <property name="iconSize">
       <size>
@@ -666,7 +666,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -677,7 +677,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -697,7 +697,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -790,7 +790,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -801,7 +801,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -821,7 +821,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -895,7 +895,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -906,7 +906,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -926,7 +926,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -950,7 +950,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -961,7 +961,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -981,7 +981,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1055,7 +1055,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1066,7 +1066,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1086,7 +1086,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1135,7 +1135,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1146,7 +1146,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1166,7 +1166,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1190,7 +1190,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1201,7 +1201,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1221,7 +1221,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1245,7 +1245,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1256,7 +1256,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1276,7 +1276,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1350,7 +1350,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1361,7 +1361,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1381,7 +1381,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1430,7 +1430,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1441,7 +1441,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1461,7 +1461,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1485,7 +1485,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1496,7 +1496,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1516,7 +1516,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1565,7 +1565,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1576,7 +1576,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1596,7 +1596,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1620,7 +1620,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1631,7 +1631,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1651,7 +1651,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1675,7 +1675,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1686,7 +1686,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1706,7 +1706,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1780,7 +1780,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1791,7 +1791,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1811,7 +1811,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1835,7 +1835,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1846,7 +1846,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1866,7 +1866,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -1940,7 +1940,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1951,7 +1951,7 @@ color: #FFFFFF;
                  <color alpha="255">
                   <red>0</red>
                   <green>0</green>
-                  <blue>127</blue>
+                  <blue>255</blue>
                  </color>
                 </brush>
                </colorrole>
@@ -1971,7 +1971,7 @@ color: #FFFFFF;
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
@@ -2073,9 +2073,46 @@ color: #FFFFFF;
          <layout class="QGridLayout" name="gridLayout_4">
           <item row="1" column="0" colspan="2">
            <widget class="QTextEdit" name="prov_notas">
+            <property name="palette">
+             <palette>
+              <active>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>0</red>
+                  <green>0</green>
+                  <blue>255</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </active>
+              <inactive>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>0</red>
+                  <green>0</green>
+                  <blue>255</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </inactive>
+              <disabled>
+               <colorrole role="Text">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>120</red>
+                  <green>120</green>
+                  <blue>120</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </disabled>
+             </palette>
+            </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
+              <family>Arial</family>
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
