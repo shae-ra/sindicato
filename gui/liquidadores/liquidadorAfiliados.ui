@@ -904,6 +904,9 @@ color: #FFFFFF;
        <bold>true</bold>
       </font>
      </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
     </widget>
    </item>
   </layout>

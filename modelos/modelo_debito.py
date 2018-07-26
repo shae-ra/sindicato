@@ -76,8 +76,8 @@ class ModeloDebito(QtCore.QAbstractTableModel):
         for fecha in fechas:
             self._setDates(fecha)
 
+        self.__toString(2)
         self.__toString(3)
-        self.__toString(4)
 
         self.layoutChanged.emit()
 

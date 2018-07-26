@@ -65,7 +65,7 @@
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>4</number>
      </property>
      <property name="iconSize">
       <size>
@@ -3540,6 +3540,9 @@ background-color: #F8F7F6
             <attribute name="horizontalHeaderCascadingSectionResizes">
              <bool>false</bool>
             </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
            </widget>
           </item>
          </layout>
@@ -3809,6 +3812,9 @@ background-color: #F8F7F6
             </property>
             <attribute name="horizontalHeaderVisible">
              <bool>false</bool>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
             </attribute>
            </widget>
           </item>
@@ -4508,6 +4514,9 @@ background-color: #F8F7F6
             <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
              <bool>true</bool>
             </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
             <attribute name="verticalHeaderVisible">
              <bool>false</bool>
             </attribute>
@@ -5048,6 +5057,9 @@ color: #FFFFFF;
            <bold>true</bold>
           </font>
          </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
         </widget>
        </item>
       </layout>

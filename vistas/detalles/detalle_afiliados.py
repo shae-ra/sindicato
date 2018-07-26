@@ -44,17 +44,16 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			"debitos.id",
 			"fecha_descuento",
 			"nombre",
-			"n_orden",
 			# "proveedor_id",
 			"importe_actual",
 			"cuota_actual",
 			"total_cuotas",
-			"fecha_carga_inicial"
+			"fecha_carga_inicial",
+			"n_orden"
 			])
 		self.model_historial = ModeloDebito(propiedades = [
 			"fecha_descuento",
 			"nombre",
-			"n_orden",
 			# "proveedor_id",
 			"importe_actual",
 			"cuota_actual",
@@ -83,6 +82,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_familiar.clicked.connect(self.guardarFamiliar)
 		self.btn_guardar_servicio.clicked.connect(self.guardarServicio)
+
+		# self.btn_imprimir.setHidden(True)
 
 	def asociarServicio(self):
 		id_servicio = self.model_servicios.getId(self.vd_afiliado.serv_tipo.currentText())
@@ -288,6 +289,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.model_servicios.verListaServicios()
 		self.model_servicios_afiliado.verTablaServicios(self.vd_afiliado.af_legajo.text())
 
+		self.vd_afiliado.fam_fecha_nacimiento.setDate(QDate(date.today()))
+		self.vd_afiliado.serv_fecha.setDate(QDate(date.today()))
 		self.vd_afiliado.serv_tipo.setCurrentIndex(0)
 
 		# Accedo al objeto 'tabWidget' que es hijo de el objeto 'vd_afiliado' y además llamo a la función setCurrentIndex()
@@ -299,7 +302,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			("estado", "IS", "NULL")
 			]
 		orden = ("fecha_descuento", "ASC")
-		self.model_debito.verTablaDebitos(condiciones, orden, fechas = [1, 7])
+		self.model_debito.verTablaDebitos(condiciones, orden, fechas = [1, 6])
 		self.tbl_debitos.setColumnHidden(0, True)
 
 	def verListaFamiliares(self):
@@ -314,7 +317,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			("estado", "IS NOT", "NULL"),
 			]
 		orden = ("fecha_descuento", "DESC")
-		self.model_historial.verTablaDebitos(condiciones, orden, fechas = [0, 6])
+		self.model_historial.verTablaDebitos(condiciones, orden, fechas = [0, 5])
 
 	def mostrarCarga(self):
 		# if self.model.tieneCbu():
