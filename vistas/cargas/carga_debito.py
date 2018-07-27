@@ -8,7 +8,7 @@ import sys, decimal
 from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTabWidget, QMessageBox
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QRegExp
 # Importamos el modulo uic necesario para levantar un archivo .ui
 from PyQt5 import uic
 import openpyxl
@@ -46,6 +46,7 @@ class CargaDebito(QtWidgets.QWidget):
 		self.v_carga.deb_total_cuotas.textChanged.connect(self.__calcularTotalACobrar)
 		self.v_carga.deb_importe_cuota.textChanged.connect(self.__calcularTotalACobrar)
 
+		self.setRegex()
 
 	def guardarDebito(self):
 		debito = self.getDebito()
@@ -247,4 +248,19 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def keyPressEvent(self, event):
 		if event.key() == Qt.Key_Escape:
-			self.close()		
+			self.close()
+
+	def setRegex(self):
+		rxCuota = QRegExp("\d{1,}")
+		rxImporte = QRegExp("\d{1,}[.]\d{2}")
+		rxImporteEL = QRegExp("[A-Z\s]{50}")
+		rxMes = QRegExp("[1-9]|(10|11|12)")
+		rxAnio = QRegExp("\d{4}")
+		rxOrden = QRegExp("\d{12}")
+
+		self.v_carga.deb_importe_cuota.setValidator(QtGui.QRegExpValidator(rxImporte))
+		self.v_carga.deb_importe_palabras.setValidator(QtGui.QRegExpValidator(rxImporteEL))
+		self.v_carga.deb_total_cuotas.setValidator(QtGui.QRegExpValidator(rxCuota))
+		self.v_carga.deb_fecha_mes.setValidator(QtGui.QRegExpValidator(rxMes))
+		self.v_carga.deb_fecha_anio.setValidator(QtGui.QRegExpValidator(rxAnio))
+		self.v_carga.deb_orden.setValidator(QtGui.QRegExpValidator(rxOrden))
