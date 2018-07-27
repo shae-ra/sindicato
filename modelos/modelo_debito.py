@@ -131,13 +131,14 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             campos = ["n_orden"],
             condiciones = [
                 ('proveedor_id' ,'=' , proveedor),
-                ('fecha_carga_inicial' ,'=' , fecha),
+                ('fecha_carga_inicial' ,'=' , "'{}'".format(fecha)),
             ],
+            orden = ('id', 'DESC'),
             limite = 1
         )
-
         if respuesta:
-            return respuesta[0][-4]
+            print(respuesta)
+            return respuesta[0][0][-2:]
 
         else:
             return 0

@@ -201,10 +201,12 @@ class CargaDebito(QtWidgets.QWidget):
 		fecha = date.today()
 
 		numero = self.model.consultarUltimoNumeroDeOrden(proveedor, fecha)
+		numero = str(int(numero) + 1)
 
 		fecha = self.__formatearFecha(fecha)
 		proveedor = self.__formatearIdProveedor(proveedor)
 		numero = self.__formatearNumeroOrden(numero)
+
 
 		numeroDeOrden = fecha + proveedor + numero
 		return numeroDeOrden
@@ -215,13 +217,13 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def __formatearIdProveedor(self, idProveedor):
 		idProveedor = str(idProveedor)
-		while len(idProveedor) < 3:
+		while len(idProveedor) < 2:
 			idProveedor = '0' + idProveedor
 		return idProveedor
 
 	def __formatearNumeroOrden(self, numero):
 		numero = str(numero)
-		while len(numero) < 4:
+		while len(numero) < 2:
 			numero = '0' + numero
 		return numero
 
