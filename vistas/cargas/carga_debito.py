@@ -3,7 +3,7 @@
 #=============
 
 # Importamos el módulo sys que provee el acceso a funciones y objetos mantenidos por el intérprete.
-import sys
+import sys, decimal
 # Importamos las herramientas de PyQT que vamos a utilizar
 from PyQt5 import QtWidgets, uic, QtGui
 # Importamos los elementos que se encuentran dentro del diseñador
@@ -123,7 +123,7 @@ class CargaDebito(QtWidgets.QWidget):
 		except:
 			errores.append("- No hay cuotas ingresadas\n")
 		try:
-			debito['importe_total'] = int(self.v_carga.deb_importe_total.text())
+			debito['importe_total'] = decimal.Decimal(self.v_carga.deb_importe_total.text())
 			if debito['importe_total'] == "" or debito['importe_total'] == "0":
 				errores.append("- No se ha podido calcular el total a cobrar\n")
 		except:
@@ -132,7 +132,7 @@ class CargaDebito(QtWidgets.QWidget):
 		if fecha_mes and fecha_anio:
 			debito['fecha_descuento'] = date(fecha_anio, fecha_mes, 1)
 		try:
-			debito['importe_actual'] = int(self.v_carga.deb_importe_cuota.text())
+			debito['importe_actual'] = decimal.Decimal(self.v_carga.deb_importe_cuota.text())
 		except:
 			errores.append("- No se ha ingresado un importe\n")
 
@@ -232,8 +232,8 @@ class CargaDebito(QtWidgets.QWidget):
 		importe = 0
 		try:
 			cantidad_cuotas = int(self.v_carga.deb_total_cuotas.text())
-			importe = int(self.v_carga.deb_importe_cuota.text())
-		except ValueError:
+			importe = decimal.Decimal(self.v_carga.deb_importe_cuota.text())
+		except:
 			total_a_cobrar = 0
 		total_a_cobrar = cantidad_cuotas * importe
 
@@ -247,4 +247,4 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def keyPressEvent(self, event):
 		if event.key() == Qt.Key_Escape:
-			self.close()
+			self.close()		
