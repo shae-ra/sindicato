@@ -101,8 +101,8 @@ class ModeloProveedor(QtCore.QAbstractTableModel):
         return self.__proveedor
 
     def guardarProveedor(self, proveedor):
-        condiciones = ''
-        if proveedor['id']:
+        condiciones = None
+        if proveedor['id'] != '':
             condiciones = [('id', '=', proveedor['id'])]
         respuesta = self.__querier.traerElementos(
             campos = ['id'],
