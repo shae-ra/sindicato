@@ -57,6 +57,9 @@ class CargaDebito(QtWidgets.QWidget):
 			debito.pop('errores')
 			of = debito['importe_actual'] % 900
 			fecha = debito['fecha_descuento']
+			if not self.getXls():
+				self.mensajeError(["Operación cancelada por el usuario"])
+				return
 			for subDebito in range(int(debito['importe_actual']/900)):
 				overflow = self.overflowDebito(debito)
 				self.model.guardarDebito(overflow)
@@ -64,7 +67,6 @@ class CargaDebito(QtWidgets.QWidget):
 			debito['importe_actual'] = of
 			if debito['importe_actual'] > 0:
 				self.model.guardarDebito(debito)
-			self.getXls()
 			self.operacionCompletada()
 			reset = self.resetDebito()
 			self.close()
@@ -162,15 +164,18 @@ class CargaDebito(QtWidgets.QWidget):
 		ws['D9'] = self.v_carga.deb_importe_palabras.text()
 
 		# ABRIR UN CUADRO DE DIALOGO INDICANDO DONDE GUARDAR
-		self.handleSave(wb)
+		done = self.handleSave(wb)
 
 		wb.close()
 
+		return done
+
 	def handleSave(self, workbook):
 		path = QtWidgets.QFileDialog.getSaveFileName(
-			None, 'Save File', self.v_carga.deb_orden.text(), 'Excel(*.xlsx)')
-		if not path[0]: return
+			None, 'Save File', "./bonos/"+self.v_carga.deb_orden.text(), 'Excel(*.xlsx)')
+		if not path[0]: return False
 		workbook.save(path[0])
+		return True
 
 	def imprimirBono(self):
 		#TERMINAR ESTO
