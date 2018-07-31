@@ -48,7 +48,7 @@ class DetalleProveedores(QtWidgets.QWidget):
 		msg.setWindowTitle("...")
 		retval = msg.exec_()
 
-	
+
 
 
 	def getProveedor(self):
@@ -94,23 +94,23 @@ class DetalleProveedores(QtWidgets.QWidget):
 
 	def setProveedor(self, proveedor):
 		self.vd_proveedor.prov_id.setText(str(proveedor[0])),
-		self.vd_proveedor.prov_nombre.setText(proveedor[1]),
-		self.vd_proveedor.prov_servicios.setText(proveedor[2]),
-		self.vd_proveedor.prov_calle.setText(proveedor[3]),
-		self.vd_proveedor.prov_altura.setText(str(proveedor[4])),
-		self.vd_proveedor.prov_localidad.setText(proveedor[5]),
-		self.vd_proveedor.prov_telefono.setText(proveedor[6]),
-		self.vd_proveedor.prov_celular.setText(proveedor[7]),
-		self.vd_proveedor.prov_email.setText(proveedor[8]),
-		self.vd_proveedor.prov_cuit.setText(str(proveedor[9])),
-		self.vd_proveedor.prov_razon_social.setText(proveedor[10]),
-		self.vd_proveedor.prov_cbu.setText(proveedor[11]),
-		self.vd_proveedor.prov_banco.setText(proveedor[12]),
-		self.vd_proveedor.prov_cuenta.setText(str(proveedor[13])),
-		self.vd_proveedor.prov_comision.setText(proveedor[14]),
-		self.vd_proveedor.prov_responsable.setText(proveedor[15]),
-		self.vd_proveedor.prov_forma_pago.setText(proveedor[16]),
-		self.vd_proveedor.prov_notas.setText(proveedor[17])
+		self.vd_proveedor.prov_nombre.setText(proveedor[2]),
+		self.vd_proveedor.prov_servicios.setText(proveedor[3]),
+		self.vd_proveedor.prov_calle.setText(proveedor[4]),
+		self.vd_proveedor.prov_altura.setText(str(proveedor[5])),
+		self.vd_proveedor.prov_localidad.setText(proveedor[6]),
+		self.vd_proveedor.prov_telefono.setText(proveedor[7]),
+		self.vd_proveedor.prov_celular.setText(proveedor[8]),
+		self.vd_proveedor.prov_email.setText(proveedor[9]),
+		self.vd_proveedor.prov_cuit.setText(str(proveedor[10])),
+		self.vd_proveedor.prov_razon_social.setText(proveedor[11]),
+		self.vd_proveedor.prov_cbu.setText(proveedor[12]),
+		self.vd_proveedor.prov_banco.setText(proveedor[13]),
+		self.vd_proveedor.prov_cuenta.setText(str(proveedor[14])),
+		self.vd_proveedor.prov_comision.setText(proveedor[15]),
+		self.vd_proveedor.prov_responsable.setText(proveedor[16]),
+		self.vd_proveedor.prov_forma_pago.setText(proveedor[17]),
+		self.vd_proveedor.prov_notas.setText(proveedor[18])
 
 	def setValidationRules(self):
 		pass
