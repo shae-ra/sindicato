@@ -1,5 +1,7 @@
 use sindicato;
 
+DROP TABLE familiares, debitos, servicios_afiliado, servicios, proveedores, bancos, usuarios, afiliados, codigos_rechazo;
+
 CREATE TABLE afiliados (
 	legajo varchar(22) NOT NULL PRIMARY KEY, # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
     dni varchar(8) UNIQUE KEY,
@@ -8,7 +10,7 @@ CREATE TABLE afiliados (
     cuil varchar(11) UNIQUE KEY,
     apellido varchar(50), # Podemos poner 10 mas? por las dudas!! no recuerdo bien, pero creo que hay gente con doble apellido y largos encima. Por ejemplo: Lagos fuentealba Cristian Juan Jose
     nombre varchar(50), # Podemos poner 10 mas? por las dudas!! no recuerdo bien, pero creo que hay gente con doble apellido y largos encima. Por ejemplo: Lagos fuentealba Cristian Juan Jose
-    fecha_nacimiento date,
+    fecha_nacimiento date DEFAULT '1900-01-01',
     edad int(3),
     estado_civil varchar(20),
     nacionalidad varchar(20),
@@ -25,7 +27,7 @@ CREATE TABLE afiliados (
     email varchar(80),
 	lugar_trabajo varchar(100),
 	jerarquia varchar(40),
-	fecha_ingreso date,
+	fecha_ingreso date DEFAULT '1900-01-01',
 	antiguedad int(2),
 	nivel_estudios varchar(40),
 	id_banco int(8),
@@ -38,7 +40,7 @@ CREATE TABLE familiares(
     relacion varchar(40),
     nombre varchar(50),  # idem nombre afiliado
     apellido varchar(50), # idem apellido afiliado
-    fecha_nacimiento date,
+    fecha_nacimiento date DEFAULT '1900-01-01',
     edad int(2),
     nivel_estudios varchar(40),
     legajo_afiliado varchar(22) NOT NULL,  # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
@@ -53,13 +55,12 @@ CREATE TABLE familiares(
 CREATE TABLE servicios(
 	id int(16) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre varchar(50)
-    # Falta el detalle del Proveedor creo?? Es un detalle en el que va a ir:  Direccion y Numero de telefono. Todo en una solo linea.. es decir un texto plano a modo informativo
 );
 
 CREATE TABLE servicios_afiliado(
 	id_servicio int(16) UNSIGNED NOT NULL,
     legajo_afiliado varchar(22) NOT NULL,
-    fecha date,
+    fecha date NOT NULL,
     cantidad int(20),
     detalle varchar(80),
 
@@ -85,8 +86,11 @@ CREATE TABLE debitos(
 	importe_total decimal(8,2),
 	n_orden varchar(22),
 	estado varchar(22),
-	motivo varchar(22)
+	motivo varchar(22),
 
+	CONSTRAINT `constr_afiliado_debito_fk`
+		FOREIGN KEY `afiliado_debito_fk` (`legajo_afiliado`) REFERENCES `afiliados` (`legajo`)
+		ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE bancos(
@@ -121,6 +125,11 @@ CREATE TABLE usuarios(
 	id int(8) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre varchar(50),
     apellido varchar(50),
-    legajo int(8) UNSIGNED NOT NULL UNIQUE KEY,
+    legajo varchar(22) NOT NULL UNIQUE KEY,
     secretariia varchar(50)
+);
+
+CREATE TABLE codigos_rechazo(
+   codigo      VARCHAR(3) NOT NULL PRIMARY KEY
+  ,descripcion VARCHAR(80)
 );
