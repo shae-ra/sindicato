@@ -145,11 +145,11 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def getXls(self):
 
-		wb = openpyxl.load_workbook('bono/bonos.xlsx')
+		wb = openpyxl.load_workbook('template_bon/bonos.xlsx')
 		ws = wb.worksheets[0]
-		img = openpyxl.drawing.image.Image('bono/sindicato.png')
-		img2 = openpyxl.drawing.image.Image('bono/sindicato.png')
-		img3 = openpyxl.drawing.image.Image('bono/sindicato.png')
+		img = openpyxl.drawing.image.Image('template_bon/sindicato.png')
+		img2 = openpyxl.drawing.image.Image('template_bon/sindicato.png')
+		img3 = openpyxl.drawing.image.Image('template_bon/sindicato.png')
 		ws.add_image(img, 'A1')
 		ws.add_image(img2, 'A15')
 		ws.add_image(img3, 'A29')
@@ -172,7 +172,7 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def handleSave(self, workbook):
 		path = QtWidgets.QFileDialog.getSaveFileName(
-			None, 'Save File', "./bonos/"+self.v_carga.deb_orden.text(), 'Excel(*.xlsx)')
+			None, 'Save File', "./bonos/"+ self.parent.vd_afiliado.af_legajo.text()+ " - " + self.v_carga.deb_orden.text(), 'Excel(*.xlsx)')
 		if not path[0]: return False
 		workbook.save(path[0])
 		return True

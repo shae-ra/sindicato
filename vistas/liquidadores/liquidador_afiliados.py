@@ -84,7 +84,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 
 	def handleSaveXls(self):
 		path = QtWidgets.QFileDialog.getSaveFileName(
-			None, 'Save File', '', 'Excel(*.xls)')
+			None, 'Save File', './ebt/', 'Excel(*.xls)')
 
 		if not path[0]:
 			return
@@ -94,7 +94,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 	def handleSaveEbt(self):
 		fechaCobro = self.getFechaCobro()
 		path = QtWidgets.QFileDialog.getSaveFileName(
-			None, 'Save File', fechaCobro.strftime("%d%m%Y"), 'Texto plano(*.txt)'
+			None, 'Save File', './ebt/' + fechaCobro.strftime("%d%m%Y"), 'Texto plano(*.txt)'
 		)
 
 		if not path[0]:

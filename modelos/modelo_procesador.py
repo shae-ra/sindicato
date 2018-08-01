@@ -232,7 +232,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
 
     def handleSave(self, workbook):
         path = QFileDialog.getSaveFileName(
-        	None, 'Save File', '', 'Excel(*.xlsx)')
+        	None, 'Save File', '/comercios/', 'Excel(*.xlsx)')
         if not path[0]: return
         workbook.save(path[0])
 

@@ -119,8 +119,6 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             debito = list(debito)
             legajo = debito[1]
             cbu = debito[2]
-            if len(legajo) != 8:
-                continue
             if len(cbu) != 22:
                 continue
 

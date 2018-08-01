@@ -32,7 +32,7 @@ class ListaProcesador(QtWidgets.QWidget):
 	def handleOpenBet(self):
 
 		path = QtWidgets.QFileDialog.getOpenFileName(
-			self, 'Open File', "", "Todos los archivos (*.*)")
+			self, 'Open File', "/comercios/", "Todos los archivos (*.*)")
 
 		try:
 			with open(path[0], 'r') as bet_file:

@@ -82,6 +82,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.btn_guardar_cbu.clicked.connect(self.guardarAfiliado)
 		self.btn_guardar_familiar.clicked.connect(self.guardarFamiliar)
 		self.btn_guardar_servicio.clicked.connect(self.guardarServicio)
+		self.vd_afiliado.btn_ingresar_debito.clicked.connect(self.mostrarCarga)
 
 		# self.btn_imprimir.setHidden(True)
 
@@ -282,7 +283,6 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 	def showEvent(self, event):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)
-		self.vd_afiliado.btn_ingresar_debito.clicked.connect(self.mostrarCarga)
 		self.verListaDebitos()
 		self.verListaFamiliares()
 		self.verHistorialDebitos()
@@ -328,7 +328,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			reply = msg.question(self, "Alerta", "El CBU del afiliado no tiene 22 caracteres",
 				QtWidgets.QMessageBox.Ok)
 			msg.show()
-			return False
+			if reply:
+				return False
 		self.v_carga.show()
 
 	def setEdad(self, fecha):
