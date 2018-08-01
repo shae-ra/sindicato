@@ -87,7 +87,7 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
         self.__afiliado = afiliado
         return self.__afiliado
 
-    def guardarAfiliado(self, afiliado):
+    def guardarAfiliado(self, afiliado, legajo = None):
         respuesta = self.__querier.traerElementos(
             campos = ['legajo'],
             condiciones = [('legajo', '=', afiliado['legajo'])],
@@ -110,7 +110,7 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             # Si este if evalua en verdadero significa que existe
             # un registro con este legajo, por lo que se usar actualizarElemento
             # en lugar de insertarElemento
-            self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", "'{}'".format(afiliado['legajo']))])
+            self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", "'{}'".format(legajo))])
             self.verListaAfiliados()
 
         else:

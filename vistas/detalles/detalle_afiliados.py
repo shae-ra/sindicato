@@ -114,7 +114,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 	def guardarAfiliado(self):
 		afiliado = self.getAfiliado()
-		self.model.guardarAfiliado(afiliado)
+		self.model.guardarAfiliado(afiliado, self.afiliado)
 		cdiag = self.operacionCompletada()
 		close = self.close()
 
@@ -283,6 +283,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 	def showEvent(self, event):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)
+		self.legajo = vd_afiliado.af_legajo.text()
 		self.verListaDebitos()
 		self.verListaFamiliares()
 		self.verHistorialDebitos()
