@@ -110,7 +110,7 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
             # Si este if evalua en verdadero significa que existe
             # un registro con este legajo, por lo que se usar actualizarElemento
             # en lugar de insertarElemento
-            self.__querier.actualizarElemento('afiliados', afiliado, [("dni", "=", afiliado['dni'])])
+            self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", "'{}'".format(afiliado['legajo']))])
             self.verListaAfiliados()
 
         else:
