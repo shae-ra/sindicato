@@ -97,27 +97,36 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
 
         if not (self.__v.validate(afiliado, esquemaAfiliado)):
             errors = self.__v.document_error_tree
+            errores = []
             # print(errors)
             for propiedad in esquemaAfiliado:
                 try:
                     print("Hay un error en el campo: " + errors[propiedad].errors[0].document_path[0])
+                    errores.append("Hay un error en el campo: {}\n".format(errors[propiedad].errors[0].document_path[0]))
                 except:
                     pass
 
-            return False
+            return errores
 
-        if respuesta:
+        if respuesta and legajo:
             # Si este if evalua en verdadero significa que existe
             # un registro con este legajo, por lo que se usar actualizarElemento
             # en lugar de insertarElemento
+
+            if respuesta[0][0] == legajo:
+                self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", "'{}'".format(legajo))])
+                self.verListaAfiliados()
+            else:
+                print("Ya existe un afiliado con este legajo")
+                return (["Ya existe un afiliado con este legajo"])
+        elif not respuesta and legajo:
             self.__querier.actualizarElemento('afiliados', afiliado, [("legajo", "=", "'{}'".format(legajo))])
             self.verListaAfiliados()
-
         else:
             self.__querier.insertarElemento('afiliados', afiliado)
             self.verListaAfiliados()
 
-        return True
+        return None
 
     def bajaAfiliado(self, afiliado):
         tabla = "afiliados"
