@@ -34,6 +34,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		self.vistaLiqAfiliado.btn_procesar_liq.clicked.connect(self.setTotales)
 
 		self.vistaLiqAfiliado.btn_exportar.clicked.connect(self.procesarDocumento)
+		self.vistaLiqAfiliado.btn_restaurar_liq.clicked.connect(self.model.restoreDebitos)
 
 	def getFechaCobro(self):
 		fechaCobro = self.vistaLiqAfiliado.liq_fecha.date()

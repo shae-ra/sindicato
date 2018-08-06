@@ -68,6 +68,14 @@ class Querier(object):
 
         return True
 
+    def consultaManual(self, consulta):
+        db = self.__conectar()
+        cursor = db.cursor()
+        cursor.execute(consulta)
+        db.commit()
+        cursor.close()
+        db.close()
+
     def getTablas(self):
         consulta = "SHOW TABLES;"
         try:

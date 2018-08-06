@@ -44,6 +44,7 @@ class LiquidadorJubilados(QtWidgets.QWidget):
 		self.vistaLiqJubilado.btn_liquidar.clicked.connect(self.buscarDebitosALiquidar)
 
 		self.vistaLiqJubilado.btn_exportar.clicked.connect(self.handleSaveEbt)
+		self.vistaLiqJubilado.btn_restaurar_liq.clicked.connect(self.model.restoreDebitos)
 
 	def getFechaLiquidacion(self):
 		mesALiquidar = self.vistaLiqJubilado.liqj_mes.currentIndex() + 1
