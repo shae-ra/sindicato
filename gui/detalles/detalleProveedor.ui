@@ -29,11 +29,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Detalle del Proveedor</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../iconos/oesteDev.ico</normaloff>../iconos/oesteDev.ico</iconset>
+    <normaloff>../iconos/ball_green.ico</normaloff>../iconos/ball_green.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">#tabWidget{

@@ -35,7 +35,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Consulta del Afiliado</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../iconos/ball_green.ico</normaloff>../iconos/ball_green.ico</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout_20">
    <item row="0" column="1">
@@ -65,7 +69,7 @@
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>4</number>
+      <number>3</number>
      </property>
      <property name="iconSize">
       <size>
@@ -827,12 +831,22 @@ color: #FFFFFF;
             </item>
             <item>
              <property name="text">
-              <string>Gonzalez Catan</string>
+              <string>Pontevedra</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Moreno</string>
+              <string>S.A Padua</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Mariano Acosta</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Lujan</string>
              </property>
             </item>
             <item>
@@ -842,17 +856,27 @@ color: #FFFFFF;
             </item>
             <item>
              <property name="text">
-              <string>Pontevedra</string>
+              <string>Ituzaingo</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Padua</string>
+              <string>Moron</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Mariano Acosta</string>
+              <string>Gral. Rodriguez</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Moreno</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Gonzalez Catan</string>
              </property>
             </item>
            </widget>
@@ -2069,27 +2093,42 @@ color: #FFFFFF;
             </item>
             <item>
              <property name="text">
-              <string>Primario</string>
+              <string>Primario Completo</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Secundario</string>
+              <string>Primario Incompleto</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Terciario</string>
+              <string>Secundario Completo</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Universitario</string>
+              <string>Secundario Incompleto</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>Posgrado</string>
+              <string>Terciario Completo</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Terciario Incompleto</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Universitario Completo</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Universitario Incompleto</string>
              </property>
             </item>
            </widget>
@@ -2634,6 +2673,16 @@ color: #FFFFFF;
               <string>Colombiano</string>
              </property>
             </item>
+            <item>
+             <property name="text">
+              <string>Venezolano</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Otro</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item row="4" column="1" colspan="6">
@@ -2702,6 +2751,21 @@ color: #FFFFFF;
             <item>
              <property name="text">
               <string>Casado</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Concubinato</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Separado</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Viudo</string>
              </property>
             </item>
             <item>
@@ -4798,6 +4862,21 @@ background-color: #F8F7F6
             <item>
              <property name="text">
               <string>Libertad</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Parque San Martin</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>S.A. Padua</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Merlo Norte</string>
              </property>
             </item>
             <item>

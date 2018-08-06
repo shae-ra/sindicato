@@ -1,7 +1,5 @@
-CREATE TABLE codigos_rechazo(
-   codigo      VARCHAR(3) NOT NULL PRIMARY KEY
-  ,descripcion VARCHAR(80)
-);
+use sindicato;
+
 INSERT INTO codigos_rechazo(codigo,descripcion) VALUES ('R02','Cuenta cerrada');
 INSERT INTO codigos_rechazo(codigo,descripcion) VALUES ('R03','Cuenta inexistente');
 INSERT INTO codigos_rechazo(codigo,descripcion) VALUES ('R04','Numero de cuenta invalido');

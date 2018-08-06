@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>iconos/oesteDev.ico</normaloff>iconos/oesteDev.ico</iconset>
+    <normaloff>iconos/ball_green.ico</normaloff>iconos/ball_green.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">

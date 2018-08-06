@@ -277,7 +277,7 @@ color: #FFFFFF;
             <enum>QFrame::Plain</enum>
            </property>
            <property name="text">
-            <string>Cuotas</string>
+            <string>Cuota/s</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

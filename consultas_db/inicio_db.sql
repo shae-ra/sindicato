@@ -1,7 +1,5 @@
 use sindicato;
 
-DROP TABLE familiares, debitos, servicios_afiliado, servicios, proveedores, bancos, usuarios, afiliados, codigos_rechazo;
-
 CREATE TABLE afiliados (
 	legajo varchar(22) NOT NULL PRIMARY KEY, # El legajo deberia ser un entero de 8 y no deberia permitir poner signos. Formato: 01002595
     dni varchar(8) UNIQUE KEY,
