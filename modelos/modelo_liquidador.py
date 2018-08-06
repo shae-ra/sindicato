@@ -48,6 +48,10 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         else:
             self.jubilado = True
 
+    def restoreDebitos(self):
+        consulta = "UPDATE debitos SET id_temporal = NULL"
+        self.__querier.consultaManual(consulta)
+
     def verListaLiquidacionJub(self, fechasCobro, condiciones = None):
         self.listaDebitos = self.__querier.traerElementos(
             campos = ['debitos.id', 'legajo_afiliado', 'cbu', 'importe_actual', 'dni'],

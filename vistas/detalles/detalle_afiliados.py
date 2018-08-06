@@ -114,9 +114,22 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 	def guardarAfiliado(self):
 		afiliado = self.getAfiliado()
-		self.model.guardarAfiliado(afiliado, self.legajo)
-		cdiag = self.operacionCompletada()
-		close = self.close()
+		errores = self.model.guardarAfiliado(afiliado, self.legajo)
+		if errores:
+			self.mensajeError(errores)
+		else:
+			cdiag = self.operacionCompletada()
+			close = self.close()
+
+	def mensajeError(self, errores):
+		msg = QMessageBox()
+		msg.setIcon(QMessageBox.Information)
+		erroresMsg = ""
+		for error in errores:
+			erroresMsg += error
+		msg.setText("No se puede realizar la operacion por los siguientes motivos\n" + erroresMsg )
+		msg.setWindowTitle("...")
+		msg.exec_()
 
 	def guardarFamiliar(self):
 		fechaNacimiento = self.vd_afiliado.fam_fecha_nacimiento.date()
@@ -284,6 +297,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 	def showEvent(self, event):
 		self.vd_afiliado.tabWidget.setCurrentIndex(0)
 		self.legajo = self.vd_afiliado.af_legajo.text()
+		if self.legajo == '': self.legajo = None
 		self.verListaDebitos()
 		self.verListaFamiliares()
 		self.verHistorialDebitos()
