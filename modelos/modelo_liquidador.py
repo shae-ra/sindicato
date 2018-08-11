@@ -49,7 +49,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
             self.jubilado = True
 
     def restoreDebitos(self):
-        consulta = "UPDATE debitos SET id_temporal = NULL"
+        consulta = "UPDATE debitos SET id_temporal = NULL, estado = NULL WHERE id_temporal IS NOT NULL"
         self.__querier.consultaManual(consulta)
 
     def verListaLiquidacionJub(self, fechasCobro, condiciones = None):

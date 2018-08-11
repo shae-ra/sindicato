@@ -34,7 +34,7 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		self.vistaLiqAfiliado.btn_procesar_liq.clicked.connect(self.setTotales)
 
 		self.vistaLiqAfiliado.btn_exportar.clicked.connect(self.procesarDocumento)
-		self.vistaLiqAfiliado.btn_restaurar_liq.clicked.connect(self.model.restoreDebitos)
+		self.vistaLiqAfiliado.btn_restaurar_liq.clicked.connect(self.restoreDebitos)
 
 	def getFechaCobro(self):
 		fechaCobro = self.vistaLiqAfiliado.liq_fecha.date()
@@ -82,6 +82,20 @@ class LiquidadorAfiliados(QtWidgets.QWidget):
 		else:
 			# ACA SE PUEDE PONER UNA VENTANA EMERGENTE PARA RESETEAR LOS DEBITOS CON id_temporal EN LA BASE DE DATOS
 			print("No se puede procesar el archivo porque se está esperando una debitación automática")
+
+	def restoreDebitos(self):
+		msg = QtWidgets.QMessageBox()
+
+		reply = msg.question(self, "¿Restaurar débitos?", "Al realizar esta acción, no se podrán debitar los registros actuales",
+			QtWidgets.QMessageBox.Yes, QtWidgets.QMessageBox.No)
+
+		msg.show()
+
+		if reply == QtWidgets.QMessageBox.Yes:
+			self.model.restoreDebitos()
+			return True
+		else:
+			return False
 
 	def handleSaveXls(self):
 		path = QtWidgets.QFileDialog.getSaveFileName(
