@@ -38,6 +38,8 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.v_carga = carga_debito.CargaDebito(self)
 
 		self.setRegex()
+		self.setRegexFamiliar()
+		self.setRegexServicios()
 
 		self.model = ModeloAfiliado(parent = self)
 		self.model_debito = ModeloDebito(propiedades = [
@@ -94,7 +96,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 			'id_servicio' : id_servicio,
 			'legajo_afiliado' : self.vd_afiliado.af_legajo.text(),
 			'fecha' : fecha,
-			'cantidad' : self.vd_afiliado.serv_cantidad.text(),
+			'cantidad' : self.vd_afiliado.serv_cantidad.cleanText(),
 			'detalle' :self.vd_afiliado.serv_detalles.text()
 		}
 		self.model_servicios_afiliado.asociarServicio(servicio)
@@ -373,17 +375,27 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		return date(fecha.year(), fecha.month(), fecha.day())
 
 	def resetFamiliar(self):
-		self.vd_afiliado.fam_dni.setText(''),
-		self.vd_afiliado.fam_relacion.setCurrentIndex(0),
-		self.vd_afiliado.fam_nombre.setText(''),
-		self.vd_afiliado.fam_apellido.setText(''),
-		self.vd_afiliado.fam_edad.setText(''),
-		self.vd_afiliado.fam_nivel_estudios.setCurrentIndex(0),
+		self.vd_afiliado.fam_dni.setText('')
+		self.vd_afiliado.fam_relacion.setCurrentIndex(0)
+		self.vd_afiliado.fam_nombre.setText('')
+		self.vd_afiliado.fam_apellido.setText('')
+		self.vd_afiliado.fam_edad.setText('')
+		self.vd_afiliado.fam_nivel_estudios.setCurrentIndex(0)
 		self.vd_afiliado.af_legajo.setText('')
+
+	def resetServicio(self):
+		self.vd_afiliado.serv_detalles.setText('')
+		self.vd_afiliado.serv_nombre.setText('')
+		self.vd_afiliado.serv_tipo.setCurrentIndex(0)
+		self.vd_afiliado.serv_cantidad.setValue(0)
 
 	def keyPressEvent(self, event):
 		if event.key() == Qt.Key_Escape:
 			self.close()
+
+	def closeEvent(self, event):
+		self.resetFamiliar()
+		self.resetServicio()
 
 	def setRegex(self):
 		rxCbu = QRegExp("[0-9]{22}")
@@ -428,3 +440,10 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		self.vd_afiliado.fam_dni.setValidator(QtGui.QRegExpValidator(rxDni))
 		self.vd_afiliado.fam_apellido.setValidator(QtGui.QRegExpValidator(rxNyA))
 		self.vd_afiliado.fam_nombre.setValidator(QtGui.QRegExpValidator(rxNyA))
+
+	def setRegexServicios(self):
+		rxNombre = QRegExp("[A-Z\s]{50}")
+		rxDetalle = QRegExp("[A-Z\s]{80}")
+
+		self.vd_afiliado.serv_nombre.setValidator(QtGui.QRegExpValidator(rxNombre))
+		self.vd_afiliado.serv_detalles.setValidator(QtGui.QRegExpValidator(rxDetalle))

@@ -68,7 +68,7 @@ class CargaDebito(QtWidgets.QWidget):
 			if debito['importe_actual'] > 0:
 				self.model.guardarDebito(debito)
 			self.operacionCompletada()
-			reset = self.resetDebito()
+			self.resetDebito()
 			self.close()
 		return
 
@@ -96,6 +96,7 @@ class CargaDebito(QtWidgets.QWidget):
 		self.v_carga.deb_importe_cuota.setText('')
 		self.v_carga.deb_importe_total.setText('')
 		self.v_carga.deb_orden.setText('')
+		self.v_carga.deb_importe_palabras.setText('')
 
 	def getDebito(self):
 		errores = []
@@ -254,6 +255,9 @@ class CargaDebito(QtWidgets.QWidget):
 	def keyPressEvent(self, event):
 		if event.key() == Qt.Key_Escape:
 			self.close()
+
+	def closeEvent(self, event):
+		self.resetDebito()
 
 	def setRegex(self):
 		rxCuota = QRegExp("\d{1,}")
