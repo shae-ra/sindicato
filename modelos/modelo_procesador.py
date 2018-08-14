@@ -89,7 +89,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         print(self.__debitosDatabase)
 
     def apllicarCambios(self):
-
+        self.guardarXls()
         for debito in self.__debitosProcesados:
             print("Estado a actualizar: " + debito[0])
             print("Motivo a actualizar: " + debito[8])
@@ -125,8 +125,6 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
                     },
                 condiciones = [("id", "=", debito[0])]
             )
-
-        self.guardarXls()
 
         self.verListaDebitosDatabase()
         self.limpiarTabla()
@@ -195,13 +193,16 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         wb = openpyxl.Workbook()
         ws = wb.worksheets[0]
 
-        registrosModificados = len(self.__debitosProcesados) + len(self.__debitosRechazados)
+        registrosProcesados = len(self.__debitosProcesados)
+        registrosRechazados = len(self.__debitosRechazados)
+        # registrosModificados = registrosProcesados + registrosRechazados
 
         debitosXls = self.__querier.traerElementos(
             tabla = "debitos",
-            campos = ["CONCAT(afiliados.nombre, ' ', afiliados. apellido)", "importe_actual", "cuota_actual", "total_cuotas", "motivo", "proveedores.nombre"],
+            campos = ["CONCAT(afiliados.nombre, ' ', afiliados. apellido)", "importe_actual", "cuota_actual", "total_cuotas", "motivo", "proveedores.nombre", "id_temporal", "legajo_afiliado"],
             uniones = [('afiliados', 'afiliados.legajo = debitos.legajo_afiliado'), ('proveedores', 'proveedores.id = debitos.proveedor_id')],
-            limite = registrosModificados,
+            condiciones = [('id_temporal','IS NOT',' NULL')],
+            # limite = registrosModificados,
             orden = ("debitos.id", "DESC")
         )
 
@@ -212,19 +213,43 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         ws['E1'] = 'Rechazado'
         ws['F1'] = 'Empresa'
 
-        for index, debito in enumerate(debitosXls):
-            a = 'A{}'.format(index + 2)
-            b = 'B{}'.format(index + 2)
-            c = 'C{}'.format(index + 2)
-            d = 'D{}'.format(index + 2)
-            e = 'E{}'.format(index + 2)
-            f = 'F{}'.format(index + 2)
-            ws[a] = debito[0]
-            ws[b] = debito[1]
-            ws[c] = debito[2]
-            ws[d] = debito[3]
-            ws[e] = self.__codigosDeRechazo[debito[4]]
-            ws[f] = debito[5]
+        print("DBG - COSAS Proc: ", self.__debitosProcesados)
+        print("DBG - COSAS Rech: ", self.__debitosRechazados)
+        print("DBG - registros procesados: ", registrosProcesados)
+
+        for possMatch in self.__debitosProcesados:
+            for index, debito in enumerate(debitosXls):
+                print(debito)
+
+                if possMatch[2] == debito[7]:
+
+                    a = 'A{}'.format(index + 1)
+                    b = 'B{}'.format(index + 1)
+                    c = 'C{}'.format(index + 1)
+                    d = 'D{}'.format(index + 1)
+                    e = 'E{}'.format(index + 1)
+                    f = 'F{}'.format(index + 1)
+                    ws[a] = debito[0]
+                    ws[b] = debito[1]
+                    ws[c] = debito[2]
+                    ws[d] = debito[3]
+                    ws[f] = debito[5]
+
+        for possMatch in self.__debitosRechazados:
+            for index, debito in enumerate(debitosXls):
+                if possMatch[1] == debito[6] and possMatch[2] == debito[7]:
+                    a = 'A{}'.format(index + 2 + registrosProcesados)
+                    b = 'B{}'.format(index + 2 + registrosProcesados)
+                    c = 'C{}'.format(index + 2 + registrosProcesados)
+                    d = 'D{}'.format(index + 2 + registrosProcesados)
+                    e = 'E{}'.format(index + 2 + registrosProcesados)
+                    f = 'F{}'.format(index + 2 + registrosProcesados)
+                    ws[a] = debito[0]
+                    ws[b] = debito[1]
+                    ws[c] = debito[2]
+                    ws[d] = debito[3]
+                    ws[e] = self.__codigosDeRechazo[debito[4]]
+                    ws[f] = debito[5]
 
 		# ABRIR UN CUADRO DE DIALOGO INDICANDO DONDE GUARDAR
         self.handleSave(wb)
