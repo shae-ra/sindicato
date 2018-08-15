@@ -12,7 +12,7 @@ class ModeloFamiliares(QtCore.QAbstractTableModel):
 
         self.__propiedades = [ 'familiares.dni', 'familiares.relacion', 'familiares.nombre',
         'familiares.apellido', 'familiares.fecha_nacimiento',
-        'familiares.edad', 'familiares.nivel_estudios', 'familiares.legajo_afiliado']
+        'familiares.edad', 'familiares.nivel_estudios']
 
         self.__listaFamiliares = []
 
@@ -45,10 +45,24 @@ class ModeloFamiliares(QtCore.QAbstractTableModel):
             condiciones = condiciones,
             orden = orden)
 
+        self.__listaFamiliares = self.__toList()
+        self._setDates(4)
+
         if self.__listaFamiliares:
             self.layoutChanged.emit()
             return True
         return False
+
+    def _setDates(self, dateIndex):
+        for familiar in self.__listaFamiliares:
+            familiar[dateIndex] = QtCore.QDate(familiar[dateIndex])
+
+    def __toList(self):
+        listaFamiliares = []
+        for index, familiar in enumerate(self.__listaFamiliares):
+            listaFamiliares.append(list(familiar))
+
+        return listaFamiliares
 
 # Estas son las funciones específicas de Qt para las tablas
     def rowCount(self, parent):

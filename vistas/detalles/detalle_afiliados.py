@@ -37,6 +37,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 		#variables que alojan las clases que se encuentran dentro del archivo .py. (nombredelArchivo.nombredelaClase)
 		self.v_carga = carga_debito.CargaDebito(self)
 
+		self.ajustarTablas()
 		self.setRegex()
 		self.setRegexFamiliar()
 		self.setRegexServicios()
@@ -447,3 +448,14 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 		self.vd_afiliado.serv_nombre.setValidator(QtGui.QRegExpValidator(rxNombre))
 		self.vd_afiliado.serv_detalles.setValidator(QtGui.QRegExpValidator(rxDetalle))
+
+	def ajustarTablas(self):
+		headerS = self.tbl_servicios.horizontalHeader()
+		headerF = self.tbl_familiares.horizontalHeader()
+		headerD = self.tbl_debitos.horizontalHeader()
+		headerHD = self.tbl_historial_debitos.horizontalHeader()
+
+		headerS.setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
+		# headerF.setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
+		headerD.setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
+		headerHD.setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
