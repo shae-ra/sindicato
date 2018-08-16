@@ -176,7 +176,7 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def handleSave(self, workbook):
 		path = QtWidgets.QFileDialog.getSaveFileName(
-			None, 'Save File', "./bonos/"+ self.parent.vd_afiliado.af_legajo.text()+ " - " + self.v_carga.deb_orden.text(), 'Excel(*.xlsx)')
+			None, 'Save File', "./bonos/"+ self.parent.vd_afiliado.af_apellido.text()+ "-" + self.v_carga.deb_orden.text(), 'Excel(*.xlsx)')
 		if not path[0]: return False
 		workbook.save(path[0])
 		return True
