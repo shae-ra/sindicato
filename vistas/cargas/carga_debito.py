@@ -133,6 +133,9 @@ class CargaDebito(QtWidgets.QWidget):
 		except:
 			errores.append("- No se ha podido calcular el total a cobrar\n")
 
+		if debito['n_orden'] == '':
+			errores.append("- No se ha ingresado un numero de orden\n")
+
 		if fecha_mes and fecha_anio:
 			debito['fecha_descuento'] = date(fecha_anio, fecha_mes, 1)
 		try:
@@ -215,7 +218,7 @@ class CargaDebito(QtWidgets.QWidget):
 		numero = self.__formatearNumeroOrden(numero)
 
 
-		numeroDeOrden = fecha + proveedor + numero
+		numeroDeOrden = fecha + proveedor + "-" + numero
 		return numeroDeOrden
 
 	def __formatearFecha(self, fecha):

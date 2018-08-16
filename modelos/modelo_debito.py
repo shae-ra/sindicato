@@ -132,6 +132,7 @@ class ModeloDebito(QtCore.QAbstractTableModel):
             condiciones = [
                 ('proveedor_id' ,'=' , proveedor),
                 ('fecha_carga_inicial' ,'=' , "'{}'".format(fecha)),
+                ('proveedor_id', '<>', 7)
             ],
             orden = ('id', 'DESC'),
             limite = 1
