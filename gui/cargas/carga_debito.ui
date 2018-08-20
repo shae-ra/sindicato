@@ -1074,5 +1074,22 @@ color: #FFFFFF;
   <tabstop>btn_confirmar</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>deb_importe_palabras</sender>
+   <signal>returnPressed()</signal>
+   <receiver>btn_confirmar</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>291</x>
+     <y>401</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
