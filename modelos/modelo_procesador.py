@@ -244,7 +244,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
                     print(debito, index)
                     index += 1
 
-        index = 2
+        index = 3
         for possMatch in self.__debitosRechazados:
             for debito in debitosXls:
                 if int(possMatch[fr_id_temporal]) == debito[db_id_temporal] and possMatch[fr_legajo] == debito[db_legajo]:
@@ -258,7 +258,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
                     ws[b] = debito[1]
                     ws[c] = debito[2]
                     ws[d] = debito[3]
-                    ws[e] = self.__codigosDeRechazo[debito[4]]
+                    ws[e] = self.__codigosDeRechazo[possMatch[13]]
                     ws[f] = debito[5]
 
                     print(debito, index)
