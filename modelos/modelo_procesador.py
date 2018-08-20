@@ -217,39 +217,52 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         print("DBG - COSAS Rech: ", self.__debitosRechazados)
         print("DBG - registros procesados: ", registrosProcesados)
 
+        db_id_temporal, db_legajo = 6, 7
+        fp_id_temporal, fp_legajo = 7, 2
+        fr_id_temporal, fr_legajo = 1, 2
+
+        index = 2
         for possMatch in self.__debitosProcesados:
-            for index, debito in enumerate(debitosXls):
-                print(debito)
+            for debito in debitosXls:
 
-                if possMatch[2] == debito[7]:
+                print(possMatch[fp_legajo], debito[db_legajo])
+                print(possMatch[fp_id_temporal], debito[db_id_temporal])
+                if possMatch[fp_legajo] == debito[db_legajo] and int(possMatch[fp_id_temporal]) == debito[db_id_temporal]:
 
-                    a = 'A{}'.format(index + 1)
-                    b = 'B{}'.format(index + 1)
-                    c = 'C{}'.format(index + 1)
-                    d = 'D{}'.format(index + 1)
-                    e = 'E{}'.format(index + 1)
-                    f = 'F{}'.format(index + 1)
+                    a = 'A{}'.format(index)
+                    b = 'B{}'.format(index)
+                    c = 'C{}'.format(index)
+                    d = 'D{}'.format(index)
+                    e = 'E{}'.format(index)
+                    f = 'F{}'.format(index)
                     ws[a] = debito[0]
                     ws[b] = debito[1]
                     ws[c] = debito[2]
                     ws[d] = debito[3]
                     ws[f] = debito[5]
 
+                    print(debito, index)
+                    index += 1
+
+        index = 2
         for possMatch in self.__debitosRechazados:
-            for index, debito in enumerate(debitosXls):
-                if possMatch[1] == debito[6] and possMatch[2] == debito[7]:
-                    a = 'A{}'.format(index + 2 + registrosProcesados)
-                    b = 'B{}'.format(index + 2 + registrosProcesados)
-                    c = 'C{}'.format(index + 2 + registrosProcesados)
-                    d = 'D{}'.format(index + 2 + registrosProcesados)
-                    e = 'E{}'.format(index + 2 + registrosProcesados)
-                    f = 'F{}'.format(index + 2 + registrosProcesados)
+            for debito in debitosXls:
+                if int(possMatch[fr_id_temporal]) == debito[db_id_temporal] and possMatch[fr_legajo] == debito[db_legajo]:
+                    a = 'A{}'.format(index + registrosProcesados)
+                    b = 'B{}'.format(index + registrosProcesados)
+                    c = 'C{}'.format(index + registrosProcesados)
+                    d = 'D{}'.format(index + registrosProcesados)
+                    e = 'E{}'.format(index + registrosProcesados)
+                    f = 'F{}'.format(index + registrosProcesados)
                     ws[a] = debito[0]
                     ws[b] = debito[1]
                     ws[c] = debito[2]
                     ws[d] = debito[3]
                     ws[e] = self.__codigosDeRechazo[debito[4]]
                     ws[f] = debito[5]
+
+                    print(debito, index)
+                    index += 1
 
 		# ABRIR UN CUADRO DE DIALOGO INDICANDO DONDE GUARDAR
         self.handleSave(wb)
