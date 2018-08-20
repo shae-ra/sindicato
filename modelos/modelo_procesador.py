@@ -93,6 +93,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         for debito in self.__debitosProcesados:
             print("Estado a actualizar: " + debito[0])
             print("Motivo a actualizar: " + debito[8])
+            print("DEBITO PROCESADO a actulizar: ", debito)
             self.__querier.actualizarElemento(
                 tabla = "debitos",
                 elemento = { "id_temporal" : None,
@@ -120,7 +121,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
             self.__querier.actualizarElemento(
                 tabla = "debitos",
                 elemento = { "id_temporal" : None,
-                    "estado" : debito[12],
+                    "estado" : "Rechazado",
                     "motivo" : debito[13]
                     },
                 condiciones = [("id", "=", debito[0])]
