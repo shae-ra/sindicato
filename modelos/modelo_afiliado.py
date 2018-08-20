@@ -43,10 +43,10 @@ class ModeloAfiliado(QtCore.QAbstractTableModel):
 
 # Legajo : 1, dni : 37537040 es lo que tiene que aparecer cuando uso esta función
     def verListaAfiliados(self, condiciones = None, orden = None):
-        if condiciones:
-            condiciones.append(("activo", "=", "1"))
-        else:
-            condiciones = [("activo", "=", "1")]
+        # if condiciones:
+        #     condiciones.append(("activo", "=", "1"))
+        # else:
+        #     condiciones = [("activo", "=", "1")]
         self.condicionesRefresco = condiciones
         self.ordenRefresco = orden
 

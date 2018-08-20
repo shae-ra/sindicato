@@ -430,8 +430,15 @@
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
-    <layout class="QGridLayout" name="gridLayout_2" rowstretch="2,0,98" columnstretch="90,10">
-     <item row="1" column="0" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,1" columnstretch="90,0,0,0,0">
+     <item row="0" column="3">
+      <widget class="QRadioButton" name="rad_todos">
+       <property name="text">
+        <string>Todos</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="5">
       <spacer name="horizontalSpacer">
        <property name="font">
         <font>
@@ -452,7 +459,7 @@
        </property>
       </spacer>
      </item>
-     <item row="2" column="0" colspan="2">
+     <item row="2" column="0" colspan="5">
       <widget class="ListadoAfiliadosContextM" name="tbl_afiliados">
        <property name="palette">
         <palette>
@@ -552,56 +559,6 @@
        </attribute>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="btn_nuevo">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>160</width>
-         <height>40</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>200</width>
-         <height>200</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">#btn_nuevo{
-background-color:#005c99;
-color: #FFFFFF;
-border-radius: 10px;
-}
-
-#btn_nuevo:hover{
-background-color:#004d80;
-color: #FFFFFF;
-}</string>
-       </property>
-       <property name="text">
-        <string>Ingresar Afiliado</string>
-       </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>../iconos/down.ico</normaloff>../iconos/down.ico</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>25</width>
-         <height>25</height>
-        </size>
-       </property>
-       <property name="shortcut">
-        <string>Ctrl+N</string>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="0">
       <widget class="QLineEdit" name="ln_buscar">
        <property name="sizePolicy">
@@ -667,6 +624,70 @@ color: #FFFFFF;
        </property>
        <property name="clearButtonEnabled">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="btn_nuevo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#btn_nuevo{
+background-color:#005c99;
+color: #FFFFFF;
+border-radius: 10px;
+}
+
+#btn_nuevo:hover{
+background-color:#004d80;
+color: #FFFFFF;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ingresar Afiliado</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../iconos/down.ico</normaloff>../iconos/down.ico</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+N</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QRadioButton" name="rad_inactivos">
+       <property name="text">
+        <string>Inactivos</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QRadioButton" name="rad_activos">
+       <property name="text">
+        <string>Activos</string>
        </property>
       </widget>
      </item>

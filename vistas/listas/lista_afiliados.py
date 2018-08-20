@@ -56,7 +56,7 @@ class ListaAfiliados(QtWidgets.QWidget):
 	#===========================
 
 	def showEvent(self, event):
-		self.model.verListaAfiliados()
+		self.model.verListaAfiliados(condiciones = [("activo", "=", 1)])
 		# Acá llamo la función, se supone que se ejecuta cada vez que
 		# se muestra en pantalla la vista que contiene la tabla 'afiliados'
 
@@ -77,6 +77,12 @@ class ListaAfiliados(QtWidgets.QWidget):
 			condiciones = [("legajo LIKE '%{}%' OR dni".format(busqueda), 'LIKE', "'%{}%'".format(busqueda))]
 		except:
 			condiciones = [("nombre LIKE '%{}%' OR apellido".format(busqueda), "LIKE", "'%{}%'".format(busqueda))]
+		if self.rad_inactivos.isChecked():
+			condiciones.append(("activo", "=", 0))
+		if self.rad_activos.isChecked():
+			condiciones.append(("activo", "=", 1))
+		if self.rad_todos.isChecked():
+			condiciones.append(("(activo = 1 OR activo", "=", "0)"))
 
 		self.model.verListaAfiliados(condiciones = condiciones, orden = orden)
 		self.ajustarTabla()
