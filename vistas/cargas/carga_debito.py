@@ -262,6 +262,9 @@ class CargaDebito(QtWidgets.QWidget):
 	def closeEvent(self, event):
 		self.resetDebito()
 
+	def showEvent(self, event):
+		self.setNumeroDeOrden()
+
 	def setRegex(self):
 		rxCuota = QRegExp("\d{1,}")
 		rxImporte = QRegExp("\d{1,}[.]\d{2}")
