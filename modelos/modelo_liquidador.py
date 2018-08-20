@@ -172,7 +172,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
         self.importe_total = 0
         if self.total_debitos > 0:
             for debito in self.listaDebitos:
-                self.importe_total += debito[indexImporte]
+                self.importe_total += debito[indexImporte] + 7 # Este 7 es el gasto bancario
 
     def __toString(self, index):
         for debito in self.listaDebitos:
