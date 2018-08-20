@@ -444,7 +444,7 @@ class DetalleAfiliados(QtWidgets.QWidget):
 
 	def setRegexServicios(self):
 		rxNombre = QRegExp("[A-Z\s]{50}")
-		rxDetalle = QRegExp("[A-Z\s]{80}")
+		rxDetalle = QRegExp(".{80}")
 
 		self.vd_afiliado.serv_nombre.setValidator(QtGui.QRegExpValidator(rxNombre))
 		self.vd_afiliado.serv_detalles.setValidator(QtGui.QRegExpValidator(rxDetalle))
