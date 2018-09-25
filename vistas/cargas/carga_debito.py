@@ -46,6 +46,8 @@ class CargaDebito(QtWidgets.QWidget):
 		self.v_carga.deb_total_cuotas.textChanged.connect(self.__calcularTotalACobrar)
 		self.v_carga.deb_importe_cuota.textChanged.connect(self.__calcularTotalACobrar)
 
+		self.model_prov.verListaProveedores()
+
 		self.setRegex()
 
 	def guardarDebito(self):
@@ -200,10 +202,11 @@ class CargaDebito(QtWidgets.QWidget):
 	def showEvent(self, event):
 		self.model_prov.verListaProveedores()
 		self.v_carga.prov_id.setCurrentIndex(0)
+		self.setNumeroDeOrden()
 
 	def setNumeroDeOrden(self):
 		numeroDeOrden = self.getNumeroDeOrden()
-
+		# numeroDeOrden = '0'
 		self.v_carga.deb_orden.setText(numeroDeOrden)
 
 	def getNumeroDeOrden(self):
@@ -261,9 +264,6 @@ class CargaDebito(QtWidgets.QWidget):
 
 	def closeEvent(self, event):
 		self.resetDebito()
-
-	def showEvent(self, event):
-		self.setNumeroDeOrden()
 
 	def setRegex(self):
 		rxCuota = QRegExp("\d{1,}")
