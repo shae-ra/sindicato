@@ -26,7 +26,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
 
         self.__debitosBet = [] # Los valores de prueba los saco del archivo fuente
 
-        self.__debitosDatabase = [] # Los valores de acá salen de la base de datos
+        self.__debitosDatabase = []  # Los valores de acá salen de la DB
         self.__debitosNoProcesados = []
         self.__debitosRechazados = []
         self.__debitosProcesados = []
@@ -88,7 +88,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
 
         print(self.__debitosDatabase)
 
-    def apllicarCambios(self):
+    def aplicarCambios(self):
         self.guardarXls()
         for debito in self.__debitosProcesados:
             print("Estado a actualizar: " + debito[0])
@@ -100,6 +100,7 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
                     "estado" : debito[0],
                     "motivo" : debito[8] },
                 condiciones = [("id_temporal", "=", int(debito[7])), ("legajo_afiliado", "=", debito[2])]
+                # condiciones = [("id_temporal", "=", int(debito[7])), ("cbu", "=", debito[4])]
             )
 
         for debito in self.__debitosRechazados:
@@ -151,8 +152,9 @@ class ModeloProcesador(QtCore.QAbstractTableModel):
         db_idTemporal, db_legajoAfiliado, db_cbu, db_fecha, db_importe, db_estado, db_motivo = 1, 2, 3, 4, 5, 12, 13
 
         for index, possMatch in enumerate(self.__debitosDatabase):
-            if possMatch[db_idTemporal] == int(debito[f_idTemporal]) and possMatch[db_legajoAfiliado] == debito[f_legajoAfiliado]:
+            if possMatch[db_idTemporal] == int(debito[f_idTemporal]) and possMatch[db_cbu] == debito[f_cbu]:
                 match = self.__debitosDatabase[index]
+                debito[f_legajoAfiliado] = match[db_legajoAfiliado]
 
                 print("\nDEBUG - El item file contiene: ")
                 print("Legajo de Afiliado: ", debito[f_legajoAfiliado])

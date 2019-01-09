@@ -68,6 +68,7 @@ class ModeloLiquidador(QtCore.QAbstractTableModel):
 
         for index, debito in enumerate(self.listaDebitos):
             debito = list(debito)
+            idCliente = index
             legajo = debito[1]
             cbu = debito[2]
             dni = debito.pop(4)

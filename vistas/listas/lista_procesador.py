@@ -27,7 +27,7 @@ class ListaProcesador(QtWidgets.QWidget):
 
 		self.listaProcesador.tbl_procesador.setModel(self.model)
 		self.listaProcesador.btn_buscar_bet.clicked.connect(self.handleOpenBet)
-		self.listaProcesador.btn_aplicar.clicked.connect(self.model.apllicarCambios)
+		self.listaProcesador.btn_aplicar.clicked.connect(self.model.aplicarCambios)
 		self.listaProcesador.btn_reporte.clicked.connect(self.model.guardarXls)
 
 	def handleOpenBet(self):
